@@ -1,0 +1,35 @@
+@import "../utils/mixins";
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  nav {
+    flex-basis: 70%;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px;
+      margin: 0;
+      list-style: none;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  .menu-setting{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    padding:5px;
+  }
+}
