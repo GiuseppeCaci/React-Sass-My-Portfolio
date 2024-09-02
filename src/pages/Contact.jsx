@@ -5,7 +5,9 @@ const Contact = () => {
 
     return (
         <>
+        <div className="content-wrappet">
         <p>Contact</p>
+        </div>
         </>
     )
 }

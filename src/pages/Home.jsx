@@ -5,7 +5,9 @@ const Home = () => {
 
     return (
         <>
+        <div className="content-wrappet">
         <p>Home</p>
+        </div>
         </>
     )
 }

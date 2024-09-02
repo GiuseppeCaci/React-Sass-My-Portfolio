@@ -5,7 +5,9 @@ const Portfolio = () => {
 
     return (
         <>
+        <div className="content-wrappet">
         <p>Portfolio</p>
+        </div>
         </>
     )
 }

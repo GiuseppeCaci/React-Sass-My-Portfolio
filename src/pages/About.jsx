@@ -5,7 +5,9 @@ const About = () => {
 
     return (
         <>
+        <div className="content-wrappet">
         <p>About</p>
+        </div>
         </>
     )
 }
