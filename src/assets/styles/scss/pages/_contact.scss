@@ -1,0 +1,46 @@
+@import '../utils/mixins';
+@import '../components/container';
+
+
+.container-contact{
+    height: 400px;
+    margin:50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border:1px solid red;
+    @include respond-to(mobile){
+        div{
+            border:1px solid green;
+            flex-basis: 100%;
+            margin:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    };
+    @include respond-to(tablet){
+        div{
+            border:1px solid green;
+            flex-basis: 100%;
+            margin:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    };
+    @include respond-to(desktop){
+        div{
+            border:1px solid green;
+            flex-basis: 40%;
+            margin:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    };
+}

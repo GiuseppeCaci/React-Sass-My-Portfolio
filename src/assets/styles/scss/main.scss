@@ -2,6 +2,11 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'components/container';
+@import 'pages/_home.scss';
+@import 'pages/_about.scss';
+@import 'pages/_contact.scss';
+@import 'pages/_blog.scss';
+@import 'pages/_portfolio.scss';
 
 * {
     margin: 0;

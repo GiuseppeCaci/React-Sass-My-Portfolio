@@ -1,0 +1,89 @@
+@import "../utils/mixins";
+@import "../components/container";
+
+.container-portfolio-curriculum {
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include respond-to(mobile){
+    div{
+        width: auto;
+       }
+};
+@include respond-to(tablet){
+    div{
+        width:auto;
+       }
+};
+@include respond-to(desktop){
+   div{
+    width: 700px;
+   }
+};
+  div {
+    margin:12px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    p:first-child{
+        width: 70%;
+        text-align: start;
+    }
+    p{
+        width: 30%;
+        text-align: center;
+    }
+    span {
+        width: 90%; 
+        border-top: 1px solid black; 
+        margin-top: 7px;
+      }
+
+  }
+}
+
+.container-portfolio-projects{
+    margin:50px 0px;
+    border:1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+.container-portfolio-grid-projects{
+    border:1px solid red;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    @include respond-to(mobile){
+        justify-content:center;
+        div{
+            flex-basis: 90%;
+            width: 150px;
+            height: 250px;
+            border:1px solid green;
+        }
+    };
+    @include respond-to(tablet){
+        justify-content:center;
+        div{
+            margin:17px;
+            flex-basis: 40%;
+            width: 200px;
+            height: 250px;
+            border:1px solid green;
+        }
+    };
+    @include respond-to(desktop){
+        div{
+            margin:17px;
+            flex-basis: 28%;
+            width: 200px;
+            height: 250px;
+            border:1px solid green;
+        }
+    };
+}

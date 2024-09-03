@@ -1,0 +1,56 @@
+@import '../utils/mixins';
+@import '../components/container';
+
+.container-hero{
+    border:1px solid black;
+    background-color: rgb(241, 239, 239);
+    @include respond-to(mobile){
+        height: 100vh;
+    };
+    @include respond-to(tablet){
+        height: 100vh;
+    };
+    @include respond-to(desktop){
+        height:100vh;
+    };
+}
+.container-project{
+    border:1px solid black;
+    background-color: rgb(241, 239, 239);
+    .container-project-title{
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    .container-project-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        padding-bottom: 40px;
+        @include respond-to(mobile){
+            div{
+                flex-basis: 100%;
+                border:1px solid black;
+                height: 270px;
+            }
+        };
+        @include respond-to(tablet){
+            div{
+                flex-basis: 100%;
+                border:1px solid black;
+                height: 300px;
+                margin:10px;
+            }
+        };
+        @include respond-to(desktop){
+            div{
+                flex-basis: 27%;
+                border:1px solid black;
+                height: 300px;
+                margin:10px;
+            }
+        };
+    }
+}

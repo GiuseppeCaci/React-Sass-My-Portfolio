@@ -1,0 +1,32 @@
+@import '../utils/mixins';
+@import '../components/container';
+
+
+.container-blog-post{
+    margin-bottom: 50px;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    @include respond-to(mobile){
+        width: auto;
+        div{
+            border:1px solid black;
+            margin:10px;
+        }
+    };
+    @include respond-to(tablet){
+        width: auto;
+        div{
+            border:1px solid black;
+            margin:10px;
+        }
+    };
+    @include respond-to(desktop){
+        min-width:700px;
+        div{
+            border:1px solid black;
+            margin:10px;
+        }
+    };
+}
