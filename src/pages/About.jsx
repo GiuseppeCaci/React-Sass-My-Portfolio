@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const {t} = useTranslation("about");
+
   return (
     <>
       <div className="content-wrappet-flex">
       <div className="container-title">
-          <h1>ABOUT</h1>
+           <h3>{t("title")}</h3>
         </div>
         <div className="container-about-base">
           <img src="https://images.unsplash.com/photo-1725109431802-d73f9fda6ba9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>

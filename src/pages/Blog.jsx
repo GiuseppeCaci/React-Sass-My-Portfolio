@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
+  const {t} = useTranslation("blog");
+
   return (
     <>
       <div className="content-wrappet-flex content-wrappet-doubleTop">
       <div className="container-title">
-          <h1>BLOG</h1>
+      <h3>{t("title")}</h3>
         </div>
      <div className="container-blog-post">
       <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LenguageSwitcher";
 
 const NavBar = () => {
   return (
@@ -27,7 +28,7 @@ const NavBar = () => {
         </nav>
         <div className="menu-setting">
           <ThemeToggle/>
-          <p>ITA</p>
+          <LanguageSwitcher/>
         </div>
       </div>
     </>

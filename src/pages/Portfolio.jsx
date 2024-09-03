@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+  const {t} = useTranslation("portfolio");
+
   return (
     <>
       <div className="content-wrappet-doubleTop">
       <div className="container-title">
-          <h1>PORTFOLIO</h1>
+      <h3>{t("title")}</h3>
         </div>
         <div className="container-portfolio-curriculum">
           <h3>cronologia lavorativa</h3>
