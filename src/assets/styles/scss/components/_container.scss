@@ -1,7 +1,20 @@
 @import '../utils/mixins';
 
+
+.light{
+    --background-color:white;
+    --color:black;
+  }
+  .dark{
+    --background-color:black;
+    --color:white;
+  }
+
 .content-wrappet{
     margin-top: 60px;
+    background-color: var(--background-color);
+    color:var(--color)
+    
 }
 .content-wrappet-flex{
     margin-top: 60px;
@@ -9,14 +22,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
+    color:var(--color)
 }
 
 .content-wrappet-doubleTop{
     margin-top:120px;
+    background-color: var(--background-color);
+    color:var(--color)
 }
 
 .container-title{
     height: 100px;
     margin-top: 60px;
     text-align: center;
+    background-color: var(--background-color);
+    color:var(--color)
 }
