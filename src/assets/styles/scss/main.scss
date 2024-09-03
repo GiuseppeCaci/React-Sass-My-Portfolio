@@ -1,7 +1,7 @@
-@import 'utils/mixins';
+@import 'abstracts/mixins';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'components/container';
+@import 'layout/container';
 @import 'pages/_home.scss';
 @import 'pages/_about.scss';
 @import 'pages/_contact.scss';

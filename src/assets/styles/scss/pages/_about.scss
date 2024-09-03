@@ -1,5 +1,5 @@
-@import "../utils/mixins";
-@import "../components/container";
+@import "../abstracts/mixins";
+@import "../layout/container";
 
 .container-about-base {
   border: 1px solid red;
