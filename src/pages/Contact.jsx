@@ -13,7 +13,7 @@ const Contact = () => {
        <div className="container-contact">
         <div>
         <a href="mailto:giuseppe.caci97@libero.it">Invia un'email</a>
-            <p>link</p>
+        <a href="/documents/curriculum-prova.pdf" target="_blank" rel="noopener noreferrer">scarica il mio curriculim</a>
             <p>link</p>
         </div>
         <div>
