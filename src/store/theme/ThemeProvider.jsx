@@ -18,9 +18,6 @@ const ThemeProvider = ({children}) => {
         localStorage.setItem("theme", theme);
     },[theme])
 
-    useEffect(() => {
-        console.log(theme)
-    },[theme])
 
 
     return(
