@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 const Home = () => {
 const {t} = useTranslation("home");
@@ -8,7 +9,8 @@ const {t} = useTranslation("home");
     <>
       <div className="content-wrappet">
         <div className="container-hero">
-          <h3>{t("title")}</h3>
+          <h3>Ciao! sono Giuseppe</h3>
+          <p>sono un Web Developer, piu precisamente un front-end developermi occupo di progettare, creare e gestire web app</p>
         </div>
         <div className="container-project">
           <div className="container-project-title">
