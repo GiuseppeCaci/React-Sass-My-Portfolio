@@ -1,0 +1,134 @@
+// _fonts.scss
+
+// Importazione dei font esterni
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+//variabili per i size
+$font-text-xxs: 0.5625rem; // 9px
+$font-text-xs: 0.6875rem;  // 11px
+$font-text-s: 0.8125rem;   // 13px
+$font-text-m: 1rem;        // 16px
+$font-text-l: 1.125rem;    // 18px
+$font-text-xl: 1.375rem;   // 22px
+$font-text-xxl: 1.625rem;  // 26px
+$font-text-big: 2.25rem;   // 36px
+
+$font-title-xxs: 1rem;     // 16px
+$font-title-xs: 1.25rem;   // 20px
+$font-title-s: 1.625rem;   // 26px
+$font-title-m: 2rem;       // 32px
+$font-title-l: 2.5rem;     // 40px
+$font-title-xl: 2.8125rem; // 45px
+$font-title-xxl: 3.25rem;  // 52px
+
+// Base font sizes
+h1 { font-size: $font-title-xxl; } 
+h2 { font-size: $font-title-xl; } 
+h3 { font-size: $font-title-l; } 
+h4 { font-size: $font-title-m; } 
+h5 { font-size: $font-title-s; } 
+h6 { font-size:$font-title-xs; } 
+p { font-size: $font-text-xl; } 
+
+// Tablet adjustments
+@media (max-width: 768px) {
+    h1 { font-size: $font-title-xl; }
+    h2 { font-size: $font-title-l; }  
+    h3 { font-size: $font-title-m; }  
+    h4 { font-size: $font-title-s; }  
+    h5 { font-size: $font-title-xs; } 
+    h6 { font-size: $font-title-xxs; } 
+    p  { font-size: $font-text-m; }  
+  }
+  
+  // Mobile adjustments
+  @media (max-width: 480px) {
+    $font-title-xxs: 1.2rem;
+    $font-title-xs: 1.35rem; 
+    $font-title-s: 1.48rem;  
+    $font-title-m: 1.57rem;      
+    $font-title-l: 1.70rem;     
+    $font-title-xl: 1.80rem; 
+
+    h1 { font-size: $font-title-xl; } 
+    h2 { font-size: $font-title-l; }
+    h3 { font-size: $font-title-m; } 
+    h4 { font-size: $font-title-s; } 
+    h5 { font-size: $font-title-xs; }
+    h6 { font-size: $font-title-xxs; }
+    p  { font-size: $font-text-m; }   
+  }
+  
+
+// Variabili per i font
+$font-title: "Poppins", "Roboto","Montserrat";
+$font-text: "Inter", "sans-serif","Montserrat";
+
+
+// Variabili per il peso dei font
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Base font settings
+body {
+  font-weight: $font-weight-normal;
+  font-family: $font-text;
+
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+// Titoli
+h1 {
+  font-weight: $font-weight-bold;
+  font-family: $font-title;
+  margin: 0;
+}
+
+h2 {
+  font-weight: $font-weight-bold;
+  font-family: $font-title;
+  margin: 0;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  font-family: $font-title;
+  margin: 0;
+}
+
+// Paragrafi e testi
+p {
+  font-weight: $font-weight-semi-bold;
+  font-family: $font-text;
+  margin: 0 0 1em 0;
+}
+
+// Link
+a {
+  font-weight: $font-weight-normal;
+  font-family: $font-text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Stili per i bottoni
+button {
+  font-weight: $font-weight-normal;
+  font-family: $font-text;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

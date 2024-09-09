@@ -1,127 +1,285 @@
 @import "../abstracts/mixins";
+@import "../base/_font.scss";
 
 //menu mobile/tablet
-.hamburger-menu{
-position: relative;
-display: flex;
-align-items: center;
-padding-left: 40px;
-width: 100%;
-height: 90px;
-border:1px solid red;
-}
 
-.hamburger-icon{
-  width: 30px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  border:1px solid red;
-  z-index: 2;
-}
-.hamburger-line{
-  width: 100%;
-  height: 3px;
-  background-color: #333;
-  transition: all 0.3s ease;
-}
-
-.hamburger-menu-open{
+//DIV PRINCIPALE
+.nav-secondary-hamburger {
   position: relative;
   display: flex;
-  align-items: center;
-  padding-left: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 90px;
-  border:1px solid red;
+  height: 70px;
 }
 
-.menu{
-  border:1px solid red;
+//LOGO CON FOTO E NOME
+.nav-secondary-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 67%;
+  padding-left: 10px;
+  img {
+    border-radius: 100%;
+    max-width: 40px;
+  }
+  p {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 7px;
+  }
+}
+
+//SETTING DARK E LIGHT MODE
+.nav-secondary-settingTheme {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+//IL DIV CHE CONTIENE L'HAMBURGER
+.nav-secondary-container-hamburger {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//ICONA HAMBURGER
+.nav-hamburger-icon {
+  width: 40px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+//LE LINEE DELL'HAMBURGER
+.nav-hamburger-line {
+  width: 65%;
+  height: 3px;
+  background-color: #333;
+}
+
+.nav-hamburger-icon.open {
+  box-shadow: none;
+}
+
+//modifico le 3 linee in una x
+.nav-hamburger-icon.open .nav-hamburger-line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: white;
+  width: 10%;
+  height: 3px;
+}
+
+.nav-hamburger-icon.open .nav-hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger-icon.open .nav-hamburger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  background-color: white;
+  width: 10%;
+  height: 3px;
+}
+
+//IL MENU CHE SI APRE
+.nav-secondary-menu {
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
   width: 100%;
   height: 100vh;
   background-color: #333;
   display: none;
   flex-direction: column;
   z-index: 1;
-
-  ul{
-
-    padding-top:80px;
-    padding-left: 40px;
-    line-height: 50px;
-  }
-}
-
-.menu.open{
-  display: flex;
-}
-
-//menu desktop
-.header {
-  background-color: black;
-  color:white;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  padding: 10px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 60px;
-
-  nav {
-    flex-basis: 70%;
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 5px;
-      margin: 0;
-      list-style: none;
-      li {
-        margin: 0 10px;
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+    li {
+      list-style-type: none;
+      line-height: 70px;
+      .nav-Link {
+        font-size: $font-title-s;
+        font-family: $font-title;
+        font-weight: $font-weight-semi-bold;
       }
     }
   }
-  .menu-setting{
-    flex-basis: 25%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 10px;
-    padding:5px;
+}
+
+//APERTURA MENU
+.nav-secondary-menu.open {
+  display: flex;
+}
+
+
+//div per il cambio lingua
+.nav-secondary-settingLanguage{
+  color:white;
+  margin-top:130px;
+}
+//cambio lingua
+.nav-setting-changeLanguageMobile{
+display: flex;
+justify-content: center;
+align-items: center;
+p{
+  padding: 10px;
+  margin: 0px;
+  font-size: $font-title-s;
+  font-family: $font-title;
+  font-weight: $font-weight-semi-bold;
+  cursor: pointer;
+
+  &.active-language {
+    text-decoration: underline;
   }
+}
 }
 
 .no-scroll {
   overflow: hidden;
 }
 
+//MENU DESKTOP / TABLET
 
-@media (max-width: 768px) {
-  .header {
-    display: none; 
+.nav-primary {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  .nav-primary-logo {
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      border-radius: 100%;
+      max-width: 50px;
+    }
+    p {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      padding-left: 7px;
+    }
+    @include respond-to(tablet) {
+      p {
+        padding-left: 2px;
+      }
+    }
   }
 
-  .hamburger-menu {
-    display: flex; 
+  .nav-primary-link {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style-type: none;
+        .nav-Link {
+          font-family: $font-title;
+          font-weight: $font-weight-semi-bold;
+        }
+      }
+    }
+  }
+  .nav-primary-setting {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include respond-to(tablet) {
+      flex-basis: 15%;
+    }
+  }
+}
 
-}}
+.nav-setting-changeLanguage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  div {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0px;
+      padding: 7px;
+    }
+  }
+  p {
+    font-size: $font-text-l;
+    padding: 0px;
+    margin: 0px;
+  }
+  @include respond-to(tablet) {
+    div {
+      width: 50px;
+    }
+  }
+}
 
-@media (min-width: 769px) {
-  .header {
-    display: flex; 
+.nav-setting-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//RESPONSIVE MENU
+
+@include respond-to(mobile) {
+  .nav-primary {
+    display: none;
   }
 
-  .hamburger-menu {
-    display: none; 
+  .nav-secondary-hamburger {
+    display: flex;
+  }
+}
 
-}}
+@include respond-to(tablet) {
+  .nav-primary {
+    display: none;
+  }
+
+  .nav-secondary-hamburger {
+    display: flex;
+  }
+}
+
+@include respond-to(desktop) {
+  .nav-primary {
+    display: flex;
+  }
+
+  .nav-secondary-hamburger {
+    display: none;
+  }
+}

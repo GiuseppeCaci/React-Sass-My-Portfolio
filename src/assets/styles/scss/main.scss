@@ -7,32 +7,11 @@
 @import 'pages/_contact.scss';
 @import 'pages/_blog.scss';
 @import 'pages/_portfolio.scss';
+@import 'themes/_darkMode.scss';
+@import 'themes/_lightMode.scss';
+@import 'base/_reset.scss';
+@import 'base/_font.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  
-  html, body {
-    height: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;  
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: white;
-    -webkit-font-smoothing: antialiased; // Migliora la resa dei font sui browser Webkit
-  }
-  
-  body {
-    margin: 0;
-    min-width: 320px;
-    min-height: 100vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;

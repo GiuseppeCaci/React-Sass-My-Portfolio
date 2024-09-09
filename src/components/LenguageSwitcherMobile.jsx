@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const LanguageSwitcher = () => {
+const LanguageSwitcherMobile = () => {
   const { i18n } = useTranslation();
 
   const storedLanguage = localStorage.getItem("language") || "it";
@@ -24,18 +24,12 @@ const LanguageSwitcher = () => {
 
   return (
     <>
-      <div onClick={handleLangMenu} className="nav-setting-changeLanguage">
-        {langMenu ? (
-          <>
-          <div>
-         <p onClick={() => handleLanguageChange("en")}>en</p>
-         <p onClick={() => handleLanguageChange("it")}>it</p>
-         </div>
-         </>
-        ) : <p>{language}</p>}
+      <div onClick={handleLangMenu} className="nav-setting-changeLanguageMobile">
+      <p onClick={() => handleLanguageChange("en")} className={language === "en" ? "active-language" : ""}>en</p>
+      <p onClick={() => handleLanguageChange("it")} className={language === "it" ? "active-language" : ""}>it</p>
       </div>
     </>
   );
 };
 
-export default LanguageSwitcher;
+export default LanguageSwitcherMobile;

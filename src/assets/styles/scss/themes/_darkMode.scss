@@ -1,0 +1,59 @@
+//PRIMARY COLOR
+$dark-mode-background-primary-color:#204E45;
+$dark-mode-text-primary-color:#E0E0E0;
+$dark-mode-accent-primary-color:#00B894;
+$dark-mode-button-primary-color:#2A6355;
+$dark-mode-button-hover-primary-color:#3C6E71;
+
+//SECONDARY COLOR
+$dark-mode-background-secondary-color:#477161;
+$dark-mode-text-secondary-color:#F0F6F6;
+$dark-mode-accent-secondary-color:#00B894;
+$dark-mode-button-secondary-color:#2A6355;
+$dark-mode-button-hover-secondary-color:#7B8989;
+
+//GENERIC COLOR
+$dark-mode-button-color:#FFFFFF;
+
+.dark-mode {
+    &.primary {
+      background-color: $dark-mode-background-primary-color;
+      color: $dark-mode-text-primary-color;
+  
+      button {
+        background-color: $dark-mode-button-primary-color;
+        color: $dark-mode-button-color;
+  
+        &:hover {
+          background-color: $dark-mode-button-hover-primary-color;
+        }
+
+      }
+      
+      a{
+        color: $dark-mode-text-primary-color
+      }
+    }
+  
+    &.secondary {
+      background-color: $dark-mode-background-secondary-color;
+      color: $dark-mode-text-secondary-color;
+
+      .img-logo{
+        border:1px solid $dark-mode-accent-secondary-color
+      }
+  
+      button {
+        background-color: $dark-mode-button-secondary-color;
+        color: $dark-mode-button-color;
+  
+        &:hover {
+          background-color: $dark-mode-button-hover-secondary-color;
+        }
+      }
+      
+      a{
+        color: $dark-mode-text-secondary-color;
+      }
+    }
+  }
