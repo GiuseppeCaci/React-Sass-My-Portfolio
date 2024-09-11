@@ -1,5 +1,96 @@
 @import "../abstracts/mixins";
 
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+
+
+.main-base {
+  @include respond-to(mobile) {
+    min-height: 92vh;
+  }
+  @include respond-to(tablet) {
+    min-height:95vh;
+  }
+  @include respond-to(desktop) {
+    min-height: 100vh;
+  }
+}
+
+.container-base {
+  width: 100%;
+}
+
+.paragraph-hero {
+  @include respond-to(mobile) {
+    width: 100%;
+   min-height: 85vh;
+   @include space(padding, 0px, 15px, 0px, 15px);
+  }
+  @include respond-to(tablet) {
+    width: 100%;
+    min-height: 85vh;
+    @include space(padding, 0px, 40px, 0px, 40px);
+  }
+  @include respond-to(desktop) {
+    max-width: 1000px;
+    min-height: 100vh;
+    @include space(padding, 0px, 40px, 0px, 40px);
+  }
+}
+
+
+.paragraph-base {
+
+  h1,h2,h3,h4,h5,h6{
+    padding-top:10px;
+  }
+  p{
+    padding-bottom: 10px;
+  }
+
+  @include respond-to(mobile) {
+    width: 100%;
+   min-height: 85vh;
+   @include space(padding, 25px, 17px, 25px, 17px);
+   @include space(margin, 40px, 0px, 40px, 0px);
+  }
+  @include respond-to(tablet) {
+    width: 100%;
+    min-height: 85vh;
+    @include space(padding, 30px, 40px, 30px, 40px);
+    @include space(margin, 40px, 0px, 40px, 0px);
+  }
+
+  @include respond-to(desktop) {
+    border-radius: 60px;
+    max-width: 1000px;
+    min-height: 100vh;
+    @include space(padding, 0px, 40px, 0px, 40px);
+    @include space(margin, 40px, 40px, 40px, 40px);
+  }
+}
+
 
 .container-wrappet {
   width: 100%;
@@ -10,9 +101,7 @@
 }
 
 .base-container-normal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include responsive-flex(row, center, center);
   @include respond-to(desktop) {
     padding: 50px 70px;
   }
@@ -20,10 +109,7 @@
 .main-container-secondary {
 
   &--large {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include responsive-flex(column, center, center);
     text-align: center;
     width: 1000px;
     h2:nth-child(3) {
@@ -55,34 +141,3 @@
     }
   }
 }
-
-/*
-.content-wrappet{
-    margin-top: 60px;
-    background-color: var(--background-color);
-    color:var(--color)
-    
-}
-.content-wrappet-flex{
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-color);
-    color:var(--color)
-}
-
-.content-wrappet-doubleTop{
-    margin-top:120px;
-    background-color: var(--background-color);
-    color:var(--color)
-}
-
-.container-title{
-    height: 100px;
-    margin-top: 60px;
-    text-align: center;
-    background-color: var(--background-color);
-    color:var(--color)
-}*/

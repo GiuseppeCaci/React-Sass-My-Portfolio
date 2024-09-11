@@ -1,21 +1,2 @@
 @import '../abstracts/mixins';
 @import '../layout/container';
-
-
-.container-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    @include respond-to(mobile) {
-      height: 93vh;
-    }
-    @include respond-to(tablet) {
-      height: 95vh;
-    }
-    @include respond-to(desktop) {
-      height: 100vh;
-    }
-  }
-
-  

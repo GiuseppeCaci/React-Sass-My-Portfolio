@@ -11,7 +11,8 @@ const skills = ["HTML", "CSS", "BOOTSTRAP","SASS","JAVASCRIPT","NODE.JS","REACT"
 
   return (
     <>
-      <div className={`container-about ${theme} primary`}>
+    <div className={`main-base ${theme} primary`}>
+    <div className="container-about">
         <div>
           <h1>About</h1>
           <div className="container-about-bio">
@@ -37,7 +38,7 @@ const skills = ["HTML", "CSS", "BOOTSTRAP","SASS","JAVASCRIPT","NODE.JS","REACT"
         </div>
         <button>CONTATTAMI</button>
       </div>
-      <div className={`base-container-normal ${theme} primary`}>
+      <div className="base-container-normal ${theme} primary">
         <div className={`main-container-secondary--large ${theme} secondary`}>
           <h2>Design</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ullam nemo at a ducimus voluptate 
@@ -55,7 +56,7 @@ const skills = ["HTML", "CSS", "BOOTSTRAP","SASS","JAVASCRIPT","NODE.JS","REACT"
             saepe doloremque rem sapiente.</p>
         </div>
       </div>
-      <div className={`base-container-normal ${theme} primary`}>
+      <div className="base-container-normal">
         <div className="container-about-skills">
         <h3>Competenze tecniche</h3>
         <div className="container-about-box">
@@ -65,7 +66,7 @@ const skills = ["HTML", "CSS", "BOOTSTRAP","SASS","JAVASCRIPT","NODE.JS","REACT"
         </div>
         </div>
         </div>
-      <div className={`base-container-normal ${theme} primary`}>
+      <div className="base-container-normal">
         <div className={`main-container-secondary--large ${theme} secondary`}>
           <h2>Soft Skills</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ullam nemo at a ducimus voluptate 
@@ -77,8 +78,7 @@ const skills = ["HTML", "CSS", "BOOTSTRAP","SASS","JAVASCRIPT","NODE.JS","REACT"
             <button>CURRICULUM PDF</button>
         </div>
       </div>
-      <div className={`container-wrappet ${theme} primary`}> 
-        </div>
+      </div>
     </>
   );
 };

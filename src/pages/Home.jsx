@@ -11,14 +11,14 @@ const {theme} = useContext(ThemeContext);
 
   return (
     <>
-    <div className={`container-hero ${theme} primary`}>
-      <div className="main-content-hero">
-      <h2>Ciao! Sono Giuseppe</h2>
-      <p>sono un Web Developer, <br/>
-        piu precisamente in front-end developer <br/>
-        mi occupo di progettare, creare e gestire web app</p>
-      </div>
-      </div>
+    <div className={`main-base ${theme} primary`}>
+      <div className="container-base flex-center-row">
+        <div className="paragraph-hero flex-center-column">
+          <h2>Ciao! Sono Giuseppe</h2>
+          <p>sono un Web Developer, <br/> piu precisamente in front-end developer <br/> mi occupo di progettare, creare e gestire web app</p>
+        </div>
+        </div>
+    </div>
     </>
   );
 };

@@ -2,20 +2,14 @@
 @import "../layout/container";
 
 .base-container-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include responsive-flex(column, center, center);
   @include respond-to(desktop) {
     padding: 50px 70px;
   }
 }
 
 .container-article-title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  @include responsive-flex(column, center, center);
       text-align: center;
       h2:nth-child(3) {
         margin-top: 20px;
@@ -47,10 +41,7 @@
   }
 
 .container-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  @include responsive-flex(column, center, left);
   text-align: left;
   width: 100%;
   h2:nth-child(3) {
@@ -125,10 +116,7 @@
 }
 
 .container-article-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  @include responsive-flex(column, center, left);
     text-align: left;
     width: 100%;
     h2:nth-child(3) {

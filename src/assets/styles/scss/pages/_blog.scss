@@ -2,9 +2,7 @@
 @import '../layout/container';
 
 .container-blog-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @include responsive-flex(row, center, center);
     @include respond-to(mobile) {
         padding: 20px 0px 0px 0px;
       }
@@ -14,20 +12,14 @@
   }
 
 .container-blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @include responsive-flex(column, center, center);
     @include respond-to(desktop) {
       padding: 0px 70px 100px 70px;
     }
   }
 
 .container-blog-post {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  @include responsive-flex(column, center, left);
     text-align: left;
     line-height: 15px;
     border-radius: 60px;

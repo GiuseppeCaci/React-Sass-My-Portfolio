@@ -3,10 +3,11 @@
 
 .container-about {
   @include responsive-flex(column, center, center);
-  padding: 60px 0px;
+  @include space(padding, 60px, 0px);
   h1 {
     text-align: center;
     margin: 40px 0px;
+    @include space(margin, 40px, 0px);
   }
   button {
     width: 150px;
@@ -14,9 +15,6 @@
     border-radius: 25px;
   }
   @include respond-to(mobile) {
-    h1 {
-      margin: 40px 0px;
-    }
     button {
       margin-top: 20px;
       width: 130px;
@@ -32,7 +30,7 @@
 
 .container-about-bio {
   @include respond-to(mobile) {
-    padding: 0px 10px;
+    @include space(padding, 0px, 10px);
     @include responsive-flex(column, center, center);
     img {
       border-radius: 20px 20px 0 0;

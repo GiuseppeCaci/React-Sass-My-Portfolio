@@ -2,10 +2,7 @@
 @import "../layout/container";
 
 .container-collaborazione-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    @include responsive-flex(column, center, center);
   h2 {
     margin: 0px;
   }
@@ -22,11 +19,8 @@
 }
 
 .container-collaborazione {
-  display: flex;
-  flex-direction: column;
+    @include responsive-flex(column, center, center);
   text-align: center;
-  justify-content: center;
-  align-items: center;
   width: 1000px;
   height: 600px;
 
@@ -37,9 +31,7 @@
   .container-collaborazione-box {
     margin-top: 30px;
     width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include responsive-flex(row, center, center);
     flex-wrap: wrap;
 
     .collaborazione-card {

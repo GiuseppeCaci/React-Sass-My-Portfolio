@@ -10,7 +10,8 @@ const ArticoloES = () => {
 
   return (
     <>
-      <div className={`base-container-article ${theme} primary`}>
+    <div className={`main-base ${theme} primary`}>
+      <div className="base-container-article">
         <div className="container-article-title">
           <h2>La programmazione</h2>
           <p>5 minuti di lettura</p>
@@ -55,6 +56,7 @@ const ArticoloES = () => {
             <li><a href="">Link alla pagina esterna</a></li>
           </ul>
         </div>
+      </div>
       </div>
     </>
   );
