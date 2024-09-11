@@ -1,5 +1,60 @@
-@import '../abstracts/mixins';
+@import "../abstracts/mixins";
 
+
+.container-wrappet {
+  width: 100%;
+  height: 50px;
+}
+.container-wrappet {
+  min-height: 40vh;
+}
+
+.base-container-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond-to(desktop) {
+    padding: 50px 70px;
+  }
+}
+.main-container-secondary {
+
+  &--large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    h2:nth-child(3) {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: auto;
+      height: 60px;
+      border-radius: 25px;
+    }
+
+    @include respond-to(mobile) {
+      padding: 50px;
+      h2:nth-child(3) {
+        margin-top: 40px;
+      }
+    }
+    @include respond-to(tablet) {
+      padding: 50px;
+      h2:nth-child(3) {
+        margin-top: 40px;
+      }
+    }
+    @include respond-to(desktop) {
+      padding: 50px;
+      border-radius: 60px;
+    }
+  }
+}
 
 /*
 .content-wrappet{

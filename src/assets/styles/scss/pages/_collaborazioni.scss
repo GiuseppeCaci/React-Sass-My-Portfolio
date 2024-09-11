@@ -1,0 +1,73 @@
+@import "../abstracts/mixins";
+@import "../layout/container";
+
+.container-collaborazione-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin: 0px;
+  }
+
+  @include respond-to(mobile) {
+    padding: 50px 0px 10px 0px;
+  }
+  @include respond-to(tablet) {
+    padding: 100px 0px 10px 0px;
+  }
+  @include respond-to(desktop) {
+    padding: 100px 0px 0px 0px;
+  }
+}
+
+.container-collaborazione {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+
+  @include respond-to(desktop) {
+    border-radius: 60px;
+  }
+
+  .container-collaborazione-box {
+    margin-top: 30px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .collaborazione-card {
+      margin: 5px;
+      flex-basis: 12%;
+      border-radius: 38px;
+      p {
+        padding: 5px 14px;
+        margin: 0px;
+        white-space: nowrap;
+      }
+    }
+
+    @include respond-to(mobile) {
+      width: auto;
+      padding: 20px;
+      .collaborazione-card {
+        p {
+          padding: 5px 10px;
+        }
+      }
+    }
+    @include respond-to(tablet) {
+      margin-top: 20px;
+      width: 500px;
+    }
+    @include respond-to(desktop) {
+      width: 600px;
+    }
+  }
+}

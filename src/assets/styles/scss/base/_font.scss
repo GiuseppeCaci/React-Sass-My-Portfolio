@@ -34,6 +34,7 @@ h4 { font-size: $font-title-m; }
 h5 { font-size: $font-title-s; } 
 h6 { font-size:$font-title-xs; } 
 p { font-size: $font-text-xl; } 
+a { font-size: $font-text-xl; } 
 
 // Tablet adjustments
 @media (max-width: 768px) {
@@ -44,6 +45,7 @@ p { font-size: $font-text-xl; }
     h5 { font-size: $font-title-xs; } 
     h6 { font-size: $font-title-xxs; } 
     p  { font-size: $font-text-m; }  
+    a  { font-size: $font-text-m; }  
   }
   
   // Mobile adjustments
@@ -62,6 +64,7 @@ p { font-size: $font-text-xl; }
     h5 { font-size: $font-title-xs; }
     h6 { font-size: $font-title-xxs; }
     p  { font-size: $font-text-m; }   
+    a { font-size: $font-text-m; }   
   }
   
 
@@ -115,7 +118,7 @@ p {
 
 // Link
 a {
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-semi-bold;
   font-family: $font-text;
   text-decoration: none;
 

@@ -1,89 +1,116 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
+.container-portfolio-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin: 0px;
+  }
+
+  @include respond-to(mobile) {
+    padding: 50px 0px 30px 0px;
+  }
+  @include respond-to(tablet) {
+    padding: 60px 0px 30px 0px;
+  }
+  @include respond-to(desktop) {
+    padding: 60px 0px 0px 0px;
+  }
+}
+
 .container-portfolio-curriculum {
-  border: 1px solid red;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include respond-to(mobile){
-    div{
-        width: auto;
-       }
-};
-@include respond-to(tablet){
-    div{
-        width:auto;
-       }
-};
-@include respond-to(desktop){
-   div{
-    width: 700px;
-   }
-};
+  width: 1000px;
+
+  h4{
+    padding: 5px 20px 20px 20px;
+  }
+
   div {
-    margin:12px;
+    margin: 12px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid green;
-    p:first-child{
-        width: 70%;
-        text-align: start;
+    p:first-child {
+      width: 70%;
+      text-align: start;
+      padding-left: 30px;
     }
-    p{
-        width: 30%;
-        text-align: center;
+    p {
+      width: 30%;
+      text-align: center;
+      margin:0px;
     }
     span {
-        width: 90%; 
-        border-top: 1px solid black; 
-        margin-top: 7px;
-      }
+      width: 95%;
+      border-top: 1px solid black;
+      margin-top: 5px;
+    }
+  }
 
+  @include respond-to(mobile) {
+    padding:30px;
+    div {
+      width: 100%;
+    }
+  }
+  @include respond-to(tablet) {
+    padding: 60px;
+    div {
+      width: 100%;
+    }
+  }
+  @include respond-to(desktop) {
+    div {
+      width: 500px;
+    }
+    padding: 50px;
+    border-radius: 60px;
   }
 }
 
-.container-portfolio-projects{
-    margin:50px 0px;
-    border:1px solid green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:20px;
+.container-portfolio-projects {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-.container-portfolio-grid-projects{
-    border:1px solid red;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    @include respond-to(mobile){
-        justify-content:center;
-        div{
-            flex-basis: 90%;
-            width: 150px;
-            height: 250px;
-            border:1px solid green;
-        }
-    };
-    @include respond-to(tablet){
-        justify-content:center;
-        div{
-            margin:17px;
-            flex-basis: 40%;
-            width: 200px;
-            height: 250px;
-            border:1px solid green;
-        }
-    };
-    @include respond-to(desktop){
-        div{
-            margin:17px;
-            flex-basis: 28%;
-            width: 200px;
-            height: 250px;
-            border:1px solid green;
-        }
-    };
+.container-portfolio-grid-projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  @include respond-to(mobile) {
+    justify-content: center;
+    div {
+      flex-basis: 90%;
+      width: 150px;
+      height: 250px;
+    }
+  }
+  @include respond-to(tablet) {
+    justify-content: center;
+    div {
+      margin: 17px;
+      flex-basis: 40%;
+      width: 200px;
+      height: 250px;
+    }
+  }
+  @include respond-to(desktop) {
+    div {
+      margin: 17px;
+      flex-basis: 28%;
+      width: 200px;
+      height: 250px;
+    }
+  }
 }

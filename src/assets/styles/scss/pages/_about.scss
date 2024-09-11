@@ -1,132 +1,130 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
-.container-about-base {
-  border: 1px solid red;
-  background-color: white;
-  height: auto;
-  padding: 20px;
+.container-about {
+  @include responsive-flex(column, center, center);
+  padding: 60px 0px;
+  h1 {
+    text-align: center;
+    margin: 40px 0px;
+  }
+  button {
+    width: 150px;
+    height: 60px;
+    border-radius: 25px;
+  }
   @include respond-to(mobile) {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    img {
-      max-width: 300px;
-      margin: 0 10px;
+    h1 {
+      margin: 40px 0px;
+    }
+    button {
+      margin-top: 20px;
+      width: 130px;
+      height: 60px;
     }
   }
   @include respond-to(tablet) {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.container-about-bio {
+  @include respond-to(mobile) {
+    padding: 0px 10px;
+    @include responsive-flex(column, center, center);
     img {
-      max-width: 300px;
-      margin: 0 10px;
+      border-radius: 20px 20px 0 0;
+      max-width: 310px;
+    }
+    .container-about-bio-text {
+      h2 {
+        text-align: center;
+        margin: 30px 0px 10px 0px;
+      }
+      p {
+        text-align: center;
+        padding: 0px 20px;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    padding: 0px 40px;
+    @include responsive-flex(column, center, center);
+    img {
+      border-radius: 25px 25px 0 0;
+      max-width: 500px;
+    }
+    .container-about-bio-text {
+      h2 {
+        text-align: center;
+        margin: 40px 0px 10px 0px;
+      }
+      p {
+        text-align: center;
+      }
     }
   }
   @include respond-to(desktop) {
-    max-width: 700px;
+    max-width: 1100px;
+    padding: 40px;
     img {
-      max-width: 250px;
-      margin: 0 10px;
+      border-radius: 25px 25px 0 0;
+      max-width: 400px;
+      margin: 0px 30px 7px 0px;
       float: left;
     }
+    .container-about-bio-text {
+      h2 {
+        text-align: left;
+        margin: 20px 0px;
+      }
+      p {
+        text-align: left;
+      }
+    }
   }
 }
 
-.container-about-skill {
-  border: 1px solid red;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include respond-to(mobile) {
-    div {
-      border: 1px solid black;
+.container-about-skills {
+  @include responsive-flex(column, center, center);
+  text-align: center;
+  width: 1000px;
+  height: 600px;
+
+  .container-about-box {
+    margin-top: 30px;
+    width: 600px;
+    @include responsive-flex(row, center, center);
+    flex-wrap: wrap;
+
+    .about-box-card {
+      margin: 5px;
+      flex-basis: 12%;
+      border-radius: 38px;
+      p {
+        padding: 5px 14px;
+        margin: 0px;
+        white-space: nowrap;
+      }
+    }
+
+    @include respond-to(mobile) {
       width: auto;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      flex-wrap: wrap;
-      p {
-        flex-basis: auto;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid black;
-        text-align: center;
-        border-radius: 40px;
+      padding: 20px;
+      .about-box-card {
+        p {
+          padding: 5px 10px;
+        }
       }
     }
-  }
-  @include respond-to(tablet) {
-    div {
-      border: 1px solid black;
-      width: 440px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      flex-wrap: wrap;
-      p {
-        flex-basis: 25%;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid black;
-        text-align: center;
-        border-radius: 40px;
-      }
+    @include respond-to(tablet) {
+      margin-top: 20px;
+      width: 500px;
     }
-  }
-  @include respond-to(desktop) {
-    div {
-      border: 1px solid black;
-      width: 440px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      flex-wrap: wrap;
-      p {
-        flex-basis: 25%;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid black;
-        text-align: center;
-        border-radius: 40px;
-      }
+    @include respond-to(desktop) {
+      width: 600px;
     }
-  }
-}
-
-.container-about-softSkill {
-  border: 1px solid red;
-  margin:50px 0px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  ul {
-    list-style-type: none;
-    text-align: justify;
-  }
-  @include respond-to(mobile) {
-    width: auto;
-    height: auto;
-  }
-  @include respond-to(tablet) {
-    width: auto;
-    height: auto;
-  }
-  @include respond-to(desktop) {
-    width: 800px;
-    height: 500px;
   }
 }

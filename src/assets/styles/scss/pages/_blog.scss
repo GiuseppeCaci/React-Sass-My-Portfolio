@@ -1,32 +1,74 @@
 @import '../abstracts/mixins';
 @import '../layout/container';
 
+.container-blog-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(mobile) {
+        padding: 20px 0px 0px 0px;
+      }
+    @include respond-to(desktop) {
+      padding: 40px 0px 0px 0px;
+    }
+  }
 
-.container-blog-post{
-    margin-bottom: 50px;
-    border:1px solid red;
+.container-blog {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    @include respond-to(mobile){
+    justify-content: center;
+    align-items: center;
+    @include respond-to(desktop) {
+      padding: 0px 70px 100px 70px;
+    }
+  }
+
+.container-blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    line-height: 15px;
+    border-radius: 60px;
+
+    button {
+      margin-top: 20px;
+      width: auto;
+      height: 60px;
+      border-radius: 25px;
+    }
+
+    @include respond-to(mobile) {
+        border-radius: 40px;
         width: auto;
-        div{
-            border:1px solid black;
-            margin:10px;
+        max-width: 800px;
+        padding: 30px 20px 30px 30px;
+        margin:0px 40px 40px 40px;
+        p:nth-child(3) {
+          line-height: 23px;
         }
-    };
-    @include respond-to(tablet){
+    }
+    @include respond-to(tablet) {
+        border-radius: 50px;
         width: auto;
-        div{
-            border:1px solid black;
-            margin:10px;
+        max-width: 800px;
+        padding: 30px;
+        margin:0px 40px 40px 40px;
+        p:nth-child(3) {
+          line-height: 25px;
         }
-    };
-    @include respond-to(desktop){
-        min-width:700px;
-        div{
-            border:1px solid black;
-            margin:10px;
-        }
-    };
-}
+    }
+    @include respond-to(desktop) {
+        width: auto;
+      padding: 35px;
+      margin:20px;
+      p:nth-child(3) {
+        line-height: 25px;
+      }
+    }
+
+    p:nth-child(2) {
+        font-style: italic;
+      }
+  }

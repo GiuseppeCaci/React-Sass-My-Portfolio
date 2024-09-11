@@ -11,11 +11,13 @@ const {theme} = useContext(ThemeContext);
 
   return (
     <>
-      <div className={`content-wrappet ${theme}`}>
-        <div className={`container-hero ${theme} primary `}>
-          <h1>h1 Ciao! sono Giuseppe</h1>
-          <p>sono un Web Developer, piu precisamente un front-end developermi occupo di progettare, creare e gestire web app</p>
-        </div>
+    <div className={`container-hero ${theme} primary`}>
+      <div className="main-content-hero">
+      <h2>Ciao! Sono Giuseppe</h2>
+      <p>sono un Web Developer, <br/>
+        piu precisamente in front-end developer <br/>
+        mi occupo di progettare, creare e gestire web app</p>
+      </div>
       </div>
     </>
   );

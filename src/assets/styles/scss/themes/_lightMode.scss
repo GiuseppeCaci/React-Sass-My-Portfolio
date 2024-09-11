@@ -31,6 +31,9 @@ $light-mode-button-color: #ffffff;
     a{
       color: $light-mode-text-secondary-color;
     }
+    .line-card{
+      border:2.5px solid $light-mode-text-primary-color;
+    }
   }
 
   &.secondary {

@@ -15,7 +15,10 @@ $dark-mode-button-hover-secondary-color:#7B8989;
 //GENERIC COLOR
 $dark-mode-button-color:#FFFFFF;
 
+
 .dark-mode {
+
+
     &.primary {
       background-color: $dark-mode-background-primary-color;
       color: $dark-mode-text-primary-color;
@@ -32,6 +35,10 @@ $dark-mode-button-color:#FFFFFF;
       
       a{
         color: $dark-mode-text-primary-color
+      }
+
+      .line-card{
+        border: 2.5px solid $dark-mode-text-primary-color;
       }
     }
   
