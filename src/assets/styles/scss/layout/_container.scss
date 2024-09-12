@@ -1,5 +1,13 @@
 @import "../abstracts/mixins";
 
+.button-base{
+  button{
+    margin: 15px;
+    padding:20px 27px;
+    border-radius: 20px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -41,27 +49,8 @@
   width: 100%;
 }
 
-.paragraph-hero {
-  @include respond-to(mobile) {
-    width: 100%;
-   min-height: 85vh;
-   @include space(padding, 0px, 15px, 0px, 15px);
-  }
-  @include respond-to(tablet) {
-    width: 100%;
-    min-height: 85vh;
-    @include space(padding, 0px, 40px, 0px, 40px);
-  }
-  @include respond-to(desktop) {
-    max-width: 1000px;
-    min-height: 100vh;
-    @include space(padding, 0px, 40px, 0px, 40px);
-  }
-}
-
 
 .paragraph-base {
-
   h1,h2,h3,h4,h5,h6{
     padding-top:10px;
   }
@@ -70,26 +59,75 @@
   }
 
   @include respond-to(mobile) {
-    width: 100%;
-   min-height: 85vh;
    @include space(padding, 25px, 17px, 25px, 17px);
-   @include space(margin, 40px, 0px, 40px, 0px);
+   @include space(margin, 30px, 0px, 30px, 0px);
   }
   @include respond-to(tablet) {
-    width: 100%;
-    min-height: 85vh;
     @include space(padding, 30px, 40px, 30px, 40px);
     @include space(margin, 40px, 0px, 40px, 0px);
   }
 
   @include respond-to(desktop) {
     border-radius: 60px;
-    max-width: 1000px;
-    min-height: 100vh;
     @include space(padding, 0px, 40px, 0px, 40px);
     @include space(margin, 40px, 40px, 40px, 40px);
   }
 }
+
+
+.container-skills{
+  flex-wrap: wrap;
+
+  .skills-card {
+    margin: 5px;
+    flex-basis: 12%;
+    border-radius: 38px;
+    p {
+      padding: 5px 14px;
+      margin: 0px;
+      white-space: nowrap;
+    }
+  }
+
+  @include respond-to(mobile) {
+    width: auto;
+    @include space(padding, 5px, 20px, 20px, 20px);
+    .skils-card {
+      p {
+        padding: 5px 10px;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    margin-top: 7px;
+    width: 500px;
+  }
+  @include respond-to(desktop) {
+    margin-top: 25px;
+    width: 700px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container-wrappet {
@@ -100,12 +138,7 @@
   min-height: 40vh;
 }
 
-.base-container-normal {
-  @include responsive-flex(row, center, center);
-  @include respond-to(desktop) {
-    padding: 50px 70px;
-  }
-}
+
 .main-container-secondary {
 
   &--large {

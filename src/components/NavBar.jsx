@@ -5,6 +5,9 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LenguageSwitcher";
 import LanguageSwitcherMobile from "./LenguageSwitcherMobile";
 import ThemeContext from "../store/theme/ThemeContext";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

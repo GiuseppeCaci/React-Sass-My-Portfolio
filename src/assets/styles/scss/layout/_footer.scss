@@ -1,22 +1,33 @@
 @import "../abstracts/mixins";
 
-.footer{
-    position:relative;
-    width: 100%;
-    height: 170px;
-    @include responsive-flex(row, space-evenly, flex-start);
-    flex-wrap: wrap;
-    div{
-        padding: 0px;
-        padding-top:20px;
-        margin: 0px;
-        h5{
-            margin-bottom:5px;
-        }
-        ul{
-            li{
-                list-style-type: none;
-            }
-        }
+.container-footer {
+  position: relative;
+  width: 100%;
+  @include responsive-flex(row, center, center);
+  @include respond-to(mobile) {
+    min-height: 80px;
+  }
+  @include respond-to(tablet) {
+    min-height: 110px;
+  }
+  @include respond-to(desktop) {
+    min-height: 120px;
+  }
+}
+
+.section-footer {
+  width: 100%;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    li {
+      a{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+      }
     }
+  }
 }

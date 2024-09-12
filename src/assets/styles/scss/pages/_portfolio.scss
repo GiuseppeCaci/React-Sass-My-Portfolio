@@ -1,28 +1,9 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
-.container-portfolio-title {
-  @include responsive-flex(column, center, center);
-  h2 {
-    margin: 0px;
-  }
-
-  @include respond-to(mobile) {
-    padding: 50px 0px 30px 0px;
-  }
-  @include respond-to(tablet) {
-    padding: 60px 0px 30px 0px;
-  }
-  @include respond-to(desktop) {
-    padding: 60px 0px 0px 0px;
-  }
-}
-
-.container-portfolio-curriculum {
-  padding: 20px;
-  @include responsive-flex(column, center, center);
+.portfolio-curriculum {
   width: 1000px;
-  h4{
+  h4 {
     padding: 5px 20px 20px 20px;
   }
 
@@ -38,7 +19,7 @@
     p {
       width: 30%;
       text-align: center;
-      margin:0px;
+      margin: 0px;
     }
     span {
       width: 95%;
@@ -48,22 +29,22 @@
   }
 
   @include respond-to(mobile) {
-    padding:30px;
+    padding: 30px;
     div {
       width: 100%;
     }
   }
   @include respond-to(tablet) {
-    padding: 60px;
+    padding: 40px;
     div {
       width: 100%;
     }
   }
   @include respond-to(desktop) {
+    padding: 35px;
+    border-radius: 60px;
     div {
       width: 500px;
     }
-    padding: 50px;
-    border-radius: 60px;
   }
 }

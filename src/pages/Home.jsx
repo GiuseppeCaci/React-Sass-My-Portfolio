@@ -13,7 +13,7 @@ const {theme} = useContext(ThemeContext);
     <>
     <div className={`main-base ${theme} primary`}>
       <div className="container-base flex-center-row">
-        <div className="paragraph-hero flex-center-column">
+        <div className="paragraph-base size-large flex-center-column pm-hero">
           <h2>Ciao! Sono Giuseppe</h2>
           <p>sono un Web Developer, <br/> piu precisamente in front-end developer <br/> mi occupo di progettare, creare e gestire web app</p>
         </div>

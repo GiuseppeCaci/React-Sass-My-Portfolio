@@ -1,35 +1,12 @@
 @import '../abstracts/mixins';
 @import '../layout/container';
 
-.container-blog-title {
-  @include responsive-flex(row, center, center);
-    @include respond-to(mobile) {
-        padding: 20px 0px 0px 0px;
-      }
-    @include respond-to(desktop) {
-      padding: 40px 0px 0px 0px;
-    }
-  }
-
-.container-blog {
-  @include responsive-flex(column, center, center);
-    @include respond-to(desktop) {
-      padding: 0px 70px 100px 70px;
-    }
-  }
 
 .container-blog-post {
   @include responsive-flex(column, center, left);
     text-align: left;
     line-height: 15px;
     border-radius: 60px;
-
-    button {
-      margin-top: 20px;
-      width: auto;
-      height: 60px;
-      border-radius: 25px;
-    }
 
     @include respond-to(mobile) {
         border-radius: 40px;
@@ -54,7 +31,7 @@
     @include respond-to(desktop) {
         width: auto;
       padding: 35px;
-      margin:20px;
+      margin:0px 20px 40px 20px;
       p:nth-child(3) {
         line-height: 25px;
       }

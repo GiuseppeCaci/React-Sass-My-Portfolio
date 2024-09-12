@@ -18,12 +18,13 @@ const CollaborazionePS = () => {
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className="container-collaborazione-title">
+        <div className="flex-center-column pm-title">
           <h2>Pubblic Sapient</h2>
           <p>Dal 02/2023 al 03/2024</p>
         </div>
-        <div className="base-container-normal">
-          <div className="main-container-secondary--large">
+
+        <div className="flex-center-column">
+          <div className="paragraph-base size-small">
             <h2>Le mie mansioni</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
@@ -36,21 +37,23 @@ const CollaborazionePS = () => {
               sapiente.
             </p>
           </div>
-        </div>
-        <div className="base-container-normal">
-          <div className={`container-collaborazione ${theme} secondary`}>
-            <h3>Strumenti usati</h3>
-            <div className="container-collaborazione-box">
-              {strumenti.map((element) => (
-                <div className="collaborazione-card line-card">
-                  <p>{element}</p>
-                </div>
-              ))}
+
+          <div
+            className={`paragraph-base size-small flex-center-column ${theme} secondary`}
+          >
+            <div className="flex-center-column">
+              <h3>Strumenti usati</h3>
+              <div className="container-skills flex-center-row">
+                {strumenti.map((element) => (
+                  <div key={element} className="skills-card line-card">
+                    <p>{element}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="base-container-normal">
-          <div className="main-container-secondary--large">
+
+          <div className="paragraph-base size-small">
             <h2>Skills sviluppate</h2>
             <p>
               Ho studiato all’università di Palermo alla facoltà del Dams
