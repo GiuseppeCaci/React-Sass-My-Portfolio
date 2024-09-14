@@ -9,8 +9,17 @@
       border-radius: 20px 20px 0 0;
       max-width: 310px;
     }
+    h3 {
+      text-align: center;
+      padding:25px 0px 10px 0px;
+      line-height: 34px;
+    }
     .about-bio-text {
       h2 {
+        text-align: center;
+        margin: 30px 0px 10px 0px;
+      }
+      h4 {
         text-align: center;
         margin: 30px 0px 10px 0px;
       }
@@ -25,6 +34,10 @@
     img {
       border-radius: 25px 25px 0 0;
       max-width: 500px;
+    }
+    h3 {
+      text-align: center;
+      padding:30px 0px 5px 0px;
     }
     .about-bio-text {
       h2 {
@@ -44,6 +57,11 @@
       max-width: 400px;
       margin: 0px 30px 7px 0px;
       float: left;
+    }
+    h3 {
+      text-align: left;
+      line-height: 35px;
+      padding-bottom: 10px;
     }
     .about-bio-text {
       h2 {

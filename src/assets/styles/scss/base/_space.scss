@@ -18,6 +18,27 @@
       }
 }
 
+.pm-super-hero{
+  @include respond-to(mobile) {
+     @include space(padding, 0px, 17px, 0px, 17px);
+     h1,h2,h3,h4,h5,h6{
+      padding:10px 0px 0px 0px;
+    }
+    }
+    @include respond-to(tablet) {
+      @include space(padding, 10px, 40px);
+      h1,h2,h3,h4,h5,h6{
+        padding:0px 0px 0px 0px;
+      }
+    }
+    @include respond-to(desktop) {
+      @include space(padding, 10px, 40px);
+      h1,h2,h3,h4,h5,h6{
+        padding:5px 0px 0px 0px;
+      }
+    }
+}
+
 .pm-title{
     h1,h2,h3,h4,h5,h6{
         margin:0;
@@ -36,11 +57,21 @@
         }
       }
       @include respond-to(desktop) {
-        @include space(padding, 80px, 0px, 40px, 0px);
+        @include space(padding, 80px, 0px, 0px, 0px);
         p{
-            margin:30px;
+            margin: 20px 30px 30px 30px;
         }
       }
+}
+
+.pm-title-paragraph{
+    h1,h2,h3,h4,h5,h6{
+        margin:0;
+    }
+    @include space(padding, 80px, 0px, 0px, 0px);
+    p{
+        @include space(margin, 30px, 30px, 0px, 30px);
+    }
 }
 
 .size-small{
@@ -89,4 +120,16 @@
         max-width: 1000px;
         min-height: 100vh;
       }
+}
+
+.last-container{
+    @include respond-to(mobile) {
+        margin-bottom: 80px;
+      }
+      @include respond-to(tablet) {
+        margin-bottom: 100px;
+      }
+      @include respond-to(desktop) {
+        margin-bottom: 100px;
+      } 
 }

@@ -26,7 +26,7 @@ const Portfolio = () => {
                 <Link to="/collaborazione-01">Lorem, ipsum dolor.</Link>
               </p>
               <p>date</p>
-              <span></span>
+              <span className="line-portfolio"></span>
             </div>
           </div>
 

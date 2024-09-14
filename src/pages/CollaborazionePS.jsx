@@ -18,14 +18,14 @@ const CollaborazionePS = () => {
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className="flex-center-column pm-title">
+        <div className="flex-center-column pm-title-paragraph">
           <h2>Pubblic Sapient</h2>
           <p>Dal 02/2023 al 03/2024</p>
         </div>
 
         <div className="flex-center-column">
           <div className="paragraph-base size-small">
-            <h2>Le mie mansioni</h2>
+            <h4>Le mie mansioni</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               ullam nemo at a ducimus voluptate rerum vel? Veritatis nesciunt
@@ -42,7 +42,7 @@ const CollaborazionePS = () => {
             className={`paragraph-base size-small flex-center-column ${theme} secondary`}
           >
             <div className="flex-center-column">
-              <h3>Strumenti usati</h3>
+              <h4>Strumenti usati</h4>
               <div className="container-skills flex-center-row">
                 {strumenti.map((element) => (
                   <div key={element} className="skills-card line-card">
@@ -54,7 +54,7 @@ const CollaborazionePS = () => {
           </div>
 
           <div className="paragraph-base size-small">
-            <h2>Skills sviluppate</h2>
+            <h4>Skills sviluppate</h4>
             <p>
               Ho studiato all’università di Palermo alla facoltà del Dams
               (discipline delle arti, musica e spettacolo), dove, oltre ad aver

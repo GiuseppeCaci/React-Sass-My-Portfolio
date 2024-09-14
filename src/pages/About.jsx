@@ -32,10 +32,10 @@ const About = () => {
           <div className="flex-center-row pm-title">
             <h1>About</h1>
           </div>
-          <div className="about-bio pm-hero button-base">
+          <div className="about-bio pm-hero">
             <img src="https://images.unsplash.com/photo-1725109431802-d73f9fda6ba9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
             <div className="about-bio-text">
-              <h2>Sono un Web developer, studio a Palermo, Italia</h2>
+              <h3>Sono un Web developer, studio a Palermo, Italia</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, eius qui dicta itaque minus odit maiores aut dolore
@@ -56,7 +56,7 @@ const About = () => {
           <div
             className={`paragraph-base size-normal flex-center-column ${theme} secondary`}
           >
-            <h2>Design</h2>
+            <h3>Design</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               ullam nemo at a ducimus voluptate rerum vel? Veritatis nesciunt
@@ -67,7 +67,7 @@ const About = () => {
               beatae, repellendus voluptate quibusdam saepe doloremque rem
               sapiente.
             </p>
-            <h2>Engine</h2>
+            <h3>Engine</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               ullam nemo at a ducimus voluptate rerum vel? Veritatis nesciunt
@@ -92,9 +92,9 @@ const About = () => {
             </div>
           </div>
           <div
-            className={`paragraph-base size-small flex-center-column button-base ${theme} secondary`}
+            className={`paragraph-base size-small flex-center-column last-container ${theme} secondary`}
           >
-           <h2>Soft Skills</h2>
+           <h3>Soft Skills</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               ullam nemo at a ducimus voluptate rerum vel? Veritatis nesciunt

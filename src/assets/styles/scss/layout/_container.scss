@@ -1,12 +1,5 @@
 @import "../abstracts/mixins";
 
-.button-base{
-  button{
-    margin: 15px;
-    padding:20px 27px;
-    border-radius: 20px;
-  }
-}
 
 .flex-center-column {
   display: flex;
@@ -51,23 +44,30 @@
 
 
 .paragraph-base {
-  h1,h2,h3,h4,h5,h6{
-    padding-top:10px;
-  }
+
   p{
     padding-bottom: 10px;
   }
 
   @include respond-to(mobile) {
+    h1,h2,h3,h4,h5,h6{
+      padding: 10px 0px;
+    }
    @include space(padding, 25px, 17px, 25px, 17px);
    @include space(margin, 30px, 0px, 30px, 0px);
   }
   @include respond-to(tablet) {
+    h1,h2,h3,h4,h5,h6{
+      padding: 10px 0px;
+    }
     @include space(padding, 30px, 40px, 30px, 40px);
     @include space(margin, 40px, 0px, 40px, 0px);
   }
 
   @include respond-to(desktop) {
+    h1,h2,h3,h4,h5,h6{
+      padding: 15px 0px;
+    }
     border-radius: 60px;
     @include space(padding, 0px, 40px, 0px, 40px);
     @include space(margin, 40px, 40px, 40px, 40px);

@@ -14,8 +14,17 @@
         max-width: 800px;
         padding: 30px 20px 30px 30px;
         margin:0px 40px 40px 40px;
+        h3{
+          padding-bottom: 15px;
+        }
+        p:nth-child(2) {
+          padding:  0px 0px 10px 0px;
+          margin: 0;
+        }
         p:nth-child(3) {
-          line-height: 23px;
+          line-height: 20px;
+          margin: 0;
+          padding:0;
         }
     }
     @include respond-to(tablet) {
@@ -24,16 +33,34 @@
         max-width: 800px;
         padding: 30px;
         margin:0px 40px 40px 40px;
+        h3{
+          padding-bottom: 15px;
+        }
+        p:nth-child(2) {
+          padding:  0px 0px 10px 0px;
+          margin: 0px;
+        }
         p:nth-child(3) {
-          line-height: 25px;
+          line-height: 20px;
+          margin: 0px;
+          padding:  0px 0px 10px 0px;
         }
     }
     @include respond-to(desktop) {
         width: auto;
-      padding: 35px;
+      padding: 40px;
       margin:0px 20px 40px 20px;
+      h3{
+        padding-bottom: 17px;
+      }
+      p:nth-child(2) {
+        padding:  0px 0px 10px 0px;
+        margin: 0px;
+      }
       p:nth-child(3) {
-        line-height: 25px;
+        line-height: 20px;
+        margin: 0px;
+        padding:  0px 0px 10px 0px;
       }
     }
 

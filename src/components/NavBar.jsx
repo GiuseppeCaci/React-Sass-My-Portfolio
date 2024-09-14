@@ -5,9 +5,9 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LenguageSwitcher";
 import LanguageSwitcherMobile from "./LenguageSwitcherMobile";
 import ThemeContext from "../store/theme/ThemeContext";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className={`nav-secondary-hamburger ${theme} secondary`}>
+      <div className={`nav-secondary-hamburger ${theme} primary`}>
         <nav className="nav-secondary-logo">
           <img
             src="public/photos/foto.jpg"
@@ -40,46 +40,80 @@ const NavBar = () => {
           <ThemeToggle />
         </nav>
         <div className="nav-secondary-container-hamburger">
-        <nav
-          className={`nav-hamburger-icon ${isOpen ? "open" : ""}`}
-          onClick={toggleMenu}
-        >
-          <div className="nav-hamburger-line"></div>
-          <div className="nav-hamburger-line"></div>
-          <div className="nav-hamburger-line"></div>
-        </nav>
+          <nav
+            className={`nav-hamburger-icon ${isOpen ? "open" : ""} ${theme} secondary`}
+            onClick={toggleMenu}
+          >
+            <div className="nav-hamburger-line line-hamburger"></div>
+            <div className="nav-hamburger-line line-hamburger"></div>
+            <div className="nav-hamburger-line line-hamburger"></div>
+          </nav>
         </div>
-        <nav className={`nav-secondary-menu ${isOpen ? "open" : ""}  ${theme} primary`}>
-          <ul>
-            <li>
-              <Link to="/" onClick={toggleMenu} className={`nav-Link ${theme} primary`}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={toggleMenu} className={`nav-Link ${theme} primary`}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={toggleMenu} className={`nav-Link ${theme} primary`}>
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link to="/blog" onClick={toggleMenu} className={`nav-Link ${theme} primary`}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/portfolio" onClick={toggleMenu} className={`nav-Link ${theme} primary`}>
-                Portfolio
-              </Link>
-            </li>
-          </ul>
-          <nav className={`nav-secondary-settingLanguage ${theme} primary`}>
-          <LanguageSwitcherMobile />
-        </nav>
+        <nav
+          className={`nav-secondary-menu ${
+            isOpen ? "open" : ""
+          }  ${theme} secondary`}
+        >
+          <div className="nav-secondary-groupLinks">
+            <ul>
+              <li>
+                <Link
+                  to="/"
+                  onClick={toggleMenu}
+                  className={`nav-Link ${theme} secondary`}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  onClick={toggleMenu}
+                  className={`nav-Link ${theme} secondary`}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={toggleMenu}
+                  className={`nav-Link ${theme} secondary`}
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  onClick={toggleMenu}
+                  className={`nav-Link ${theme} secondary`}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  onClick={toggleMenu}
+                  className={`nav-Link ${theme} secondary`}
+                >
+                  Portfolio
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="nav-secondary-containerSetting">
+            <nav className={`nav-secondary-settingLanguage ${theme} secondary`}>
+            <ul>
+          <li><a href=""><GitHubIcon fontSize="large"/></a></li>
+          <li><a href=""><InstagramIcon fontSize="large"/></a></li>
+          <li><a href="">CV</a></li>
+          <li><a href=""><EmailIcon fontSize="large"/></a></li>
+        </ul>
+              <LanguageSwitcherMobile />
+            </nav>
+          </div>
         </nav>
       </div>
 

@@ -34,6 +34,12 @@ $light-mode-button-color: #ffffff;
     .line-card{
       border:2.5px solid $light-mode-text-primary-color;
     }
+    .line-hamburger{
+      background-color: $light-mode-text-secondary-color;
+    }
+    .line-portfolio{
+      background-color: $light-mode-text-secondary-color;
+    }
   }
 
   &.secondary {

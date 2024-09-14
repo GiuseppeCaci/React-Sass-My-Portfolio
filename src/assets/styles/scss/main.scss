@@ -14,19 +14,3 @@
 @import 'base/_reset.scss';
 @import 'base/_font.scss';
 @import 'base/_space.scss';
-
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-  }
-
-  a {
-    color: #007bff; 
-    text-decoration: none;
-  
-    &:hover {
-      text-decoration: underline;
-    }
-  }

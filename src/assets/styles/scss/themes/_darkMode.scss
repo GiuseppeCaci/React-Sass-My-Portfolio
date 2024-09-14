@@ -40,6 +40,12 @@ $dark-mode-button-color:#FFFFFF;
       .line-card{
         border: 2.5px solid $dark-mode-text-primary-color;
       }
+      .line-hamburger{
+        background-color: $dark-mode-text-primary-color;
+      }
+      .line-portfolio{
+        background-color: $dark-mode-text-primary-color;
+      }
     }
   
     &.secondary {
