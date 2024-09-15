@@ -3,6 +3,61 @@
 
 //menu mobile/tablet
 
+//rotazione di apertura menu icona hamburger
+.rotate-90-cw {
+  -webkit-animation: rotate-90-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-90-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+//rotazione di chiusura menu icona hamburger
+.rotate-90-ccw {
+  -webkit-animation: rotate-90-ccw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: rotate-90-ccw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
 //DIV PRINCIPALE
 .nav-secondary-hamburger {
   position: relative;
@@ -11,7 +66,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: 75px;
-  padding: 10px;
+  padding: 20px;
   @include respond-to(tablet) {
     width: 100%;
     height: 120px;
@@ -38,7 +93,7 @@
 
 //SETTING DARK E LIGHT MODE
 .nav-secondary-settingTheme {
-  flex-basis: 10%;
+  flex-basis: 13%;
   @include responsive-flex(row, space-evenly, center);
 }
 
@@ -54,69 +109,70 @@
 //ICONA HAMBURGER
 .nav-hamburger-icon {
   width: 50px;
-  height: 42px;
+  height: 45px;
   @include responsive-flex(column, space-evenly, center);
   cursor: pointer;
   z-index: 2;
+  position: relative;
 }
 
-//LE LINEE DELL'HAMBURGER
+// LE LINEE DELL'HAMBURGER
 .nav-hamburger-line {
   width: 65%;
   height: 3px;
+  transition: width 0.2s ease, height 0.2s ease, transform 0.2s ease;
+  transform-origin: center;
 }
 
-.nav-hamburger-icon.open {
-  box-shadow: none;
-}
-
-//modifico le 3 linee in una x
+// Modifica delle 3 linee in "X"
 .nav-hamburger-icon.open .nav-hamburger-line:nth-child(1) {
-  transform: rotate(45deg);
+  width: 75%;
   position: absolute;
- width: 10%;
-  height: 3px;
-  @include respond-to(tablet) {
-    width: 8%;
-    margin-top:20px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: width 0.2s ease, height 0.2s ease, transform 0.2s ease;
 }
 
 .nav-hamburger-icon.open .nav-hamburger-line:nth-child(2) {
   opacity: 0;
+  height: 0;
 }
 
 .nav-hamburger-icon.open .nav-hamburger-line:nth-child(3) {
-  transform: rotate(-45deg);
+  transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+  width: 75%;
   position: absolute;
-  width: 10%;
-  height: 3px;
-  @include respond-to(tablet) {
-    width: 8%;
-    margin-top:20px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 //IL MENU CHE SI APRE
 .nav-secondary-menu {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: #333;
-  display: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   z-index: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-//APERTURA MENU
+// Apertura menu
 .nav-secondary-menu.open {
-  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.nav-secondary-groupLinks{
+.nav-secondary-groupLinks {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -130,53 +186,64 @@
         font-size: $font-title-s;
         font-family: $font-title;
         font-weight: $font-weight-semi-bold;
+        transition: font-size 0.5s ease;
+        &:hover {
+          transition: font-size 0.5s ease;
+          font-size: $font-title-l;
+          text-decoration: none;
+        }
+      }
+      .position-utent {
+        font-size: $font-title-l;
+        padding-right:25px;
       }
     }
   }
 }
 
-.nav-secondary-containerSetting{
+
+.nav-secondary-containerSetting {
   display: flex;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
   padding: 30px;
 }
 
 //div per il cambio lingua
-.nav-secondary-settingLanguage{
-  color:white;
+.nav-secondary-settingLanguage {
+  color: white;
   ul {
-    margin:15px;
+    margin: 15px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     li {
-      a{
+      a {
         display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
       }
-    }}
-}
-
-
-//cambio lingua
-.nav-setting-changeLanguageMobile{
-  @include responsive-flex(row, center, center);
-p{
-  padding: 10px;
-  margin: 0px;
-  font-size: $font-title-s;
-  font-family: $font-title;
-  font-weight: $font-weight-semi-bold;
-  cursor: pointer;
-
-  &.active-language {
-    text-decoration: underline;
+    }
   }
 }
+
+//cambio lingua
+.nav-setting-changeLanguageMobile {
+  @include responsive-flex(row, center, center);
+  p {
+    padding: 10px;
+    margin: 0px;
+    font-size: $font-title-s;
+    font-family: $font-title;
+    font-weight: $font-weight-semi-bold;
+    cursor: pointer;
+
+    &.active-language {
+      text-decoration: underline;
+    }
+  }
 }
 
 .no-scroll {
@@ -222,7 +289,6 @@ p{
         list-style-type: none;
         .nav-Link {
           font-family: $font-title;
-          font-weight: $font-weight-semi-bold;
         }
       }
     }
@@ -238,27 +304,37 @@ p{
 
 .nav-setting-changeLanguage {
   @include responsive-flex(row, center, center);
-  width: auto;
+  transition: width 1s ease;
+  width: 50px;
   height: 50px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
   div {
-    width: 70px;
-    height: 50px;
     @include responsive-flex(row, center, center);
+
     p {
       margin: 0px;
       padding: 7px;
     }
   }
+
   p {
     font-size: $font-text-l;
     padding: 0px;
     margin: 0px;
   }
+
   @include respond-to(tablet) {
     div {
       width: 50px;
     }
   }
+}
+
+.nav-setting-changeLanguage.open {
+  transition: background-color 0.5s ease;
+  transition: width 1s ease;
+  width: 110px;
 }
 
 .nav-setting-theme {

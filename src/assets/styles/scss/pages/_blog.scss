@@ -67,4 +67,9 @@
     p:nth-child(2) {
         font-style: italic;
       }
+
+      &:hover{
+        transform: scale(1.03);
+        text-decoration: none;
+      }
   }

@@ -1,34 +1,71 @@
-//PRIMARY COLOR
-$dark-mode-background-primary-color:#204E45;
-$dark-mode-text-primary-color:#E0E0E0;
-$dark-mode-accent-primary-color:#00B894;
-$dark-mode-button-primary-color:#2A6355;
-$dark-mode-button-hover-primary-color:#3C6E71;
+// PRIMARY COLOR
+$dark-mode-background-primary-color: #193832; // Scurito
+$dark-mode-text-primary-color: #E0E0E0; // Mantiene un buon contrasto con il background scuro
+$dark-mode-accent-primary-color: #00B894; // Colore di accento vivace, ben visibile su fondo scuro
+$dark-mode-button-primary-color: #2A6355; // Colore dei bottoni, leggermente più scuro per coerenza con lo sfondo
+$dark-mode-button-hover-primary-color: #3C6E71; // Colore dei bottoni al passaggio del mouse, contrastante ma non troppo acceso
 
-//SECONDARY COLOR
-$dark-mode-background-secondary-color:#477161;
-$dark-mode-text-secondary-color:#F0F6F6;
-$dark-mode-accent-secondary-color:#00B894;
-$dark-mode-button-secondary-color:#2A6355;
-$dark-mode-button-hover-secondary-color:#7B8989;
+// SECONDARY COLOR
+$dark-mode-background-secondary-color: #2A4B41; // Scurito per un buon contrasto con il background principale
+$dark-mode-text-secondary-color: #F0F6F6; // Mantiene la leggibilità su background scuro
+$dark-mode-accent-secondary-color: #00B894; // Colore di accento secondario coerente con quello principale
+$dark-mode-button-secondary-color: #2A6355; // Colore dei bottoni secondari, coerente con quello principale
+$dark-mode-button-hover-secondary-color: #4A7D73; // Colore dei bottoni secondari al passaggio del mouse, con un buon contrasto
+
 
 //GENERIC COLOR
 $dark-mode-button-color:#FFFFFF;
 
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #00876F; // Verde scuro per migliorare la leggibilità
+  }
+  50% {
+    background: #004E45; // Verde/blu molto scuro
+  }
+  100% {
+    background: #2F4D4B; // Un tono più scuro per l'ultimo step
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #00876F; // Verde scuro per migliorare la leggibilità
+  }
+  50% {
+    background: #004E45; // Verde/blu molto scuro
+  }
+  100% {
+    background: #2F4D4B; // Un tono più scuro per l'ultimo step
+  }
+}
+
+
 
 .dark-mode {
 
+  transition: all 0.3s ease-in-out;
+
+  
+  .color-change-3x {
+    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+            animation: color-change-3x 4s linear infinite alternate both;
+  }
 
     &.primary {
       background-color: $dark-mode-background-primary-color;
       color: $dark-mode-text-primary-color;
+      
   
       button {
         background-color: $dark-mode-button-primary-color;
         color: $dark-mode-button-color;
+        transition: all 0.5s ease;
   
         &:hover {
+          padding: 23px 32px;
           background-color: $dark-mode-button-hover-primary-color;
+          transition: all 0.5s ease;
         }
 
       }
@@ -41,7 +78,7 @@ $dark-mode-button-color:#FFFFFF;
         border: 2.5px solid $dark-mode-text-primary-color;
       }
       .line-hamburger{
-        background-color: $dark-mode-text-primary-color;
+        background-color: $dark-mode-text-secondary-color;
       }
       .line-portfolio{
         background-color: $dark-mode-text-primary-color;
@@ -59,9 +96,12 @@ $dark-mode-button-color:#FFFFFF;
       button {
         background-color: $dark-mode-button-secondary-color;
         color: $dark-mode-button-color;
+        transition: all 0.5s ease;
   
         &:hover {
+          padding: 23px 32px;
           background-color: $dark-mode-button-hover-secondary-color;
+          transition: all 0.5s ease;
         }
       }
       

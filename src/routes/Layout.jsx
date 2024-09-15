@@ -5,16 +5,18 @@ import { Outlet } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-
-const Layout = () => (
-    <div>
-     <NavBar/>
+const Layout = () => {
+  return (
+    <>
+      <div>
+        <NavBar/>
         <main>
-            <Outlet/>
+          <Outlet/>
         </main>
-    <Footer/>
-    </div>
-)
+        <Footer/>
+      </div>
+    </>
+  );
+};
 
-
-export default Layout
+export default Layout;

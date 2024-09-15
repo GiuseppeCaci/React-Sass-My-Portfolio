@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { useTranslation } from 'react-i18next';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import ThemeContext from "../store/theme/ThemeContext";
+import { useLocation } from "react-router-dom";
 
 
 const Home = () => {

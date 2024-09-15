@@ -14,8 +14,10 @@ const CollaborazionePS = lazy(() => import("../pages/CollaborazionePS"));
 import Loading from "../components/Loading";
 import Layout from "./Layout";
 
-const AppRoutes = () => (
-  <Router>
+const AppRoutes = () => {
+  return(
+    <>
+      <Router>
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -30,6 +32,8 @@ const AppRoutes = () => (
       </Routes>
     </Suspense>
   </Router>
-);
+    </>
+  )
+};
 
 export default AppRoutes;

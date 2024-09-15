@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useTranslation } from "react-i18next";
+import ThemeContext from "../store/theme/ThemeContext";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const {theme} = useContext(ThemeContext);
 
   const storedLanguage = localStorage.getItem("language") || "it";
   const [language, setLanguage] = useState(storedLanguage);
@@ -24,7 +26,7 @@ const LanguageSwitcher = () => {
 
   return (
     <>
-      <div onClick={handleLangMenu} className="nav-setting-changeLanguage">
+      <div onClick={handleLangMenu} className={`nav-setting-changeLanguage ${theme} ${langMenu ? 'open primary' : 'secondary'} ${theme}`}>
         {langMenu ? (
           <>
           <div>

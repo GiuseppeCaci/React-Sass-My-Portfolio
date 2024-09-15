@@ -1,21 +1,25 @@
-//PRIMARY COLOR
-$light-mode-background-primary-color: #f0f5f5;
-$light-mode-text-primary-color: #30665b;
-$light-mode-accent-primary-color: #4fbb64;
-$light-mode-button-primary-color: #2a6355;
-$light-mode-button-hover-primary-color: #7f8f8f;
+// PRIMARY COLOR
+$light-mode-background-primary-color: #f0f5f5; // Mantiene un background chiaro e pulito
+$light-mode-text-primary-color: #2d6a4f; // Scurito per un migliore contrasto con il background chiaro
+$light-mode-accent-primary-color: #4fbb64; // Colore di accento vivace e coerente
+$light-mode-button-primary-color: #2a6355; // Colore dei bottoni, coerente con la dark mode per una buona transizione tra i temi
+$light-mode-button-hover-primary-color: #5d8a76; // Leggermente scurito rispetto al colore dei bottoni primari per un buon effetto al passaggio del mouse
 
-//SECONDARY COLOR
-$light-mode-background-secondary-color: #ededed;
-$light-mode-text-secondary-color: #1b3b32;
-$light-mode-accent-secondary-color: #4fbb64;
-$light-mode-button-secondary-color: #667965;
-$light-mode-button-hover-secondary-color: #7f8f8f;
+// SECONDARY COLOR
+$light-mode-background-secondary-color: #e2e2e2; // Scurito leggermente rispetto al background primario per una differenziazione più chiara
+$light-mode-text-secondary-color: #1b3b32; // Mantiene la leggibilità e il contrasto con il background secondario
+$light-mode-accent-secondary-color: #4fbb64; // Colore di accento coerente con quello principale
+$light-mode-button-secondary-color: #4b6e5e; // Scurito leggermente per allinearsi meglio con i colori modificati della dark mode
+$light-mode-button-hover-secondary-color: #6c8b75; // Leggermente scurito per mantenere un buon contrasto al passaggio del mouse
+
 
 //GENERIC COLOR
 $light-mode-button-color: #ffffff;
 
 .light-mode {
+
+  transition: all 0.3s ease-in-out;
+
   &.primary {
     background-color: $light-mode-background-primary-color;
     color: $light-mode-text-primary-color;
@@ -23,9 +27,12 @@ $light-mode-button-color: #ffffff;
     button {
       background-color: $light-mode-button-primary-color;
       color: $light-mode-button-color;
+      transition: all 0.5s ease;
 
       &:hover {
+        padding: 23px 32px;
         background-color: $light-mode-button-hover-primary-color;
+        transition: all 0.5s ease;
       }
     }
     a{
@@ -53,14 +60,18 @@ $light-mode-button-color: #ffffff;
     button {
       background-color: $light-mode-button-secondary-color;
       color: $light-mode-button-color;
+      transition: all 0.5s ease;
 
       &:hover {
+        padding: 23px 32px;
         background-color: $light-mode-button-hover-secondary-color;
+        transition: all 0.5s ease;
       }
     }
 
     a{
       color: $light-mode-text-secondary-color;
     }
+
   }
 }

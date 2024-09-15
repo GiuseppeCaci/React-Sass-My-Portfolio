@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LenguageSwitcher";
@@ -8,10 +8,13 @@ import ThemeContext from "../store/theme/ThemeContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import PlaceIcon from "@mui/icons-material/Place";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useContext(ThemeContext);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -41,7 +44,9 @@ const NavBar = () => {
         </nav>
         <div className="nav-secondary-container-hamburger">
           <nav
-            className={`nav-hamburger-icon ${isOpen ? "open" : ""} ${theme} secondary`}
+            className={`nav-hamburger-icon ${
+              isOpen ? "open rotate-90-cw" : "rotate-90-ccw"
+            } ${theme} secondary`}
             onClick={toggleMenu}
           >
             <div className="nav-hamburger-line line-hamburger"></div>
@@ -57,46 +62,66 @@ const NavBar = () => {
           <div className="nav-secondary-groupLinks">
             <ul>
               <li>
+              {location.pathname === "/" ? (
+                  <PlaceIcon fontSize="large" />
+                ) : null}
                 <Link
                   to="/"
                   onClick={toggleMenu}
-                  className={`nav-Link ${theme} secondary`}
+                  className={` nav-Link ${
+                    location.pathname === "/" ? "position-utent" : ""
+                  } ${theme} secondary`}
                 >
                   Home
                 </Link>
               </li>
               <li>
+                {location.pathname === "/about" ? (
+                  <PlaceIcon fontSize="large" />
+                ) : null}
                 <Link
                   to="/about"
                   onClick={toggleMenu}
-                  className={`nav-Link ${theme} secondary`}
+                  className={`nav-Link ${
+                    location.pathname === "/about" ? "position-utent" : ""
+                  } ${theme} secondary`}
                 >
                   About
                 </Link>
               </li>
-              <li>
+              <li
+              >
+                {location.pathname === "/contact" ? (
+                  <PlaceIcon fontSize="large" />
+                ) : null}
                 <Link
                   to="/contact"
                   onClick={toggleMenu}
-                  className={`nav-Link ${theme} secondary`}
+                  className={`nav-Link ${location.pathname === "/contact" ? "position-utent" : ""} ${theme} secondary`}
                 >
                   Contact
                 </Link>
               </li>
               <li>
+                {location.pathname === "/blog" ? (
+                  <PlaceIcon fontSize="large" />
+                ) : null}
                 <Link
                   to="/blog"
                   onClick={toggleMenu}
-                  className={`nav-Link ${theme} secondary`}
+                  className={`nav-Link ${location.pathname === "/blog" ? "position-utent" : ""} ${theme} secondary`}
                 >
                   Blog
                 </Link>
               </li>
               <li>
+                {location.pathname === "/portfolio" ? (
+                  <PlaceIcon fontSize="large" />
+                ) : null}
                 <Link
                   to="/portfolio"
                   onClick={toggleMenu}
-                  className={`nav-Link ${theme} secondary`}
+                  className={`nav-Link ${location.pathname === "/portfolio" ? "position-utent" : ""} ${theme} secondary`}
                 >
                   Portfolio
                 </Link>
@@ -105,12 +130,26 @@ const NavBar = () => {
           </div>
           <div className="nav-secondary-containerSetting">
             <nav className={`nav-secondary-settingLanguage ${theme} secondary`}>
-            <ul>
-          <li><a href=""><GitHubIcon fontSize="large"/></a></li>
-          <li><a href=""><InstagramIcon fontSize="large"/></a></li>
-          <li><a href="">CV</a></li>
-          <li><a href=""><EmailIcon fontSize="large"/></a></li>
-        </ul>
+              <ul>
+                <li>
+                  <a href="">
+                    <GitHubIcon fontSize="large" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <InstagramIcon fontSize="large" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">CV</a>
+                </li>
+                <li>
+                  <a href="">
+                    <EmailIcon fontSize="large" />
+                  </a>
+                </li>
+              </ul>
               <LanguageSwitcherMobile />
             </nav>
           </div>
