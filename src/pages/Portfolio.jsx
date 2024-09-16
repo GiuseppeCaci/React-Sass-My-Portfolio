@@ -1,11 +1,9 @@
 import React from "react";
 import { useContext, useState } from "react";
-import { useTranslation } from "react-i18next";
 import ThemeContext from "../store/theme/ThemeContext";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
-  const { t } = useTranslation("portfolio");
   const { theme } = useContext(ThemeContext);
 
   return (

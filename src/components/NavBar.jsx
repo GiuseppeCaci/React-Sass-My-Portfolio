@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LenguageSwitcher";
-import LanguageSwitcherMobile from "./LenguageSwitcherMobile";
 import ThemeContext from "../store/theme/ThemeContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -85,7 +83,7 @@ const NavBar = () => {
                     location.pathname === "/about" ? "position-utent" : ""
                   } ${theme} secondary`}
                 >
-                  Chi sono
+                  About
                 </Link>
               </li>
               <li
@@ -98,7 +96,7 @@ const NavBar = () => {
                   onClick={toggleMenu}
                   className={`nav-Link ${location.pathname === "/contact" ? "position-utent" : ""} ${theme} secondary`}
                 >
-                  Contatti
+                   Contatti
                 </Link>
               </li>
               <li>
@@ -150,7 +148,6 @@ const NavBar = () => {
                   </a>
                 </li>
               </ul>
-              <LanguageSwitcherMobile />
             </nav>
           </div>
         </nav>
@@ -174,12 +171,12 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/about" className={`nav-Link ${theme} secondary`}>
-                About
+              About
               </Link>
             </li>
             <li>
               <Link to="/contact" className={`nav-Link ${theme} secondary`}>
-                Contact
+              Contatti
               </Link>
             </li>
             <li>
@@ -196,7 +193,6 @@ const NavBar = () => {
         </nav>
         <nav className="nav-primary-setting">
           <ThemeToggle />
-          <LanguageSwitcher />
         </nav>
       </div>
     </>

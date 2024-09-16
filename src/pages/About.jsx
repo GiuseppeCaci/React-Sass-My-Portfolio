@@ -1,10 +1,8 @@
 import React from "react";
 import { useContext, useState } from "react";
-import { useTranslation } from "react-i18next";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const About = () => {
-  const { t } = useTranslation("about");
   const { theme } = useContext(ThemeContext);
   const skills = [
     "Html",
@@ -30,7 +28,7 @@ const About = () => {
       <div className={`main-base ${theme} primary color-change-4x`}>
         <div className="container-base flex-center-column">
           <div className="flex-center-row pm-title">
-            <h1>Chi sono</h1>
+            <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
             <img src="https://images.unsplash.com/photo-1725109431802-d73f9fda6ba9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>

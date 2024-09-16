@@ -942,7 +942,7 @@ button {
   }
 }
 .dark-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .dark-mode .gradient-skeleton {
   background-color: #1e3d34;
@@ -1069,7 +1069,7 @@ button {
   }
 }
 .light-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .light-mode .gradient-skeleton {
   background-color: #e0e0e0;
@@ -2599,7 +2599,7 @@ button {
   }
 }
 .dark-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .dark-mode .gradient-skeleton {
   background-color: #1e3d34;
@@ -2726,7 +2726,7 @@ button {
   }
 }
 .light-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .light-mode .gradient-skeleton {
   background-color: #e0e0e0;
@@ -3139,7 +3139,7 @@ button {
   }
 }
 .dark-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .dark-mode .gradient-skeleton {
   background-color: #1e3d34;
@@ -3266,7 +3266,7 @@ button {
   }
 }
 .light-mode {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .light-mode .gradient-skeleton {
   background-color: #e0e0e0;
