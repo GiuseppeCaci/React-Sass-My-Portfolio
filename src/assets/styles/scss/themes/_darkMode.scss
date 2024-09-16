@@ -12,6 +12,10 @@ $dark-mode-accent-secondary-color: #00B894; // Colore di accento secondario coer
 $dark-mode-button-secondary-color: #2A6355; // Colore dei bottoni secondari, coerente con quello principale
 $dark-mode-button-hover-secondary-color: #4A7D73; // Colore dei bottoni secondari al passaggio del mouse, con un buon contrasto
 
+//SKELETON GRADIENT
+$dark-skeleton-color-1: #1e3d34; // Grigio molto scuro
+$dark-skeleton-color-2: #2a4b41; // Grigio scuro più chiaro
+
 
 //GENERIC COLOR
 $dark-mode-button-color:#FFFFFF;
@@ -51,6 +55,13 @@ $dark-mode-button-color:#FFFFFF;
 
   transition: all 0.3s ease;
 
+  .gradient-skeleton{
+    background-color: $dark-skeleton-color-1;
+    background: linear-gradient(90deg, $dark-skeleton-color-1 25%, $dark-skeleton-color-2 50%, $dark-skeleton-color-1 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+  }
+
   .color-change-4x {
     -webkit-animation: color-change-dark 10s linear infinite alternate both;
     animation: color-change-dark 10s linear infinite alternate both;
@@ -67,9 +78,24 @@ $dark-mode-button-color:#FFFFFF;
         transition: padding 0.5s ease;
   
         &:hover {
-          padding: 23px 32px;
+          @include respond-to(mobile) {
+            padding: 18px 23px;
+          }
+        
+          @include respond-to(tablet) {
+            padding: 20px 27px;
+          }
+        
+          @include respond-to(desktop) {
+            padding: 23px 32px;
+          }
+
           background-color: $dark-mode-button-hover-primary-color;
           transition: padding 0.5s ease;
+        }
+        &:focus {
+          outline: 3px solid $dark-mode-button-hover-primary-color; 
+          outline-offset: 2px;
         }
 
       }
@@ -79,7 +105,7 @@ $dark-mode-button-color:#FFFFFF;
       }
 
       .line-card{
-        border: 2.5px solid $dark-mode-text-primary-color;
+        border: 1.5px solid $dark-mode-text-secondary-color;
       }
       .line-hamburger{
         background-color: $dark-mode-text-secondary-color;
@@ -101,14 +127,29 @@ $dark-mode-button-color:#FFFFFF;
       }
   
       button {
-        background-color: $dark-mode-button-secondary-color;
+        background-color: $dark-mode-button-primary-color;
         color: $dark-mode-button-color;
         transition: padding 0.5s ease;
   
         &:hover {
-          padding: 23px 32px;
-          background-color: $dark-mode-button-hover-secondary-color;
+          @include respond-to(mobile) {
+            padding: 18px 23px;
+          }
+        
+          @include respond-to(tablet) {
+            padding: 20px 27px;
+          }
+        
+          @include respond-to(desktop) {
+            padding: 23px 32px;
+          }
+
+          background-color: $dark-mode-button-hover-primary-color;
           transition: padding 0.5s ease;
+        }
+        &:focus {
+          outline: 3px solid $dark-mode-button-hover-primary-color; 
+          outline-offset: 2px;
         }
       }
       

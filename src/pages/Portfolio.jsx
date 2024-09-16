@@ -23,9 +23,9 @@ const Portfolio = () => {
             <h4>Collaborazioni</h4>
             <div>
               <p>
-                <Link to="/collaborazione-01">Lorem, ipsum dolor.</Link>
+                <Link to="/collaborazione-01">Publicis Sapient.</Link>
               </p>
-              <p>date</p>
+              <p>2023</p>
               <span className="line-portfolio"></span>
             </div>
           </div>

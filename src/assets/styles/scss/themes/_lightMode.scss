@@ -12,6 +12,10 @@ $light-mode-accent-secondary-color: #4fbb64; // Colore di accento coerente con q
 $light-mode-button-secondary-color: #4b6e5e; // Scurito leggermente per allinearsi meglio con i colori modificati della dark mode
 $light-mode-button-hover-secondary-color: #6c8b75; // Leggermente scurito per mantenere un buon contrasto al passaggio del mouse
 
+//SKELETON GRADIENT
+$light-skeleton-color-1: #e0e0e0;
+$light-skeleton-color-2: #f0f0f0;
+
 //GENERIC COLOR
 $light-mode-button-color: #ffffff;
 
@@ -48,6 +52,18 @@ $light-mode-button-color: #ffffff;
 .light-mode {
   transition: all 0.3s ease;
 
+  .gradient-skeleton {
+    background-color: $light-skeleton-color-1;
+    background: linear-gradient(
+      90deg,
+      $light-skeleton-color-1 25%,
+      $light-skeleton-color-2 50%,
+      $light-skeleton-color-1 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+  }
+
   .color-change-4x {
     -webkit-animation: color-change-light 10s linear infinite alternate both;
     animation: color-change-light 10s linear infinite alternate both;
@@ -57,15 +73,24 @@ $light-mode-button-color: #ffffff;
     background-color: $light-mode-background-primary-color;
     color: $light-mode-text-primary-color;
 
-
-
     button {
       background-color: $light-mode-button-primary-color;
       color: $light-mode-button-color;
       transition: padding 0.5s ease;
 
       &:hover {
-        padding: 23px 32px;
+        @include respond-to(mobile) {
+          padding: 18px 23px;
+        }
+
+        @include respond-to(tablet) {
+          padding: 20px 27px;
+        }
+
+        @include respond-to(desktop) {
+          padding: 23px 32px;
+        }
+
         background-color: $light-mode-button-hover-primary-color;
         transition: padding 0.5s ease;
       }
@@ -74,7 +99,7 @@ $light-mode-button-color: #ffffff;
       color: $light-mode-text-secondary-color;
     }
     .line-card {
-      border: 2.5px solid $light-mode-text-primary-color;
+      border: 1.5px solid $light-mode-text-secondary-color;
     }
     .line-hamburger {
       background-color: $light-mode-text-secondary-color;
@@ -82,8 +107,8 @@ $light-mode-button-color: #ffffff;
     .line-portfolio {
       background-color: $light-mode-text-secondary-color;
     }
-    .accent{
-      color:$light-mode-accent-primary-color;
+    .accent {
+      color: $light-mode-accent-primary-color;
     }
   }
 
@@ -101,7 +126,18 @@ $light-mode-button-color: #ffffff;
       transition: padding 0.5s ease;
 
       &:hover {
-        padding: 23px 32px;
+        @include respond-to(mobile) {
+          padding: 18px 23px;
+        }
+
+        @include respond-to(tablet) {
+          padding: 20px 27px;
+        }
+
+        @include respond-to(desktop) {
+          padding: 23px 32px;
+        }
+
         background-color: $light-mode-button-hover-secondary-color;
         transition: padding 0.5s ease;
       }

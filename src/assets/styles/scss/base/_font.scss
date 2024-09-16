@@ -97,12 +97,22 @@ a {
 button {
   font-size: $font-text-m;
   font-family: $font-text;
-  font-weight: $font-weight-semi-bold;
   margin: 15px;
-  padding: 20px 27px;
+
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  @include respond-to(mobile) {
+    padding: 15px 20px;
+  }
+
+  @include respond-to(tablet) {
+    padding: 18px 24px;
+  }
+
+  @include respond-to(desktop) {
+    padding: 20px 27px;
+  }
 }
 
 // Tablet adjustments

@@ -9,6 +9,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import PlaceIcon from "@mui/icons-material/Place";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,7 +85,7 @@ const NavBar = () => {
                     location.pathname === "/about" ? "position-utent" : ""
                   } ${theme} secondary`}
                 >
-                  About
+                  Chi sono
                 </Link>
               </li>
               <li
@@ -97,7 +98,7 @@ const NavBar = () => {
                   onClick={toggleMenu}
                   className={`nav-Link ${location.pathname === "/contact" ? "position-utent" : ""} ${theme} secondary`}
                 >
-                  Contact
+                  Contatti
                 </Link>
               </li>
               <li>
@@ -130,20 +131,21 @@ const NavBar = () => {
             <nav className={`nav-secondary-settingLanguage ${theme} secondary`}>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="https://github.com/GiuseppeCaci?tab=projects">
                     <GitHubIcon fontSize="large" />
                   </a>
                 </li>
+                <li><a href="https://www.linkedin.com/in/giuseppe-caci-415364262/"><LinkedInIcon fontSize="large"/></a></li>
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/caci.g/">
                     <InstagramIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
-                  <a href="">CV</a>
+                  <a href="/documents/curriculum-prova.pdf" download="curriculum-CACI.pdf">CV</a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="mailto:giuseppe.caci97@libero.it">
                     <EmailIcon fontSize="large" />
                   </a>
                 </li>

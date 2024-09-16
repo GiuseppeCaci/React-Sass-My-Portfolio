@@ -124,12 +124,12 @@
 
 .last-container{
     @include respond-to(mobile) {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
       }
       @include respond-to(tablet) {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
       }
       @include respond-to(desktop) {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
       } 
 }

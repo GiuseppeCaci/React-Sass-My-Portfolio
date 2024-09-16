@@ -72,12 +72,25 @@ a:hover {
 button {
   font-size: 1.125rem;
   font-family: "Inter", "sans-serif", "Montserrat";
-  font-weight: 600;
   margin: 15px;
-  padding: 20px 27px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  button {
+    padding: 20px 27px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -596,7 +609,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -625,30 +641,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -761,7 +787,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -790,30 +819,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -905,6 +944,12 @@ button {
 .dark-mode {
   transition: all 0.3s ease;
 }
+.dark-mode .gradient-skeleton {
+  background-color: #1e3d34;
+  background: linear-gradient(90deg, #1e3d34 25%, #2a4b41 50%, #1e3d34 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
 .dark-mode .color-change-4x {
   -webkit-animation: color-change-dark 10s linear infinite alternate both;
   animation: color-change-dark 10s linear infinite alternate both;
@@ -919,15 +964,33 @@ button {
   transition: padding 0.5s ease;
 }
 .dark-mode.primary button:hover {
-  padding: 23px 32px;
   background-color: #3C6E71;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.primary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.primary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
 }
 .dark-mode.primary a {
   color: #E0E0E0;
 }
 .dark-mode.primary .line-card {
-  border: 2.5px solid #E0E0E0;
+  border: 1.5px solid #F0F6F6;
 }
 .dark-mode.primary .line-hamburger {
   background-color: #F0F6F6;
@@ -951,9 +1014,27 @@ button {
   transition: padding 0.5s ease;
 }
 .dark-mode.secondary button:hover {
-  padding: 23px 32px;
-  background-color: #4A7D73;
+  background-color: #3C6E71;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.secondary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
 }
 .dark-mode.secondary a {
   color: #F0F6F6;
@@ -990,6 +1071,12 @@ button {
 .light-mode {
   transition: all 0.3s ease;
 }
+.light-mode .gradient-skeleton {
+  background-color: #e0e0e0;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
 .light-mode .color-change-4x {
   -webkit-animation: color-change-light 10s linear infinite alternate both;
   animation: color-change-light 10s linear infinite alternate both;
@@ -1004,15 +1091,29 @@ button {
   transition: padding 0.5s ease;
 }
 .light-mode.primary button:hover {
-  padding: 23px 32px;
   background-color: #5d8a76;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.primary button:hover {
+    padding: 23px 32px;
+  }
 }
 .light-mode.primary a {
   color: #1b3b32;
 }
 .light-mode.primary .line-card {
-  border: 2.5px solid #2d6a4f;
+  border: 1.5px solid #1b3b32;
 }
 .light-mode.primary .line-hamburger {
   background-color: #1b3b32;
@@ -1036,9 +1137,23 @@ button {
   transition: padding 0.5s ease;
 }
 .light-mode.secondary button:hover {
-  padding: 23px 32px;
   background-color: #6c8b75;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
 }
 .light-mode.secondary a {
   color: #1b3b32;
@@ -1059,7 +1174,7 @@ button {
 }
 @media (max-width: 599px) {
   .container-hero {
-    padding: 25px 17px 25px 17px;
+    padding: 25px 20px 25px 20px;
     margin: 30px 0px 30px 0px;
     width: 100%;
     min-height: 85vh;
@@ -1153,7 +1268,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1182,30 +1300,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -1395,7 +1523,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1424,30 +1555,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -1560,7 +1701,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1589,30 +1733,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -1803,7 +1957,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1832,30 +1989,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -2024,7 +2191,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -2053,30 +2223,40 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -2264,7 +2444,10 @@ button {
     margin: 30px 0px 30px 0px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -2293,30 +2476,501 @@ button {
 .container-skills .skills-card {
   margin: 5px;
   flex-basis: 12%;
-  border-radius: 38px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
-  padding: 5px 14px;
+  padding: 5px 17px;
   margin: 0px;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
   margin: 13px;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
+    flex-basis: 20%;
     width: auto;
     padding: 5px 20px 20px 20px;
   }
   .container-skills .skils-card p {
     padding: 5px 10px;
   }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-skills {
+    flex-basis: 15%;
+    margin-top: 7px;
+    width: 500px;
+  }
+}
+@media (min-width: 1025px) {
+  .container-skills {
+    margin-top: 25px;
+    width: 700px;
+  }
+}
+
+.container-wrappet {
+  width: 100%;
+  height: 50px;
+}
+
+.container-wrappet {
+  min-height: 40vh;
+}
+
+.main-container-secondary--large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+}
+.main-container-secondary--large h2:nth-child(3) {
+  margin-top: 20px;
+}
+.main-container-secondary--large button {
+  margin-top: 20px;
+  width: auto;
+  height: 60px;
+  border-radius: 25px;
+}
+@media (max-width: 599px) {
+  .main-container-secondary--large {
+    padding: 50px;
+  }
+  .main-container-secondary--large h2:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .main-container-secondary--large {
+    padding: 50px;
+  }
+  .main-container-secondary--large h2:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .main-container-secondary--large {
+    padding: 50px;
+    border-radius: 60px;
+  }
+}
+
+@-webkit-keyframes color-change-dark {
+  0% {
+    background: #325a4d; /* Sfumatura più chiara */
+  }
+  33.3333% {
+    background: #193832; /* Sfumatura media */
+  }
+  66.666% {
+    background: #1c4840; /* Sfumatura più scura */
+  }
+  100% {
+    background: #193832; /* Ritorna alla sfumatura media */
+  }
+}
+@keyframes color-change-dark {
+  0% {
+    background: #325a4d; /* Sfumatura più chiara */
+  }
+  33.3333% {
+    background: #193832; /* Sfumatura media */
+  }
+  66.666% {
+    background: #1c4840; /* Sfumatura più scura */
+  }
+  100% {
+    background: #193832; /* Ritorna alla sfumatura media */
+  }
+}
+.dark-mode {
+  transition: all 0.3s ease;
+}
+.dark-mode .gradient-skeleton {
+  background-color: #1e3d34;
+  background: linear-gradient(90deg, #1e3d34 25%, #2a4b41 50%, #1e3d34 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+.dark-mode .color-change-4x {
+  -webkit-animation: color-change-dark 10s linear infinite alternate both;
+  animation: color-change-dark 10s linear infinite alternate both;
+}
+.dark-mode.primary {
+  background-color: #193832;
+  color: #E0E0E0;
+}
+.dark-mode.primary button {
+  background-color: #2A6355;
+  color: #FFFFFF;
+  transition: padding 0.5s ease;
+}
+.dark-mode.primary button:hover {
+  background-color: #3C6E71;
+  transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.primary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.primary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
+}
+.dark-mode.primary a {
+  color: #E0E0E0;
+}
+.dark-mode.primary .line-card {
+  border: 1.5px solid #F0F6F6;
+}
+.dark-mode.primary .line-hamburger {
+  background-color: #F0F6F6;
+}
+.dark-mode.primary .line-portfolio {
+  background-color: #E0E0E0;
+}
+.dark-mode.primary .accent {
+  color: #00B894;
+}
+.dark-mode.secondary {
+  background-color: #2A4B41;
+  color: #F0F6F6;
+}
+.dark-mode.secondary .img-logo {
+  border: 1px solid #00B894;
+}
+.dark-mode.secondary button {
+  background-color: #2A6355;
+  color: #FFFFFF;
+  transition: padding 0.5s ease;
+}
+.dark-mode.secondary button:hover {
+  background-color: #3C6E71;
+  transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.secondary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
+}
+.dark-mode.secondary a {
+  color: #F0F6F6;
+}
+
+@-webkit-keyframes color-change-light {
+  0% {
+    background: #e0e5e5; /* Sfumatura chiara */
+  }
+  33.3333% {
+    background: #f0f5f5; /* Sfumatura base */
+  }
+  66.666% {
+    background: #e6ecec; /* Sfumatura scura */
+  }
+  100% {
+    background: #f0f5f5; /* Ritorna alla sfumatura base */
+  }
+}
+@keyframes color-change-light {
+  0% {
+    background: #e0e5e5; /* Sfumatura chiara */
+  }
+  33.3333% {
+    background: #f0f5f5; /* Sfumatura base */
+  }
+  66.666% {
+    background: #e6ecec; /* Sfumatura scura */
+  }
+  100% {
+    background: #f0f5f5; /* Ritorna alla sfumatura base */
+  }
+}
+.light-mode {
+  transition: all 0.3s ease;
+}
+.light-mode .gradient-skeleton {
+  background-color: #e0e0e0;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+.light-mode .color-change-4x {
+  -webkit-animation: color-change-light 10s linear infinite alternate both;
+  animation: color-change-light 10s linear infinite alternate both;
+}
+.light-mode.primary {
+  background-color: #f0f5f5;
+  color: #2d6a4f;
+}
+.light-mode.primary button {
+  background-color: #2a6355;
+  color: #ffffff;
+  transition: padding 0.5s ease;
+}
+.light-mode.primary button:hover {
+  background-color: #5d8a76;
+  transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.primary button:hover {
+    padding: 23px 32px;
+  }
+}
+.light-mode.primary a {
+  color: #1b3b32;
+}
+.light-mode.primary .line-card {
+  border: 1.5px solid #1b3b32;
+}
+.light-mode.primary .line-hamburger {
+  background-color: #1b3b32;
+}
+.light-mode.primary .line-portfolio {
+  background-color: #1b3b32;
+}
+.light-mode.primary .accent {
+  color: #4fbb64;
+}
+.light-mode.secondary {
+  background-color: #e2e2e2;
+  color: #1b3b32;
+}
+.light-mode.secondary .img-logo {
+  border: 1px solid #4fbb64;
+}
+.light-mode.secondary button {
+  background-color: #4b6e5e;
+  color: #ffffff;
+  transition: padding 0.5s ease;
+}
+.light-mode.secondary button:hover {
+  background-color: #6c8b75;
+  transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
+}
+.light-mode.secondary a {
+  color: #1b3b32;
+}
+
+.container-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.container-loading div {
+  margin: 10px;
+  border-radius: 10px;
+  width: 80%;
+  height: 180px;
+}
+.container-loading div:nth-child(1) {
+  width: 50%;
+  height: 80px;
+}
+.container-loading div:nth-child(2) {
+  width: 80%;
+  height: 180px;
+}
+.container-loading div:nth-child(3) {
+  width: 80%;
+  height: 180px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+@media (max-width: 599px) {
+  .main-base {
+    min-height: 92vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .main-base {
+    min-height: 95vh;
+  }
+}
+@media (min-width: 1025px) {
+  .main-base {
+    min-height: 100vh;
+  }
+}
+
+.container-base {
+  width: 100%;
+}
+
+.paragraph-base p {
+  padding-bottom: 10px;
+}
+@media (max-width: 599px) {
+  .paragraph-base {
+    padding: 25px 17px 25px 17px;
+    margin: 30px 0px 30px 0px;
+  }
+  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
+    padding: 10px 10px;
+  }
+  .paragraph-base p {
+    padding: 0px 10px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .paragraph-base {
+    padding: 30px 40px 30px 40px;
+    margin: 40px 0px 40px 0px;
+  }
+  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
+    padding: 10px 0px;
+  }
+}
+@media (min-width: 1025px) {
+  .paragraph-base {
+    border-radius: 60px;
+    padding: 0px 40px 0px 40px;
+    margin: 40px 40px 40px 40px;
+  }
+  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
+    padding: 15px 0px;
+  }
+}
+
+.container-skills {
+  flex-wrap: wrap;
+}
+.container-skills .skills-card {
+  margin: 5px;
+  flex-basis: 12%;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease;
+}
+.container-skills .skills-card p {
+  padding: 5px 17px;
+  margin: 0px;
+  white-space: nowrap;
+}
+.container-skills .skills-card:hover {
+  margin: 13px;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.7s ease;
+}
+@media (max-width: 599px) {
+  .container-skills {
+    flex-basis: 20%;
+    width: auto;
+    padding: 5px 20px 20px 20px;
+  }
+  .container-skills .skils-card p {
+    padding: 5px 10px;
+  }
+  .container-skills .skils-card:hover {
+    margin: 13px;
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container-skills {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
@@ -2487,6 +3141,12 @@ button {
 .dark-mode {
   transition: all 0.3s ease;
 }
+.dark-mode .gradient-skeleton {
+  background-color: #1e3d34;
+  background: linear-gradient(90deg, #1e3d34 25%, #2a4b41 50%, #1e3d34 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
 .dark-mode .color-change-4x {
   -webkit-animation: color-change-dark 10s linear infinite alternate both;
   animation: color-change-dark 10s linear infinite alternate both;
@@ -2501,15 +3161,33 @@ button {
   transition: padding 0.5s ease;
 }
 .dark-mode.primary button:hover {
-  padding: 23px 32px;
   background-color: #3C6E71;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.primary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.primary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
 }
 .dark-mode.primary a {
   color: #E0E0E0;
 }
 .dark-mode.primary .line-card {
-  border: 2.5px solid #E0E0E0;
+  border: 1.5px solid #F0F6F6;
 }
 .dark-mode.primary .line-hamburger {
   background-color: #F0F6F6;
@@ -2533,9 +3211,27 @@ button {
   transition: padding 0.5s ease;
 }
 .dark-mode.secondary button:hover {
-  padding: 23px 32px;
-  background-color: #4A7D73;
+  background-color: #3C6E71;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .dark-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .dark-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .dark-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
+}
+.dark-mode.secondary button:focus {
+  outline: 3px solid #3C6E71;
+  outline-offset: 2px;
 }
 .dark-mode.secondary a {
   color: #F0F6F6;
@@ -2572,6 +3268,12 @@ button {
 .light-mode {
   transition: all 0.3s ease;
 }
+.light-mode .gradient-skeleton {
+  background-color: #e0e0e0;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
 .light-mode .color-change-4x {
   -webkit-animation: color-change-light 10s linear infinite alternate both;
   animation: color-change-light 10s linear infinite alternate both;
@@ -2586,15 +3288,29 @@ button {
   transition: padding 0.5s ease;
 }
 .light-mode.primary button:hover {
-  padding: 23px 32px;
   background-color: #5d8a76;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.primary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.primary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.primary button:hover {
+    padding: 23px 32px;
+  }
 }
 .light-mode.primary a {
   color: #1b3b32;
 }
 .light-mode.primary .line-card {
-  border: 2.5px solid #2d6a4f;
+  border: 1.5px solid #1b3b32;
 }
 .light-mode.primary .line-hamburger {
   background-color: #1b3b32;
@@ -2618,9 +3334,23 @@ button {
   transition: padding 0.5s ease;
 }
 .light-mode.secondary button:hover {
-  padding: 23px 32px;
   background-color: #6c8b75;
   transition: padding 0.5s ease;
+}
+@media (max-width: 599px) {
+  .light-mode.secondary button:hover {
+    padding: 18px 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .light-mode.secondary button:hover {
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 1025px) {
+  .light-mode.secondary button:hover {
+    padding: 23px 32px;
+  }
 }
 .light-mode.secondary a {
   color: #1b3b32;
@@ -2716,12 +3446,25 @@ a:hover {
 button {
   font-size: 1.125rem;
   font-family: "Inter", "sans-serif", "Montserrat";
-  font-weight: 600;
   margin: 15px;
-  padding: 20px 27px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  button {
+    padding: 20px 27px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2923,17 +3666,17 @@ button {
 
 @media (max-width: 599px) {
   .last-container {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .last-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 1025px) {
   .last-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
 

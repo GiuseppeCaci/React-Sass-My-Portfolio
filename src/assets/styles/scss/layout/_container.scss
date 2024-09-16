@@ -52,7 +52,10 @@
 
   @include respond-to(mobile) {
     h1,h2,h3,h4,h5,h6{
-      padding: 10px 0px;
+      padding: 10px 10px;
+    }
+    p{
+      padding: 0px 10px;
     }
    @include space(padding, 25px, 17px, 25px, 17px);
    @include space(margin, 30px, 0px, 30px, 0px);
@@ -82,9 +85,10 @@
   .skills-card {
     margin: 5px;
     flex-basis: 12%;
-    border-radius: 38px;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     p {
-      padding: 5px 14px;
+      padding: 5px 17px;
       margin: 0px;
       white-space: nowrap;
     }
@@ -93,20 +97,29 @@
     &:hover{
       margin: 13px;
       transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: all 0.7s ease;
     }
   }
 
   @include respond-to(mobile) {
+    flex-basis: 20%;
     width: auto;
     @include space(padding, 5px, 20px, 20px, 20px);
     .skils-card {
       p {
         padding: 5px 10px;
       }
+      &:hover{
+        margin: 13px;
+        transform:none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.7s ease;
+      }
     }
   }
   @include respond-to(tablet) {
+    flex-basis: 15%;
     margin-top: 7px;
     width: 500px;
   }
