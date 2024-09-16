@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 
+
 const Footer = () => {
 const {theme} = useContext(ThemeContext);
 

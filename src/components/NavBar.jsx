@@ -9,12 +9,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import PlaceIcon from "@mui/icons-material/Place";
-import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useContext(ThemeContext);
-  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

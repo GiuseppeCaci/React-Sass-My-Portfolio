@@ -10,7 +10,7 @@ const Blog = () => {
 
   return (
     <>
-      <div className={`main-base ${theme} primary`}>
+      <div className={`main-base ${theme} primary color-change-4x`}>
       <div className="container-base flex-center-column">
         <div className="pm-title">
           <h2>Blog</h2>

@@ -16,56 +16,60 @@ $dark-mode-button-hover-secondary-color: #4A7D73; // Colore dei bottoni secondar
 //GENERIC COLOR
 $dark-mode-button-color:#FFFFFF;
 
-@-webkit-keyframes color-change-3x {
+@-webkit-keyframes color-change-dark {
   0% {
-    background: #00876F; // Verde scuro per migliorare la leggibilità
+    background: #325a4d; /* Sfumatura più chiara */
   }
-  50% {
-    background: #004E45; // Verde/blu molto scuro
+  33.3333% {
+    background: #193832; /* Sfumatura media */
+  }
+  66.666% {
+    background: #1c4840; /* Sfumatura più scura */
   }
   100% {
-    background: #2F4D4B; // Un tono più scuro per l'ultimo step
+    background: #193832; /* Ritorna alla sfumatura media */
   }
 }
 
-@keyframes color-change-3x {
+@keyframes color-change-dark {
   0% {
-    background: #00876F; // Verde scuro per migliorare la leggibilità
+    background: #325a4d; /* Sfumatura più chiara */
   }
-  50% {
-    background: #004E45; // Verde/blu molto scuro
+  33.3333% {
+    background: #193832; /* Sfumatura media */
+  }
+  66.666% {
+    background: #1c4840; /* Sfumatura più scura */
   }
   100% {
-    background: #2F4D4B; // Un tono più scuro per l'ultimo step
+    background: #193832; /* Ritorna alla sfumatura media */
   }
 }
-
 
 
 .dark-mode {
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 
-  
-  .color-change-3x {
-    -webkit-animation: color-change-3x 4s linear infinite alternate both;
-            animation: color-change-3x 4s linear infinite alternate both;
+  .color-change-4x {
+    -webkit-animation: color-change-dark 10s linear infinite alternate both;
+    animation: color-change-dark 10s linear infinite alternate both;
   }
 
     &.primary {
       background-color: $dark-mode-background-primary-color;
       color: $dark-mode-text-primary-color;
-      
+    
   
       button {
         background-color: $dark-mode-button-primary-color;
         color: $dark-mode-button-color;
-        transition: all 0.5s ease;
+        transition: padding 0.5s ease;
   
         &:hover {
           padding: 23px 32px;
           background-color: $dark-mode-button-hover-primary-color;
-          transition: all 0.5s ease;
+          transition: padding 0.5s ease;
         }
 
       }
@@ -83,6 +87,9 @@ $dark-mode-button-color:#FFFFFF;
       .line-portfolio{
         background-color: $dark-mode-text-primary-color;
       }
+      .accent{
+        color:$dark-mode-accent-secondary-color;
+      }
     }
   
     &.secondary {
@@ -96,12 +103,12 @@ $dark-mode-button-color:#FFFFFF;
       button {
         background-color: $dark-mode-button-secondary-color;
         color: $dark-mode-button-color;
-        transition: all 0.5s ease;
+        transition: padding 0.5s ease;
   
         &:hover {
           padding: 23px 32px;
           background-color: $dark-mode-button-hover-secondary-color;
-          transition: all 0.5s ease;
+          transition: padding 0.5s ease;
         }
       }
       
