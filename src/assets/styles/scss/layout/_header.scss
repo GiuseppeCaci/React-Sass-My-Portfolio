@@ -195,12 +195,10 @@
       }
       .position-utent {
         font-size: $font-title-l;
-        padding-right:25px;
       }
     }
   }
 }
-
 
 .nav-secondary-containerSetting {
   display: flex;
@@ -209,8 +207,41 @@
   padding: 30px;
 }
 
-//div per il cambio lingua
-.nav-secondary-settingLanguage {
+.no-scroll {
+  overflow: hidden;
+}
+
+.coming-soon-container {
+  transition: font-size 0.5s ease;
+  p:nth-child(1) {
+    padding: 0;
+    margin: 0;
+    font-size: $font-title-s;
+    font-family: $font-title;
+    font-weight: $font-weight-semi-bold;
+  }
+  p:nth-child(2) {
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+    font-size: $font-text-s;
+    font-family: $font-title;
+    font-weight: $font-weight-semi-bold;
+  }
+  &:hover {
+    transition: font-size 0.5s ease;
+    p:nth-child(1) {
+      transition: font-size 0.5s ease;
+      font-size: $font-title-l;
+    }
+    p:nth-child(2) {
+      transition: font-size 0.5s ease;
+      font-size: $font-text-l;
+    }
+  }
+}
+
+
+.nav-secondary-link-icons {
   color: white;
   ul {
     margin: 15px;
@@ -229,26 +260,6 @@
   }
 }
 
-//cambio lingua
-.nav-setting-changeLanguageMobile {
-  @include responsive-flex(row, center, center);
-  p {
-    padding: 10px;
-    margin: 0px;
-    font-size: $font-title-s;
-    font-family: $font-title;
-    font-weight: $font-weight-semi-bold;
-    cursor: pointer;
-
-    &.active-language {
-      text-decoration: underline;
-    }
-  }
-}
-
-.no-scroll {
-  overflow: hidden;
-}
 
 //MENU DESKTOP / TABLET
 
@@ -302,41 +313,6 @@
   }
 }
 
-.nav-setting-changeLanguage {
-  @include responsive-flex(row, center, center);
-  transition: width 1s ease;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  transition: background-color 0.5s ease;
-  div {
-    @include responsive-flex(row, center, center);
-
-    p {
-      margin: 0px;
-      padding: 7px;
-    }
-  }
-
-  p {
-    font-size: $font-text-l;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  @include respond-to(tablet) {
-    div {
-      width: 50px;
-    }
-  }
-}
-
-.nav-setting-changeLanguage.open {
-  transition: background-color 0.5s ease;
-  transition: width 1s ease;
-  width: 110px;
-}
-
 .nav-setting-theme {
   @include responsive-flex(row, center, center);
 }
@@ -370,5 +346,24 @@
 
   .nav-secondary-hamburger {
     display: none;
+  }
+}
+
+.coming-soon-container-desk {
+  display: flex;
+  align-items: end;
+  p:nth-child(1) {
+    padding: 0;
+    margin: 0;
+    font-size: $font-title-s;
+    font-family: $font-title;
+    font-weight: $font-weight-semi-bold;
+  }
+  p:nth-child(2) {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: $font-text-xxs;
+    font-family: $font-title;
+    font-weight: $font-weight-semi-bold;
   }
 }

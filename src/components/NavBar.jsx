@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import PlaceIcon from "@mui/icons-material/Place";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,66 +59,51 @@ const NavBar = () => {
           <div className="nav-secondary-groupLinks">
             <ul>
               <li>
-              {location.pathname === "/" ? (
-                  <PlaceIcon fontSize="large" />
-                ) : null}
                 <Link
                   to="/"
                   onClick={toggleMenu}
-                  className={` nav-Link ${
-                    location.pathname === "/" ? "position-utent" : ""
-                  } ${theme} secondary`}
+                  className={` nav-Link ${theme} secondary ${
+                    location.pathname === "/" ? "position-utent navigation-menu" : ""
+                  }`}
                 >
                   Home
                 </Link>
               </li>
               <li>
-                {location.pathname === "/about" ? (
-                  <PlaceIcon fontSize="large" />
-                ) : null}
                 <Link
                   to="/about"
                   onClick={toggleMenu}
-                  className={`nav-Link ${
-                    location.pathname === "/about" ? "position-utent" : ""
-                  } ${theme} secondary`}
+                  className={`nav-Link ${theme} secondary ${
+                    location.pathname === "/about" ? "position-utent navigation-menu" : ""
+                  }`}
                 >
                   About
                 </Link>
               </li>
-              <li
-              >
-                {location.pathname === "/contact" ? (
-                  <PlaceIcon fontSize="large" />
-                ) : null}
+              <li>
                 <Link
                   to="/contact"
                   onClick={toggleMenu}
-                  className={`nav-Link ${location.pathname === "/contact" ? "position-utent" : ""} ${theme} secondary`}
+                  className={`nav-Link ${theme} secondary ${
+                    location.pathname === "/contact" ? "position-utent navigation-menu" : ""
+                  }`}
                 >
-                   Contatti
+                  Contatti
                 </Link>
               </li>
-              <li>
-                {location.pathname === "/blog" ? (
-                  <PlaceIcon fontSize="large" />
-                ) : null}
-                <Link
-                  to="/blog"
-                  onClick={toggleMenu}
-                  className={`nav-Link ${location.pathname === "/blog" ? "position-utent" : ""} ${theme} secondary`}
-                >
-                  Blog
-                </Link>
+              <li className={`nav-Link ${theme} secondary`} >
+                <div className="coming-soon-container coming-soon-color">
+                  <p>Blog</p>
+                  <p>ComingSoon</p>
+                </div>
               </li>
               <li>
-                {location.pathname === "/portfolio" ? (
-                  <PlaceIcon fontSize="large" />
-                ) : null}
                 <Link
                   to="/portfolio"
                   onClick={toggleMenu}
-                  className={`nav-Link ${location.pathname === "/portfolio" ? "position-utent" : ""} ${theme} secondary`}
+                  className={`nav-Link ${theme} secondary ${
+                    location.pathname === "/portfolio" ? "position-utent navigation-menu" : ""
+                  }`}
                 >
                   Portfolio
                 </Link>
@@ -126,21 +111,30 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="nav-secondary-containerSetting">
-            <nav className={`nav-secondary-settingLanguage ${theme} secondary`}>
+            <nav className={`nav-secondary-link-icons ${theme} secondary`}>
               <ul>
                 <li>
                   <a href="https://github.com/GiuseppeCaci?tab=projects">
                     <GitHubIcon fontSize="large" />
                   </a>
                 </li>
-                <li><a href="https://www.linkedin.com/in/giuseppe-caci-415364262/"><LinkedInIcon fontSize="large"/></a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/giuseppe-caci-415364262/">
+                    <LinkedInIcon fontSize="large" />
+                  </a>
+                </li>
                 <li>
                   <a href="https://www.instagram.com/caci.g/">
                     <InstagramIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
-                  <a href="/documents/curriculum-prova.pdf" download="curriculum-CACI.pdf">CV</a>
+                  <a
+                    href="/documents/curriculum-prova.pdf"
+                    download="curriculum-CACI.pdf"
+                  >
+                    CV
+                  </a>
                 </li>
                 <li>
                   <a href="mailto:giuseppe.caci97@libero.it">
@@ -171,18 +165,19 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/about" className={`nav-Link ${theme} secondary`}>
-              About
+                About
               </Link>
             </li>
             <li>
               <Link to="/contact" className={`nav-Link ${theme} secondary`}>
-              Contatti
+                Contatti
               </Link>
             </li>
             <li>
-              <Link to="/blog" className={`nav-Link ${theme} secondary`}>
-                Blog
-              </Link>
+            <div className="coming-soon-container-desk coming-soon-color">
+                  <p>Blog</p>
+                  <p>ComingSoon</p>
+                </div>
             </li>
             <li>
               <Link to="/portfolio" className={`nav-Link ${theme} secondary`}>

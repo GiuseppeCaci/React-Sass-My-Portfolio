@@ -11,6 +11,7 @@ $light-mode-text-secondary-color: #1b3b32; // Mantiene la leggibilità e il cont
 $light-mode-accent-secondary-color: #4fbb64; // Colore di accento coerente con quello principale
 $light-mode-button-secondary-color: #4b6e5e; // Scurito leggermente per allinearsi meglio con i colori modificati della dark mode
 $light-mode-button-hover-secondary-color: #6c8b75; // Leggermente scurito per mantenere un buon contrasto al passaggio del mouse
+$light-mode-red-secondary-color: #D94A4A;
 
 //SKELETON GRADIENT
 $light-skeleton-color-1: #e0e0e0;
@@ -107,7 +108,7 @@ $light-mode-button-color: #ffffff;
     .line-portfolio {
       background-color: $light-mode-text-secondary-color;
     }
-    .accent {
+    .text-accent {
       color: $light-mode-accent-primary-color;
     }
   }
@@ -145,6 +146,14 @@ $light-mode-button-color: #ffffff;
 
     a {
       color: $light-mode-text-secondary-color;
+    }
+    .navigation-menu{
+      color:$light-mode-accent-secondary-color;
+    }
+    .coming-soon-color{
+      p:nth-child(2){
+        color:$light-mode-red-secondary-color
+      }
     }
   }
 }

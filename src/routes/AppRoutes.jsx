@@ -6,8 +6,6 @@ const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 const Contact = lazy(() => import("../pages/Contact"));
 const Portfolio = lazy(() => import("../pages/Portfolio"));
-const Blog = lazy(() => import("../pages/Blog"));
-const ArticoloES = lazy(() => import("../pages/ArticoloES"));
 const CollaborazionePS = lazy(() => import("../pages/CollaborazionePS"));
 
 //components
@@ -39,8 +37,6 @@ const AppRoutes = () => {
           <Route path="/loading" element={<Loading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/articolo-es" element={<ArticoloES />} />
           <Route path="/collaborazione-01" element={<CollaborazionePS/>} />
         </Route>
       </Routes>
