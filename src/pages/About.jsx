@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const About = () => {
@@ -23,6 +23,10 @@ const About = () => {
     "Figma",
   ];
 
+  useEffect(() => {
+    document.title = 'About | Giuseppe Caci';
+  }, []);
+
   return (
     <>
       <div className={`main-base ${theme} primary color-change-4x`}>
@@ -31,7 +35,7 @@ const About = () => {
             <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="https://images.unsplash.com/photo-1725109431802-d73f9fda6ba9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+            <img src="/photos/foto-about2.jpg"></img>
             <div className="about-bio-text">
   <h3>Sono un Web developer, studio a Palermo, Italia</h3>
   <p>

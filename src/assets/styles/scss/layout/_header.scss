@@ -80,8 +80,10 @@
   flex-basis: 67%;
 
   img {
-    border-radius: 100%;
-    max-width: 40px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
   }
   p {
     width: 100%;
@@ -273,8 +275,10 @@
     flex-basis: 30%;
 
     img {
-      border-radius: 100%;
-      max-width: 50px;
+      border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
     }
     p {
       width: 100%;

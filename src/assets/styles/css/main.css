@@ -223,8 +223,10 @@ button {
   flex-basis: 67%;
 }
 .nav-secondary-logo img {
-  border-radius: 100%;
-  max-width: 40px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 .nav-secondary-logo p {
   width: 100%;
@@ -414,8 +416,10 @@ button {
   flex-basis: 30%;
 }
 .nav-primary .nav-primary-logo img {
-  border-radius: 100%;
-  max-width: 50px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 .nav-primary .nav-primary-logo p {
   width: 100%;
@@ -992,12 +996,12 @@ button {
 .dark-mode.primary .text-accent {
   color: #00B894;
 }
+.dark-mode.primary .img-logo {
+  border: 1px solid #00B894;
+}
 .dark-mode.secondary {
   background-color: #2A4B41;
   color: #F0F6F6;
-}
-.dark-mode.secondary .img-logo {
-  border: 1px solid #00B894;
 }
 .dark-mode.secondary button {
   background-color: #2A6355;
@@ -1035,6 +1039,9 @@ button {
 }
 .dark-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #E57373;
+}
+.dark-mode.secondary .img-logo {
+  border: 1px solid #00B894;
 }
 
 @-webkit-keyframes color-change-light {
@@ -1121,12 +1128,12 @@ button {
 .light-mode.primary .text-accent {
   color: #4fbb64;
 }
+.light-mode.primary .img-logo {
+  border: 1px solid #4fbb64;
+}
 .light-mode.secondary {
   background-color: #e2e2e2;
   color: #1b3b32;
-}
-.light-mode.secondary .img-logo {
-  border: 1px solid #4fbb64;
 }
 .light-mode.secondary button {
   background-color: #4b6e5e;
@@ -1160,6 +1167,9 @@ button {
 }
 .light-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #D94A4A;
+}
+.light-mode.secondary .img-logo {
+  border: 1px solid #4fbb64;
 }
 
 .container-hero {
@@ -1406,7 +1416,7 @@ button {
   }
   .about-bio img {
     border-radius: 20px 20px 0 0;
-    max-width: 310px;
+    max-width: 250px;
   }
   .about-bio h3 {
     text-align: center;
@@ -2305,12 +2315,12 @@ button {
 .dark-mode.primary .text-accent {
   color: #00B894;
 }
+.dark-mode.primary .img-logo {
+  border: 1px solid #00B894;
+}
 .dark-mode.secondary {
   background-color: #2A4B41;
   color: #F0F6F6;
-}
-.dark-mode.secondary .img-logo {
-  border: 1px solid #00B894;
 }
 .dark-mode.secondary button {
   background-color: #2A6355;
@@ -2348,6 +2358,9 @@ button {
 }
 .dark-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #E57373;
+}
+.dark-mode.secondary .img-logo {
+  border: 1px solid #00B894;
 }
 
 @-webkit-keyframes color-change-light {
@@ -2434,12 +2447,12 @@ button {
 .light-mode.primary .text-accent {
   color: #4fbb64;
 }
+.light-mode.primary .img-logo {
+  border: 1px solid #4fbb64;
+}
 .light-mode.secondary {
   background-color: #e2e2e2;
   color: #1b3b32;
-}
-.light-mode.secondary .img-logo {
-  border: 1px solid #4fbb64;
 }
 .light-mode.secondary button {
   background-color: #4b6e5e;
@@ -2473,6 +2486,9 @@ button {
 }
 .light-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #D94A4A;
+}
+.light-mode.secondary .img-logo {
+  border: 1px solid #4fbb64;
 }
 
 .container-loading {
@@ -2857,12 +2873,12 @@ button {
 .dark-mode.primary .text-accent {
   color: #00B894;
 }
+.dark-mode.primary .img-logo {
+  border: 1px solid #00B894;
+}
 .dark-mode.secondary {
   background-color: #2A4B41;
   color: #F0F6F6;
-}
-.dark-mode.secondary .img-logo {
-  border: 1px solid #00B894;
 }
 .dark-mode.secondary button {
   background-color: #2A6355;
@@ -2900,6 +2916,9 @@ button {
 }
 .dark-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #E57373;
+}
+.dark-mode.secondary .img-logo {
+  border: 1px solid #00B894;
 }
 
 @-webkit-keyframes color-change-light {
@@ -2986,12 +3005,12 @@ button {
 .light-mode.primary .text-accent {
   color: #4fbb64;
 }
+.light-mode.primary .img-logo {
+  border: 1px solid #4fbb64;
+}
 .light-mode.secondary {
   background-color: #e2e2e2;
   color: #1b3b32;
-}
-.light-mode.secondary .img-logo {
-  border: 1px solid #4fbb64;
 }
 .light-mode.secondary button {
   background-color: #4b6e5e;
@@ -3025,6 +3044,9 @@ button {
 }
 .light-mode.secondary .coming-soon-color p:nth-child(2) {
   color: #D94A4A;
+}
+.light-mode.secondary .img-logo {
+  border: 1px solid #4fbb64;
 }
 
 * {

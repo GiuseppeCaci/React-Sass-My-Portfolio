@@ -1,10 +1,14 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    document.title = 'Portfolio | Giuseppe Caci';
+  }, []);
 
   return (
     <>
@@ -21,7 +25,7 @@ const Portfolio = () => {
             <h4>Collaborazioni</h4>
             <div>
               <p>
-                <Link to="/collaborazione-01">Publicis Sapient.</Link>
+                <Link to="/portfolio/collaborazione-01">Publicis Sapient.</Link>
               </p>
               <p>2023</p>
               <span className="line-portfolio"></span>

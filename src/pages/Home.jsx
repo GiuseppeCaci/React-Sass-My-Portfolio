@@ -1,10 +1,15 @@
 import React from "react";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
 
+  useEffect(() => {
+    document.title = 'Home | Giuseppe Caci';
+  }, []);
+
+  
   return (
     <>
       <div className={`main-base ${theme} primary color-change-4x`}>

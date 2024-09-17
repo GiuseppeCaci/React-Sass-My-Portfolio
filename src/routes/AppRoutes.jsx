@@ -37,7 +37,7 @@ const AppRoutes = () => {
           <Route path="/loading" element={<Loading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/collaborazione-01" element={<CollaborazionePS/>} />
+          <Route path="/portfolio/collaborazione-01" element={<CollaborazionePS/>} />
         </Route>
       </Routes>
     </Suspense>

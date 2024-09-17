@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className={`nav-secondary-hamburger ${theme} primary`}>
         <nav className="nav-secondary-logo">
           <img
-            src="public/photos/foto.jpg"
+            src="public/photos/logo.png"
             alt="mia-foto"
             className="img-logo"
           />
@@ -150,7 +150,7 @@ const NavBar = () => {
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
           <img
-            src="public/photos/foto.jpg"
+            src="public/photos/logo.png"
             alt="mia-foto"
             className="img-logo"
           />

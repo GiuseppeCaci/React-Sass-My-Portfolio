@@ -1,9 +1,13 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const Contact = () => {
   const {theme} = useContext(ThemeContext);
+
+  useEffect(() => {
+    document.title = 'Contatti | Giuseppe Caci';
+  }, []);
 
   return (
     <>

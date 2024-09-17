@@ -117,15 +117,15 @@ $dark-mode-button-color:#FFFFFF;
       .text-accent{
         color:$dark-mode-accent-secondary-color;
       }
+      
+      .img-logo{
+        border:1px solid $dark-mode-accent-secondary-color;
+      }
     }
   
     &.secondary {
       background-color: $dark-mode-background-secondary-color;
       color: $dark-mode-text-secondary-color;
-
-      .img-logo{
-        border:1px solid $dark-mode-accent-secondary-color
-      }
   
       button {
         background-color: $dark-mode-button-primary-color;
@@ -165,6 +165,10 @@ $dark-mode-button-color:#FFFFFF;
         p:nth-child(2){
           color:$dark-mode-red-secondary-color;
         }
+      }
+
+      .img-logo{
+        border:1px solid $dark-mode-accent-secondary-color;
       }
     }
   }

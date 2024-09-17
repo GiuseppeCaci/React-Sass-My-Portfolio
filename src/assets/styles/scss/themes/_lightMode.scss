@@ -111,15 +111,15 @@ $light-mode-button-color: #ffffff;
     .text-accent {
       color: $light-mode-accent-primary-color;
     }
+
+    .img-logo {
+      border: 1px solid $light-mode-accent-primary-color;
+    }
   }
 
   &.secondary {
     background-color: $light-mode-background-secondary-color;
     color: $light-mode-text-secondary-color;
-
-    .img-logo {
-      border: 1px solid $light-mode-accent-secondary-color;
-    }
 
     button {
       background-color: $light-mode-button-secondary-color;
@@ -154,6 +154,10 @@ $light-mode-button-color: #ffffff;
       p:nth-child(2){
         color:$light-mode-red-secondary-color
       }
+    }
+
+    .img-logo {
+      border: 1px solid $light-mode-accent-secondary-color;
     }
   }
 }
