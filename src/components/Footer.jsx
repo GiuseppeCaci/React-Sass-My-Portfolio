@@ -15,11 +15,11 @@ const {theme} = useContext(ThemeContext);
       <div className={`container-footer ${theme} secondary`}>
     <div className="section-footer">
         <ul>
-          <li><a href="https://github.com/GiuseppeCaci?tab=projects"><GitHubIcon fontSize="large"/></a></li>
-          <li><a href="https://www.linkedin.com/in/giuseppe-caci-415364262/"><LinkedInIcon fontSize="large"/></a></li>
-          <li><a href="https://www.instagram.com/caci.g/"><InstagramIcon fontSize="large"/></a></li>
-          <li><a href="/documents/curriculum-prova.pdf" download="curriculum-CACI.pdf">CV</a></li>
-          <li><a href="mailto:giuseppe.caci97@libero.it"><EmailIcon fontSize="large"/></a></li>
+        <li><a href={import.meta.env.VITE_GITHUB_URL} target="_blank"><GitHubIcon fontSize="large" /></a></li>
+            <li><a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank"><LinkedInIcon fontSize="large" /></a></li>
+            <li><a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank"><InstagramIcon fontSize="large" /></a></li>
+            <li><a href={import.meta.env.VITE_CV_URL} download="curriculum-CACI.pdf">CV</a></li>
+            <li><a href={`mailto:${import.meta.env.VITE_EMAIL}`} target="_blank"><EmailIcon fontSize="large" /></a></li>
         </ul>
     </div>
     </div>

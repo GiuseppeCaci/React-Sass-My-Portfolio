@@ -35,7 +35,7 @@ const About = () => {
             <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="/photos/foto-about2.jpg"></img>
+            <img src="/assets/img-about.jpg"></img>
             <div className="about-bio-text">
   <h3>Sono un Web developer, studio a Palermo, Italia</h3>
   <p>
@@ -49,7 +49,7 @@ const About = () => {
     Finita questa esperienza, ho continuato e continuo tutt'oggi a studiare per accrescere le mie conoscenze e competenze.
   </p>
 </div>
-            <a href="mailto:giuseppe.caci97@libero.it"> <button>Contattami </button></a>
+            <a href={`mailto:${import.meta.env.VITE_EMAIL}`}> <button>Contattami </button></a>
           </div>
           <div className={`paragraph-base size-normal flex-center-column ${theme} secondary`}>
   <h3>Design</h3>
@@ -96,7 +96,7 @@ const About = () => {
   Infine, sono convinto che <span className="text-accent">l'educazione</span> e <span className="text-accent">l'empatia</span> siano tasselli fondamentali. 
   Un sorriso o un gesto di gentilezza possono cambiare l'esito della giornata.
 </p>
-            <a href="/documents/curriculum-prova.pdf" download="curriculum-CACI.pdf"><button>Curriculum in PDF</button></a>
+            <a href={import.meta.env.VITE_CV_URL} download="curriculum-CACI.pdf"><button>Curriculum in PDF</button></a>
           </div>
         </div>
       </div>

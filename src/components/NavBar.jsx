@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className={`nav-secondary-hamburger ${theme} primary`}>
         <nav className="nav-secondary-logo">
           <img
-            src="public/photos/logo.png"
+            src="/assets/logo.png"
             alt="mia-foto"
             className="img-logo"
           />
@@ -114,30 +114,30 @@ const NavBar = () => {
             <nav className={`nav-secondary-link-icons ${theme} secondary`}>
               <ul>
                 <li>
-                  <a href="https://github.com/GiuseppeCaci?tab=projects">
+                  <a href={import.meta.env.VITE_GITHUB_URL} target="_blank">
                     <GitHubIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/giuseppe-caci-415364262/">
+                  <a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">
                     <LinkedInIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/caci.g/">
+                  <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank"> 
                     <InstagramIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/documents/curriculum-prova.pdf"
+                    href={import.meta.env.VITE_CV_URL} target="_blank"
                     download="curriculum-CACI.pdf"
                   >
                     CV
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:giuseppe.caci97@libero.it">
+                  <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
                     <EmailIcon fontSize="large" />
                   </a>
                 </li>
@@ -150,7 +150,7 @@ const NavBar = () => {
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
           <img
-            src="public/photos/logo.png"
+            src="/assets/logo.png"
             alt="mia-foto"
             className="img-logo"
           />

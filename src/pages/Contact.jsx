@@ -15,8 +15,9 @@ const Contact = () => {
       <div className="container-base flex-center-row">
         <div className="paragraph-base size-large flex-center-column pm-super-hero">
         <h3>Contatti</h3>
-          <h5>Mandami un Email a <a href="mailto:giuseppe.caci97@libero.it">giuseppe.caci@libero.it</a> 
-          <br/> Oppure visita le mie pagine su <a href="">Instagram</a> <a href="">GitHub</a> <a href="">Linkedin</a></h5>
+          <h5>Mandami un Email a <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>giuseppe.caci@libero.it</a> 
+          <br/> Oppure visita le mie pagine su <a href={import.meta.env.VITE_GITHUB_URL} target="_blank">GitHub, </a>
+          <a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">Linkedin</a></h5>
         </div>
       </div>
     </div>
