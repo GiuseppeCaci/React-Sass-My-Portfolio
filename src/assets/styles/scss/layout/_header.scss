@@ -162,6 +162,7 @@
   visibility: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
   z-index: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -176,7 +177,7 @@
 
 //gruppo link sito
 .nav-secondary-groupLinks {
-  height: 100%;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,20 +205,12 @@
 }
 
 
-.nav-secondary-containerSetting {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 30px;
-}
-
 .no-scroll {
   overflow: hidden;
 }
 
 //dig per blogComingSoon
 .coming-soon-container {
-  @include transition-all(font-size, 0.5s, ease);
   p:nth-child(1) {
     padding: 0;
     margin: 0;
@@ -231,17 +224,6 @@
     font-size: $font-text-s;
     font-family: $font-title;
     font-weight: $font-weight-semi-bold;
-  }
-  &:hover {
-    @include transition-all(font-size, 0.5s, ease);
-    p:nth-child(1) {
-      @include transition-all(font-size, 0.5s, ease);
-      font-size: $font-title-l;
-    }
-    p:nth-child(2) {
-      @include transition-all(font-size, 0.5s, ease);
-      font-size: $font-text-l;
-    }
   }
 }
 
