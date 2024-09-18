@@ -1,32 +1,32 @@
 // _fonts.scss
 
 // Importazione dei font esterni
-// Importazione dei font esterni
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 // Variabili per i size
-$font-text-xxs: 0.8125rem; // 13px
-$font-text-xs: 0.875rem;   // 14px
-$font-text-s: 1rem;        // 16px
-$font-text-m: 1.125rem;    // 18px
-$font-text-l: 1.375rem;    // 22px
-$font-text-xl: 1.625rem;   // 26px
-$font-text-big: 2.25rem;   // 36px
-
-$font-title-xxs: 1rem;     // 16px
-$font-title-xs: 1.25rem;   // 20px
-$font-title-s: 1.5rem;     // 24px
-$font-title-m: 1.75rem;    // 28px
-$font-title-l: 2rem;       // 32px
-$font-title-xl: 2.25rem;   // 36px
-$font-title-xxl: 2.5rem;   // 40px
+//font testi
+$font-text-xxs: 0.8125rem;
+$font-text-xs: 0.875rem;
+$font-text-s: 1rem;
+$font-text-m: 1.125rem;
+$font-text-l: 1.375rem;
+$font-text-xl: 1.625rem;
+$font-text-big: 2.25rem;
+//font titoli
+$font-title-xxs: 1rem;
+$font-title-xs: 1.25rem;
+$font-title-s: 1.5rem;
+$font-title-m: 1.75rem; 
+$font-title-l: 2rem; 
+$font-title-xl: 2.25rem; 
+$font-title-xxl: 2.5rem; 
 
 // Variabili per i font
-$font-title: "Poppins", "Roboto", "Montserrat";
-$font-text: "Inter", "sans-serif", "Montserrat";
+$font-title: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-text: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 // Variabili per il peso dei font
 $font-weight-lighter: lighter;
@@ -35,7 +35,16 @@ $font-weight-normal: 400;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
-// Base font settings
+// padding per i bottoni
+$padding-mobile: 15px 20px;
+$padding-tablet: 18px 24px;
+$padding-desktop: 20px 27px;
+//padding generali usati nei diversi div
+$padding-standard: 10px 40px;
+$padding-hero-mobile: 0px 15px;
+$padding-super-hero-mobile: 0px 17px;
+
+//font di base
 body {
   font-weight: $font-weight-normal;
   font-family: $font-text;
@@ -44,38 +53,44 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-title;
   margin: 0;
 }
 
-h1 { 
+h1 {
   font-size: $font-title-xl;
   font-weight: $font-weight-bold;
 }
-h2 { 
-  font-size: $font-title-l; 
+h2 {
+  font-size: $font-title-l;
   font-weight: $font-weight-bold;
 }
-h3 { 
-  font-size: $font-title-m; 
+h3 {
+  font-size: $font-title-m;
   font-weight: $font-weight-semi-bold;
 }
-h4 { 
-  font-size: $font-title-s; 
+h4 {
+  font-size: $font-title-s;
   font-weight: $font-weight-semi-bold;
 }
-h5 { 
-  font-size: $font-title-xs; 
+h5 {
+  font-size: $font-title-xs;
   font-weight: $font-weight-normal;
 }
-h6 { 
-  font-size: $font-title-xxs; 
+h6 {
+  font-size: $font-title-xxs;
   font-weight: $font-weight-normal;
 }
 
-p, a {
-  font-size: $font-text-l; // 1.375rem - 22px per una migliore leggibilità
+p,
+a {
+  font-size: $font-text-l; 
   font-family: $font-text;
   font-weight: $font-weight-normal;
   line-height: 1.5;
@@ -98,44 +113,67 @@ button {
   font-size: $font-text-m;
   font-family: $font-text;
   margin: 15px;
-
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  padding: $padding-desktop;
   @include respond-to(mobile) {
-    padding: 15px 20px;
+    padding: $padding-mobile;
   }
-
   @include respond-to(tablet) {
-    padding: 18px 24px;
-  }
-
-  @include respond-to(desktop) {
-    padding: 20px 27px;
+    padding: $padding-tablet;
   }
 }
 
-// Tablet adjustments
+// Query per tablet
 @media (max-width: 768px) {
-    h1 { font-size: $font-title-l; } // 32px
-    h2 { font-size: $font-title-m; } // 28px
-    h3 { font-size: $font-title-s; } // 24px
-    h4 { font-size: $font-title-xs; } // 20px
-    h5 { font-size: $font-title-xxs; } // 16px
-    h6 { font-size: $font-title-xxs; } // 16px
-    p  { font-size: $font-text-m; } // 18px
-    a  { font-size: $font-text-m; } // 18px
+  h1 {
+    font-size: $font-title-l;
+  }
+  h2 {
+    font-size: $font-title-m;
+  } 
+  h3 {
+    font-size: $font-title-s;
+  } 
+  h4 {
+    font-size: $font-title-xs;
+  } 
+  h5 {
+    font-size: $font-title-xxs;
+  } 
+  h6 {
+    font-size: $font-title-xxs;
+  } 
+  p, a {
+    font-size: $font-text-m;
+  }
 }
 
-// Mobile adjustments
+// Query per mobile
 @media (max-width: 480px) {
-    h1 { font-size: 2rem; } // 32px per migliorare la visibilità
-    h2 { font-size: 1.8rem; } // 28.8px
-    h3 { font-size: 1.7rem; } // 27.2px
-    h4 { font-size: 1.5rem; } // 24px
-    h5 { font-size: 1.35rem; } // 21.6px
-    h6 { font-size: 1.2rem; } // 19.2px
-    p  { font-size: $font-text-s; } // 16px per la leggibilità su schermi piccoli
-    a  { font-size: $font-text-s; } // 16px
-    button { font-size: $font-text-xs; } // 14px per mantenere un buon equilibrio tra leggibilità e spazio.
+  h1 {
+    font-size: 2rem;
+  } 
+  h2 {
+    font-size: 1.8rem;
+  } 
+  h3 {
+    font-size: 1.7rem;
+  } 
+  h4 {
+    font-size: 1.5rem;
+  } 
+  h5 {
+    font-size: 1.35rem;
+  } 
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: $font-text-s;
+  }
+  button {
+    font-size: $font-text-xs;
+  }
 }

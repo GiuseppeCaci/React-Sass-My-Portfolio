@@ -1,4 +1,31 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -9,14 +36,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-weight: 400;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", "Roboto", "Montserrat";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
 }
 
@@ -50,9 +82,10 @@ h6 {
   font-weight: 400;
 }
 
-p, a {
+p,
+a {
   font-size: 1.375rem;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -71,11 +104,12 @@ a:hover {
 
 button {
   font-size: 1.125rem;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 15px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  padding: 20px 27px;
 }
 @media (max-width: 599px) {
   button {
@@ -85,11 +119,6 @@ button {
 @media (min-width: 600px) and (max-width: 1024px) {
   button {
     padding: 18px 24px;
-  }
-}
-@media (min-width: 1025px) {
-  button {
-    padding: 20px 27px;
   }
 }
 
@@ -112,10 +141,7 @@ button {
   h6 {
     font-size: 1rem;
   }
-  p {
-    font-size: 1.125rem;
-  }
-  a {
+  p, a {
     font-size: 1.125rem;
   }
 }
@@ -138,10 +164,7 @@ button {
   h6 {
     font-size: 1.2rem;
   }
-  p {
-    font-size: 1rem;
-  }
-  a {
+  p, a {
     font-size: 1rem;
   }
   button {
@@ -333,7 +356,7 @@ button {
 }
 .nav-secondary-groupLinks ul li .nav-Link {
   font-size: 1.5rem;
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
   transition: font-size 0.5s ease;
 }
@@ -364,14 +387,14 @@ button {
   padding: 0;
   margin: 0;
   font-size: 1.5rem;
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 .coming-soon-container p:nth-child(2) {
   padding: 0;
   margin: 0px 0px 10px 0px;
   font-size: 1rem;
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 .coming-soon-container:hover {
@@ -448,7 +471,7 @@ button {
   list-style-type: none;
 }
 .nav-primary .nav-primary-link ul li .nav-Link {
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .nav-primary .nav-primary-setting {
   flex-basis: 15%;
@@ -502,14 +525,14 @@ button {
   padding: 0;
   margin: 0;
   font-size: 1.5rem;
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 .coming-soon-container-desk p:nth-child(2) {
   padding: 0;
   margin-bottom: 5px;
   font-size: 0.8125rem;
-  font-family: "Poppins", "Roboto", "Montserrat";
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -543,15 +566,154 @@ button {
 .section-footer ul {
   list-style: none;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 .section-footer ul li a {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -600,33 +762,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -642,7 +804,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -657,10 +819,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -681,55 +843,143 @@ button {
   }
 }
 
-.container-wrappet {
-  width: 100%;
-  height: 50px;
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.container-wrappet {
-  min-height: 40vh;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
 }
 
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
 }
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
 }
 @media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
+  button {
+    padding: 15px 20px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
+  button {
+    padding: 18px 24px;
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -778,33 +1028,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -820,7 +1070,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -835,10 +1085,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -856,84 +1106,35 @@ button {
   .container-skills {
     margin-top: 25px;
     width: 700px;
-  }
-}
-
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
   }
 }
 
 @-webkit-keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 @keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 .dark-mode {
@@ -1046,30 +1247,30 @@ button {
 
 @-webkit-keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 @keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 .light-mode {
@@ -1173,27 +1374,22 @@ button {
 }
 
 .container-hero {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: left;
   text-align: left;
-  /* Mobile */
-  /* Tablet */
-  /* Desktop */
 }
 .container-hero p {
   padding-bottom: 10px;
 }
 @media (max-width: 599px) {
   .container-hero {
-    padding: 25px 20px 25px 20px;
-    margin: 30px 0px 30px 0px;
     width: 100%;
     min-height: 85vh;
-  }
-  .container-hero h5 {
-    padding-top: 10px;
+    padding: 25px 20px;
+    margin: 30px 0px h5;
+    margin-padding-top: 10px;
   }
   .container-hero h4 {
     padding-top: 15px;
@@ -1201,8 +1397,8 @@ button {
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-hero {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0px;
     width: 100%;
     min-height: 85vh;
   }
@@ -1215,11 +1411,11 @@ button {
 }
 @media (min-width: 1025px) {
   .container-hero {
-    border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
     max-width: 1000px;
     min-height: 100vh;
+    border-radius: 60px;
+    padding: 0px 40px;
+    margin: 40px;
   }
   .container-hero h5 {
     padding-top: 10px;
@@ -1229,6 +1425,143 @@ button {
   }
 }
 
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -1277,33 +1610,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -1319,7 +1652,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -1334,10 +1667,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1355,55 +1688,6 @@ button {
   .container-skills {
     margin-top: 25px;
     width: 700px;
-  }
-}
-
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
   }
 }
 
@@ -1484,6 +1768,143 @@ button {
   }
 }
 
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -1532,33 +1953,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -1574,7 +1995,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -1589,10 +2010,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1610,233 +2031,6 @@ button {
   .container-skills {
     margin-top: 25px;
     width: 700px;
-  }
-}
-
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
-  }
-}
-
-.flex-center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.flex-center-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.flex-left-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-}
-
-@media (max-width: 599px) {
-  .main-base {
-    min-height: 92vh;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-base {
-    min-height: 95vh;
-  }
-}
-@media (min-width: 1025px) {
-  .main-base {
-    min-height: 100vh;
-  }
-}
-
-.container-base {
-  width: 100%;
-}
-
-.paragraph-base p {
-  padding-bottom: 10px;
-}
-@media (max-width: 599px) {
-  .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
-  }
-  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
-  }
-  .paragraph-base p {
-    padding: 0px 10px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
-  }
-  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
-  }
-}
-@media (min-width: 1025px) {
-  .paragraph-base {
-    border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
-  }
-  .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
-  }
-}
-
-.container-skills {
-  flex-wrap: wrap;
-}
-.container-skills .skills-card {
-  margin: 5px;
-  flex-basis: 12%;
-  border-radius: 35px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
-}
-.container-skills .skills-card p {
-  padding: 5px 17px;
-  margin: 0px;
-  white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
-}
-@media (max-width: 599px) {
-  .container-skills {
-    flex-basis: 20%;
-    width: auto;
-    padding: 5px 20px 20px 20px;
-  }
-  .container-skills .skils-card p {
-    padding: 5px 10px;
-  }
-  .container-skills .skils-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .container-skills {
-    flex-basis: 15%;
-    margin-top: 7px;
-    width: 500px;
-  }
-}
-@media (min-width: 1025px) {
-  .container-skills {
-    margin-top: 25px;
-    width: 700px;
-  }
-}
-
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
   }
 }
 
@@ -2049,6 +2243,143 @@ button {
   }
 }
 
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -2097,33 +2428,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -2139,7 +2470,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -2154,10 +2485,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -2178,81 +2509,32 @@ button {
   }
 }
 
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
-  }
-}
-
 @-webkit-keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 @keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 .dark-mode {
@@ -2365,30 +2647,30 @@ button {
 
 @-webkit-keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 @keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 .light-mode {
@@ -2528,6 +2810,143 @@ button {
     background-position: -200% 0;
   }
 }
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.875rem;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -2576,33 +2995,33 @@ button {
 }
 @media (max-width: 599px) {
   .paragraph-base {
-    padding: 25px 17px 25px 17px;
-    margin: 30px 0px 30px 0px;
+    padding: 25px 17px;
+    margin: 30px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 10px;
+    padding: 10px;
   }
   .paragraph-base p {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .paragraph-base {
-    padding: 30px 40px 30px 40px;
-    margin: 40px 0px 40px 0px;
+    padding: 30px 40px;
+    margin: 40px 0;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 10px 0px;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1025px) {
   .paragraph-base {
+    margin: 40px;
+    padding: 0 40px;
     border-radius: 60px;
-    padding: 0px 40px 0px 40px;
-    margin: 40px 40px 40px 40px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
 }
 
@@ -2618,7 +3037,7 @@ button {
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
-  margin: 0px;
+  margin: 0;
   white-space: nowrap;
 }
 .container-skills .skills-card:hover {
@@ -2633,10 +3052,10 @@ button {
     width: auto;
     padding: 5px 20px 20px 20px;
   }
-  .container-skills .skils-card p {
+  .container-skills .skills-card p {
     padding: 5px 10px;
   }
-  .container-skills .skils-card:hover {
+  .container-skills .skills-card:hover {
     margin: 13px;
     transform: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -2654,55 +3073,6 @@ button {
   .container-skills {
     margin-top: 25px;
     width: 700px;
-  }
-}
-
-.container-wrappet {
-  width: 100%;
-  height: 50px;
-}
-
-.container-wrappet {
-  min-height: 40vh;
-}
-
-.main-container-secondary--large {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 1000px;
-}
-.main-container-secondary--large h2:nth-child(3) {
-  margin-top: 20px;
-}
-.main-container-secondary--large button {
-  margin-top: 20px;
-  width: auto;
-  height: 60px;
-  border-radius: 25px;
-}
-@media (max-width: 599px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-container-secondary--large {
-    padding: 50px;
-  }
-  .main-container-secondary--large h2:nth-child(3) {
-    margin-top: 40px;
-  }
-}
-@media (min-width: 1025px) {
-  .main-container-secondary--large {
-    padding: 50px;
-    border-radius: 60px;
   }
 }
 
@@ -2787,30 +3157,30 @@ button {
 
 @-webkit-keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 @keyframes color-change-dark {
   0% {
-    background: #325a4d; /* Sfumatura più chiara */
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; /* Sfumatura media */
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; /* Sfumatura più scura */
+    background: #1c4840;
   }
   100% {
-    background: #193832; /* Ritorna alla sfumatura media */
+    background: #193832;
   }
 }
 .dark-mode {
@@ -2923,30 +3293,30 @@ button {
 
 @-webkit-keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 @keyframes color-change-light {
   0% {
-    background: #e0e5e5; /* Sfumatura chiara */
+    background: #e0e5e5;
   }
   33.3333% {
-    background: #f0f5f5; /* Sfumatura base */
+    background: #f0f5f5;
   }
   66.666% {
-    background: #e6ecec; /* Sfumatura scura */
+    background: #e6ecec;
   }
   100% {
-    background: #f0f5f5; /* Ritorna alla sfumatura base */
+    background: #f0f5f5;
   }
 }
 .light-mode {
@@ -3060,30 +3430,34 @@ html, body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: #222;
   background-color: white;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  padding: 0;
   display: flex;
   flex-direction: column;
 }
 
 body {
   font-weight: 400;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", "Roboto", "Montserrat";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
 }
 
@@ -3117,9 +3491,10 @@ h6 {
   font-weight: 400;
 }
 
-p, a {
+p,
+a {
   font-size: 1.375rem;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -3138,11 +3513,12 @@ a:hover {
 
 button {
   font-size: 1.125rem;
-  font-family: "Inter", "sans-serif", "Montserrat";
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 15px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  padding: 20px 27px;
 }
 @media (max-width: 599px) {
   button {
@@ -3152,11 +3528,6 @@ button {
 @media (min-width: 600px) and (max-width: 1024px) {
   button {
     padding: 18px 24px;
-  }
-}
-@media (min-width: 1025px) {
-  button {
-    padding: 20px 27px;
   }
 }
 
@@ -3179,10 +3550,7 @@ button {
   h6 {
     font-size: 1rem;
   }
-  p {
-    font-size: 1.125rem;
-  }
-  a {
+  p, a {
     font-size: 1.125rem;
   }
 }
@@ -3205,10 +3573,144 @@ button {
   h6 {
     font-size: 1.2rem;
   }
-  p {
+  p, a {
     font-size: 1rem;
   }
-  a {
+  button {
+    font-size: 0.875rem;
+  }
+}
+body {
+  font-weight: 400;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-size: 1.375rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.125rem;
+  font-family: "Inter", "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 27px;
+}
+@media (max-width: 599px) {
+  button {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  button {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.35rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p, a {
     font-size: 1rem;
   }
   button {
@@ -3221,7 +3723,7 @@ button {
 
 @media (max-width: 599px) {
   .pm-hero {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -3237,7 +3739,7 @@ button {
 
 @media (max-width: 599px) {
   .pm-super-hero {
-    padding: 0px 17px 0px 17px;
+    padding: 0px 17px;
   }
   .pm-super-hero h1, .pm-super-hero h2, .pm-super-hero h3, .pm-super-hero h4, .pm-super-hero h5, .pm-super-hero h6 {
     padding: 10px 0px 0px 0px;
@@ -3248,7 +3750,7 @@ button {
     padding: 10px 40px;
   }
   .pm-super-hero h1, .pm-super-hero h2, .pm-super-hero h3, .pm-super-hero h4, .pm-super-hero h5, .pm-super-hero h6 {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
   }
 }
 @media (min-width: 1025px) {

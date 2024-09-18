@@ -1,135 +1,134 @@
+@import '../base/_font.scss';
 
+//container suddivisi per dimensione, e classi padding suddivisi per contesto
 
-.pm-small{
-    padding:20px;
+.pm-small {
+  padding: 20px;
 }
 
-
-
-.pm-hero{
-    @include respond-to(mobile) {
-       @include space(padding, 0px, 15px, 0px, 15px);
-      }
-      @include respond-to(tablet) {
-        @include space(padding, 10px, 40px);
-      }
-      @include respond-to(desktop) {
-        @include space(padding, 10px, 40px);
-      }
-}
-
-.pm-super-hero{
+.pm-hero {
   @include respond-to(mobile) {
-     @include space(padding, 0px, 17px, 0px, 17px);
-     h1,h2,h3,h4,h5,h6{
-      padding:10px 0px 0px 0px;
-    }
-    }
-    @include respond-to(tablet) {
-      @include space(padding, 10px, 40px);
-      h1,h2,h3,h4,h5,h6{
-        padding:0px 0px 0px 0px;
-      }
-    }
-    @include respond-to(desktop) {
-      @include space(padding, 10px, 40px);
-      h1,h2,h3,h4,h5,h6{
-        padding:5px 0px 0px 0px;
-      }
-    }
+    padding: $padding-hero-mobile;
+  }
+  @include respond-to(tablet) {
+    padding: $padding-standard;
+  }
+  @include respond-to(desktop) {
+    padding: $padding-standard;
+  }
 }
 
-.pm-title{
-    h1,h2,h3,h4,h5,h6{
-        margin:0;
+.pm-super-hero {
+  @include respond-to(mobile) {
+    padding: $padding-super-hero-mobile;
+    h1, h2, h3, h4, h5, h6 {
+      padding: 10px 0px 0px 0px;
     }
-    
-    @include respond-to(mobile) {
-       @include space(padding, 80px, 0px, 30px, 0px);
-       p {
-        margin:10px;
+  }
+  @include respond-to(tablet) {
+    padding: $padding-standard;
+    h1, h2, h3, h4, h5, h6 {
+      padding: 0;
     }
-      }
-      @include respond-to(tablet) {
-        @include space(padding, 80px, 0px, 40px, 0px);
-        p{
-            margin:20px;
-        }
-      }
-      @include respond-to(desktop) {
-        @include space(padding, 80px, 0px, 0px, 0px);
-        p{
-            margin: 20px 30px 30px 30px;
-        }
-      }
-}
-
-.pm-title-paragraph{
-    h1,h2,h3,h4,h5,h6{
-        margin:0;
+  }
+  @include respond-to(desktop) {
+    padding: $padding-standard;
+    h1, h2, h3, h4, h5, h6 {
+      padding: 5px 0px 0px 0px;
     }
-    @include space(padding, 80px, 0px, 0px, 0px);
-    p{
-        @include space(margin, 30px, 30px, 0px, 30px);
+  }
+}
+
+.pm-title {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  @include respond-to(mobile) {
+    padding: 80px 0px 30px 0px;
+    p {
+      margin: 10px;
     }
+  }
+  @include respond-to(tablet) {
+    padding: 80px 0px 40px 0px;
+    p {
+      margin: 20px;
+    }
+  }
+  @include respond-to(desktop) {
+    padding: 80px 0px 0px 0px;
+    p {
+      margin: 20px 30px 30px 30px;
+    }
+  }
 }
 
-.size-small{
-    @include respond-to(mobile) {
-        width: 100%;
-       min-height: 35vh;
-      }
-      @include respond-to(tablet) {
-        width: 100%;
-        min-height: 30vh;
-        padding:40px;
-      }
-      @include respond-to(desktop) {
-        max-width: 1000px;
-        min-height: 50vh;
-        padding:40px;
-      }
+.pm-title-paragraph {
+  padding: 80px 0px 0px 0px;
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  p {
+    margin: 30px 30px 0px 30px;
+  }
 }
 
-
-.size-normal{
-    @include respond-to(mobile) {
-        width: 100%;
-       min-height: 60vh;
-      }
-      @include respond-to(tablet) {
-        width: 100%;
-        min-height: 60vh;
-      }
-      @include respond-to(desktop) {
-        max-width: 1000px;
-        min-height: 100vh;
-      }
+.size-small {
+  @include respond-to(mobile) {
+    width: 100%;
+    min-height: 35vh;
+  }
+  @include respond-to(tablet) {
+    width: 100%;
+    min-height: 30vh;
+    padding: 40px;
+  }
+  @include respond-to(desktop) {
+    max-width: 1000px;
+    min-height: 50vh;
+    padding: 40px;
+  }
 }
 
-.size-large{
-    @include respond-to(mobile) {
-        width: 100%;
-       min-height: 85vh;
-      }
-      @include respond-to(tablet) {
-        width: 100%;
-        min-height: 85vh;
-      }
-      @include respond-to(desktop) {
-        max-width: 1000px;
-        min-height: 100vh;
-      }
+.size-normal {
+  @include respond-to(mobile) {
+    width: 100%;
+    min-height: 60vh;
+  }
+  @include respond-to(tablet) {
+    width: 100%;
+    min-height: 60vh;
+  }
+  @include respond-to(desktop) {
+    max-width: 1000px;
+    min-height: 100vh;
+  }
 }
 
-.last-container{
-    @include respond-to(mobile) {
-        margin-bottom: 40px;
-      }
-      @include respond-to(tablet) {
-        margin-bottom: 80px;
-      }
-      @include respond-to(desktop) {
-        margin-bottom: 80px;
-      } 
+.size-large {
+  @include respond-to(mobile) {
+    width: 100%;
+    min-height: 85vh;
+  }
+  @include respond-to(tablet) {
+    width: 100%;
+    min-height: 85vh;
+  }
+  @include respond-to(desktop) {
+    max-width: 1000px;
+    min-height: 100vh;
+  }
+}
+
+.last-container {
+  @include respond-to(mobile) {
+    margin-bottom: 40px;
+  }
+  @include respond-to(tablet) {
+    margin-bottom: 80px;
+  }
+  @include respond-to(desktop) {
+    margin-bottom: 80px;
+  }
 }

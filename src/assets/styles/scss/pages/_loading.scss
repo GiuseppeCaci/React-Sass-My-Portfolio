@@ -10,6 +10,8 @@
     flex-direction: column;
     width: 100%;
     padding: 30px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
     div{
         margin: 10px;
         border-radius: 10px;
@@ -28,9 +30,6 @@
         width: 80%;
         height: 180px;
     }
-
-    opacity: 1;
-    transition: opacity 0.5s ease;
 }
 
 

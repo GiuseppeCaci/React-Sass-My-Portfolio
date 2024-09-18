@@ -1,17 +1,21 @@
 @import "../abstracts/mixins";
 
+$footer-height-mobile: 80px;
+$footer-height-tablet: 110px;
+$footer-height-desktop: 120px;
+
 .container-footer {
   position: relative;
   width: 100%;
   @include responsive-flex(row, center, center);
   @include respond-to(mobile) {
-    min-height: 80px;
+    min-height: $footer-height-mobile;
   }
   @include respond-to(tablet) {
-    min-height: 110px;
+    min-height: $footer-height-tablet;
   }
   @include respond-to(desktop) {
-    min-height: 120px;
+    min-height: $footer-height-desktop;
   }
 }
 
@@ -19,14 +23,10 @@
   width: 100%;
   ul {
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include responsive-flex(row, space-evenly, center);
     li {
       a{
-        display: flex;
-    align-items: center;
-    justify-content: center;
+        @include responsive-flex(row, center, center);
       }
     }
   }

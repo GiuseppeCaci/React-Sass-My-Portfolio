@@ -1,9 +1,10 @@
 import React from "react";
-import { useContext, useState, useEffect } from "react";
+import { useContext} from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const Loading = () => {
-    const { theme } = useContext(ThemeContext);
+  //chiamo il context del tema per recuperare il tema inserito
+  const { theme } = useContext(ThemeContext);
 
     return (
         <>

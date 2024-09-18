@@ -3,20 +3,22 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import ThemeContext from "../store/theme/ThemeContext";
+//icone
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
-import PlaceIcon from "@mui/icons-material/Place";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
-
+  //stato che gestisce l'apertura/chiusura del menu a discesa
+  const [isOpen, setIsOpen] = useState(false);
+//funzione che gestisce il cambio stato menu a discesa
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+//creo una funzione che blocca lo scroll della pagina se il menu a discesa è attivo
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
@@ -27,13 +29,10 @@ const NavBar = () => {
 
   return (
     <>
+    {/*MENU VERSIONE MOBILE/TABLET*/}
       <div className={`nav-secondary-hamburger ${theme} primary`}>
         <nav className="nav-secondary-logo">
-          <img
-            src="/assets/logo.png"
-            alt="mia-foto"
-            className="img-logo"
-          />
+          <img src="/assets/logo.png" alt="mia-foto" className="img-logo" />
           <p>Giuseppe Caci</p>
         </nav>
         <nav className="nav-secondary-settingTheme">
@@ -63,7 +62,9 @@ const NavBar = () => {
                   to="/"
                   onClick={toggleMenu}
                   className={` nav-Link ${theme} secondary ${
-                    location.pathname === "/" ? "position-utent navigation-menu" : ""
+                    location.pathname === "/"
+                      ? "position-utent navigation-menu"
+                      : ""
                   }`}
                 >
                   Home
@@ -74,7 +75,9 @@ const NavBar = () => {
                   to="/about"
                   onClick={toggleMenu}
                   className={`nav-Link ${theme} secondary ${
-                    location.pathname === "/about" ? "position-utent navigation-menu" : ""
+                    location.pathname === "/about"
+                      ? "position-utent navigation-menu"
+                      : ""
                   }`}
                 >
                   About
@@ -85,13 +88,15 @@ const NavBar = () => {
                   to="/contact"
                   onClick={toggleMenu}
                   className={`nav-Link ${theme} secondary ${
-                    location.pathname === "/contact" ? "position-utent navigation-menu" : ""
+                    location.pathname === "/contact"
+                      ? "position-utent navigation-menu"
+                      : ""
                   }`}
                 >
                   Contatti
                 </Link>
               </li>
-              <li className={`nav-Link ${theme} secondary`} >
+              <li className={`nav-Link ${theme} secondary`}>
                 <div className="coming-soon-container coming-soon-color">
                   <p>Blog</p>
                   <p>ComingSoon</p>
@@ -102,7 +107,9 @@ const NavBar = () => {
                   to="/portfolio"
                   onClick={toggleMenu}
                   className={`nav-Link ${theme} secondary ${
-                    location.pathname === "/portfolio" ? "position-utent navigation-menu" : ""
+                    location.pathname === "/portfolio"
+                      ? "position-utent navigation-menu"
+                      : ""
                   }`}
                 >
                   Portfolio
@@ -124,13 +131,14 @@ const NavBar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank"> 
+                  <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank">
                     <InstagramIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href={import.meta.env.VITE_CV_URL} target="_blank"
+                    href={import.meta.env.VITE_CV_URL}
+                    target="_blank"
                     download="curriculum-CACI.pdf"
                   >
                     CV
@@ -147,13 +155,10 @@ const NavBar = () => {
         </nav>
       </div>
 
+{/*MENU VERSIONE DESKTOP*/}
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
-          <img
-            src="/assets/logo.png"
-            alt="mia-foto"
-            className="img-logo"
-          />
+          <img src="/assets/logo.png" alt="mia-foto" className="img-logo" />
           <p>Giuseppe Caci</p>
         </nav>
         <nav className="nav-primary-link">
@@ -174,10 +179,10 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-            <div className="coming-soon-container-desk coming-soon-color">
-                  <p>Blog</p>
-                  <p>ComingSoon</p>
-                </div>
+              <div className="coming-soon-container-desk coming-soon-color">
+                <p>Blog</p>
+                <p>ComingSoon</p>
+              </div>
             </li>
             <li>
               <Link to="/portfolio" className={`nav-Link ${theme} secondary`}>

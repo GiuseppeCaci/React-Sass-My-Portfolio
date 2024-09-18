@@ -1,4 +1,4 @@
-//media query width
+//mixin per regolare le misure suoi diversi dispositivi
 @mixin respond-to($breakpoint){
     @if $breakpoint == mobile {
         @media (max-width:599px) {@content;}
@@ -8,7 +8,7 @@
         @media (min-width:1025px) {@content;}
     }
 }
-
+//mixin per l'inserimento di flex
 @mixin responsive-flex($flex-direction,$justify-content,$align-items){
     display:flex;
     flex-direction: $flex-direction;
@@ -16,11 +16,7 @@
     align-items: $align-items;
 }
 
-@mixin space($property, $top, $right: null, $bottom: null, $left: null) {
-    @if $right == null and $bottom == null and $left == null {
-      #{$property}: $top $top $right $right;
-    }
-    @else {
-      #{$property}: $top $right $bottom $left;
-    }
+//mixin per le transizioni
+  @mixin transition-all($property, $duration: 0.3s, $easing: ease) {
+    transition: $property $duration $easing;
   }
