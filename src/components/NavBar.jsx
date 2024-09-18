@@ -117,41 +117,6 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="nav-secondary-containerSetting">
-            <nav className={`nav-secondary-link-icons ${theme} secondary`}>
-              <ul>
-                <li>
-                  <a href={import.meta.env.VITE_GITHUB_URL} target="_blank">
-                    <GitHubIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">
-                    <LinkedInIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank">
-                    <InstagramIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={import.meta.env.VITE_CV_URL}
-                    target="_blank"
-                    download="curriculum-CACI.pdf"
-                  >
-                    CV
-                  </a>
-                </li>
-                <li>
-                  <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                    <EmailIcon fontSize="large" />
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </nav>
       </div>
 
