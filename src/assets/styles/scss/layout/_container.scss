@@ -37,8 +37,22 @@
   }
 }
 
+
 .container-base {
   width: 100%;
+}
+
+//transizione scesa div al montaggio
+//classe apposita per transizione
+.container-invisible{
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .paragraph-base {
@@ -83,18 +97,10 @@
     flex-basis: 12%;
     border-radius: 35px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.7s ease;
     p {
       padding: 5px 17px;
       margin: 0;
       white-space: nowrap;
-    }
-
-    &:hover {
-      margin: 13px;
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      transition: all 0.7s ease;
     }
   }
 
@@ -105,12 +111,6 @@
     .skills-card {
       p {
         padding: 5px 10px;
-      }
-      &:hover {
-        margin: 13px;
-        transform: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: all 0.7s ease;
       }
     }
   }

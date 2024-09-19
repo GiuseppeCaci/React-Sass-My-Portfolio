@@ -54,6 +54,7 @@ $light-mode-button-color: #ffffff;
 //modalità suddivisa in due grandi sotto classi primary e secondary
 .light-mode {
   transition: all 0.4s ease;
+  background-color:$light-mode-background-primary-color;
 
   .gradient-skeleton {
     background-color: $light-skeleton-color-1;
@@ -75,6 +76,12 @@ $light-mode-button-color: #ffffff;
   &.primary {
     background-color: $light-mode-background-primary-color;
     color: $light-mode-text-primary-color;
+
+    &.nav-trasparent-color {
+      backdrop-filter: blur(10px);
+      background-color: #f0f5f587;
+    }
+
 
     button {
       background-color: $light-mode-button-primary-color;

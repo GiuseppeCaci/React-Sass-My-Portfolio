@@ -627,6 +627,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -670,18 +681,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -691,12 +695,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -756,6 +754,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -799,18 +808,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -820,12 +822,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1211,6 +1207,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -1254,18 +1261,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -1275,12 +1275,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1417,6 +1411,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -1460,18 +1465,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -1481,12 +1479,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1755,6 +1747,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -1798,18 +1801,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -1819,12 +1815,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -2195,6 +2185,17 @@ button {
   width: 100%;
 }
 
+.container-invisible {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paragraph-base p {
   padding-bottom: 10px;
 }
@@ -2238,18 +2239,11 @@ button {
   flex-basis: 12%;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease;
 }
 .container-skills .skills-card p {
   padding: 5px 17px;
   margin: 0;
   white-space: nowrap;
-}
-.container-skills .skills-card:hover {
-  margin: 13px;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.7s ease;
 }
 @media (max-width: 599px) {
   .container-skills {
@@ -2259,12 +2253,6 @@ button {
   }
   .container-skills .skills-card p {
     padding: 5px 10px;
-  }
-  .container-skills .skills-card:hover {
-    margin: 13px;
-    transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.7s ease;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {

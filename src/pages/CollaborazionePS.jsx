@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const CollaborazionePS = () => {
@@ -17,10 +17,23 @@ const CollaborazionePS = () => {
     "Microsoft Power Point",
   ];
 
+    //transizione scesa div al montaggio
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+      setIsVisible(true);
+    }, []);
+
+       //resetta lo scroll a Y0 al montaggio
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className="flex-center-column">
+        <div className={`flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
           <div className="size-large">
             <div className="flex-center-column pm-title">
               <h2>Pubblic Sapient</h2>
