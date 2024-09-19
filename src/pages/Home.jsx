@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 
 const Home = () => {
@@ -11,10 +11,22 @@ const Home = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
 
+  //transizione scesa div al montaggio
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+     //resetta lo scroll a Y0 al montaggio
+     useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <>
       <div className={`main-base ${theme} primary color-change-4x`}>
-        <div className="container-base flex-center-row">
+        <div className={`container-base flex-center-row container-invisible ${isVisible ? 'visible' : ''}`}>
           <div className="container-hero">
             <h5 className="text-accent">CIAO! SONO GIUSEPPE</h5>
             <h2>sono un Web Developer</h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 import { Link } from "react-router-dom";
 
@@ -12,14 +12,26 @@ const Portfolio = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
 
+  //transizione scesa div al montaggio
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+     //resetta lo scroll a Y0 al montaggio
+     useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className=" flex-center-column pm-title">
+        <div className={`flex-center-column pm-title container-invisible ${isVisible ? 'visible' : ''}`}>
           <h2>Portfolio</h2>
           <p>Collaborazioni e progetti</p>
         </div>
-        <div className="flex-center-row">
+        <div className={`flex-center-row container-invisible ${isVisible ? 'visible' : ''}`}>
           <div
             className={`portfolio-curriculum flex-center-column ${theme} secondary`}
           >
