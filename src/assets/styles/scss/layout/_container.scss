@@ -81,10 +81,10 @@
 
   @include respond-to(desktop) {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
     h1, h2, h3, h4, h5, h6 {
-      padding: 15px 0;
+      padding: 20px 0px 10px 0px;
     }
   }
 }
