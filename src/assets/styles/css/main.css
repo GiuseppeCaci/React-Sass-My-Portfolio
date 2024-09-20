@@ -670,11 +670,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 
@@ -797,11 +797,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 
@@ -1250,11 +1250,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 
@@ -1501,11 +1501,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 
@@ -1837,11 +1837,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 
@@ -2275,11 +2275,11 @@ button {
 @media (min-width: 1025px) {
   .paragraph-base {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
   }
   .paragraph-base h1, .paragraph-base h2, .paragraph-base h3, .paragraph-base h4, .paragraph-base h5, .paragraph-base h6 {
-    padding: 15px 0;
+    padding: 20px 0px 10px 0px;
   }
 }
 

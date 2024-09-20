@@ -1,60 +1,93 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
-
 .about-bio {
   @include respond-to(mobile) {
-    @include responsive-flex(column, center, center);
+    margin: 10px 0px 10px 0px;
     img {
-      border-radius: 20px 20px 0 0;
-      max-width: 250px;
+      border-radius: 5px;
+      max-width: 120px;
+      margin: 0px 17px 7px 21px;
+      float: left;
     }
     h3 {
-      text-align: center;
-      padding:25px 0px 10px 0px;
-      line-height: 34px;
+      text-align: left;
+      line-height: 35px;
+      padding-bottom: 10px;
     }
     .about-bio-text {
+      text-align: left;
       h2 {
-        text-align: center;
         margin: 30px 0px 10px 0px;
       }
       h4 {
-        text-align: center;
         margin: 30px 0px 10px 0px;
       }
       p {
-        text-align: center;
         padding: 0px 20px;
+      }
+      .citazione{
+        border-radius: 20px;
+        margin: 35px 10px;
+        padding: 20px;
+        p:nth-child(1){
+          text-align: center;
+          font-style: italic;
+          padding: 0px;
+          margin: 0px;
+        }
+        p:nth-child(2){
+          text-align: right;
+          padding: 10px 5px;
+          margin: 0px;
+        }
       }
     }
   }
   @include respond-to(tablet) {
-    @include responsive-flex(column, center, center);
     img {
-      border-radius: 25px 25px 0 0;
-      max-width: 500px;
+      border-radius: 5px;
+      max-width: 190px;
+      margin: 0px 17px 7px 0px;
+      float: left;
     }
     h3 {
-      text-align: center;
-      padding:30px 0px 5px 0px;
+      text-align: left;
+      padding: 30px 0px 5px 0px;
     }
     .about-bio-text {
+      text-align: left;
       h2 {
-        text-align: center;
         margin: 40px 0px 10px 0px;
       }
-      p {
-        text-align: center;
+      p{
+        margin-bottom: 40px;
       }
+      .citazione{
+        border-radius: 20px;
+        margin: 50px 25px;
+        padding: 20px;
+        p:nth-child(1){
+          text-align: center;
+          font-style: italic;
+          padding: 0px;
+          margin: 0px;
+        }
+        p:nth-child(2){
+          text-align: center;
+          padding: 10px 0px;
+          margin: 0px;
+        }
+      }
+  
     }
   }
   @include respond-to(desktop) {
     max-width: 1000px;
-    margin:10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     img {
-      border-radius: 25px 25px 0 0;
-      max-width: 400px;
+      border-radius: 5px;
+      max-width: 210px;
       margin: 0px 30px 7px 0px;
       float: left;
     }
@@ -64,12 +97,28 @@
       padding-bottom: 10px;
     }
     .about-bio-text {
+      text-align: left;
       h2 {
-        text-align: left;
         margin: 20px 0px;
       }
-      p {
-        text-align: left;
+      p{
+        margin-bottom: 40px;
+      }
+        .citazione{
+          border-radius: 20px;
+          margin: 50px;
+          padding: 20px 0px;
+        p:nth-child(1){
+          text-align: center;
+          font-style: italic;
+          padding: 0px;
+          margin: 0px;
+        }
+        p:nth-child(2){
+          text-align: center;
+          padding: 10px 0px;
+          margin: 0px;
+        }
       }
     }
   }
