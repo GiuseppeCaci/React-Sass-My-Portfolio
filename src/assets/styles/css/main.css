@@ -2167,7 +2167,7 @@ button {
   border: 6px solid rgba(0, 0, 0, 0.1);
   border-top: 6px solid white;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {
