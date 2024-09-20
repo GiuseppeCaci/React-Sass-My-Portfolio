@@ -3,41 +3,21 @@
 @import "../themes/darkMode";
 @import "../themes/lightMode";
 
-.container-loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    div{
-        margin: 10px;
-        border-radius: 10px;
-        width: 80%;
-        height: 180px;
-    }
-    div:nth-child(1){
-        width: 50%;
-        height: 80px;
-    }
-    div:nth-child(2){
-        width: 80%;
-        height: 180px;
-    }
-    div:nth-child(3){
-        width: 80%;
-        height: 180px;
-    }
-}
 
-
-@keyframes skeleton-loading {
+  .loading-spinner {
+    width: 60px; 
+    height: 60px; 
+    border: 6px solid rgba(0, 0, 0, 0.1); 
+    border-top: 6px solid white; 
+    border-radius: 50%; 
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
     0% {
-      background-position: 200% 0;
+      transform: rotate(0deg); 
     }
     100% {
-      background-position: -200% 0;
+      transform: rotate(360deg);
     }
   }

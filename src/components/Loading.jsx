@@ -8,10 +8,8 @@ const Loading = () => {
 
     return (
         <>
-        <div className={`main-base container-loading ${theme} primary `}>
-            <div className={`${theme} secondary gradient-skeleton`}></div>
-            <div className={`${theme} secondary gradient-skeleton`}></div>
-            <div className={`${theme} secondary gradient-skeleton`}></div>
+        <div className={`main-base flex-center-column ${theme} primary`}>
+        <div className="loading-spinner"></div>
         </div>
         </>
     )

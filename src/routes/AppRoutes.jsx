@@ -1,5 +1,5 @@
 import React from "react";
-import { Suspense, lazy, useState, useEffect } from "react";
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 //pagine
@@ -23,7 +23,6 @@ const AppRoutes = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>} />
           <Route path="/about" element={<About />} />
-          <Route path="/loading" element={<Loading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/collaborazione-01" element={<CollaborazionePS/>} />
