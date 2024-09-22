@@ -45,6 +45,26 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <div className={`container-base flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
+        <div className="container-project">
+            <div className="flex-center-column pm-title">
+              <h3>Progetti</h3>
+            </div>
+            <div className="projects-grid">
+              <Link className="link-project" to="/portfolio/progetto-01">
+                <div className="project-box">
+                  <h3>Progetto Portfolio</h3>
+                  <p>
+                    {" "}
+                    giuseppecaci.com è il mio portfolio e biglietto da visita
+                    digitale, un archivio di progetti, collaborazioni e idee. In
+                    futuro, ospiterà anche un blog.{" "}
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

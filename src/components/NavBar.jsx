@@ -43,7 +43,7 @@ const NavBar = () => {
       <div className={`nav-secondary-hamburger ${theme} primary nav-trasparent-color `}>
         <nav className="nav-secondary-logo">
           <Link className="nav-secondary-link-logo" to="/about" onClick={toggleLogo}>
-            <img src="/assets/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
             <p>Giuseppe Caci</p>
           </Link>
         </nav>
@@ -156,7 +156,7 @@ const NavBar = () => {
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
         <Link className="nav-primary-link-logo" to="/about" onClick={toggleLogo}>
-            <img src="/assets/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
             <p>Giuseppe Caci</p>
           </Link>
         </nav>

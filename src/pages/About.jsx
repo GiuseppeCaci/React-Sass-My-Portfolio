@@ -55,7 +55,7 @@ const About = () => {
             <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="/assets/logo.png"></img>
+            <img src="/assets/generic/img-about.jpg"></img>
             <div className="about-bio-text">
               <p>
                 Ciao! Sono <strong>Giuseppe</strong> e sono uno sviluppatore{" "}
@@ -199,21 +199,6 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="about-bio pm-hero">
-          <div className="about-bio-text">
-          <div className="citazione">
-                <p>
-                  <em>
-                    “While(!Finished)<br/>{
-                      "{ TryAgain() }"
-                    }”
-                  </em>
-                </p>
-                <p>
-                </p>
-              </div>
-            </div>
-        </div>
         </div>
       </div>
     </>

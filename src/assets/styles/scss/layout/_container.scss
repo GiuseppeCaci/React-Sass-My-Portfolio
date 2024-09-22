@@ -107,6 +107,7 @@
   @include respond-to(mobile) {
     flex-basis: 20%;
     width: auto;
+    margin-bottom: 10px;
     padding: 5px 20px 20px 20px;
     .skills-card {
       p {
@@ -117,12 +118,12 @@
 
   @include respond-to(tablet) {
     flex-basis: 15%;
-    margin-top: 7px;
+    margin-bottom: 10px;
     width: 500px;
   }
 
   @include respond-to(desktop) {
-    margin-top: 25px;
+    margin-bottom: 10px;
     width: 700px;
   }
 }
