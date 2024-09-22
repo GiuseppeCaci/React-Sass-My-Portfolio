@@ -26,31 +26,38 @@ $light-background-color:#e6f0f0;
   0% {
     background: #e0e5e5;
   }
-  33.3333% {
-    background: #f0f5f5;
+  25% {
+    background: #f0f5f5; /* Leggermente più chiaro */
   }
-  66.666% {
-    background: #e6ecec; 
+  50% {
+    background: #ece6ec;
+  }
+  75% {
+    background: #e6f0f0; /* Sfumatura di viola chiaro */
   }
   100% {
-    background: #f0f5f5;
+    background: #f0f5f5; /* Leggermente più chiaro */
   }
 }
 
 @keyframes color-change-light {
   0% {
-    background: #e0e5e5; 
+    background: #e0e5e5;
   }
-  33.3333% {
-    background: #f0f5f5;
+  25% {
+    background: #f0f5f5; /* Leggermente più chiaro */
   }
-  66.666% {
-    background: #e6ecec;
+  50% {
+    background: #ece6ec;
+  }
+  75% {
+    background: #e6f0f0; /* Sfumatura di viola chiaro */
   }
   100% {
-    background: #f0f5f5;
+    background: #f0f5f5; /* Leggermente più chiaro */
   }
 }
+
 
 //modalità suddivisa in due grandi sotto classi primary e secondary
 .light-mode {
