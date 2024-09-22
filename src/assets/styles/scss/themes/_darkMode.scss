@@ -19,6 +19,8 @@ $dark-skeleton-color-2: #2a4b41;
 
 //GENERIC COLOR
 $dark-mode-button-color: #ffffff;
+$dark-background-color: #142d2b;
+
 
 //animazione background
 @-webkit-keyframes color-change-dark {
@@ -75,6 +77,9 @@ $dark-mode-button-color: #ffffff;
     animation: color-change-dark 10s linear infinite alternate both;
   }
 
+  .gallery-background{
+    background-color: $dark-background-color;
+  }
 
   &.primary {
     background-color: $dark-mode-background-primary-color;
@@ -127,6 +132,9 @@ $dark-mode-button-color: #ffffff;
     }
     .text-accent {
       color: $dark-mode-accent-secondary-color;
+    }
+    .text-accent-v2 {
+      color: $dark-mode-red-secondary-color;
     }
     .img-logo {
       border: 1px solid $dark-mode-accent-secondary-color;

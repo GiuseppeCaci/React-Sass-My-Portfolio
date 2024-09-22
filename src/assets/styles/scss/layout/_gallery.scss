@@ -1,0 +1,47 @@
+
+.container-gallery{
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+    h4{
+        text-align: center;
+        padding: 0px 0px 20px 0px !important;
+    }
+    @include respond-to(mobile) {
+        padding: 50px 0px;
+    
+    }
+    @include respond-to(tablet) {
+        padding: 50px 0px;
+    }
+    @include respond-to(desktop) {
+        padding: 40px 40px;
+    border-radius: 60px;
+    } 
+}
+
+.gallery-photo{
+    @include responsive-flex(row, center, center);
+    flex-wrap: wrap;
+}
+
+.photo-item{
+    cursor: pointer;
+    margin:20px;
+    padding: 0px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+
+    @include respond-to(mobile) {
+          flex-basis: 100%;
+          max-width: 300px;
+      
+      }
+      @include respond-to(tablet) {
+          flex-basis: 30%;
+          max-width: 300px;
+      }
+      @include respond-to(desktop) {
+          flex-basis: 40%;
+          max-width: 310px;
+      } 
+}

@@ -19,6 +19,7 @@ $light-skeleton-color-2: #f0f0f0;
 
 //GENERIC COLOR
 $light-mode-button-color: #ffffff;
+$light-background-color:#e6f0f0;
 
 //animazione per il background
 @-webkit-keyframes color-change-light {
@@ -71,6 +72,10 @@ $light-mode-button-color: #ffffff;
   .color-change-4x {
     -webkit-animation: color-change-light 10s linear infinite alternate both;
     animation: color-change-light 10s linear infinite alternate both;
+  }
+
+  .gallery-background{
+    background-color: $light-background-color;
   }
 
   &.primary {
