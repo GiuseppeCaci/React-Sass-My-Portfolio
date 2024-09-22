@@ -33,14 +33,14 @@ const Portfolio = () => {
               <p>
                 <Link to="/portfolio/collaborazione-01">Publicis Sapient.</Link>
               </p>
-              <p>2023</p>
+              <p>2023/24</p>
               <span className="line-portfolio"></span>
             </div>
           </div>
         </div>
         <div className={`container-base flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
         <div className="container-project">
-            <div className="flex-center-column pm-title">
+            <div className="flex-center-column portfolio-pm-title">
               <h3>Progetti</h3>
             </div>
             <div className="projects-grid">

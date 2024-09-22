@@ -43,13 +43,13 @@
   }
   
   @include respond-to(mobile) {
-    padding: 50px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
     p {
       margin: 10px;
     }
   }
   @include respond-to(tablet) {
-    padding: 70px 0px 40px 0px;
+    padding: 50px 0px 40px 0px;
     p {
       margin: 20px;
     }

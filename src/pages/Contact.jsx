@@ -31,7 +31,7 @@ const Contact = () => {
             <li>
               <EmailIcon fontSize="large"/>
               <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                giuseppe.caci@libero.it{" "}
+                giuseppe.caci97@libero.it{" "}
               </a>{" "}
             </li>
             <li>
