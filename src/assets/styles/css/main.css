@@ -1448,11 +1448,13 @@ button {
 @media (min-width: 600px) and (max-width: 1024px) {
   .project-title h2 {
     font-size: 2.25rem;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1025px) {
   .project-title h2 {
     font-size: 2.25rem;
+    margin-bottom: 20px;
   }
 }
 
