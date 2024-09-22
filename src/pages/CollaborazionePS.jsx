@@ -1,6 +1,7 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const CollaborazionePS = () => {
   //chiamo il context del tema per recuperare il tema inserito
@@ -17,17 +18,8 @@ const CollaborazionePS = () => {
     "Microsoft Power Point",
   ];
 
-    //transizione scesa div al montaggio
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-      setIsVisible(true);
-    }, []);
-
-       //resetta lo scroll a Y0 al montaggio
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+    const isVisible = useVisibilityAndScrollReset();
   
 
   return (

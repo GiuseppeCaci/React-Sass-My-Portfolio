@@ -4,6 +4,8 @@ import ThemeContext from "../store/theme/ThemeContext";
 import Gallery from "../components/GalleryComponent/Gallery";
 import "react-photo-view/dist/react-photo-view.css";
 import CodeSnippet from "../components/CodeSnippet";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
+
 
 const ProgettoPortfolio = () => {
   //cambio nome alla pagina
@@ -26,17 +28,9 @@ const ProgettoPortfolio = () => {
     "react-photo-view",
     "react-syntax-highlighter ",
   ];
-  //transizione scesa div al montaggio
-  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  //resetta lo scroll a Y0 al montaggio
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+  const isVisible = useVisibilityAndScrollReset();
 
   const figmaProject = [
     {
@@ -188,18 +182,10 @@ const ProgettoPortfolio = () => {
               <p>Come ad esempio questo:</p>
               <div>
                 <CodeSnippet
-                  code={`const CodeSnippet = ({ code, language, bgColor}) => {
-
-  return (
-    <>
-      <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
-        {code}
-      </SyntaxHighlighter>
-    </>
-  );
-};
-
-export default CodeSnippet;`}
+          code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
+              {code}
+            </SyntaxHighlighter>
+`}
                   language="javascript"
                   bgColor={theme}
                 />

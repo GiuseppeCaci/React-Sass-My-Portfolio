@@ -1,7 +1,8 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 import { Link } from "react-router-dom";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const About = () => {
   //cambio nome alla pagina
@@ -31,17 +32,9 @@ const About = () => {
     "Figma",
   ];
 
-  //transizione scesa div al montaggio
-  const [isVisible, setIsVisible] = useState(false);
+  //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+  const isVisible = useVisibilityAndScrollReset();
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  //resetta lo scroll a Y0 al montaggio
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>

@@ -4,6 +4,7 @@ import ThemeContext from "../store/theme/ThemeContext";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const Contact = () => {
   //cambio nome alla pagina
@@ -14,17 +15,8 @@ const Contact = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
 
-  //transizione scesa div al montaggio
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  //resetta lo scroll a Y0 al montaggio
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+  const isVisible = useVisibilityAndScrollReset();
 
   return (
     <>
