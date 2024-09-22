@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const CollaborazionePS = () => {
   //chiamo il context del tema per recuperare il tema inserito
@@ -17,10 +18,14 @@ const CollaborazionePS = () => {
     "Microsoft Power Point",
   ];
 
+    //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+    const isVisible = useVisibilityAndScrollReset();
+  
+
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className="flex-center-column">
+        <div className={`flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
           <div className="size-large">
             <div className="flex-center-column pm-title">
               <h2>Pubblic Sapient</h2>

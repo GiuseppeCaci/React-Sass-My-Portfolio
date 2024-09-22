@@ -1,25 +1,26 @@
 // PRIMARY COLOR
 $dark-mode-background-primary-color: #193832;
-$dark-mode-text-primary-color: #E0E0E0;
-$dark-mode-accent-primary-color: #00B894; 
-$dark-mode-button-primary-color: #2A6355; 
-$dark-mode-button-hover-primary-color: #3C6E71; 
+$dark-mode-text-primary-color: #e0e0e0;
+$dark-mode-accent-primary-color: #00b894;
+$dark-mode-button-primary-color: #2a6355;
+$dark-mode-button-hover-primary-color: #3c6e71;
 
 // SECONDARY COLOR
-$dark-mode-background-secondary-color: #2A4B41;
-$dark-mode-text-secondary-color: #F0F6F6;
-$dark-mode-accent-secondary-color: #00B894; 
-$dark-mode-button-secondary-color: #2A6355; 
-$dark-mode-button-hover-secondary-color: #4A7D73; 
-$dark-mode-red-secondary-color: #E57373;
+$dark-mode-background-secondary-color: #2a4b41;
+$dark-mode-text-secondary-color: #f0f6f6;
+$dark-mode-accent-secondary-color: #00b894;
+$dark-mode-button-secondary-color: #2a6355;
+$dark-mode-button-hover-secondary-color: #4a7d73;
+$dark-mode-red-secondary-color: #e57373;
 
 //SKELETON GRADIENT
 $dark-skeleton-color-1: #1e3d34;
 $dark-skeleton-color-2: #2a4b41;
 
-
 //GENERIC COLOR
-$dark-mode-button-color:#FFFFFF;
+$dark-mode-button-color: #ffffff;
+$dark-background-color: #142d2b;
+
 
 //animazione background
 @-webkit-keyframes color-change-dark {
@@ -30,7 +31,7 @@ $dark-mode-button-color:#FFFFFF;
     background: #193832;
   }
   66.666% {
-    background: #1c4840; 
+    background: #1c4840;
   }
   100% {
     background: #193832;
@@ -39,27 +40,34 @@ $dark-mode-button-color:#FFFFFF;
 
 @keyframes color-change-dark {
   0% {
-    background: #325a4d; 
+    background: #325a4d;
   }
   33.3333% {
-    background: #193832; 
+    background: #193832;
   }
   66.666% {
-    background: #1c4840; 
+    background: #1c4840;
   }
   100% {
-    background: #193832; 
+    background: #193832;
   }
 }
 
 //modalità suddivisa in due grandi sotto classi primary e secondary
+ 
+
 .dark-mode {
-
   transition: all 0.4s ease;
+  background-color:$dark-mode-background-primary-color;
 
-  .gradient-skeleton{
+  .gradient-skeleton {
     background-color: $dark-skeleton-color-1;
-    background: linear-gradient(90deg, $dark-skeleton-color-1 25%, $dark-skeleton-color-2 50%, $dark-skeleton-color-1 75%);
+    background: linear-gradient(
+      90deg,
+      $dark-skeleton-color-1 25%,
+      $dark-skeleton-color-2 50%,
+      $dark-skeleton-color-1 75%
+    );
     background-size: 200% 100%;
     animation: skeleton-loading 1.5s infinite ease-in-out;
   }
@@ -69,107 +77,116 @@ $dark-mode-button-color:#FFFFFF;
     animation: color-change-dark 10s linear infinite alternate both;
   }
 
-    &.primary {
-      background-color: $dark-mode-background-primary-color;
-      color: $dark-mode-text-primary-color;
-    
-  
-      button {
-        background-color: $dark-mode-button-primary-color;
-        color: $dark-mode-button-color;
+  .gallery-background{
+    background-color: $dark-background-color;
+  }
+
+  &.primary {
+    background-color: $dark-mode-background-primary-color;
+    color: $dark-mode-text-primary-color;
+
+    &.nav-trasparent-color {
+      backdrop-filter: blur(10px);
+      background-color: #19383287;
+    }
+
+    button {
+      background-color: $dark-mode-button-primary-color;
+      color: $dark-mode-button-color;
+      transition: padding 0.5s ease;
+
+      &:hover {
+        background-color: $dark-mode-button-hover-primary-color;
         transition: padding 0.5s ease;
-  
-        &:hover {
-          background-color: $dark-mode-button-hover-primary-color;
-          transition: padding 0.5s ease;
-          
-          @include respond-to(mobile) {
-            padding: 18px 23px;
-          }
-        
-          @include respond-to(tablet) {
-            padding: 20px 27px;
-          }
-        
-          @include respond-to(desktop) {
-            padding: 23px 32px;
-          }
-        }
-        &:focus {
-          outline: 3px solid $dark-mode-button-hover-primary-color; 
-          outline-offset: 2px;
+
+        @include respond-to(mobile) {
+          padding: 18px 23px;
         }
 
-      }
-      
-      a{
-        color: $dark-mode-text-primary-color
-      }
-      
+        @include respond-to(tablet) {
+          padding: 20px 27px;
+        }
 
-      .line-card{
-        border: 1.5px solid $dark-mode-text-secondary-color;
+        @include respond-to(desktop) {
+          padding: 23px 32px;
+        }
       }
-      .line-hamburger{
-        background-color: $dark-mode-text-secondary-color;
-      }
-      .line-portfolio{
-        background-color: $dark-mode-text-primary-color;
-      }
-      .text-accent{
-        color:$dark-mode-accent-secondary-color;
-      }
-      .img-logo{
-        border:1px solid $dark-mode-accent-secondary-color;
+      &:focus {
+        outline: 3px solid $dark-mode-button-hover-primary-color;
+        outline-offset: 2px;
       }
     }
-  
-    &.secondary {
-      background-color: $dark-mode-background-secondary-color;
-      color: $dark-mode-text-secondary-color;
-  
-      button {
-        background-color: $dark-mode-button-primary-color;
-        color: $dark-mode-button-color;
-        transition: padding 0.5s ease;
-  
-        &:hover {
-          background-color: $dark-mode-button-hover-primary-color;
-          transition: padding 0.5s ease;
 
-          @include respond-to(mobile) {
-            padding: 18px 23px;
-          }
-        
-          @include respond-to(tablet) {
-            padding: 20px 27px;
-          }
-        
-          @include respond-to(desktop) {
-            padding: 23px 32px;
-          }
-        }
-        &:focus {
-          outline: 3px solid $dark-mode-button-hover-primary-color; 
-          outline-offset: 2px;
-        }
-      }
-      
-      a{
-        color: $dark-mode-text-secondary-color;
-      }
-      .navigation-menu{
-        color:$dark-mode-accent-secondary-color;
-      }
+    a {
+      color: $dark-mode-text-primary-color;
+    }
 
-      .coming-soon-color{
-        p:nth-child(2){
-          color:$dark-mode-red-secondary-color;
-        }
-      }
-
-      .img-logo{
-        border:1px solid $dark-mode-accent-secondary-color;
-      }
+    .line-card {
+      border: 1.5px solid $dark-mode-text-secondary-color;
+    }
+    .line-hamburger {
+      background-color: $dark-mode-text-secondary-color;
+    }
+    .line-portfolio {
+      background-color: $dark-mode-text-primary-color;
+    }
+    .text-accent {
+      color: $dark-mode-accent-secondary-color;
+    }
+    .text-accent-v2 {
+      color: $dark-mode-red-secondary-color;
+    }
+    .img-logo {
+      border: 1px solid $dark-mode-accent-secondary-color;
     }
   }
+
+  &.secondary {
+    background-color: $dark-mode-background-secondary-color;
+    color: $dark-mode-text-secondary-color;
+
+    button {
+      background-color: $dark-mode-button-primary-color;
+      color: $dark-mode-button-color;
+      transition: padding 0.5s ease;
+
+      &:hover {
+        background-color: $dark-mode-button-hover-primary-color;
+        transition: padding 0.5s ease;
+
+        @include respond-to(mobile) {
+          padding: 18px 23px;
+        }
+
+        @include respond-to(tablet) {
+          padding: 20px 27px;
+        }
+
+        @include respond-to(desktop) {
+          padding: 23px 32px;
+        }
+      }
+      &:focus {
+        outline: 3px solid $dark-mode-button-hover-primary-color;
+        outline-offset: 2px;
+      }
+    }
+
+    a {
+      color: $dark-mode-text-secondary-color;
+    }
+    .navigation-menu {
+      color: $dark-mode-accent-secondary-color;
+    }
+
+    .coming-soon-color {
+      p:nth-child(2) {
+        color: $dark-mode-red-secondary-color;
+      }
+    }
+
+    .img-logo {
+      border: 1px solid $dark-mode-accent-secondary-color;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
+import { Link } from "react-router-dom";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const Home = () => {
   //cambio nome alla pagina
@@ -11,10 +13,17 @@ const Home = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
 
+  //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+  const isVisible = useVisibilityAndScrollReset();
+
   return (
     <>
       <div className={`main-base ${theme} primary color-change-4x`}>
-        <div className="container-base flex-center-row">
+        <div
+          className={`container-base flex-center-column container-invisible ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <div className="container-hero">
             <h5 className="text-accent">CIAO! SONO GIUSEPPE</h5>
             <h2>sono un Web Developer</h2>
@@ -22,10 +31,35 @@ const Home = () => {
               più precisamente un front-end developer. <br /> mi occupo di
               progettare, creare e gestire web app.
             </h5>
-            <h4>fatti un giro nel mio sito per conoscermi meglio!</h4>
+          </div>
+
+          <div className="container-project">
+            <div className="project-title">
+              <h2>Ultimi Progetti</h2>
+            </div>
+            <div className="projects-grid">
+              <Link className="link-project" to="/portfolio/progetto-01">
+                <div className="project-box">
+                  <h3>Progetto Portfolio</h3>
+                  <p>
+                    {" "}
+                    giuseppecaci.com è il mio portfolio e biglietto da visita
+                    digitale, un archivio di progetti, collaborazioni e idee. In
+                    futuro, ospiterà anche un blog.{" "}
+                  </p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+
+      {/*  <div className="container-base flex-left-column">
+            <div className="project-title flex-left-column">
+              <h2>Utimi progetti</h2>
+            </div>
+            <div className="container-project"></div>
+          </div> */}
     </>
   );
 };

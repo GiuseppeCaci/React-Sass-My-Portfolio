@@ -1,6 +1,8 @@
 import React from "react";
 import { useContext, useEffect } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
+import { Link } from "react-router-dom";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const About = () => {
   //cambio nome alla pagina
@@ -16,6 +18,7 @@ const About = () => {
     "Bootstrap",
     "Sass",
     "Javascript",
+    "Assoli di Chitarra",
     "Node.js",
     "React",
     "Git",
@@ -29,39 +32,68 @@ const About = () => {
     "Figma",
   ];
 
+  //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
+  const isVisible = useVisibilityAndScrollReset();
+
+
   return (
     <>
       <div className={`main-base ${theme} primary color-change-4x`}>
-        <div className="container-base flex-center-column">
-          <div className="flex-center-row pm-title">
+        <div
+          className={`container-base flex-center-column container-invisible ${
+            isVisible ? "visible" : ""
+          }`}
+        >
+          <div className="flex-center-column pm-title">
             <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="/assets/img-about.jpg"></img>
+            <img src="/assets/generic/img-about.jpg"></img>
             <div className="about-bio-text">
-              <h3>Sono un Web developer, studio a Palermo, Italia</h3>
               <p>
-                Mi sono laureato alla facoltà del Dams, dove oltre ad aver
-                studiato vari rami artistici come cinema e musica, ho studiato
-                visual design e ho avuto l'opportunità di conoscere la
-                programmazione. Affascinato dalle logiche di funzionamento di{" "}
-                <span className="text-accent">Python</span>, decido di
-                approfondire questo mondo. Così, scopro la figura del web
-                developer. Un mondo incredibile in cui{" "}
-                <em>
-                  la logica dei dati si mescola alla creatività del design
-                </em>
-                . <br />
-                Decido di seguire vari corsi di{" "}
-                <span className="text-accent">front-end development</span>.
-                Trovo il mio primo lavoro in una grande azienda di Milano e
-                vengo affidato alla
-                <span className="text-accent"> Stellantis</span>, per la
-                gestione dei siti dei più grandi marchi di auto sul mercato.
-                Qui, ho l'opportunità di mettermi alla prova e di accrescere le
-                mie competenze. <br />
-                Finita questa esperienza, ho continuato e continuo tutt'oggi a
-                studiare per accrescere le mie conoscenze e competenze.
+                Ciao! Sono <strong>Giuseppe</strong> e sono uno sviluppatore{" "}
+                <strong>front-end</strong> con competenze{" "}
+                <strong>full stack junior</strong> e{" "}
+                <strong>web designer</strong>. Amo trasformare idee innovative
+                in realtà digitali, mescolando{" "}
+                <strong className="text-accent">creatività</strong> e
+                <strong className="text-accent"> logica </strong> attraverso
+                linguaggi di programmazione e markup. Continuo ad espandere le
+                mie competenze esplorando altri rami dello sviluppo, come quello
+                del <strong>back-end</strong>, dei <strong>CMS</strong> e del{" "}
+                <strong>design</strong>.
+              </p>
+              <p>
+                Mi sono laureato alla facoltà del <strong>DAMS</strong>, ho
+                frequentato diversi corsi di{" "}
+                <strong className="text-accent">programmazione</strong> e{" "}
+                <strong className="text-accent">design</strong>, continuando poi
+                a studiare per conto mio. Infine, ho lavorato come{" "}
+                <strong>Interactive Developer</strong> per{" "}
+                <strong className="text-accent">Stellantis</strong>.
+              </p>
+              <p>
+                Il mio sogno è sviluppare un’app che possa migliorare la vita
+                delle persone e avere un impatto positivo sul mondo.
+              </p>
+              <div className={`citazione ${theme} secondary`}>
+                <p>
+                  <em>
+                    “Strade? Dove stiamo andando, non c’è bisogno di strade!”
+                  </em>
+                </p>
+                <p>
+                  - <strong>Ritorno al futuro</strong>
+                </p>
+              </div>
+              <p>
+                Nel mio tempo libero, mi piace suonare la{" "}
+                <strong className="text-accent"> chitarra </strong> e dedicarmi
+                all'attività fisica in palestra. Adoro anche scattare foto
+                vintage con la mia{" "}
+                <strong className="text-accent">Polaroid</strong>. Sono un fan
+                della musica <strong>rock</strong> e amo il cinema degli{" "}
+                <strong className="text-accent">anni '80</strong>.
               </p>
             </div>
             <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
@@ -70,26 +102,26 @@ const About = () => {
             </a>
           </div>
           <div
-            className={`paragraph-base size-normal flex-center-column ${theme} secondary`}
+            className={`paragraph-base size-normal flex-left-column ${theme} secondary`}
           >
             <h3>Design</h3>
             <p>
-              Il design è uno degli aspetti più importanti dell'intero processo
-              di sviluppo. Il mio approccio prevede fasi di{" "}
-              <span className="text-accent">ricerca</span> e{" "}
-              <span className="text-accent">test</span>, durante i quali pongo
-              l'obiettivo di trovare la struttura visiva più adatta al contesto,
-              che sia pratica, semplice ma soprattutto{" "}
-              <em>elegante e visivamente stimolante</em>. <br />
-              Prediligo le{" "}
-              <span className="text-accent">palette di colori delicati</span> e
-              quando posso, amo sperimentare combinazioni cromatiche e nuovi
-              stili. <br />
-              Credo che un buon designer debba saper bilanciare{" "}
-              <em>precisione e disciplina</em> durante la fase di sviluppo, e la{" "}
-              <span className="text-accent">creatività</span> e l'
-              <span className="text-accent">ambizione</span> nella ricerca dello
-              stile e delle combinazioni di colori.
+              L'engine del mio processo di sviluppo si basa su{" "}
+              <span className="text-accent">conoscenze solide</span> dei
+              linguaggi di programmazione e sul metodo. Utilizzo strumenti come{" "}
+              <span className="text-accent">JavaScript</span>,{" "}
+              <span className="text-accent">React</span> e altre librerie per
+              creare applicazioni interattive e funzionanti. Il mio approccio
+              prevede un'attenta analisi delle funzioni da sviluppare e la
+              progettazione in <em>pseudo codice</em>, sia delle varie
+              funzionalità sia dell'intera struttura del progetto. Mi pongo come
+              obiettivo quello di creare{" "}
+              <span className="text-accent">funzioni scalabili e semplici</span>
+              . Infine, seguo una attenta fase di{" "}
+              <span className="text-accent">testing</span> sulle varie funzioni.
+              La mia filosofia è che nel coding si può realizzare ciò che si
+              vuole, ma solo se si ha <em>metodo</em> e voglia di superare i
+              propri limiti.
             </p>
 
             <h3>Engine</h3>
@@ -111,6 +143,9 @@ const About = () => {
               vuole, ma solo se si ha <em>metodo</em> e voglia di superare i
               propri limiti.
             </p>
+             <div className="flex-center-column">
+            <Link to="/portfolio"><button>Portfolio</button></Link>
+            </div>
           </div>
           <div className="paragraph-base size-small flex-center-column">
             <div className="flex-center-column">
@@ -128,7 +163,7 @@ const About = () => {
             </div>
           </div>
           <div
-            className={`paragraph-base size-small flex-center-column last-container ${theme} secondary`}
+            className={`paragraph-base size-small flex-left-column ${theme} secondary`}
           >
             <h3>Soft Skills</h3>
             <p>
@@ -136,24 +171,26 @@ const About = () => {
               <span className="text-accent">integrazione</span> in lavori di
               squadra e in ambienti multiculturali. Mi piace l'ordine,
               l'organizzazione e avere metodo. Se non porto a termine il lavoro
-              giornaliero il cielo potrebbe crollare. Mi scoraggio
+              giornaliero, il cielo potrebbe crollare. Mi scoraggio
               difficilmente; sono dell'idea che{" "}
               <em>essere negativi è una perdita di tempo</em>, soprattutto nei
               momenti di forte stress lavorativo. Mi piace ampliare le mie
               conoscenze e fare gioco di squadra. Nei momenti di brainstorming e
-              progettazione mi piace prendere appunti, fare schemi e toDoList.
-              Infine, sono convinto che{" "}
+              progettazione, mi piace prendere appunti, fare schemi e To-Do
+              List. Infine, sono convinto che{" "}
               <span className="text-accent">l'educazione</span> e{" "}
               <span className="text-accent">l'empatia</span> siano tasselli
               fondamentali. Un sorriso o un gesto di gentilezza possono cambiare
               l'esito della giornata.
             </p>
-            <a
-              href={import.meta.env.VITE_CV_URL}
-              download="curriculum-CACI.pdf"
-            >
-              <button>Curriculum in PDF</button>
-            </a>
+            <div className="flex-center-column">
+              <a
+                href={import.meta.env.VITE_CV_URL}
+                download="curriculum-CACI.pdf"
+              >
+                <button>Curriculum in PDF</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

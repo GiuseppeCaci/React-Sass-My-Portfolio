@@ -1,24 +1,33 @@
-import React, { useContext, useEffect } from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { Link} from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import ThemeContext from "../store/theme/ThemeContext";
-//icone
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const NavBar = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+
   //stato che gestisce l'apertura/chiusura del menu a discesa
   const [isOpen, setIsOpen] = useState(false);
-//funzione che gestisce il cambio stato menu a discesa
+
+  //funzione che gestisce il cambio stato menu a discesa
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-//creo una funzione che blocca lo scroll della pagina se il menu a discesa è attivo
+
+   //stato che gestisce la rotazione del logo
+   const [touchIt, setTouchIt] = useState(false);
+
+   //funzione che gestisce la rotazione del logo
+   const toggleLogo = () => {
+    setTouchIt(!touchIt);
+
+    //resetto dopo l'animazione
+    setTimeout(() => {
+      setTouchIt(false);
+    }, 300); 
+  };
+  //creo una funzione che blocca lo scroll della pagina se il menu a discesa è attivo
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
@@ -27,13 +36,16 @@ const NavBar = () => {
     }
   }, [isOpen]);
 
+
   return (
     <>
-    {/*MENU VERSIONE MOBILE/TABLET*/}
-      <div className={`nav-secondary-hamburger ${theme} primary`}>
+      {/*MENU VERSIONE MOBILE/TABLET*/}
+      <div className={`nav-secondary-hamburger ${theme} primary nav-trasparent-color `}>
         <nav className="nav-secondary-logo">
-          <img src="/assets/logo.png" alt="mia-foto" className="img-logo" />
-          <p>Giuseppe Caci</p>
+          <Link className="nav-secondary-link-logo" to="/about" onClick={toggleLogo}>
+            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+            <p>Giuseppe Caci</p>
+          </Link>
         </nav>
         <nav className="nav-secondary-settingTheme">
           <ThemeToggle />
@@ -53,11 +65,15 @@ const NavBar = () => {
         <nav
           className={`nav-secondary-menu ${
             isOpen ? "open" : ""
-          }  ${theme} secondary`}
+          } ${theme} secondary`}
         >
           <div className="nav-secondary-groupLinks">
             <ul>
-              <li>
+              <li
+                className={`link-transition-left  ${
+                  isOpen ? "link-transition-state" : ""
+                }`}
+              >
                 <Link
                   to="/"
                   onClick={toggleMenu}
@@ -70,7 +86,11 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li
+                className={`link-transition-right  ${
+                  isOpen ? "link-transition-state" : ""
+                }`}
+              >
                 <Link
                   to="/about"
                   onClick={toggleMenu}
@@ -83,7 +103,11 @@ const NavBar = () => {
                   About
                 </Link>
               </li>
-              <li>
+              <li
+                className={`link-transition-left  ${
+                  isOpen ? "link-transition-state" : ""
+                }`}
+              >
                 <Link
                   to="/contact"
                   onClick={toggleMenu}
@@ -97,12 +121,20 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className={`nav-Link ${theme} secondary`}>
-                <div className="coming-soon-container coming-soon-color">
+                <div
+                  className={`coming-soon-container coming-soon-color link-transition-right ${
+                    isOpen ? "link-transition-state" : ""
+                  }`}
+                >
                   <p>Blog</p>
                   <p>ComingSoon</p>
                 </div>
               </li>
-              <li>
+              <li
+                className={`link-transition-left  ${
+                  isOpen ? "link-transition-state" : ""
+                }`}
+              >
                 <Link
                   to="/portfolio"
                   onClick={toggleMenu}
@@ -117,49 +149,16 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="nav-secondary-containerSetting">
-            <nav className={`nav-secondary-link-icons ${theme} secondary`}>
-              <ul>
-                <li>
-                  <a href={import.meta.env.VITE_GITHUB_URL} target="_blank">
-                    <GitHubIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">
-                    <LinkedInIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank">
-                    <InstagramIcon fontSize="large" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={import.meta.env.VITE_CV_URL}
-                    target="_blank"
-                    download="curriculum-CACI.pdf"
-                  >
-                    CV
-                  </a>
-                </li>
-                <li>
-                  <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
-                    <EmailIcon fontSize="large" />
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </nav>
       </div>
 
-{/*MENU VERSIONE DESKTOP*/}
+      {/*MENU VERSIONE DESKTOP*/}
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
-          <img src="/assets/logo.png" alt="mia-foto" className="img-logo" />
-          <p>Giuseppe Caci</p>
+        <Link className="nav-primary-link-logo" to="/about" onClick={toggleLogo}>
+            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+            <p>Giuseppe Caci</p>
+          </Link>
         </nav>
         <nav className="nav-primary-link">
           <ul>

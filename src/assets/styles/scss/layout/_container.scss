@@ -1,5 +1,4 @@
 @import "../abstracts/mixins";
-@import '../base/_font.scss';
 
 //classi flex e container generici
 
@@ -38,8 +37,22 @@
   }
 }
 
+
 .container-base {
   width: 100%;
+}
+
+//transizione scesa div al montaggio
+//classe apposita per transizione
+.container-invisible{
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .paragraph-base {
@@ -68,10 +81,10 @@
 
   @include respond-to(desktop) {
     margin: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
     border-radius: 60px;
     h1, h2, h3, h4, h5, h6 {
-      padding: 15px 0;
+      padding: 20px 0px 10px 0px;
     }
   }
 }
@@ -84,46 +97,33 @@
     flex-basis: 12%;
     border-radius: 35px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.7s ease;
     p {
       padding: 5px 17px;
       margin: 0;
       white-space: nowrap;
-    }
-
-    &:hover {
-      margin: 13px;
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      transition: all 0.7s ease;
     }
   }
 
   @include respond-to(mobile) {
     flex-basis: 20%;
     width: auto;
+    margin-bottom: 10px;
     padding: 5px 20px 20px 20px;
     .skills-card {
       p {
         padding: 5px 10px;
-      }
-      &:hover {
-        margin: 13px;
-        transform: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: all 0.7s ease;
       }
     }
   }
 
   @include respond-to(tablet) {
     flex-basis: 15%;
-    margin-top: 7px;
+    margin-bottom: 10px;
     width: 500px;
   }
 
   @include respond-to(desktop) {
-    margin-top: 25px;
+    margin-bottom: 10px;
     width: 700px;
   }
 }

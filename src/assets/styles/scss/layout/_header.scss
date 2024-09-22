@@ -3,6 +3,7 @@
 
 //menu mobile/tablet
 
+
 //rotazione di apertura menu icona hamburger
 .rotate-90-cw {
   -webkit-animation: rotate-90-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -58,15 +59,50 @@
   }
 }
 
+//rotazione logo al click
+
+.rotate-logo{
+  -webkit-animation: rotate-logo 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: rotate-logo 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+
 //div principale menu hamburger
 .nav-secondary-hamburger {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   height: 75px;
   padding: 17px;
+  z-index: 10;
+  will-change: transform;
+  transform: translateZ(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   @include respond-to(tablet) {
     width: 100%;
     height: 120px;
@@ -78,18 +114,24 @@
 .nav-secondary-logo {
   @include responsive-flex(row, left, center);
   flex-basis: 67%;
-
-  img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-  }
-  p {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 7px;
+  .nav-secondary-link-logo{
+    @include responsive-flex(row, left, center);
+    text-decoration: none;
+    img {
+      padding: 0px;
+      margin:0px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    p {
+      width: auto;
+      margin: 0px;
+      padding: 0px;
+      padding-left: 7px;
+    
+    }
   }
 }
 
@@ -112,6 +154,7 @@
 .nav-hamburger-icon {
   width: 50px;
   height: 45px;
+  border-radius: 7px;
   @include responsive-flex(column, space-evenly, center);
   cursor: pointer;
   z-index: 2;
@@ -159,24 +202,25 @@
   height: 100vh;
   opacity: 0;
   transform: translateY(-100%);
-  visibility: hidden;
+  visibility: hidden; 
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
   z-index: 1;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out, visibility 0s 0.3s; 
 }
 
 // Apertura menu
 .nav-secondary-menu.open {
   opacity: 1;
   transform: translateY(0);
-  visibility: visible;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: visible; 
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out, visibility 0s 0s; 
 }
 
 //gruppo link sito
 .nav-secondary-groupLinks {
-  height: 100%;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,13 +247,26 @@
   }
 }
 
+//transizioni asse Y devi vari link
 
-.nav-secondary-containerSetting {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 30px;
+.link-transition-left{
+  opacity: 0;
+  transform: translateX(+40px);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 }
+
+.link-transition-right{
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+
+.link-transition-state{
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .no-scroll {
   overflow: hidden;
@@ -217,7 +274,6 @@
 
 //dig per blogComingSoon
 .coming-soon-container {
-  @include transition-all(font-size, 0.5s, ease);
   p:nth-child(1) {
     padding: 0;
     margin: 0;
@@ -231,17 +287,6 @@
     font-size: $font-text-s;
     font-family: $font-title;
     font-weight: $font-weight-semi-bold;
-  }
-  &:hover {
-    @include transition-all(font-size, 0.5s, ease);
-    p:nth-child(1) {
-      @include transition-all(font-size, 0.5s, ease);
-      font-size: $font-title-l;
-    }
-    p:nth-child(2) {
-      @include transition-all(font-size, 0.5s, ease);
-      font-size: $font-text-l;
-    }
   }
 }
 
@@ -269,14 +314,21 @@
 //MENU DESKTOP / TABLET
 
 .nav-primary {
+  position: sticky;
+  top:0;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 15px;
+  z-index: 99;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
 
   .nav-primary-logo {
     @include responsive-flex(row, center, center);
     flex-basis: 30%;
-
+    .nav-primary-link-logo{
+    @include responsive-flex(row, left, center);
+    text-decoration: none;
     img {
       border-radius: 50%;
     width: 40px;
@@ -289,11 +341,7 @@
       padding: 0px;
       padding-left: 7px;
     }
-    @include respond-to(tablet) {
-      p {
-        padding-left: 2px;
-      }
-    }
+  }
   }
 
   .nav-primary-link {
