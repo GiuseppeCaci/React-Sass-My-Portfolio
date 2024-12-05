@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import ThemeContext from "../store/theme/ThemeContext";
 
@@ -15,17 +15,17 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
-   //stato che gestisce la rotazione del logo
-   const [touchIt, setTouchIt] = useState(false);
+  //stato che gestisce la rotazione del logo
+  const [touchIt, setTouchIt] = useState(false);
 
-   //funzione che gestisce la rotazione del logo
-   const toggleLogo = () => {
+  //funzione che gestisce la rotazione del logo
+  const toggleLogo = () => {
     setTouchIt(!touchIt);
 
     //resetto dopo l'animazione
     setTimeout(() => {
       setTouchIt(false);
-    }, 300); 
+    }, 300);
   };
   //creo una funzione che blocca lo scroll della pagina se il menu a discesa è attivo
   useEffect(() => {
@@ -36,14 +36,19 @@ const NavBar = () => {
     }
   }, [isOpen]);
 
-
   return (
     <>
       {/*MENU VERSIONE MOBILE/TABLET*/}
-      <div className={`nav-secondary-hamburger ${theme} primary nav-trasparent-color `}>
+      <div
+        className={`nav-secondary-hamburger ${theme} primary nav-trasparent-color `}
+      >
         <nav className="nav-secondary-logo">
-          <Link className="nav-secondary-link-logo" to="/about" onClick={toggleLogo}>
-            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+          <Link className="nav-secondary-link-logo" to="/" onClick={toggleLogo}>
+            <img
+              src="/assets/generic/logo.png"
+              alt="mia-foto"
+              className={`img-logo ${touchIt ? "rotate-logo" : ""}`}
+            />
             <p>Giuseppe Caci</p>
           </Link>
         </nav>
@@ -120,16 +125,22 @@ const NavBar = () => {
                   Contatti
                 </Link>
               </li>
-              <li className={`nav-Link ${theme} secondary`}>
-                <div
-                  className={`coming-soon-container coming-soon-color link-transition-right ${
+
+              <li className={`nav-Link ${theme} secondary link-transition-right ${
                     isOpen ? "link-transition-state" : ""
-                  }`}
-                >
-                  <p>Blog</p>
-                  <p>ComingSoon</p>
-                </div>
+                  }`}>
+                    
+                  <a
+                href="https://adventurescode.com/"
+                className={`nav-Link ${theme} secondary`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                AdventuresCode
+              </a>
+
               </li>
+
               <li
                 className={`link-transition-left  ${
                   isOpen ? "link-transition-state" : ""
@@ -155,8 +166,12 @@ const NavBar = () => {
       {/*MENU VERSIONE DESKTOP*/}
       <div className={`nav-primary ${theme} secondary`}>
         <nav className="nav-primary-logo">
-        <Link className="nav-primary-link-logo" to="/about" onClick={toggleLogo}>
-            <img src="/assets/generic/logo.png" alt="mia-foto" className={`img-logo ${touchIt? 'rotate-logo' : ''}`} />
+          <Link className="nav-primary-link-logo" to="/" onClick={toggleLogo}>
+            <img
+              src="/assets/generic/logo.png"
+              alt="mia-foto"
+              className={`img-logo ${touchIt ? "rotate-logo" : ""}`}
+            />
             <p>Giuseppe Caci</p>
           </Link>
         </nav>
@@ -178,10 +193,14 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <div className="coming-soon-container-desk coming-soon-color">
-                <p>Blog</p>
-                <p>ComingSoon</p>
-              </div>
+              <a
+                href="https://adventurescode.com/"
+                className={`nav-Link ${theme} secondary`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                AdventuresCode
+              </a>
             </li>
             <li>
               <Link to="/portfolio" className={`nav-Link ${theme} secondary`}>
