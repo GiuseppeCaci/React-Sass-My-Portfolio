@@ -25,41 +25,48 @@ const Home = () => {
           }`}
         >
           <div className="container-hero">
-            <h5 className="text-accent">CIAO! SONO GIUSEPPE</h5>
+            <h5 className="text-accent">Ciao! Sono Giuseppe</h5>
             <h2>sono un Web Developer</h2>
-            <h5>
-              più precisamente un front-end developer. <br /> mi occupo di
-              progettare, creare e gestire web app.
-            </h5>
+            <h5>Mi occupo di progettare, creare e gestire web app.</h5>
           </div>
 
           <div className="container-project">
-            <div className="project-title">
-              <h2>Ultimi Progetti</h2>
-            </div>
             <div className="projects-grid">
               <Link className="link-project" to="/portfolio/progetto-01">
-                <div className="project-box">
-                  <h3>Progetto Portfolio</h3>
-                  <p>
-                    {" "}
-                    giuseppecaci.com è il mio portfolio e biglietto da visita
-                    digitale, un archivio di progetti, collaborazioni e idee. In
-                    futuro, ospiterà anche un blog.{" "}
-                  </p>
+                <div
+                  className="project-box"
+                  style={{
+                    backgroundImage:
+                      "url('/assets/generic/bg-giuseppe-caci.png')",
+                    color: "#FAFAFA",
+                  }}
+                >
+                  <div>
+                    <h4 style={{color:" #eaeaea"}}>REACT</h4>
+                    <h4 style={{color:" #eaeaea"}}>SASS</h4>
+                    <h3>Giuseppe Caci</h3>
+                  </div>
+                </div>
+              </Link>
+              <Link className="link-project" to="/portfolio/progetto-02">
+                <div
+                  className="project-box"
+                  style={{
+                    backgroundImage:
+                      "url('/assets/generic/bg-adventurescode.png')",
+                    color: "#FAFAFA",
+                  }}
+                >
+                  <div>
+                    <h4 style={{color:" #727272"}}>WORDPRESS</h4>
+                    <h3 style={{color:" #3d3d3d"}}>AdventuresCode</h3>
+                  </div>
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-
-      {/*  <div className="container-base flex-left-column">
-            <div className="project-title flex-left-column">
-              <h2>Utimi progetti</h2>
-            </div>
-            <div className="container-project"></div>
-          </div> */}
     </>
   );
 };
