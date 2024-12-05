@@ -286,26 +286,17 @@
   width: 30%;
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content:start;
   a{
     display: flex;
     padding: 0px 5px;
-  }
-  @include respond-to(mobile) {
-    justify-content:space-evenly;
-  }
-  @include respond-to(tablet) {
-    justify-content:start;
-  }
-  @include respond-to(desktop) {
-    justify-content:start;
   }
 }
 
 .title-palette{
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
   h2{
     flex-basis: 100%;
     text-align: left;

@@ -5,6 +5,13 @@ import Gallery from "../components/GalleryComponent/Gallery";
 import "react-photo-view/dist/react-photo-view.css";
 import CodeSnippet from "../components/CodeSnippet";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WebIcon from "@mui/icons-material/Web";
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CloudIcon from '@mui/icons-material/Cloud';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import LinkIcon from '@mui/icons-material/Link';
 
 
 const ProgettoAdventuresCode = () => {
@@ -72,11 +79,31 @@ const ProgettoAdventuresCode = () => {
         >
           <div className="size-large">
             <div className="article-informations">
-              <h2>AdventuresCode.com</h2>
-              <h5 className="text-accent">Pubblicato il </h5>
+              <div className="title-palette">
+                <h2>Adventures Code</h2>
+                {/*
+                 <div style={{ backgroundColor: "#193832" }}></div>
+                <div style={{ backgroundColor: "#2a6355" }}></div>
+                <div style={{ backgroundColor: "#f0f5f5" }}></div>
+                <div style={{ backgroundColor: "#4fbb64" }}></div>
+                */}
+              </div>
+              <h5 className="text-accent"> <LightbulbIcon fontSize="small"/> Tipo di progetto</h5>
+              <p>Blog di scrittura e Programmazione</p>
+              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Data pubblicazione</h5>
               <p>05/10/2024</p>
-              <h5 className="text-accent">Nelle piattaforme</h5>
+              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Piattaforme</h5>
               <p>SiteGround</p>
+              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Visita il sito</h5>
+              <div className="icon-project">
+                <a
+                  href="https://adventurescode.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <WebIcon fontSize="large" />
+                </a>
+              </div>
             </div>
             <div className="article-base flex-left-column">
               <p>

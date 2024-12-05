@@ -136,7 +136,7 @@ const NavBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                AdventuresCode
+                Blog
               </a>
 
               </li>
@@ -199,7 +199,7 @@ const NavBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                AdventuresCode
+                Blog
               </a>
             </li>
             <li>

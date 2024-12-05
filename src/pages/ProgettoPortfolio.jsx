@@ -81,18 +81,20 @@ const ProgettoPortfolio = () => {
             <div className="article-informations">
               <div className="title-palette">
                 <h2>Giuseppe Caci</h2>
-                <div style={{ backgroundColor: "#193832" }}></div>
+                {/*
+                 <div style={{ backgroundColor: "#193832" }}></div>
                 <div style={{ backgroundColor: "#2a6355" }}></div>
                 <div style={{ backgroundColor: "#f0f5f5" }}></div>
                 <div style={{ backgroundColor: "#4fbb64" }}></div>
+                */}
               </div>
               <h5 className="text-accent"> <LightbulbIcon fontSize="small"/> Tipo di progetto</h5>
               <p>Portfolio personale</p>
-              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Pubblicato il </h5>
+              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Data pubblicazione</h5>
               <p>18/09/2024</p>
-              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Nelle piattaforme</h5>
+              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Piattaforme</h5>
               <p>Netlify, GitHub</p>
-              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Vai al sito</h5>
+              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Visita il sito</h5>
               <div className="icon-project">
                 <a
                   href="https://github.com/GiuseppeCaci/React-Sass-My-Portfolio"

@@ -59,7 +59,7 @@ const Home = () => {
                 >
                   <div>
                     <h4 style={{color:" #727272"}}>WORDPRESS</h4>
-                    <h3 style={{color:" #3d3d3d"}}>AdventuresCode</h3>
+                    <h3 style={{color:" #3d3d3d"}}>Adventures Code</h3>
                   </div>
                 </div>
               </Link>
