@@ -177,3 +177,11 @@ button {
     font-size: $font-text-xs;
   }
 }
+
+.link-a-no-stile{
+  text-decoration: none;
+  margin: 0; 
+  background: transparent; 
+  border: none; 
+  display: inline; 
+}

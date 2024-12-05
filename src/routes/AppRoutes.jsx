@@ -9,6 +9,7 @@ const Contact = lazy(() => import("../pages/Contact"));
 const Portfolio = lazy(() => import("../pages/Portfolio"));
 const CollaborazionePS = lazy(() => import("../pages/CollaborazionePS"));
 const ProgettoPortfolio = lazy(() => import("../pages/ProgettoPortfolio"));
+const ProgettoAdventuresCode = lazy(() => import("../pages/ProgettoAdventuresCode"));
 
 
 //componenti
@@ -29,6 +30,7 @@ const AppRoutes = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/collaborazione-01" element={<CollaborazionePS/>} />
           <Route path="/portfolio/progetto-01" element={<ProgettoPortfolio/>} />
+          <Route path="/portfolio/progetto-02" element={<ProgettoAdventuresCode/>} />
         </Route>
       </Routes>
     </Suspense>

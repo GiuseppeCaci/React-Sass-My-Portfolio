@@ -192,8 +192,15 @@
 }
 
 .article-informations{
+  h5{
+    display: flex;
+    align-items: center;
+    svg{
+      margin-right: 3px;
+    }
+  }
   @include respond-to(mobile) {
-    margin:7px 0px 20px 0px;
+    margin:10px 0px 20px 0px;
     padding:10px 40px;
     @include responsive-flex(column, center, left);
     text-align: left;
@@ -270,6 +277,67 @@
     padding: 40px 0px 0px 0px;
     p {
       margin: 20px 30px 30px 30px;
+    }
+  }
+}
+
+.icon-project{
+  margin-top: 10px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  a{
+    display: flex;
+    padding: 0px 5px;
+  }
+  @include respond-to(mobile) {
+    justify-content:space-evenly;
+  }
+  @include respond-to(tablet) {
+    justify-content:start;
+  }
+  @include respond-to(desktop) {
+    justify-content:start;
+  }
+}
+
+.title-palette{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 20px 0px;
+  h2{
+    flex-basis: 100%;
+    text-align: left;
+  }
+  div{
+    border-radius:2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-basis: 23%;
+    height: 15px;
+    background-color: green;
+    margin: 1px;
+    margin-right: 3px;
+  }
+  @include respond-to(mobile) {
+    h2{
+      margin: 10px 0px 5px 0px;
+    }
+  }
+  @include respond-to(tablet) {
+    h2{
+      margin: 10px 0px 10px 0px;
+    }
+    div{
+      flex-basis: 15%;
+    }
+  }
+  @include respond-to(desktop) {
+    h2{
+      margin: 10px 0px 10px 0px;
+    }
+    div{
+      flex-basis: 13%;
     }
   }
 }
