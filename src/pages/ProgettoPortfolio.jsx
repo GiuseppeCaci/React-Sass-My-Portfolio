@@ -8,11 +8,11 @@ import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAnd
 import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import CloudIcon from '@mui/icons-material/Cloud';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import LinkIcon from '@mui/icons-material/Link';
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CloudIcon from "@mui/icons-material/Cloud";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import LinkIcon from "@mui/icons-material/Link";
 
 const ProgettoPortfolio = () => {
   //cambio nome alla pagina
@@ -88,13 +88,28 @@ const ProgettoPortfolio = () => {
                 <div style={{ backgroundColor: "#4fbb64" }}></div>
                 */}
               </div>
-              <h5 className="text-accent"> <LightbulbIcon fontSize="small"/> Tipo di progetto</h5>
+              <h5 className="text-accent">
+                {" "}
+                <LightbulbIcon fontSize="small" /> Tipo di progetto
+              </h5>
               <p>Portfolio personale</p>
-              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Data pubblicazione</h5>
+              <h5 className="text-accent">
+                {" "}
+                <AccessTimeIcon fontSize="small" />
+                Data pubblicazione
+              </h5>
               <p>18/09/2024</p>
-              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Piattaforme</h5>
+              <h5 className="text-accent">
+                {" "}
+                <CloudIcon fontSize="small" />
+                Piattaforme
+              </h5>
               <p>Netlify, GitHub</p>
-              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Visita il sito</h5>
+              <h5 className="text-accent">
+                {" "}
+                <LinkIcon fontSize="small" />
+                Visita il sito
+              </h5>
               <div className="icon-project">
                 <a
                   href="https://github.com/GiuseppeCaci/React-Sass-My-Portfolio"
@@ -114,22 +129,15 @@ const ProgettoPortfolio = () => {
             </div>
             <div className="article-base flex-left-column">
               <p>
-                Questo sito è il mio{" "}
-                <strong>biglietto da visita digitale</strong>, una
-                rappresentazione del mio{" "}
-                <strong>percorso di crescita professionale</strong> come
-                sviluppatore, ma anche una raccolta delle mie{" "}
-                <span className="text-accent">creazioni</span> e
-                <span className="text-accent"> progetti</span> nel campo del{" "}
-                <strong>web development</strong>. Il sito ha l'obiettivo
-                primario di mostrare a potenziali{" "}
-                <strong>datori di lavoro</strong>, <strong>clienti</strong> e{" "}
-                <strong>colleghi</strong> le mie{" "}
-                <span className="text-accent">abilità</span> nel campo dello
-                sviluppo. In secondo luogo, funge da{" "}
-                <span className="text-accent">archivio</span> delle mie{" "}
-                <span className="text-accent">collaborazioni</span>, siti e
-                progetti.
+                Il sito è una vetrina digitale del mio{" "}
+                <strong>percorso professionale</strong> come sviluppatore,
+                progettato per mostrare
+                <span className="text-accent"> abilità</span>,{" "}
+                <span className="text-accent">progetti</span> e{" "}
+                <span className="text-accent">collaborazioni</span>. Il focus è
+                su <i>design minimalista</i> e <i>funzionalità intuitive</i>,
+                offrendo una panoramica chiara delle mie{" "}
+                <strong>competenze</strong>.
               </p>
             </div>
             <div
@@ -150,111 +158,74 @@ const ProgettoPortfolio = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Lo Sviluppo</h4>
-              <h5>RICERCHE PRELIMINARI</h5>
-              <p>
-                Ho iniziato il mio progetto portfolio esplorando le strutture
-                standard per siti simili, esaminando template di CMS,
-                classifiche e esempi. Questo mi ha aiutato a definire l'idea del
-                sito. Mi sono poi posto alcune domande chiave:{" "}
-                <strong>Che servizi offrirà il mio sito?</strong> <br />
-                <strong>Sarà minimalista o ricco di animazioni?</strong> Dopo
-                aver definito funzioni e design, ho iniziato a progettare.
-              </p>
-              <h5>SVILUPPO TECNICO</h5>
-              <p>
-                Il sito non richiedeva un{" "}
-                <span className="text-accent">back-end</span>, quindi mi sono
-                concentrato sullo sviluppo <strong>front-end</strong>. Ho
-                definito la <span className="text-accent">struttura</span> e
-                creato componenti riutilizzabili.
-              </p>
-              <p>
-                Utilizzando <strong>React</strong> e{" "}
-                <strong>react-router-dom</strong> per la gestione delle pagine,
-                ho implementato un cambio tema tramite{" "}
-                <strong>Context API</strong> e memorizzato il tema nel{" "}
-                <span className="text-accent">LocalStorage</span>.
-              </p>
-              <p>
-                Il focus finale è stato espandere la logica del{" "}
-                <span className="text-accent">layout</span> e sviluppare
-                componenti scalabili. Ecco un esempio di codice per un
-                componente di evidenziazione della sintassi:
-              </p>
-              <div>
-                <CodeSnippet
-                  code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
+              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <ul>
+                <li>
+                  <strong>Ricerche preliminari:</strong> Analisi di{" "}
+                  <i>template</i> e <i>standard</i> per definire funzioni e
+                  design.
+                </li>
+                <li>
+                  <strong>Sviluppo tecnico:</strong> Uso di{" "}
+                  <span className="text-accent">React</span> per un front-end
+                  scalabile, gestione delle pagine con
+                  <span className="text-accent">react-router-dom</span> e cambio
+                  tema dinamico tramite{" "}
+                  <span className="text-accent">Context API</span>.
+                </li>
+                <li>  <strong>
+                    Esempio di codice per evidenziare la sintassi:
+                  </strong>
+                  </li>
+                  </ul>
+                  </div>
+                    <CodeSnippet
+                      code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
               {code}
             </SyntaxHighlighter>
 `}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <p>
-                Il componente <strong>CodeSnippet</strong> usa il modulo{" "}
-                <strong>react-syntax-highlighter</strong> per evidenziare la
-                sintassi e integra il <strong>Context API</strong> per cambiare
-                tema dinamicamente.
-              </p>
-              <div>
-                <CodeSnippet
-                  code={`<CodeSnippet code={code} language="javascript" bgColor={theme}/>`}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <h5>DESIGN VISIVO</h5>
-              <p>
-                Il design del sito è stato pensato per essere{" "}
-                <strong>minimalista</strong> e <strong>professionale</strong>,
-                con un focus sul <strong>contenuto del portfolio</strong>. Ho
-                scelto un approccio <span className="text-accent">sobrio</span>,
-                limitando le animazioni e riservandole per progetti secondari.
-              </p>
-              <p>
-                Per la <strong>palette dei colori</strong>, ho scelto sfumature
-                di <span className="text-accent">verde scuro</span> per la
-                modalità scura, e un mix di{" "}
-                <span className="text-accent">grigio chiaro</span> e{" "}
-                <span className="text-accent">verde</span> per quella chiara.
-                Questo bilanciamento crea un'atmosfera{" "}
-                <span className="text-accent">accogliente</span> e{" "}
-                <strong>professionale</strong>.
-              </p>
-              <p>
-                Per la <strong>tipografia</strong>, ho scelto{" "}
-                <strong>Poppins</strong> e <strong>Inter</strong>, per un look
-                moderno che si abbina ai colori del sito. Ho inoltre integrato{" "}
-                <span className="text-accent">animazioni sottili</span> per
-                migliorare l'interazione senza distrarre l'utente.
-              </p>
-
+                      language="javascript"
+                      bgColor={theme}
+                    />
+                    <div className="article-base flex-left-column">
+                <ul>
+                <li>
+                  <strong>Design visivo:</strong>
+                  <ul>
+                    <li>
+                      Palette di colori:{" "}
+                      <span className="text-accent">verde scuro</span> per
+                      modalità scura,{" "}
+                      <span className="text-accent">grigio chiaro</span> e
+                      <span className="text-accent"> verde</span> per quella
+                      chiara.
+                    </li>
+                    <li>
+                      Tipografia: <span className="text-accent">Poppins</span> e{" "}
+                      <span className="text-accent">Inter</span> per un look
+                      moderno e professionale.
+                    </li>
+                    <li>Animazioni sottili per migliorare l'interazione.</li>
+                  </ul>
+                </li>
+              </ul>
               <div className={`${theme} gallery-background container-gallery`}>
                 <h4>Progetti Figma</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4>Difficoltà e Soluzioni</h4>
+              <h4 className="text-accent">Difficoltà principali:</h4>
               <p>
-                La principale difficoltà è stata la{" "}
-                <span className="text-accent">ricerca</span> e la{" "}
-                <span className="text-accent">scelta</span> dei{" "}
-                <strong>colori finali</strong>. Dopo vari tentativi, ho trovato
-                l'<span className="text-accent">equilibrio</span> desiderato,
-                garantendo un design <strong>minimalista</strong> e{" "}
-                <strong>professionale</strong>.
+                La scelta dei colori ha richiesto diversi tentativi per ottenere
+                il giusto equilibrio.
               </p>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Risultati e Conclusioni</h4>
+              <h4 className="text-accent">Risultati e conclusioni:</h4>
               <p>
-                Il progetto è stato <strong>semplice</strong> dal punto di vista
-                funzionale, ma la scelta del <strong>design</strong> e dello{" "}
-                <strong>stile finale</strong> è stata fondamentale. Ogni
-                dettaglio è stato pensato per riflettere le mie{" "}
-                <span className="text-accent">competenze</span> e il mio{" "}
-                <span className="text-accent">approccio professionale</span>.
+                Un <i>design minimalista</i> e <i>funzionale</i> che rispecchia
+                le mie <strong>competenze professionali</strong> e offre
+                un'esperienza utente
+                <span className="text-accent"> intuitiva</span>.
               </p>
               <div className={`${theme} gallery-background container-gallery`}>
                 <h4>Sui vari dispositivi</h4>

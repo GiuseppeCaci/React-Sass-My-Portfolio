@@ -5,14 +5,14 @@ import Gallery from "../components/GalleryComponent/Gallery";
 import "react-photo-view/dist/react-photo-view.css";
 import CodeSnippet from "../components/CodeSnippet";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
+import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import CloudIcon from '@mui/icons-material/Cloud';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import LinkIcon from '@mui/icons-material/Link';
-
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CloudIcon from "@mui/icons-material/Cloud";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import LinkIcon from "@mui/icons-material/Link";
 
 const ProgettoAdventuresCode = () => {
   //cambio nome alla pagina
@@ -24,18 +24,23 @@ const ProgettoAdventuresCode = () => {
   const { theme } = useContext(ThemeContext);
 
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
-  const strumentiUsati = [
-    "Figma",
-    "Html",
-    "Css",
-    "Sass",
-    "Javascript",
-    "React",
-    "mui/material",
-    "react-photo-view",
-    "react-syntax-highlighter ",
+  const pluginUsati = [
+    "Wordpress",
+    "Phlox",
+    "Anywhere Elementor",
+    "Elementor",
+    "Phlox Core Elements",
+    "Easy Table of Contents",
+    "Enlighter",
+    "Hustle",
+    "Read Meter",
+    "Site Kit by Google",
+    "Smart Slider 3",
+    "Yoast SEO"
   ];
-
+  const strumentiDesign = [
+"Figma", "Adobe Illustrator"
+  ];
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
   const isVisible = useVisibilityAndScrollReset();
 
@@ -88,13 +93,28 @@ const ProgettoAdventuresCode = () => {
                 <div style={{ backgroundColor: "#4fbb64" }}></div>
                 */}
               </div>
-              <h5 className="text-accent"> <LightbulbIcon fontSize="small"/> Tipo di progetto</h5>
-              <p>Blog di scrittura e Programmazione</p>
-              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Data pubblicazione</h5>
+              <h5 className="text-accent">
+                {" "}
+                <LightbulbIcon fontSize="small" /> Tipo di progetto
+              </h5>
+              <p>Blog di Programmazione</p>
+              <h5 className="text-accent">
+                {" "}
+                <AccessTimeIcon fontSize="small" />
+                Data pubblicazione
+              </h5>
               <p>05/10/2024</p>
-              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Piattaforme</h5>
+              <h5 className="text-accent">
+                {" "}
+                <CloudIcon fontSize="small" />
+                Piattaforme
+              </h5>
               <p>SiteGround</p>
-              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Visita il sito</h5>
+              <h5 className="text-accent">
+                {" "}
+                <LinkIcon fontSize="small" />
+                Visita il sito
+              </h5>
               <div className="icon-project">
                 <a
                   href="https://adventurescode.com/"
@@ -107,28 +127,24 @@ const ProgettoAdventuresCode = () => {
             </div>
             <div className="article-base flex-left-column">
               <p>
-              Questo sito è il mio{" "}
-  <strong>biglietto da visita digitale</strong>, una rappresentazione del mio{" "}
-  <strong>percorso di crescita professionale</strong> come sviluppatore, ma anche una raccolta delle mie{" "}
-  <span className="text-accent">creazioni</span> e
-  <span className="text-accent"> progetti</span> nel campo del{" "}
-  <strong>web development</strong>. Il sito ha l'obiettivo primario di mostrare a potenziali{" "}
-  <strong>datori di lavoro</strong>, <strong>clienti</strong> e{" "}
-  <strong>colleghi</strong> le mie{" "}
-  <span className="text-accent">abilità</span> nel campo dello sviluppo. In secondo luogo, funge da{" "}
-  <span className="text-accent">archivio</span> delle mie <span className="text-accent">collaborazioni</span>,
-  siti e progetti. Infine, quando terminerò di ampliare questa sezione, il sito diventerà anche un{" "}
-  <strong>blog</strong> in cui condividerò <span className="text-accent">idee</span>,
-  guide e notizie sul mondo dello sviluppo.
-</p>
+                Il sito è una vetrina digitale del mio{" "}
+                <strong>percorso professionale</strong> come sviluppatore,
+                progettato per mostrare
+                <span className="text-accent"> abilità</span>,{" "}
+                <span className="text-accent">progetti</span> e{" "}
+                <span className="text-accent">collaborazioni</span>. Il focus è
+                su <i>design minimalista</i> e <i>funzionalità intuitive</i>,
+                offrendo una panoramica chiara delle mie{" "}
+                <strong>competenze</strong>.
+              </p>
             </div>
             <div
               className={`paragraph-base size-small flex-center-column ${theme} secondary`}
             >
               <div className="flex-center-column">
-                <h4>Strumenti usati</h4>
+                <h4>Strumenti Usati</h4>
                 <div className="container-skills flex-center-row">
-                  {strumentiUsati.map((element) => (
+                  {pluginUsati.map((element) => (
                     <div
                       key={element}
                       className={`skills-card ${theme} primary`}
@@ -140,198 +156,79 @@ const ProgettoAdventuresCode = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Lo Sviluppo</h4>
-              <h5>RICERCHE PRELIMINARI</h5>
-              <p>
-                Non essendomi mai cimentato nella creazione di un{" "}
-                <strong>progetto portfolio</strong>, la prima cosa fatta è stata
-                quella di orientare le mie ricerche sulla comprensione delle{" "}
-                <span className="text-accent">strutture standard</span> per
-                questo tipo di sito. Con tutto il materiale raccolto (come{" "}
-                <span className="text-accent">siti CMS a pagamento</span> che
-                offrivano template,{" "}
-                <span className="text-accent">classifiche</span> dei migliori
-                portfolio di web developer e{" "}
-                <span className="text-accent"> esempi di siti </span>) mi sono
-                fatto un'idea generale del tipo di sito.
-              </p>
-              <p>
-                Successivamente, mi sono posto alcune domande: <br />
-                <strong>Che servizi offrirà il mio sito?</strong> <br />
-                <strong>
-                  Sarà un sito elegante e minimalista o vivace e ricco di
-                  animazioni?
-                </strong>{" "}
-                <br />
-                Dopo essermi fatto un'idea delle funzioni e del design, ho
-                cominciato a <strong>progettare</strong> il sito.
-              </p>
-              <h5>SVILUPPO TECNICO</h5>
-              <p>
-                Una volta scelti i componenti e le funzionalità, ho avuto una
-                chiara comprensione della{" "}
-                <strong>complessità del progetto</strong>. Le funzionalità
-                scelte per il sito non richiedevano la creazione di un{" "}
-                <span className="text-accent">back-end</span>, permettendomi di
-                concentrarmi completamente sullo sviluppo{" "}
-                <strong>front-end</strong>. Questo ha semplificato notevolmente
-                il processo.
-              </p>
-              <p>
-                Ho definito la{" "}
-                <span className="text-accent">struttura del sito</span> e uno
-                schema delle interazioni tra le funzionalità, cercando al
-                contempo di identificare e creare{" "}
-                <span className="text-accent">
-                  componenti scalabili e riutilizzabili
-                </span>
-                .
-              </p>
-              <p>
-                Per la realizzazione del sito, ho utilizzato{" "}
-                <strong>JavaScript orientato a React</strong>. Inizialmente, ho
-                creato le pagine e impostato una struttura di routing con{" "}
-                <strong>react-router-dom</strong>. Non ho avuto bisogno di una
-                gestione avanzata dello stato, poiché l'unica funzionalità
-                richiesta era il{" "}
-                <span className="text-accent">cambio tema</span>. Pertanto, ho
-                scelto di utilizzare il <strong>Context API</strong> per
-                collegare le varie pagine e fornire il tema salvato nel{" "}
-                <span className="text-accent">LocalStorage</span>.
-              </p>
-              <p>
-                Dopo aver completato questa fase, mi sono concentrato
-                sull'espansione delle logiche relative al{" "}
-                <span className="text-accent">layout</span> e sulla ricerca di{" "}
-                <span className="text-accent">componenti riutilizzabili</span>,
-                per garantire la <strong>scalabilità</strong> del sito.
-              </p>
-              <p>Come ad esempio questo:</p>
-              <div>
-                <CodeSnippet
-          code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
+              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <ul>
+                <li>
+                  <strong>Ricerche preliminari:</strong> Analisi di{" "}
+                  <i>template</i> e <i>standard</i> per definire funzioni e
+                  design.
+                </li>
+                <li>
+                  <strong>Sviluppo tecnico:</strong> Uso di{" "}
+                  <span className="text-accent">React</span> per un front-end
+                  scalabile, gestione delle pagine con
+                  <span className="text-accent">react-router-dom</span> e cambio
+                  tema dinamico tramite{" "}
+                  <span className="text-accent">Context API</span>.
+                </li>
+                <li>  <strong>
+                    Esempio di codice per evidenziare la sintassi:
+                  </strong>
+                  </li>
+                  </ul>
+                  </div>
+                    <CodeSnippet
+                      code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
               {code}
             </SyntaxHighlighter>
 `}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <p>
-                Questo codice definisce un componente chiamato{" "}
-                <strong>CodeSnippet</strong>, progettato per visualizzare
-                frammenti di codice con{" "}
-                <span className="text-accent">
-                  evidenziazione della sintassi
-                </span>{" "}
-                all'interno della pagina. Per realizzare questa funzionalità, ho
-                utilizzato il modulo <strong>react-syntax-highlighter</strong>.
-                La particolarità di questo componente scalabile è la sua
-                integrazione con il <strong>Context API</strong> per il{" "}
-                <span className="text-accent">cambio tema</span>, che permette
-                di adattare l'aspetto del codice in base alla modalità
-                selezionata tramite{" "}
-                <span className="text-accent">ternary operator</span>.
-              </p>
-              <div>
-                <CodeSnippet
-                  code={`<CodeSnippet code={code} language="javascript" bgColor={theme}/>`}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <h5>DESIGN VISIVO</h5>
-              <p>
-                Il design visivo del sito è stato progettato per trasmettere
-                un'estetica <strong>minimalista</strong> e{" "}
-                <strong>professionale</strong>. Ho optato per un approccio{" "}
-                <span className="text-accent">sobrio</span>, evitando{" "}
-                <span className="text-accent">animazioni eccessive</span>,
-                preferendo invece di riservare tali esperimenti per progetti
-                secondari. Questo ha permesso di mantenere un focus chiaro sul{" "}
-                <strong>contenuto del portfolio</strong>.
-              </p>
-              <p>
-                Per quanto riguarda la <strong>palette dei colori</strong>, ho
-                optato per una combinazione che offre un'esperienza coesa e
-                armoniosa. Ho scelto due colori dominanti per le modalità:{" "}
-                <span className="text-accent">sfumature di verde scuro</span>{" "}
-                per la modalità scura, e un mix di{" "}
-                <span className="text-accent">grigio chiaro</span> e{" "}
-                <span className="text-accent">verde</span> per quella chiara.
-                Questi colori primari e secondari sono stati bilanciati tra le
-                due modalità, garantendo che ogni elemento si integri
-                perfettamente nell'insieme. Questo approccio non solo facilita
-                la navigazione, ma valorizza anche i miei lavori, creando
-                un'atmosfera <span className="text-accent">accogliente</span> e{" "}
-                <strong>professionale</strong>.
-              </p>
-              <p>
-                Per quanto riguarda la <strong>tipografia</strong>, i font{" "}
-                <strong>Poppins</strong> e <strong>Inter</strong> sono i
-                predominanti. Ho optato per dei font moderni che si abbinino ai
-                colori delicati del sito.
-              </p>
-              <p>
-                Infine, ho integrato{" "}
-                <span className="text-accent">animazioni sottili</span> che
-                migliorano l'interazione senza distrarre l'utente.
-              </p>
-
+                      language="javascript"
+                      bgColor={theme}
+                    />
+                    <div className="article-base flex-left-column">
+                <ul>
+                <li>
+                  <strong>Design visivo:</strong>
+                  <ul>
+                    <li>
+                      Palette di colori:{" "}
+                      <span className="text-accent">verde scuro</span> per
+                      modalità scura,{" "}
+                      <span className="text-accent">grigio chiaro</span> e
+                      <span className="text-accent"> verde</span> per quella
+                      chiara.
+                    </li>
+                    <li>
+                      Tipografia: <span className="text-accent">Poppins</span> e{" "}
+                      <span className="text-accent">Inter</span> per un look
+                      moderno e professionale.
+                    </li>
+                    <li>Animazioni sottili per migliorare l'interazione.</li>
+                  </ul>
+                </li>
+              </ul>
               <div className={`${theme} gallery-background container-gallery`}>
                 <h4>Progetti Figma</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4>Difficoltà e Soluzioni</h4>
+              <h4 className="text-accent">Difficoltà principali:</h4>
               <p>
-                Non ho riscontrato particolari <strong>difficoltà</strong> nella
-                realizzazione del sito. L'unico aspetto complicato è stata la{" "}
-                <span className="text-accent">ricerca</span> e la{" "}
-                <span className="text-accent">scelta</span> dei{" "}
-                <strong>colori finali</strong>. Dopo vari tentativi e
-                campionamenti, sono riuscito a trovare un{" "}
-                <span className="text-accent">equilibrio</span> e un mix di
-                palette che mi soddisfano pienamente. Questo processo mi ha
-                permesso di trovare il <strong>design</strong> e garantire che i
-                colori rispecchiassero l'estetica{" "}
-                <span className="text-accent">minimalista</span> e{" "}
-                <strong>professionale</strong> che desideravo.
+                La scelta dei colori ha richiesto diversi tentativi per ottenere
+                il giusto equilibrio.
               </p>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Risultati e Conclusioni</h4>
+              <h4 className="text-accent">Risultati e conclusioni:</h4>
               <p>
-                Il progetto è stato relativamente <strong>semplice</strong>,
-                soprattutto per quanto riguarda la parte{" "}
-                <span className="text-accent">funzionale</span>. Tuttavia,
-                l'importanza del sito ha reso insidiosa la scelta del{" "}
-                <strong>design</strong> e dello <strong>stile finale</strong>.
-                Ogni dettaglio contava, e ho voluto assicurarmi che il design
-                riflettesse le mie{" "}
-                <span className="text-accent">competenze</span> e il mio{" "}
-                <span className="text-accent">approccio professionale</span>.
-                Questo ha richiesto un'attenta riflessione e un equilibrio tra{" "}
-                <span className="text-accent">estetica</span> e{" "}
-                <strong>funzionalità</strong>.
+                Un <i>design minimalista</i> e <i>funzionale</i> che rispecchia
+                le mie <strong>competenze professionali</strong> e offre
+                un'esperienza utente
+                <span className="text-accent"> intuitiva</span>.
               </p>
               <div className={`${theme} gallery-background container-gallery`}>
                 <h4>Sui vari dispositivi</h4>
                 <Gallery images={dispositives} />
               </div>
-            </div>
-            <div></div>
-            <div className="article-base flex-left-column">
-              <h4>Futuri Aggiornamenti</h4>
-              <p>
-                Come futuri <strong>aggiornamenti</strong>, ho in programma di
-                ampliare la sezione <strong>blog</strong> per condividere{" "}
-                <span className="text-accent">idee</span>,{" "}
-                <span className="text-accent">guide</span> e{" "}
-                <span className="text-accent">esperienze</span> nel campo dello
-                sviluppo. Inoltre, intendo aggiungere la funzionalità di{" "}
-                <strong>cambio lingua</strong>, permettendo così a un pubblico
-                più ampio di accedere ai contenuti del sito.
-              </p>
             </div>
           </div>
         </div>

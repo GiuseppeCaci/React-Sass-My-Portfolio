@@ -2255,6 +2255,15 @@ button {
   .article-base h1, .article-base h2, .article-base h3, .article-base h4, .article-base h5, .article-base h6 {
     padding: 30px 40px 0px 40px;
   }
+  .article-base ul {
+    padding: 20px 40px 20px 40px;
+  }
+  .article-base ul li {
+    padding: 5px 0px;
+  }
+  .article-base pre {
+    padding: 30px 0px 30px 0px;
+  }
   .article-base p {
     padding: 10px 40px 10px 40px;
   }
@@ -2262,6 +2271,12 @@ button {
 @media (min-width: 600px) and (max-width: 1024px) {
   .article-base h1, .article-base h2, .article-base h3, .article-base h4, .article-base h5, .article-base h6 {
     padding: 30px 40px 0px 40px;
+  }
+  .article-base ul {
+    padding: 20px 40px 20px 40px;
+  }
+  .article-base ul li {
+    padding: 5px 0px;
   }
   .article-base p {
     padding: 10px 40px 10px 40px;
@@ -2271,7 +2286,30 @@ button {
   .article-base h1, .article-base h2, .article-base h3, .article-base h4, .article-base h5, .article-base h6 {
     padding: 30px 0px 0px 0px;
   }
+  .article-base ul {
+    padding: 20px 40px 20px 40px;
+  }
+  .article-base ul li {
+    padding: 5px 0px;
+  }
   .article-base p {
+    padding: 10px 0px 10px 0px;
+  }
+}
+
+@media (max-width: 599px) {
+  .code-class {
+    padding: 30px 40px 0px 40px;
+    padding: 30px 0px 30px 0px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .code-class {
+    padding: 30px 40px 0px 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .code-class {
     padding: 10px 0px 10px 0px;
   }
 }
@@ -2442,11 +2480,12 @@ button {
 .title-palette {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .title-palette h2 {
   flex-basis: 100%;
   text-align: left;
+  padding: 0px 0px 0px 0px;
 }
 .title-palette div {
   border-radius: 2px;
