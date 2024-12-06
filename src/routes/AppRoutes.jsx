@@ -10,6 +10,9 @@ const Portfolio = lazy(() => import("../pages/Portfolio"));
 const CollaborazionePS = lazy(() => import("../pages/CollaborazionePS"));
 const ProgettoPortfolio = lazy(() => import("../pages/ProgettoPortfolio"));
 const ProgettoAdventuresCode = lazy(() => import("../pages/ProgettoAdventuresCode"));
+const ProgettoPanasci = lazy(() => import("../pages/ProgettoPanasci"));
+const ProgettoStreaming = lazy(() => import("../pages/ProgettoStreaming"));
+const ProgettoSeica = lazy(() => import("../pages/ProgettoSeica"));
 
 
 //componenti
@@ -31,6 +34,9 @@ const AppRoutes = () => {
           <Route path="/portfolio/collaborazione-01" element={<CollaborazionePS/>} />
           <Route path="/portfolio/progetto-01" element={<ProgettoPortfolio/>} />
           <Route path="/portfolio/progetto-02" element={<ProgettoAdventuresCode/>} />
+          <Route path="/portfolio/progetto-03" element={<ProgettoPanasci/>} />
+          <Route path="/portfolio/progetto-04" element={<ProgettoStreaming/>} />
+          <Route path="/portfolio/progetto-05" element={<ProgettoSeica/>} />
         </Route>
       </Routes>
     </Suspense>

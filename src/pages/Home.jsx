@@ -32,36 +32,64 @@ const Home = () => {
 
           <div className="container-project">
             <div className="projects-grid">
-              <Link className="link-project" to="/portfolio/progetto-01">
-                <div
-                  className="project-box"
-                  style={{
-                    backgroundImage:
-                      "url('/assets/generic/bg-giuseppe-caci.png')",
-                    color: "#FAFAFA",
-                  }}
-                >
-                  <div>
-                    <h4 style={{color:" #eaeaea"}}>REACT</h4>
-                    <h4 style={{color:" #eaeaea"}}>SASS</h4>
-                    <h3>Giuseppe Caci</h3>
-                  </div>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-seica-boat.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-05"
+              >
+                <div>
                 </div>
               </Link>
-              <Link className="link-project" to="/portfolio/progetto-02">
-                <div
-                  className="project-box"
-                  style={{
-                    backgroundImage:
-                      "url('/assets/generic/bg-adventurescode.png')",
-                    color: "#FAFAFA",
-                  }}
-                >
-                  <div>
-                    <h4 style={{color:" #727272"}}>WORDPRESS</h4>
-                    <h3 style={{color:" #3d3d3d"}}>Adventures Code</h3>
-                  </div>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-streaming-project.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-04"
+              >
+                <div>
                 </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-salvatore-panasci.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-03"
+              >
+                <div>
+                </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-adventurescode.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-02"
+              >
+                <div>
+                </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-giuseppe-caci.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-01"
+              >
+                <div></div>
               </Link>
             </div>
           </div>

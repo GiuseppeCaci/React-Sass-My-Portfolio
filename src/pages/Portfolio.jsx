@@ -43,19 +43,69 @@ const Portfolio = () => {
             <div className="flex-center-column portfolio-pm-title">
               <h3>Progetti</h3>
             </div>
+            <div className="container-project">
             <div className="projects-grid">
-              <Link className="link-project" to="/portfolio/progetto-01">
-                <div className="project-box">
-                  <h3>Progetto Portfolio</h3>
-                  <p>
-                    {" "}
-                    giuseppecaci.com è il mio portfolio e biglietto da visita
-                    digitale, un archivio di progetti, collaborazioni e idee. In
-                    futuro, ospiterà anche un blog.{" "}
-                  </p>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-seica-boat.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-05"
+              >
+                <div>
                 </div>
               </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-streaming-project.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-04"
+              >
+                <div>
+                </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-salvatore-panasci.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-03"
+              >
+                <div>
+                </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-adventurescode.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-02"
+              >
+                <div>
+                </div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-giuseppe-caci.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-01"
+              >
+                <div></div>
+              </Link>
             </div>
+          </div>
           </div>
         </div>
       </div>
