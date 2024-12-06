@@ -36,41 +36,27 @@ const ProgettoAdventuresCode = () => {
     "Read Meter",
     "Site Kit by Google",
     "Smart Slider 3",
-    "Yoast SEO"
+    "Yoast SEO",
   ];
-  const strumentiDesign = [
-"Figma", "Adobe Illustrator"
-  ];
+
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
   const isVisible = useVisibilityAndScrollReset();
 
   const figmaProject = [
     {
-      src: "/assets/gallery/figma-desk.png",
-      alt: "Figma-desk",
-      thumb: "/assets/gallery/figma-desk.png",
+      src: "/assets/gallery/adventures-code-02.png",
+      alt: "flat-design-libreria",
+      thumb: "/assets/gallery/adventures-code-02.png",
     },
     {
-      src: "/assets/gallery/figma-mobile.png",
-      alt: "Figma-mobile",
-      thumb: "/assets/gallery/figma-mobile.png",
-    },
-  ];
-  const dispositives = [
-    {
-      src: "/assets/gallery/desk-version.png",
-      alt: "responsive-desk",
-      thumb: "/assets/gallery/desk-thumb.png",
+      src: "/assets/gallery/adventures-code-03.png",
+      alt: "flat-design-computer-giugla",
+      thumb: "/assets/gallery/adventures-code-03.png",
     },
     {
-      src: "/assets/gallery/tablet-version.png",
-      alt: "responsive-tablet",
-      thumb: "/assets/gallery/tablet-thumb.png",
-    },
-    {
-      src: "/assets/gallery/mobile-version.png",
-      alt: "responsive-mobile",
-      thumb: "/assets/gallery/mobile-thumb.png",
+      src: "/assets/gallery/adventures-code-04.png",
+      alt: "flat-design-monte",
+      thumb: "/assets/gallery/adventures-code-04.png",
     },
   ];
 
@@ -97,7 +83,7 @@ const ProgettoAdventuresCode = () => {
                 {" "}
                 <LightbulbIcon fontSize="small" /> Tipo di progetto
               </h5>
-              <p>Blog di Programmazione</p>
+              <p>Blog, Storytelling </p>
               <h5 className="text-accent">
                 {" "}
                 <AccessTimeIcon fontSize="small" />
@@ -127,15 +113,27 @@ const ProgettoAdventuresCode = () => {
             </div>
             <div className="article-base flex-left-column">
               <p>
-                Il sito è una vetrina digitale del mio{" "}
-                <strong>percorso professionale</strong> come sviluppatore,
-                progettato per mostrare
-                <span className="text-accent"> abilità</span>,{" "}
-                <span className="text-accent">progetti</span> e{" "}
-                <span className="text-accent">collaborazioni</span>. Il focus è
-                su <i>design minimalista</i> e <i>funzionalità intuitive</i>,
-                offrendo una panoramica chiara delle mie{" "}
-                <strong>competenze</strong>.
+                L'idea di fondo di questo sito nasce da una domanda: <br />
+                <i>
+                  {" "}
+                  Cosa succede se mescolo la programmazione ai{" "}
+                  <span className="text-accent"> racconti d'avventura?</span>
+                </i>
+              </p>
+            </div>
+              <img
+                src="/assets/generic/adventures-code-01.png"
+                className="img-project"
+              ></img>
+                <div className="article-base flex-left-column">
+              <p>
+                L'atmosfera in stile <i>Indiana Jones</i> si combina
+                perfettamente con gli argomenti logici e spesso enigmatici della
+                programmazione. Aggiungi un blog dedicato al coding, una sezione{" "}
+                <strong className="text-accent">Note</strong> dove raccolgo i
+                miei pensieri, una raccolta di esercizi di programmazione, e un
+                tocco di <strong>flat design</strong> come sfondo, ed ecco a voi
+                <strong className="text-accent"> Adventures Code</strong>.
               </p>
             </div>
             <div
@@ -159,76 +157,66 @@ const ProgettoAdventuresCode = () => {
               <h4 className="text-accent">Fasi dello sviluppo:</h4>
               <ul>
                 <li>
-                  <strong>Ricerche preliminari:</strong> Analisi di{" "}
-                  <i>template</i> e <i>standard</i> per definire funzioni e
-                  design.
+                  <strong>Studio preliminare: </strong>
+                  Ho approfondito le mie conoscenze su{" "}
+                  <strong className="text-accent">WordPress</strong> e il plugin{" "}
+                  <strong className="text-accent">Elementor</strong>, in quanto
+                  non avevo molta sicurezza degli strumenti da usare.
                 </li>
                 <li>
-                  <strong>Sviluppo tecnico:</strong> Uso di{" "}
-                  <span className="text-accent">React</span> per un front-end
-                  scalabile, gestione delle pagine con
-                  <span className="text-accent">react-router-dom</span> e cambio
-                  tema dinamico tramite{" "}
-                  <span className="text-accent">Context API</span>.
+                  <strong>Sviluppo organizzativo: </strong>
+                  Ho avviato un nuovo progetto{" "}
+                  <strong className="text-accent">WordPress</strong>,
+                  realizzando il design preliminare con{" "}
+                  <strong className="text-accent">Figma</strong> e definendo
+                  l'alberatura delle pagine per garantire una navigazione
+                  intuitiva.
                 </li>
-                <li>  <strong>
-                    Esempio di codice per evidenziare la sintassi:
-                  </strong>
-                  </li>
-                  </ul>
-                  </div>
-                    <CodeSnippet
-                      code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
-              {code}
-            </SyntaxHighlighter>
-`}
-                      language="javascript"
-                      bgColor={theme}
-                    />
-                    <div className="article-base flex-left-column">
-                <ul>
                 <li>
-                  <strong>Design visivo:</strong>
+                  <strong>Design visivo: </strong>
                   <ul>
                     <li>
-                      Palette di colori:{" "}
-                      <span className="text-accent">verde scuro</span> per
-                      modalità scura,{" "}
-                      <span className="text-accent">grigio chiaro</span> e
-                      <span className="text-accent"> verde</span> per quella
-                      chiara.
+                      Palette di colori: ho usato il{" "}
+                      <strong className="text-accent">verde</strong> utilizzato
+                      nel mio portfolio, per accentuare elementi chiave. Per il
+                      background, ho scelto un{" "}
+                      <strong className="text-accent">bianco tenue</strong>,
+                      mentre il <strong className="text-accent">nero</strong>{" "}
+                      per i menu.
                     </li>
                     <li>
-                      Tipografia: <span className="text-accent">Poppins</span> e{" "}
-                      <span className="text-accent">Inter</span> per un look
-                      moderno e professionale.
+                      Tipografia: Ho adottato il font{" "}
+                      <strong className="text-accent">Roboto Flex</strong> per
+                      la sua versatilità e modernità, accompagnato da caratteri{" "}
+                      <strong className="text-accent">sans-serif</strong>, in
+                      linea con il tono del sito.
                     </li>
-                    <li>Animazioni sottili per migliorare l'interazione.</li>
                   </ul>
                 </li>
               </ul>
+
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Progetti Figma</h4>
+                <h4>Flat Design su Figma</h4>
                 <Gallery images={figmaProject} />
               </div>
               <h4 className="text-accent">Difficoltà principali:</h4>
               <p>
-                La scelta dei colori ha richiesto diversi tentativi per ottenere
-                il giusto equilibrio.
+                Ho studiato la <strong className="text-accent">SEO</strong> per
+                la prima volta, imparando come ottimizzare il contenuto per i
+                motori di ricerca, e ho preso confidenza con le illustrazioni su
+                <strong> Figma</strong>, migliorando le mie competenze nel
+                design grafico e nella creazione di elementi visivi
+                accattivanti.
               </p>
             </div>
             <div className="article-base flex-left-column">
               <h4 className="text-accent">Risultati e conclusioni:</h4>
               <p>
-                Un <i>design minimalista</i> e <i>funzionale</i> che rispecchia
-                le mie <strong>competenze professionali</strong> e offre
-                un'esperienza utente
-                <span className="text-accent"> intuitiva</span>.
+                Un blog e sito di scrittura alternativo, con un design fresco e
+                moderno, che offre un'esperienza utente coinvolgente e
+                visivamente piacevole, facilmente navigabile e ben ottimizzato
+                per il web.
               </p>
-              <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Sui vari dispositivi</h4>
-                <Gallery images={dispositives} />
-              </div>
             </div>
           </div>
         </div>
