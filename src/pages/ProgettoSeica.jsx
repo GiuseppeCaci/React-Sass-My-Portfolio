@@ -8,11 +8,12 @@ import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAnd
 import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import CloudIcon from '@mui/icons-material/Cloud';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import LinkIcon from '@mui/icons-material/Link';
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CloudIcon from "@mui/icons-material/Cloud";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import LinkIcon from "@mui/icons-material/Link";
+import StorageIcon from '@mui/icons-material/Storage';
 
 const ProgettoSeica = () => {
   //cambio nome alla pagina
@@ -24,16 +25,19 @@ const ProgettoSeica = () => {
   const { theme } = useContext(ThemeContext);
 
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
-  const strumentiUsati = [
-    "Figma",
-    "Html",
-    "Css",
-    "Sass",
-    "Javascript",
-    "React",
-    "mui/material",
-    "react-photo-view",
-    "react-syntax-highlighter ",
+  const pacchettiUsati = [
+    "Anywhere Elementor",
+    "Polylang",
+    "Easy Table of Contents",
+    "Elementor",
+    "Hustle",
+    "Phlox Core Elements",
+    "Photo Gallery",
+    "Timeline",
+    "Read Meter",
+    "Smart Slider 3",
+    "WPCode Lite",
+    "Yoast SEO"
   ];
 
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
@@ -41,31 +45,24 @@ const ProgettoSeica = () => {
 
   const figmaProject = [
     {
-      src: "/assets/gallery/figma-desk.png",
-      alt: "Figma-desk",
-      thumb: "/assets/gallery/figma-desk.png",
+      src: "/assets/gallery/seica-01.png",
+      alt: "design-libreria",
+      thumb: "/assets/gallery/seica-01.png",
     },
     {
-      src: "/assets/gallery/figma-mobile.png",
-      alt: "Figma-mobile",
-      thumb: "/assets/gallery/figma-mobile.png",
-    },
-  ];
-  const dispositives = [
-    {
-      src: "/assets/gallery/desk-version.png",
-      alt: "responsive-desk",
-      thumb: "/assets/gallery/desk-thumb.png",
+      src: "/assets/gallery/seica-02.png",
+      alt: "design-libreria",
+      thumb: "/assets/gallery/seica-02.png",
     },
     {
-      src: "/assets/gallery/tablet-version.png",
-      alt: "responsive-tablet",
-      thumb: "/assets/gallery/tablet-thumb.png",
+      src: "/assets/gallery/seica-03.png",
+      alt: "design-libreria",
+      thumb: "/assets/gallery/seica-03.png",
     },
     {
-      src: "/assets/gallery/mobile-version.png",
-      alt: "responsive-mobile",
-      thumb: "/assets/gallery/mobile-thumb.png",
+      src: "/assets/gallery/seica-04.png",
+      alt: "design-libreria",
+      thumb: "/assets/gallery/seica-04.png",
     },
   ];
 
@@ -88,23 +85,31 @@ const ProgettoSeica = () => {
                 <div style={{ backgroundColor: "#4fbb64" }}></div>
                 */}
               </div>
-              <h5 className="text-accent"> <LightbulbIcon fontSize="small"/> Tipo di progetto</h5>
-              <p>Portfolio personale</p>
-              <h5 className="text-accent"> <AccessTimeIcon fontSize="small"/>Data pubblicazione</h5>
-              <p>18/09/2024</p>
-              <h5 className="text-accent"> <CloudIcon fontSize="small"/>Piattaforme</h5>
-              <p>Netlify, GitHub</p>
-              <h5 className="text-accent"> <LinkIcon fontSize="small"/>Visita il sito</h5>
+              <h5 className="text-accent">
+                {" "}
+                <LightbulbIcon fontSize="small" /> Tipo di progetto
+              </h5>
+              <p>Sito Escursioni </p>
+              <h5 className="text-accent">
+                {" "}
+                <AccessTimeIcon fontSize="small" />
+                Data pubblicazione
+              </h5>
+              <p>18/11/2024</p>
+              <h5 className="text-accent">
+                {" "}
+                <CloudIcon fontSize="small" />
+                Piattaforme
+              </h5>
+              <p>SiteGround</p>
+              <h5 className="text-accent">
+                {" "}
+                <LinkIcon fontSize="small" />
+                Visita il sito
+              </h5>
               <div className="icon-project">
                 <a
-                  href="https://github.com/GiuseppeCaci/React-Sass-My-Portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon fontSize="large" />
-                </a>
-                <a
-                  href="https://giuseppecaci.com/"
+                  href="https://seicaboatexcursions.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,32 +118,21 @@ const ProgettoSeica = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <p>
-                Questo sito è il mio{" "}
-                <strong>biglietto da visita digitale</strong>, una
-                rappresentazione del mio{" "}
-                <strong>percorso di crescita professionale</strong> come
-                sviluppatore, ma anche una raccolta delle mie{" "}
-                <span className="text-accent">creazioni</span> e
-                <span className="text-accent"> progetti</span> nel campo del{" "}
-                <strong>web development</strong>. Il sito ha l'obiettivo
-                primario di mostrare a potenziali{" "}
-                <strong>datori di lavoro</strong>, <strong>clienti</strong> e{" "}
-                <strong>colleghi</strong> le mie{" "}
-                <span className="text-accent">abilità</span> nel campo dello
-                sviluppo. In secondo luogo, funge da{" "}
-                <span className="text-accent">archivio</span> delle mie{" "}
-                <span className="text-accent">collaborazioni</span>, siti e
-                progetti.
-              </p>
+            <p>
+    Un sito di <strong className="text-accent">escursioni in barca</strong> creato con
+    <strong className="text-accent"> WordPress</strong>, utilizzando il tema
+    <strong className="text-accent"> Phlox</strong> e il builder
+    <strong className="text-accent"> Elementor</strong>. Un progetto che coniuga
+    creatività e funzionalità, pensato per valorizzare l’esperienza turistica.
+  </p>
             </div>
             <div
               className={`paragraph-base size-small flex-center-column ${theme} secondary`}
             >
               <div className="flex-center-column">
-                <h4>Strumenti usati</h4>
+                <h4>Strumenti Usati</h4>
                 <div className="container-skills flex-center-row">
-                  {strumentiUsati.map((element) => (
+                  {pacchettiUsati.map((element) => (
                     <div
                       key={element}
                       className={`skills-card ${theme} primary`}
@@ -150,116 +144,71 @@ const ProgettoSeica = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Lo Sviluppo</h4>
-              <h5>RICERCHE PRELIMINARI</h5>
-              <p>
-                Ho iniziato il mio progetto portfolio esplorando le strutture
-                standard per siti simili, esaminando template di CMS,
-                classifiche e esempi. Questo mi ha aiutato a definire l'idea del
-                sito. Mi sono poi posto alcune domande chiave:{" "}
-                <strong>Che servizi offrirà il mio sito?</strong> <br />
-                <strong>Sarà minimalista o ricco di animazioni?</strong> Dopo
-                aver definito funzioni e design, ho iniziato a progettare.
-              </p>
-              <h5>SVILUPPO TECNICO</h5>
-              <p>
-                Il sito non richiedeva un{" "}
-                <span className="text-accent">back-end</span>, quindi mi sono
-                concentrato sullo sviluppo <strong>front-end</strong>. Ho
-                definito la <span className="text-accent">struttura</span> e
-                creato componenti riutilizzabili.
-              </p>
-              <p>
-                Utilizzando <strong>React</strong> e{" "}
-                <strong>react-router-dom</strong> per la gestione delle pagine,
-                ho implementato un cambio tema tramite{" "}
-                <strong>Context API</strong> e memorizzato il tema nel{" "}
-                <span className="text-accent">LocalStorage</span>.
-              </p>
-              <p>
-                Il focus finale è stato espandere la logica del{" "}
-                <span className="text-accent">layout</span> e sviluppare
-                componenti scalabili. Ecco un esempio di codice per un
-                componente di evidenziazione della sintassi:
-              </p>
-              <div>
-                <CodeSnippet
-                  code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
-              {code}
-            </SyntaxHighlighter>
-`}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <p>
-                Il componente <strong>CodeSnippet</strong> usa il modulo{" "}
-                <strong>react-syntax-highlighter</strong> per evidenziare la
-                sintassi e integra il <strong>Context API</strong> per cambiare
-                tema dinamicamente.
-              </p>
-              <div>
-                <CodeSnippet
-                  code={`<CodeSnippet code={code} language="javascript" bgColor={theme}/>`}
-                  language="javascript"
-                  bgColor={theme}
-                />
-              </div>
-              <h5>DESIGN VISIVO</h5>
-              <p>
-                Il design del sito è stato pensato per essere{" "}
-                <strong>minimalista</strong> e <strong>professionale</strong>,
-                con un focus sul <strong>contenuto del portfolio</strong>. Ho
-                scelto un approccio <span className="text-accent">sobrio</span>,
-                limitando le animazioni e riservandole per progetti secondari.
-              </p>
-              <p>
-                Per la <strong>palette dei colori</strong>, ho scelto sfumature
-                di <span className="text-accent">verde scuro</span> per la
-                modalità scura, e un mix di{" "}
-                <span className="text-accent">grigio chiaro</span> e{" "}
-                <span className="text-accent">verde</span> per quella chiara.
-                Questo bilanciamento crea un'atmosfera{" "}
-                <span className="text-accent">accogliente</span> e{" "}
-                <strong>professionale</strong>.
-              </p>
-              <p>
-                Per la <strong>tipografia</strong>, ho scelto{" "}
-                <strong>Poppins</strong> e <strong>Inter</strong>, per un look
-                moderno che si abbina ai colori del sito. Ho inoltre integrato{" "}
-                <span className="text-accent">animazioni sottili</span> per
-                migliorare l'interazione senza distrarre l'utente.
-              </p>
-
+              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <ul>
+    <li>
+      <strong>Studio preliminare:</strong> Ho effettuato una ricerca approfondita sui
+      <strong className="text-accent">template</strong> per siti di escursioni in barca, 
+      analizzando stili visivi e tecniche per l’utilizzo di 
+      <strong className="text-accent">Elementor</strong>.
+    </li>
+    <li>
+      <strong>Sviluppo organizzativo:</strong> 
+      <ul>
+        <li>Progettazione della struttura del design con <strong className="text-accent">Figma</strong>.</li>
+        <li>Creazione dell’alberatura delle pagine e loro sviluppo in <strong className="text-accent">WordPress</strong>.</li>
+        <li>Inserimento di contenuti testuali e multimediali.</li>
+        <li>
+          Realizzazione di <strong className="text-accent">disegni in background</strong> con Figma, 
+          per aggiungere un tocco personalizzato.
+        </li>
+        <li>Ottimizzazione del sistema <strong className="text-accent">SEO</strong> per aumentare la visibilità.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Design visivo:</strong>
+      <ul>
+        <li>
+          <strong>Palette di colori:</strong> Ho scelto una combinazione cromatica che rispecchia i colori del mare:
+          <strong className="text-accent">256D85</strong>, <strong className="text-accent">3B82F6</strong>, 
+          e <strong className="text-accent">FDFDFD</strong>.
+        </li>
+        <li>
+          <strong>Tipografia:</strong> <strong className="text-accent">Nunito </strong> 
+          e <strong className="text-accent">Lora</strong>.
+        </li>
+        <li>
+          <strong>Immagini:</strong> Tutti gli elementi visivi sono stati disegnati a mano 
+          con <strong className="text-accent">Figma</strong>.
+        </li>
+      </ul>
+    </li>
+  </ul>
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Progetti Figma</h4>
+                <h4>Flat Design su Figma</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4>Difficoltà e Soluzioni</h4>
+              <h4 className="text-accent">Difficoltà principali:</h4>
               <p>
-                La principale difficoltà è stata la{" "}
-                <span className="text-accent">ricerca</span> e la{" "}
-                <span className="text-accent">scelta</span> dei{" "}
-                <strong>colori finali</strong>. Dopo vari tentativi, ho trovato
-                l'<span className="text-accent">equilibrio</span> desiderato,
-                garantendo un design <strong>minimalista</strong> e{" "}
-                <strong>professionale</strong>.
-              </p>
+    Questo progetto mi ha messo alla prova su numerosi fronti. 
+    Lato <i>backend</i>, inizialmente ho trovato complessa la gestione delle funzioni legate 
+    all'<strong className="text-accent">autenticazione</strong> tramite token e all'invio email. 
+    Lato <i>frontend</i>, la creazione di stati Redux ramificati in tutto il sito ha rappresentato una sfida, 
+    così come l'implementazione del <strong className="text-accent">localStorage</strong> per ottimizzare il flusso dati.
+  </p>
             </div>
             <div className="article-base flex-left-column">
-              <h4>Risultati e Conclusioni</h4>
-              <p>
-                Il progetto è stato <strong>semplice</strong> dal punto di vista
-                funzionale, ma la scelta del <strong>design</strong> e dello{" "}
-                <strong>stile finale</strong> è stata fondamentale. Ogni
-                dettaglio è stato pensato per riflettere le mie{" "}
-                <span className="text-accent">competenze</span> e il mio{" "}
-                <span className="text-accent">approccio professionale</span>.
-              </p>
-              <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Sui vari dispositivi</h4>
-                <Gallery images={dispositives} />
-              </div>
+              <h4 className="text-accent">Risultati e conclusioni:</h4>
+              <ul>
+    <li>Funzionalità di registrazione e accesso utente, con conferma tramite email.</li>
+    <li>Gestione del cambio password e dell'immagine del profilo utente.</li>
+    <li>Possibilità per gli utenti di aggiungere e rimuovere media dai preferiti.</li>
+    <li>Caricamento e gestione dei film sulla piattaforma, con opzioni di modifica ed eliminazione.</li>
+    <li>Ottimizzazione delle chiamate API tramite Redux e utilizzo del <strong className="text-accent">localStorage</strong>.</li>
+    <li>Integrazione di funzionalità avanzate di <i>backend</i>, inclusa l'autenticazione basata su token.</li>
+    <li>Creazione di un design moderno e accattivante ispirato alla piattaforma <strong className="text-accent">Netflix</strong>.</li>
+  </ul>
+  <br/>
             </div>
           </div>
         </div>

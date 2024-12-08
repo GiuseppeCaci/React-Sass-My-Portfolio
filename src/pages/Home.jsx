@@ -25,8 +25,8 @@ const Home = () => {
           }`}
         >
           <div className="container-hero">
-            <h5 className="text-accent">Ciao! Sono Giuseppe</h5>
-            <h2>sono un Web Developer</h2>
+            <h5 className="text-accent">Ciao! Sono Giuseppe,</h5>
+            <h2>sono un Web Developer.</h2>
             <h5>Mi occupo di progettare, creare e gestire web app.</h5>
           </div>
 
