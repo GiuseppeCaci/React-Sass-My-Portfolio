@@ -17,7 +17,7 @@ import LinkIcon from "@mui/icons-material/Link";
 const ProgettoPortfolio = () => {
   //cambio nome alla pagina
   useEffect(() => {
-    document.title = "Progetto Portfolio | Giuseppe Caci";
+    document.title = "Sito Portfolio | Giuseppe Caci";
   }, []);
 
   //chiamo il context del tema per recuperare il tema inserito
@@ -90,7 +90,7 @@ const ProgettoPortfolio = () => {
               </div>
               <h5 className="text-accent">
                 {" "}
-                <LightbulbIcon fontSize="small" /> Tipo di progetto
+                <LightbulbIcon fontSize="small" /> Tipo di Sito
               </h5>
               <p>Portfolio personale</p>
               <h5 className="text-accent">

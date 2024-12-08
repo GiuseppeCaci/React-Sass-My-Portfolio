@@ -139,6 +139,7 @@
       padding: 20px 40px 20px 40px;
       li{
         padding: 5px 0px;
+        font-size: $font-text-m;
       }
     }
     pre{
@@ -146,6 +147,7 @@
     }
     p {
       padding: 10px 40px 10px 40px;
+      font-size: $font-text-m;
     }
   }
   @include respond-to(tablet) {
@@ -156,10 +158,12 @@
       padding: 20px 40px 20px 40px;
       li{
         padding: 5px 0px;
+        font-size: $font-text-m;
       }
     }
     p {
       padding: 10px 40px 10px 40px;
+      font-size: $font-text-m;
     }
   }
   @include respond-to(desktop) {
@@ -170,10 +174,12 @@
       padding: 20px 40px 20px 40px;
       li{
         padding: 5px 0px;
+        font-size: $font-text-m;
       }
     }
     p {
       padding: 10px 0px 10px 0px;
+      font-size: $font-text-m;
     }
   }
 }

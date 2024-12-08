@@ -18,7 +18,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 const ProgettoSeica = () => {
   //cambio nome alla pagina
   useEffect(() => {
-    document.title = "Progetto Portfolio | Giuseppe Caci";
+    document.title = "Sito Seica Boat Excursions | Giuseppe Caci";
   }, []);
 
   //chiamo il context del tema per recuperare il tema inserito
@@ -87,9 +87,9 @@ const ProgettoSeica = () => {
               </div>
               <h5 className="text-accent">
                 {" "}
-                <LightbulbIcon fontSize="small" /> Tipo di progetto
+                <LightbulbIcon fontSize="small" /> Tipo di Sito
               </h5>
-              <p>Sito Escursioni </p>
+              <p>E-commerce Specializzato</p>
               <h5 className="text-accent">
                 {" "}
                 <AccessTimeIcon fontSize="small" />
@@ -122,7 +122,7 @@ const ProgettoSeica = () => {
     Un sito di <strong className="text-accent">escursioni in barca</strong> creato con
     <strong className="text-accent"> WordPress</strong>, utilizzando il tema
     <strong className="text-accent"> Phlox</strong> e il builder
-    <strong className="text-accent"> Elementor</strong>. Un progetto che coniuga
+    <strong className="text-accent"> Elementor</strong>. Un sito che coniuga
     creatività e funzionalità, pensato per valorizzare l’esperienza turistica.
   </p>
             </div>
@@ -148,9 +148,9 @@ const ProgettoSeica = () => {
               <ul>
     <li>
       <strong>Studio preliminare:</strong> Ho effettuato una ricerca approfondita sui
-      <strong className="text-accent">template</strong> per siti di escursioni in barca, 
+      <strong className="text-accent"> template</strong> per siti di escursioni in barca, 
       analizzando stili visivi e tecniche per l’utilizzo di 
-      <strong className="text-accent">Elementor</strong>.
+      <strong className="text-accent"> Elementor</strong>.
     </li>
     <li>
       <strong>Sviluppo organizzativo:</strong> 
@@ -170,8 +170,8 @@ const ProgettoSeica = () => {
       <ul>
         <li>
           <strong>Palette di colori:</strong> Ho scelto una combinazione cromatica che rispecchia i colori del mare:
-          <strong className="text-accent">256D85</strong>, <strong className="text-accent">3B82F6</strong>, 
-          e <strong className="text-accent">FDFDFD</strong>.
+          <strong className="text-accent"> #256D85</strong> (Teal Blue), <strong className="text-accent">#3B82F6</strong> (Blue Cornflower), 
+          e <strong className="text-accent">#FDFDFD</strong> (White Smoke).
         </li>
         <li>
           <strong>Tipografia:</strong> <strong className="text-accent">Nunito </strong> 
@@ -185,28 +185,21 @@ const ProgettoSeica = () => {
     </li>
   </ul>
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Flat Design su Figma</h4>
+                <h4>Background di Figma</h4>
                 <Gallery images={figmaProject} />
               </div>
               <h4 className="text-accent">Difficoltà principali:</h4>
-              <p>
-    Questo progetto mi ha messo alla prova su numerosi fronti. 
-    Lato <i>backend</i>, inizialmente ho trovato complessa la gestione delle funzioni legate 
-    all'<strong className="text-accent">autenticazione</strong> tramite token e all'invio email. 
-    Lato <i>frontend</i>, la creazione di stati Redux ramificati in tutto il sito ha rappresentato una sfida, 
-    così come l'implementazione del <strong className="text-accent">localStorage</strong> per ottimizzare il flusso dati.
-  </p>
+              <p>Non ho incontrato difficoltà particolari nello sviluppo di questo sito.</p>
             </div>
             <div className="article-base flex-left-column">
               <h4 className="text-accent">Risultati e conclusioni:</h4>
               <ul>
-    <li>Funzionalità di registrazione e accesso utente, con conferma tramite email.</li>
-    <li>Gestione del cambio password e dell'immagine del profilo utente.</li>
-    <li>Possibilità per gli utenti di aggiungere e rimuovere media dai preferiti.</li>
-    <li>Caricamento e gestione dei film sulla piattaforma, con opzioni di modifica ed eliminazione.</li>
-    <li>Ottimizzazione delle chiamate API tramite Redux e utilizzo del <strong className="text-accent">localStorage</strong>.</li>
-    <li>Integrazione di funzionalità avanzate di <i>backend</i>, inclusa l'autenticazione basata su token.</li>
-    <li>Creazione di un design moderno e accattivante ispirato alla piattaforma <strong className="text-accent">Netflix</strong>.</li>
+    <li>Un sito web di <strong className="text-accent">escursioni in barca</strong> dal design accattivante.</li>
+    <li>Esperienza visiva coinvolgente grazie all’uso di colori vivaci e contenuti personalizzati.</li>
+    <li>
+      Una struttura <strong className="text-accent">SEO</strong> ampliata per migliorare la 
+      visibilità sui motori di ricerca.
+    </li>
   </ul>
   <br/>
             </div>
