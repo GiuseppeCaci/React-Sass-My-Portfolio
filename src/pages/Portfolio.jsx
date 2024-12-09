@@ -20,30 +20,24 @@ const Portfolio = () => {
   return (
     <>
       <div className={`main-base ${theme} primary`}>
-        <div className={`flex-center-column pm-title container-invisible ${isVisible ? 'visible' : ''}`}>
-          <h2>Portfolio</h2>
-          <p>Collaborazioni e progetti</p>
-        </div>
-        <div className={`flex-center-row container-invisible ${isVisible ? 'visible' : ''}`}>
-          <div
-            className={`portfolio-curriculum flex-center-column ${theme} secondary`}
-          >
-            <h4>Collaborazioni</h4>
-            <div>
-              <p>
-                <Link to="/portfolio/collaborazione-01">Publicis Sapient.</Link>
-              </p>
-              <p>2023/24</p>
-              <span className="line-portfolio"></span>
+        <div className={`container-base flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
+            <div className="container-project">
+            <h3>Collaborazioni</h3>
+            <div className="projects-grid">
+            <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-publicis.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/collaborazione-01"
+              >
+              </Link>
             </div>
           </div>
-        </div>
-        <div className={`container-base flex-center-column container-invisible ${isVisible ? 'visible' : ''}`}>
-        <div className="container-project">
-            <div className="flex-center-column portfolio-pm-title">
-              <h3>Progetti</h3>
-            </div>
-            <div className="container-project">
+          <div className="container-project">
+            <h3>Siti Web</h3>
             <div className="projects-grid">
               <Link
                 className="link-project project-box"
@@ -54,20 +48,6 @@ const Portfolio = () => {
                 }}
                 to="/portfolio/progetto-05"
               >
-                <div>
-                </div>
-              </Link>
-              <Link
-                className="link-project project-box"
-                style={{
-                  backgroundImage:
-                    "url('/assets/generic/bg-streaming-project.png')",
-                  color: "#FAFAFA",
-                }}
-                to="/portfolio/progetto-04"
-              >
-                <div>
-                </div>
               </Link>
               <Link
                 className="link-project project-box"
@@ -78,8 +58,6 @@ const Portfolio = () => {
                 }}
                 to="/portfolio/progetto-03"
               >
-                <div>
-                </div>
               </Link>
               <Link
                 className="link-project project-box"
@@ -90,8 +68,6 @@ const Portfolio = () => {
                 }}
                 to="/portfolio/progetto-02"
               >
-                <div>
-                </div>
               </Link>
               <Link
                 className="link-project project-box"
@@ -102,13 +78,28 @@ const Portfolio = () => {
                 }}
                 to="/portfolio/progetto-01"
               >
-                <div></div>
+              </Link>
+            </div>
+            
+          </div>
+          <div className="container-project last-container">
+            <h3>Progetti Realizzati</h3>
+            <div className="projects-grid">
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-streaming-project.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-04"
+              >
               </Link>
             </div>
           </div>
+          
           </div>
         </div>
-      </div>
     </>
   );
 };

@@ -35,50 +35,11 @@ const Home = () => {
               <Link
                 className="link-project project-box"
                 style={{
-                  backgroundImage:
-                    "url('/assets/generic/bg-seica-boat.png')",
+                  backgroundImage: "url('/assets/generic/bg-seica-boat.png')",
                   color: "#FAFAFA",
                 }}
                 to="/portfolio/progetto-05"
               >
-                <div>
-                </div>
-              </Link>
-              <Link
-                className="link-project project-box"
-                style={{
-                  backgroundImage:
-                    "url('/assets/generic/bg-streaming-project.png')",
-                  color: "#FAFAFA",
-                }}
-                to="/portfolio/progetto-04"
-              >
-                <div>
-                </div>
-              </Link>
-              <Link
-                className="link-project project-box"
-                style={{
-                  backgroundImage:
-                    "url('/assets/generic/bg-salvatore-panasci.png')",
-                  color: "#FAFAFA",
-                }}
-                to="/portfolio/progetto-03"
-              >
-                <div>
-                </div>
-              </Link>
-              <Link
-                className="link-project project-box"
-                style={{
-                  backgroundImage:
-                    "url('/assets/generic/bg-adventurescode.png')",
-                  color: "#FAFAFA",
-                }}
-                to="/portfolio/progetto-02"
-              >
-                <div>
-                </div>
               </Link>
               <Link
                 className="link-project project-box"
@@ -89,7 +50,26 @@ const Home = () => {
                 }}
                 to="/portfolio/progetto-01"
               >
-                <div></div>
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-streaming-project.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/progetto-04"
+              >
+              </Link>
+              <Link
+                className="link-project project-box"
+                style={{
+                  backgroundImage:
+                    "url('/assets/generic/bg-publicis.png')",
+                  color: "#FAFAFA",
+                }}
+                to="/portfolio/collaborazione-01"
+              >
               </Link>
             </div>
           </div>
