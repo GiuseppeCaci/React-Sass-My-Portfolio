@@ -74,9 +74,19 @@ const ContattiChatBox = () => {
             response = [citazione];
             textButtonQuestion = ["Un'altra!", "Torna alle domande"];
             break;
+            case "Dimmi la tua preferita!":
+              response = ["September dei Earth, Wind & Fire...Ma solo quando tutto nella programmazione è andato per il verso giusto! 🎉"];
+              break;
+              case "Non ascolto musica Funky..":
+              response = ["...🤔"];
+              break;
+            case "Come si crea una Web App?":
+              response = ["Conoscenze di programmazione, passione, dedizione, tante tazze di caffè e un po' di musica funky! 🕺"];
+              textButtonQuestion = ["Non ascolto musica Funky..","Dimmi la tua preferita!"];
+              break;
       case "Volevo solo Salutare!":
         response = ["Ciao! Grazie per aver visitato il sito, è stato un piacere!👋😊"];
-        textButtonQuestion = ["Fammi sentire una citazione cinematografica!"];
+        textButtonQuestion = ["Fammi sentire una citazione cinematografica!","Come si crea una Web App?"];
         break;
       case "Perché dovresti scegliere di lavorare con Giuseppe?":
         response = ["Con anni di esperienza nel coding, metto passione e dedizione in ogni progetto. E se la conoscenza non basta, c'è sempre la determinazione di imparare e trovare la soluzione giusta!💡"];
