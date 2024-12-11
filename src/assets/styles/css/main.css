@@ -149,7 +149,7 @@ button {
     font-size: 1rem;
   }
   button {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .link-a-no-stile {
@@ -610,6 +610,26 @@ button {
   align-items: center;
 }
 
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -677,6 +697,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -799,6 +820,26 @@ button {
   }
 }
 
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -866,6 +907,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1154,7 +1196,7 @@ button {
 }
 @media (min-width: 1025px) {
   .light-mode.primary button:hover {
-    padding: 23px 32px;
+    padding: 20px 25px;
   }
 }
 .light-mode.primary a {
@@ -1350,7 +1392,7 @@ button {
     font-size: 1rem;
   }
   button {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .link-a-no-stile {
@@ -1605,6 +1647,26 @@ button {
   margin-left: 5px;
 }
 
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -1672,6 +1734,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1739,7 +1802,7 @@ button {
   }
   .about-bio img {
     border-radius: 5px;
-    max-width: 120px;
+    max-width: 130px;
     margin: 0px 17px 7px 21px;
     float: left;
   }
@@ -1759,6 +1822,7 @@ button {
   }
   .about-bio .about-bio-text p {
     padding: 0px 20px;
+    font-size: 1.125rem;
   }
   .about-bio .about-bio-text .citazione {
     border-radius: 20px;
@@ -1796,6 +1860,7 @@ button {
   }
   .about-bio .about-bio-text p {
     margin-bottom: 40px;
+    font-size: 1.125rem;
   }
   .about-bio .about-bio-text .citazione {
     border-radius: 20px;
@@ -1838,6 +1903,7 @@ button {
   }
   .about-bio .about-bio-text p {
     margin-bottom: 40px;
+    font-size: 1.125rem;
   }
   .about-bio .about-bio-text .citazione {
     border-radius: 20px;
@@ -1854,6 +1920,26 @@ button {
     text-align: center;
     padding: 10px 0px;
     margin: 0px;
+  }
+}
+
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
   }
 }
 
@@ -1924,6 +2010,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -2119,7 +2206,7 @@ button {
     font-size: 1rem;
   }
   button {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .link-a-no-stile {
@@ -2559,6 +2646,26 @@ button {
   }
 }
 
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -2626,6 +2733,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -2914,7 +3022,7 @@ button {
 }
 @media (min-width: 1025px) {
   .light-mode.primary button:hover {
-    padding: 23px 32px;
+    padding: 20px 25px;
   }
 }
 .light-mode.primary a {
@@ -2993,6 +3101,26 @@ button {
     transform: rotate(360deg);
   }
 }
+.button-class-1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (max-width: 599px) {
+  .button-class-1 {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .button-class-1 {
+    padding: 18px 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-class-1 {
+    padding: 17px 23px;
+  }
+}
+
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -3060,6 +3188,7 @@ button {
   }
   .paragraph-base p {
     padding: 0 10px;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -3427,7 +3556,7 @@ button {
 }
 @media (min-width: 1025px) {
   .light-mode.primary button:hover {
-    padding: 23px 32px;
+    padding: 20px 25px;
   }
 }
 .light-mode.primary a {
@@ -3645,7 +3774,7 @@ button {
     font-size: 1rem;
   }
   button {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .link-a-no-stile {

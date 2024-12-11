@@ -203,10 +203,9 @@ const ProgettoAdventuresCode = () => {
               <p>
                 Ho studiato la <strong className="text-accent">SEO</strong> per
                 la prima volta, imparando come ottimizzare il contenuto per i
-                motori di ricerca, e ho preso confidenza con le illustrazioni su
-                <strong> Figma</strong>, migliorando le mie competenze nel
-                design grafico e nella creazione di elementi visivi
-                accattivanti.
+                motori di ricerca, ho acquisito esperienza nella creazione di illustrazioni
+                 artistiche su <strong>Figma</strong>, affinando ulteriormente le mie competenze 
+                nel design grafico e nella realizzazione di elementi visivi creativi.
               </p>
             </div>
             <div className="article-base flex-left-column">

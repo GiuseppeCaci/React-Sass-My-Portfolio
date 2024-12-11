@@ -13,27 +13,41 @@ const About = () => {
   const { theme } = useContext(ThemeContext);
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
   const skills = [
+    // Front-End
     "Html",
     "Css",
-    "Bootstrap",
     "Sass",
+    "Bootstrap",
+    "Tailwind",
+    "Responsive Design",
     "Javascript",
-    "Assoli di Chitarra",
-    "Node.js",
     "React",
-    "CMS",
-    "Git",
+    "Redux",
+  
+    // Back-End
+    "Node.js",
     "CRUD",
     "RestfulApi",
-    "MongoDB",
-    "Postman",
     "JWT",
-    "Redux",
-    "Responsive Design",
-    "Github",
-    "Tailwind",
-    "Aem",
+  
+    // Database
+    "MongoDB",
+  
+    // Design
     "Figma",
+    "Adobe",
+    "Canvas",
+  
+    // CMS
+    "Wordpress",
+    "Elementor",
+    "Aem",
+  
+    // Generale
+    "Git",
+    "Github",
+    "Postman",
+    "SEO"
   ];
 
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
@@ -52,33 +66,13 @@ const About = () => {
             <h1>About</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="/assets/generic/img-about.jpg"></img>
+            <img src="/assets/generic/img-about.jpg" alt="About"></img>
             <div className="about-bio-text">
               <p>
-                Ciao! Sono <strong>Giuseppe</strong> e sono uno sviluppatore{" "}
-                <strong>front-end</strong> con competenze{" "}
-                <strong>full stack junior</strong> e{" "}
-                <strong>web designer</strong>. Amo trasformare idee innovative
-                in realtà digitali, mescolando{" "}
-                <strong className="text-accent">creatività</strong> e
-                <strong className="text-accent"> logica </strong> attraverso
-                linguaggi di programmazione e markup. Continuo ad espandere le
-                mie competenze esplorando altri rami dello sviluppo, come quello
-                del <strong>back-end</strong>, dei <strong>CMS</strong> e del{" "}
-                <strong>design</strong>.
+                Sono <strong className="text-accent">Giuseppe</strong>, sviluppatore <i>front-end</i> con competenze <i>full stack junior</i> e web designer. Amo trasformare idee innovative in realtà digitali, unendo creatività e logica. Continuo ad ampliare le mie conoscenze, esplorando il <i>back-end</i>, i <i>CMS</i> e il design.
               </p>
               <p>
-                Mi sono laureato alla facoltà del <strong>DAMS</strong>, ho
-                frequentato diversi corsi di{" "}
-                <strong className="text-accent">programmazione</strong> e{" "}
-                <strong className="text-accent">design</strong>, continuando poi
-                a studiare per conto mio. Infine, ho lavorato come{" "}
-                <strong>Interactive Developer</strong> per{" "}
-                <strong className="text-accent">Stellantis</strong>.
-              </p>
-              <p>
-                Il mio sogno è sviluppare un’app che possa migliorare la vita
-                delle persone e avere un impatto positivo sul mondo.
+                Mi sono laureato in <strong className="text-accent">DAMS</strong>, ho frequentato corsi di programmazione e design, e lavorato come Interactive Developer per <strong className="text-accent">Stellantis</strong>. Il mio sogno? Creare un’app che migliori la vita delle persone e lasci un impatto positivo sul mondo.
               </p>
               <div className={`citazione ${theme} secondary`}>
                 <p>
@@ -91,69 +85,41 @@ const About = () => {
                 </p>
               </div>
               <p>
-                Nel mio tempo libero, mi piace suonare la{" "}
-                <strong className="text-accent"> chitarra </strong> e dedicarmi
-                all'attività fisica in palestra. Adoro anche scattare foto
-                vintage con la mia{" "}
-                <strong className="text-accent">Polaroid</strong>. Sono un fan
-                della musica <strong>rock</strong> e amo il cinema degli{" "}
-                <strong className="text-accent">anni '80</strong>.
+                Nel tempo libero suono la <strong>chitarra</strong>, faccio foto vintage con la mia <strong>Polaroid</strong> e mi alleno in palestra. Amo il <strong className="text-accent">rock</strong> e il cinema degli anni '80.
               </p>
             </div>
             <a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
               {" "}
-              <button>Contattami </button>
+              <button className="button-class-1">Contattami</button>
             </a>
           </div>
           <div
             className={`paragraph-base size-normal flex-left-column ${theme} secondary`}
           >
-            <h3>Design</h3>
-            <p>
-              L'engine del mio processo di sviluppo si basa su{" "}
-              <span className="text-accent">conoscenze solide</span> dei
-              linguaggi di programmazione e sul metodo. Utilizzo strumenti come{" "}
-              <span className="text-accent">JavaScript</span>,{" "}
-              <span className="text-accent">React</span> e altre librerie per
-              creare applicazioni interattive e funzionanti. Il mio approccio
-              prevede un'attenta analisi delle funzioni da sviluppare e la
-              progettazione in <em>pseudo codice</em>, sia delle varie
-              funzionalità sia dell'intera struttura del progetto. Mi pongo come
-              obiettivo quello di creare{" "}
-              <span className="text-accent">funzioni scalabili e semplici</span>
-              . Infine, seguo una attenta fase di{" "}
-              <span className="text-accent">testing</span> sulle varie funzioni.
-              La mia filosofia è che nel coding si può realizzare ciò che si
-              vuole, ma solo se si ha <em>metodo</em> e voglia di superare i
-              propri limiti.
-            </p>
+          <h3>Design</h3>
+<p>
+  Nel design punto a combinare <strong className="text-accent">estetica</strong> e <strong className="text-accent">funzionalità</strong>, 
+  creando interfacce moderne, intuitive e <i>responsive</i>. Utilizzo strumenti come <strong className="text-accent">Figma </strong> 
+  per la progettazione visiva e mi affido a principi di <i>usabilità</i> per garantire 
+  un’esperienza utente ottimale. Credo che un design ben studiato sia il ponte perfetto tra l’idea e la sua realizzazione tecnica.
+</p>
 
-            <h3>Engine</h3>
-            <p>
-              L'engine del mio processo di sviluppo si basa su{" "}
-              <span className="text-accent">conoscenze solide</span> dei
-              linguaggi di programmazione e sul metodo. Utilizzo strumenti come{" "}
-              <span className="text-accent">Javascript</span>,{" "}
-              <span className="text-accent">React</span> e altre librerie per
-              creare applicazioni interattive e funzionanti. Il mio approccio
-              prevede un'attenta analisi delle funzioni da sviluppare e la
-              progettazione in <em>pseudo codice</em>, sia delle varie
-              funzionalità sia dell'intera struttura del progetto. Mi pongo come
-              obiettivo quello di creare{" "}
-              <span className="text-accent">funzioni scalabili e semplici</span>
-              . Infine, seguo una attenta fase di{" "}
-              <span className="text-accent">testing</span> sulle varie funzioni.
-              La mia filosofia è che nel coding si può realizzare ciò che si
-              vuole, ma solo se si ha <em>metodo</em> e voglia di superare i
-              propri limiti.
-            </p>
-             <div className="flex-center-column">
-            <Link to="/portfolio"><button>Portfolio</button></Link>
+<h3>Engine</h3>
+<p>
+  Il mio processo di sviluppo si fonda su una solida conoscenza dei <strong className="text-accent">linguaggi di programmazione</strong> e
+   su un metodo strutturato. Analizzo le funzioni da sviluppare, le progetto in <i>pseudo codice</i> e seguo una 
+   fase di <strong>testing</strong> accurata. L’obiettivo? Creare applicazioni scalabili, interattive e ben 
+   funzionanti.
+</p>
+            <div className="flex-center-column">
+              <Link to="/portfolio">
+                <button className="button-class-1">Portfolio</button>
+              </Link>
             </div>
           </div>
           <div className="paragraph-base size-small flex-center-column">
             <div className="flex-center-column">
-              <h3>Competenze tecniche</h3>
+              <h3 className="text-accent">Competenze tecniche</h3>
               <div className="container-skills flex-center-row">
                 {skills.map((element) => (
                   <div
@@ -171,28 +137,14 @@ const About = () => {
           >
             <h3>Soft Skills</h3>
             <p>
-              Ho ottime capacità di{" "}
-              <span className="text-accent">integrazione</span> in lavori di
-              squadra e in ambienti multiculturali. Mi piace l'ordine,
-              l'organizzazione e avere metodo. Se non porto a termine il lavoro
-              giornaliero, il cielo potrebbe crollare. Mi scoraggio
-              difficilmente; sono dell'idea che{" "}
-              <em>essere negativi è una perdita di tempo</em>, soprattutto nei
-              momenti di forte stress lavorativo. Mi piace ampliare le mie
-              conoscenze e fare gioco di squadra. Nei momenti di brainstorming e
-              progettazione, mi piace prendere appunti, fare schemi e To-Do
-              List. Infine, sono convinto che{" "}
-              <span className="text-accent">l'educazione</span> e{" "}
-              <span className="text-accent">l'empatia</span> siano tasselli
-              fondamentali. Un sorriso o un gesto di gentilezza possono cambiare
-              l'esito della giornata.
+              Ho ottime capacità di integrazione in team multiculturali e prediligo un approccio organizzato e metodico al lavoro. Sono resiliente anche sotto stress e credo nell'importanza di mantenere un atteggiamento positivo, trasformando ogni difficoltà in un'opportunità per accrescere le mie conoscenze. Durante brainstorming e progettazione, adoro prendere appunti, creare schemi e <i>To-Do list</i> per ottimizzare il processo. Ritengo che <strong className="text-accent">educazione</strong> ed <strong className="text-accent">empatia</strong> siano fondamentali, perché un gesto di gentilezza può fare la differenza.
             </p>
             <div className="flex-center-column">
               <a
                 href={import.meta.env.VITE_CV_URL}
                 download="curriculum-CACI.pdf"
               >
-                <button>Curriculum in PDF</button>
+                <button className="button-class-1">Curriculum in PDF</button>
               </a>
             </div>
           </div>
@@ -200,6 +152,7 @@ const About = () => {
       </div>
     </>
   );
+  
 };
 
 export default About;

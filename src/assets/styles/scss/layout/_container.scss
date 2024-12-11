@@ -2,6 +2,19 @@
 
 //classi flex e container generici
 
+.button-class-1{
+  font-size: $font-text-m;
+  font-weight: $font-weight-extra-normal;
+  @include respond-to(mobile) {
+    padding:15px 20px;
+  }
+  @include respond-to(tablet) {
+    padding:18px 24px ;
+  }
+  @include respond-to(desktop) {
+    padding:17px 23px;
+  }
+}
 .flex-center-column {
   display: flex;
   flex-direction: column;
@@ -68,6 +81,7 @@
     }
     p {
       padding: 0 10px;
+      font-size: $font-text-m;
     }
   }
 
