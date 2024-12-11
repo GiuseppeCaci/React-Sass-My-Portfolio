@@ -114,10 +114,10 @@ const NavBar = () => {
                 }`}
               >
                 <Link
-                  to="/contact"
+                  to="/chat-assistant"
                   onClick={toggleMenu}
                   className={`nav-Link ${theme} secondary ${
-                    location.pathname === "/contact"
+                    location.pathname === "/chat-assistant"
                       ? "position-utent navigation-menu"
                       : ""
                   }`}
@@ -188,7 +188,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={`nav-Link ${theme} secondary`}>
+              <Link to="/chat-assistant" className={`nav-Link ${theme} secondary`}>
                 Contatti
               </Link>
             </li>

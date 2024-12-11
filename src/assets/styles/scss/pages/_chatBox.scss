@@ -1,0 +1,127 @@
+@import "../abstracts/mixins";
+@import "../layout/container";
+
+.chatBox-base {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  div {
+    width: 100%;
+  }
+  margin: 20px 10px 30px 10px;
+  .chatBox-messages {
+    h3{
+        margin-bottom: 10px;
+    }
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    p {
+      margin: 0px 0px 7px 0px;
+      padding: 0px;
+      font-size: $font-text-m;
+    }
+    button {
+      text-align: left;
+      font-size: $font-text-m;
+      margin: 7px 0px;
+      padding: 10px;
+      border-radius: 13px;
+      &:hover,
+      &:focus,
+      &:active {
+        padding: 10px !important;
+        border: none !important;
+        outline: none !important;
+      }
+    }
+
+    @include respond-to(tablet) {
+      width: 80%;
+      p {
+        margin: 0px 0px 9px 0px;
+        padding: 0px;
+      }
+      button {
+        margin: 9px 0px;
+      }
+    }
+    @include respond-to(desktop) {
+        width: 70%;
+      div {
+        p {
+          margin: 0px 0px 9px 0px;
+          padding: 0px;
+        }
+        button {
+          margin: 5px 5px;
+        }
+      }
+    }
+  }
+
+  .chatBox-sender {
+    
+    @include respond-to(tablet) {
+        width: 78%;
+      }
+  
+      @include respond-to(desktop) {
+        width: 70%;
+      }
+
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .chat-user {
+        width: 100%;
+        margin: 13px 0px;
+  
+        p {
+          font-size: $font-text-m;
+          padding: 5px 0px;
+          margin: 5px;
+        }
+    }
+
+    .chat-pc {
+      width: 100%;
+      padding: 10px 3px;
+      border-radius: 15px;
+      p {
+        font-size: $font-text-m;
+        padding: 0px 13px 0px 13px;
+        margin: 0px 0px 5px 0px;
+      }
+  
+      .button-chat {
+      margin: 15px 0px;
+      padding: 0px;
+        button {
+          font-size: $font-text-m;
+          text-align: center;
+          padding: 10px;
+          border-radius: 13px;
+          margin: 5px 6px;
+          &:hover,
+          &:focus,
+          &:active {
+            padding: 8px !important; /* Mantiene il padding costante */
+            border: none !important; /* Rimuove il bordo */
+            outline: none !important; /* Rimuove il bordo di focus */
+          }
+        }
+      }
+      
+    }
+
+  }
+}

@@ -13,6 +13,7 @@ const ProgettoAdventuresCode = lazy(() => import("../pages/ProgettoAdventuresCod
 const ProgettoPanasci = lazy(() => import("../pages/ProgettoPanasci"));
 const ProgettoStreaming = lazy(() => import("../pages/ProgettoStreaming"));
 const ProgettoSeica = lazy(() => import("../pages/ProgettoSeica"));
+const ContattiChatBox = lazy(() => import("../pages/ContattiChatBox"));
 
 
 //componenti
@@ -28,6 +29,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>} />
+          <Route path="/chat-assistant" element={<ContattiChatBox/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />

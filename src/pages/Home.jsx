@@ -31,7 +31,7 @@ const Home = () => {
             <h5>Mi occupo di progettare, creare e gestire web app.</h5>
           </div>
 
-          <div className="container-project">
+          <div className="container-project last-container">
             <div className="projects-grid">
               <ProjectBox
                backgroundImage="/assets/generic/bg-seica-boat.png"
