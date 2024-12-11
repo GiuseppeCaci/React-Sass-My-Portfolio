@@ -2,8 +2,10 @@ import React, { useEffect, useState, useRef, memo, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ThemeContext from "../store/theme/ThemeContext";
+import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 
 const ContattiChatBox = () => {
+  const isVisible = useVisibilityAndScrollReset();
   const { theme } = useContext(ThemeContext);
   const [messages, setMessages] = useState([
     { sender: "box", text: [""], textButtons: [], buttons: [] },
@@ -14,7 +16,24 @@ const ContattiChatBox = () => {
     "Hai un portfolio?",
     "Mi piacerebbe sapere di più su di te!",
     "Come posso contattarti?",
+    "Perché dovresti scegliere di lavorare con Giuseppe?",
+    "Volevo solo Salutare!"
   ];
+
+  const citazioni = [
+    "Ci serve una barca piu grande!🦈",
+    "Yippee-ki-yay!!💥",
+    "Nella giungla dovrai stare finché un cinque o un otto non compare.🌴",
+    "LEGGEN - non ti muovere - DARIO!⚔️",
+    "Questa sì che è una bella montagna di m**!💩",
+    "Peperonata? Alle otto del mattino? A mezzogiorno, topi morti?🐀",
+    "Guarda oltre ciò che vedi!🦁"
+  ];
+
+  function getRandomQuote(citazioni) {
+    const randomIndex = Math.floor(Math.random() * citazioni.length);
+    return citazioni[randomIndex];
+}
 
   const messagesEndRef = useRef(null);
 
@@ -49,26 +68,37 @@ const ContattiChatBox = () => {
     let buttons = [];
     let textButtonQuestion = [];
     switch (question) {
+      case "Fammi sentire una citazione cinematografica!":
+        case "Un'altra!":
+            const citazione = getRandomQuote(citazioni);
+            response = [citazione];
+            textButtonQuestion = ["Un'altra!", "Torna alle domande"];
+            break;
+      case "Volevo solo Salutare!":
+        response = ["Ciao! Grazie per aver visitato il sito, è stato un piacere!👋😊"];
+        textButtonQuestion = ["Fammi sentire una citazione cinematografica!"];
+        break;
+      case "Perché dovresti scegliere di lavorare con Giuseppe?":
+        response = ["Con anni di esperienza nel coding, metto passione e dedizione in ogni progetto. E se la conoscenza non basta, c'è sempre la determinazione di imparare e trovare la soluzione giusta!💡"];
+        break;
       case "Hai un portfolio?":
-        response = [
-          "Assolutamente! Puoi dare un'occhiata al mio portfolio! 💼",
-        ];
+        response = ["Certamente! Dai pure un'occhiata al mio portfolio! 💻"];
         buttons = ["Vai al Portfolio", "/portfolio"];
         textButtonQuestion = ["Dettagli sul Portfolio"];
         break;
-
       case "Dettagli sul Portfolio":
         response = [
           "Il Portfolio è organizzato con il seguente ordine:",
           "• <strong>Collaborazioni</strong> <i>(esperienze lavorative nel settore)</i>",
           "• <strong>Siti Web</strong> <i>(realizzati e attivi online)</i>",
           "• <strong>Progetti</strong> <i>(sperimentali e pubblicati su GitHub)</i>",
+          "Ogni Lavoro include una scheda dettagliata, in cui analizzo vari aspetti, dalle sfide tecniche alle soluzioni adottate, fino ai risultati ottenuti.📂",
         ];
         break;
 
       case "Mi piacerebbe sapere di più su di te!":
         response = [
-          "Per saperne di più su di me, puoi visitare la mia pagina About o leggere la mia storia nel mio blog!",
+          "Per saperne di più su di me, puoi visitare la mia pagina About o leggere la mia storia nel mio blog!📖",
         ];
         buttons = ["Vai ad About", "/about"];
         textButtonQuestion = ["Hai un Blog?"];
@@ -76,15 +106,13 @@ const ContattiChatBox = () => {
 
       case "Hai un Blog?":
         response = [
-          "Esatto! Ho un blog dove condivido storie, consigli ed esercizi sul codice.😎",
+          "Assolutamente! Ma non è un blog qualsiasi. Oltre a condividere articoli e esercizi di codice, racconto anche storie d'avventura mescolate con la programmazione!😎",
         ];
         buttons = ["Vai al mio Blog", "https://adventurescode.com/"];
         break;
 
       case "Come posso contattarti?":
-        response = [
-          "Puoi mandarmi un'email, ti risponderò in giornata stessa!",
-        ];
+        response = ["Puoi inviarmi un'email, ti risponderò entro la giornata! 📧"];
         buttons = ["Mandami un email", `mailto:${import.meta.env.VITE_EMAIL}`];
         break;
 
@@ -134,10 +162,7 @@ const ContattiChatBox = () => {
         )}
         {msg.textButtons.length > 0 &&
           msg.textButtons.map((questionExtra, index) => (
-            <button
-              key={index}
-              onClick={() => handleUseMessage(questionExtra)}
-            >
+            <button key={index} onClick={() => handleUseMessage(questionExtra)}>
               {questionExtra}
             </button>
           ))}
@@ -151,13 +176,19 @@ const ContattiChatBox = () => {
   ));
 
   return (
-    <div className={`main-base chatBox-base ${theme} primary`}>
+    <div
+      className={`main-base chatBox-base ${theme} primary container-invisible ${
+        isVisible ? "visible" : ""
+      }`}
+    >
       <div className={`chatBox-messages`}>
         <h3>Chat Assistant</h3>
+        <p> Salve!👋 </p>
         <p>
-          Ciao! <br />
-          Sono una ChatBot creata da Giuseppe per aiutarti!
+          {" "}
+          Sono un chatbot creato da Giuseppe per rispondere alle tue domande!{" "}
         </p>
+        <p> Come posso esserti utile?</p>
         {predefinedQuestions.map((element, index) => (
           <button key={index} onClick={() => handleUseMessage(element)}>
             {element}

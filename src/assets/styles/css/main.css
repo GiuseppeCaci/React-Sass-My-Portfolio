@@ -3498,10 +3498,11 @@ button {
   justify-content: center;
 }
 .chatBox-base .chatBox-messages h3 {
+  text-align: left;
   margin-bottom: 10px;
 }
 .chatBox-base .chatBox-messages p {
-  margin: 0px 0px 7px 0px;
+  margin: 0px 0px 10px 0px;
   padding: 0px;
   font-size: 1.125rem;
 }
@@ -3583,7 +3584,7 @@ button {
 }
 .chatBox-base .chatBox-sender .chat-pc .button-chat button {
   font-size: 1.125rem;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   border-radius: 13px;
   margin: 5px 6px;

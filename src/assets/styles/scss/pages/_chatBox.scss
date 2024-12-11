@@ -11,6 +11,7 @@
   margin: 20px 10px 30px 10px;
   .chatBox-messages {
     h3{
+      text-align: left;
         margin-bottom: 10px;
     }
     margin: 0px 0px 5px 0px;
@@ -22,7 +23,7 @@
     align-items: start;
     justify-content: center;
     p {
-      margin: 0px 0px 7px 0px;
+      margin: 0px 0px 10px 0px;
       padding: 0px;
       font-size: $font-text-m;
     }
@@ -107,7 +108,7 @@
       padding: 0px;
         button {
           font-size: $font-text-m;
-          text-align: center;
+          text-align: left;
           padding: 10px;
           border-radius: 13px;
           margin: 5px 6px;
