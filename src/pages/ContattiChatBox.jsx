@@ -75,7 +75,7 @@ const ContattiChatBox = () => {
         response = [
           "Puoi mandarmi un'email, ti risponderò in giornata stessa!",
         ];
-        buttons = ["Mandami un email"];
+        buttons = ["Mandami un email", `mailto:${import.meta.env.VITE_EMAIL}`];
         break;
 
       case "Torna alle domande":
