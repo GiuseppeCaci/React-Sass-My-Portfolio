@@ -3578,7 +3578,7 @@ button {
   margin: 0px 0px 5px 0px;
 }
 .chatBox-base .chatBox-sender .chat-pc .button-chat {
-  margin: 15px 0px;
+  margin: 15px 0px 5px 0px;
   padding: 0px;
 }
 .chatBox-base .chatBox-sender .chat-pc .button-chat button {

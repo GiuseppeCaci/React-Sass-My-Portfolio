@@ -8,6 +8,7 @@ const ContattiChatBox = () => {
   const [messages, setMessages] = useState([
     { sender: "box", text: [""], textButtons: [], buttons: [] },
   ]);
+  const [isLoading, setIsLoading] = useState(false); // Stato per il caricamento
 
   const predefinedQuestions = [
     "Hai un portfolio?",
@@ -26,18 +27,20 @@ const ContattiChatBox = () => {
     };
     setMessages((prevMessage) => [...prevMessage, useMessage]);
 
-    // Show loading message before bot response
+    // Mostra messaggio di caricamento
     setMessages((prevMessages) => [
       ...prevMessages,
       { sender: "bot", text: ["💬..."], buttons: [], textButtons: [] },
     ]);
+    setIsLoading(true); // Inizia il caricamento
 
     setTimeout(() => {
       const botMessage = generateBotResponse(question);
       setMessages((prevMessages) => [
-        ...prevMessages.slice(0, -1), // Remove loading message
+        ...prevMessages.slice(0, -1), // Rimuovi messaggio di caricamento
         botMessage,
       ]);
+      setIsLoading(false); // Fine caricamento
     }, 1000);
   };
 
@@ -102,11 +105,12 @@ const ContattiChatBox = () => {
   };
 
   useEffect(() => {
-    const debounceScroll = setTimeout(() => {
-      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
-
-    return () => clearTimeout(debounceScroll);
+    if (messages.length > 1) {
+      const debounceScroll = setTimeout(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return () => clearTimeout(debounceScroll);
+    }
   }, [messages]);
 
   const Message = memo(({ msg, theme, handleUseMessage }) => (
@@ -115,14 +119,8 @@ const ContattiChatBox = () => {
         textAlign: msg.sender === "user" ? "right" : "left",
       }}
       className={`${theme} ${
-        msg.sender === "user"
-          ? "primary chat-user"
-          : "secondary chat-pc"
+        msg.sender === "user" ? "primary chat-user" : "secondary chat-pc"
       }`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {msg.text.map((text, index) => (
         <p key={index} dangerouslySetInnerHTML={{ __html: text }}></p>
@@ -143,8 +141,10 @@ const ContattiChatBox = () => {
               {questionExtra}
             </button>
           ))}
-        {msg.textButtons.length === 0 && msg.sender === "bot" && (
-          <button onClick={() => handleUseMessage("Torna alle domande")}>indietro</button>
+        {msg.textButtons.length === 0 && msg.sender === "bot" && !isLoading && (
+          <button onClick={() => handleUseMessage("Torna alle domande")}>
+            indietro
+          </button>
         )}
       </div>
     </div>
