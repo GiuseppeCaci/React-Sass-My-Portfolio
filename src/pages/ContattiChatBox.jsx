@@ -14,7 +14,6 @@ const ContattiChatBox = () => {
     "Hai un portfolio?",
     "Mi piacerebbe sapere di più su di te!",
     "Come posso contattarti?",
-    "Come si crea una buona Web App?",
   ];
 
   const messagesEndRef = useRef(null); // Riferimento per lo scroll del contenitore
@@ -39,11 +38,7 @@ const ContattiChatBox = () => {
     let buttons = [];
     let textButtonQuestion = [];
     switch (question) {
-      case "Come si crea una buona Web App?":
-        response = [
-          "Conoscenza, pazienza, passione, tante tazze di caffé e un pò di musica funky",
-        ];
-        break;
+
       case "Hai un portfolio?":
         response = [
           "Assolutamente! Puoi dare un'occhiata al mio portfolio! 💼",
@@ -71,7 +66,7 @@ const ContattiChatBox = () => {
 
       case "Hai un Blog?":
         response = [
-          "Esatto! Ho un blog dove condivido storie, riflessioni e progetti.",
+          "Esatto! Ho un blog dove condivido storie, consigli ed esercizi sul codice.😎",
         ];
         buttons = ["Vai al mio Blog", "https://adventurescode.com/"];
         break;
@@ -80,7 +75,7 @@ const ContattiChatBox = () => {
         response = [
           "Puoi mandarmi un'email, ti risponderò in giornata stessa!",
         ];
-        buttons = ["Mandami un email", `mailto:${import.meta.env.VITE_EMAIL}`];
+        buttons = ["Mandami un email"];
         break;
 
       case "Torna alle domande":
@@ -89,7 +84,6 @@ const ContattiChatBox = () => {
           "Hai un portfolio?",
           "Mi piacerebbe sapere di più su di te!",
           "Come posso contattarti?",
-          "Come si crea una buona Web App?",
         ];
         break;
 

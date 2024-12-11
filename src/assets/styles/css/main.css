@@ -3589,7 +3589,7 @@ button {
   margin: 5px 6px;
 }
 .chatBox-base .chatBox-sender .chat-pc .button-chat button:hover, .chatBox-base .chatBox-sender .chat-pc .button-chat button:focus, .chatBox-base .chatBox-sender .chat-pc .button-chat button:active {
-  padding: 8px !important; /* Mantiene il padding costante */
+  padding: 10px !important; /* Mantiene il padding costante */
   border: none !important; /* Rimuove il bordo */
   outline: none !important; /* Rimuove il bordo di focus */
 }
