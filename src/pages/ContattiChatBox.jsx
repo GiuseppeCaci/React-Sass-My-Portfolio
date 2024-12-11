@@ -110,7 +110,7 @@ const ContattiChatBox = () => {
   }, [messages]);
 
   const Message = memo(({ msg, theme, handleUseMessage }) => (
-    <motion.div
+    <div
       style={{
         textAlign: msg.sender === "user" ? "right" : "left",
       }}
@@ -147,7 +147,7 @@ const ContattiChatBox = () => {
           <button onClick={() => handleUseMessage("Torna alle domande")}>indietro</button>
         )}
       </div>
-    </motion.div>
+    </div>
   ));
 
   return (
