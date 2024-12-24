@@ -38,7 +38,7 @@ const About = () => {
     // Design
     "Figma",
     "Adobe",
-    "Canvas",
+    "Canva",
   
     // CMS
     "Wordpress",
