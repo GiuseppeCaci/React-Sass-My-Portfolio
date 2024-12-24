@@ -2,10 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import ThemeContext from "../store/theme/ThemeContext";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation, Trans } from 'react-i18next';
 
 const NavBar = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+  const { t } = useTranslation('navBar');
 
   //stato che gestisce l'apertura/chiusura del menu a discesa
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +108,7 @@ const NavBar = () => {
                       : ""
                   }`}
                 >
-                  About
+                  {t('about')}
                 </Link>
               </li>
               <li
@@ -122,7 +125,7 @@ const NavBar = () => {
                       : ""
                   }`}
                 >
-                  Contatti
+                  {t('contact')}
                 </Link>
               </li>
 
@@ -159,6 +162,9 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
+            <div>
+            <LanguageSwitcher/>
+            </div>
           </div>
         </nav>
       </div>
@@ -184,12 +190,12 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/about" className={`nav-Link ${theme} secondary`}>
-                About
+              {t('about')}
               </Link>
             </li>
             <li>
               <Link to="/chat-assistant" className={`nav-Link ${theme} secondary`}>
-                Contatti
+              {t('contact')}
               </Link>
             </li>
             <li>

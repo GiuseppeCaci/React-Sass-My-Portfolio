@@ -13,6 +13,7 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CloudIcon from "@mui/icons-material/Cloud";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import LinkIcon from "@mui/icons-material/Link";
+import { useTranslation, Trans } from 'react-i18next';
 
 const ProgettoPortfolio = () => {
   //cambio nome alla pagina
@@ -22,6 +23,7 @@ const ProgettoPortfolio = () => {
 
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+    const { t } = useTranslation('giuseppeCaci');
 
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
   const strumentiUsati = [
@@ -34,6 +36,7 @@ const ProgettoPortfolio = () => {
     "mui/material",
     "react-photo-view",
     "react-syntax-highlighter ",
+    "i18n"
   ];
 
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
@@ -81,34 +84,28 @@ const ProgettoPortfolio = () => {
             <div className="article-informations">
               <div className="title-palette">
                 <h2>Giuseppe Caci</h2>
-                {/*
-                 <div style={{ backgroundColor: "#193832" }}></div>
-                <div style={{ backgroundColor: "#2a6355" }}></div>
-                <div style={{ backgroundColor: "#f0f5f5" }}></div>
-                <div style={{ backgroundColor: "#4fbb64" }}></div>
-                */}
               </div>
               <h5 className="text-accent">
                 {" "}
-                <LightbulbIcon fontSize="small" /> Tipo di Sito
+                <LightbulbIcon fontSize="small" /> {t('progettoPortfolio.siteType.heading')}
               </h5>
-              <p>Portfolio personale</p>
+              <p> {t('progettoPortfolio.siteType.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <AccessTimeIcon fontSize="small" />
-                Data pubblicazione
+                {t('progettoPortfolio.publicationDate.heading')}
               </h5>
-              <p>18/09/2024</p>
+              <p>{t('progettoPortfolio.publicationDate.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <CloudIcon fontSize="small" />
-                Piattaforme
+                {t('progettoPortfolio.platforms.heading')}
               </h5>
-              <p>Netlify, GitHub</p>
+              <p>{t('progettoPortfolio.platforms.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <LinkIcon fontSize="small" />
-                Visita il sito
+                {t('progettoPortfolio.visitWebsite.heading')}
               </h5>
               <div className="icon-project">
                 <a
@@ -129,22 +126,14 @@ const ProgettoPortfolio = () => {
             </div>
             <div className="article-base flex-left-column">
               <p>
-                Il sito è una vetrina digitale del mio{" "}
-                <strong>percorso professionale</strong> come sviluppatore,
-                progettato per mostrare
-                <span className="text-accent"> abilità</span>,{" "}
-                <span className="text-accent">progetti</span> e{" "}
-                <span className="text-accent">collaborazioni</span>. Il focus è
-                su <i>design minimalista</i> e <i>funzionalità intuitive</i>,
-                offrendo una panoramica chiara delle mie{" "}
-                <strong>competenze</strong>.
+               <Trans i18nKey={t('progettoPortfolio.description.paragraph1')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
             </div>
             <div
               className={`paragraph-base size-small flex-center-column ${theme} secondary`}
             >
               <div className="flex-center-column">
-                <h4>Strumenti usati</h4>
+                <h4>{t('progettoPortfolio.toolsUsed.heading')}</h4>
                 <div className="container-skills flex-center-row">
                   {strumentiUsati.map((element) => (
                     <div
@@ -158,26 +147,12 @@ const ProgettoPortfolio = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <h4 className="text-accent">{t('progettoPortfolio.developmentPhases.heading')}</h4>
               <ul>
-                <li>
-                  <strong>Ricerche preliminari:</strong> Analisi di{" "}
-                  <i>template</i> e <i>standard</i> per definire funzioni e
-                  design.
-                </li>
-                <li>
-                  <strong>Sviluppo tecnico:</strong> Uso di{" "}
-                  <span className="text-accent">React</span> per un front-end
-                  scalabile, gestione delle pagine con
-                  <span className="text-accent">react-router-dom</span> e cambio
-                  tema dinamico tramite{" "}
-                  <span className="text-accent">Context API</span>.
-                </li>
-                <li>  <strong>
-                    Esempio di codice per evidenziare la sintassi:
-                  </strong>
-                  </li>
-                  </ul>
+              {t('progettoPortfolio.developmentPhases.phases', { returnObjects: true }).map((phase, index) => (
+  <li key={index} dangerouslySetInnerHTML={{ __html: phase.description }} />
+))}
+              </ul>
                   </div>
                     <CodeSnippet
                       code={`   <SyntaxHighlighter language={language} style={bgColor === "dark-mode"? atomDark : solarizedlight}>
@@ -190,45 +165,25 @@ const ProgettoPortfolio = () => {
                     <div className="article-base flex-left-column">
                 <ul>
                 <li>
-                  <strong>Design visivo:</strong>
-                  <ul>
-                    <li>
-                      Palette di colori:{" "}
-                      <span className="text-accent">verde scuro</span> per
-                      modalità scura,{" "}
-                      <span className="text-accent">grigio chiaro</span> e
-                      <span className="text-accent"> verde</span> per quella
-                      chiara.
-                    </li>
-                    <li>
-                      Tipografia: <span className="text-accent">Poppins</span> e{" "}
-                      <span className="text-accent">Inter</span> per un look
-                      moderno e professionale.
-                    </li>
-                    <li>Animazioni sottili per migliorare l'interazione.</li>
-                  </ul>
+                <Trans i18nKey={t('progettoPortfolio.developmentPhases.phases2')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
                 </li>
               </ul>
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Progetti Figma</h4>
+                <h4>{t('progettoPortfolio.figmaProject.heading')}</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4 className="text-accent">Difficoltà principali:</h4>
+              <h4 className="text-accent">{t('progettoPortfolio.mainDifficulties.heading')}</h4>
               <p>
-                La scelta dei colori ha richiesto diversi tentativi per ottenere
-                il giusto equilibrio.
+              {t('progettoPortfolio.mainDifficulties.description')}
               </p>
             </div>
             <div className="article-base flex-left-column">
-              <h4 className="text-accent">Risultati e conclusioni:</h4>
+              <h4 className="text-accent">{t('progettoPortfolio.resultsAndConclusions.heading')}</h4>
               <p>
-                Un <i>design minimalista</i> e <i>funzionale</i> che rispecchia
-                le mie <strong>competenze professionali</strong> e offre
-                un'esperienza utente
-                <span className="text-accent"> intuitiva</span>.
+              <Trans i18nKey={t('progettoPortfolio.resultsAndConclusions.description')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Sui vari dispositivi</h4>
+                <h4>{t('progettoPortfolio.dispositives.heading')}</h4>
                 <Gallery images={dispositives} />
               </div>
             </div>

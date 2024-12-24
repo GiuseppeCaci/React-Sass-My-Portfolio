@@ -1,0 +1,81 @@
+{
+    "predefinedQuestions": [
+      "Do you have a portfolio?",
+      "I would love to know more about you!",
+      "How can I contact you?",
+      "Why should you choose to work with Giuseppe?",
+      "I just wanted to say hello!"
+    ],
+    "quotes": [
+      "We need a bigger boat!🦈",
+      "Yippee-ki-yay!!💥",
+      "In the jungle, you’ll have to stay until a five or an eight appears.🌴",
+      "LEGEND - don't move - DARIO!⚔️",
+      "Now that's a hell of a pile of s**t!💩",
+      "Pepper stew? At eight in the morning? Dead rats at noon?🐀",
+      "Look beyond what you see!🦁"
+    ],
+    "messages": {
+      "chatbotIntro": "Hello!👋",
+      "chatbotDescription": "I am a chatbot created by Giuseppe to answer your questions! How can I assist you?",
+      "buttonBackToQuestions": "Back to questions"
+    },
+    "responses": {
+      "quoteRequest": {
+        "question": "Give me a movie quote!",
+        "response": "Yippee-ki-yay!!💥"
+      },
+      "anotherQuote": {
+        "question": "Another one!",
+        "response": "We need a bigger boat!🦈"
+      },
+      "favoriteQuote": {
+        "question": "Tell me your favorite one!",
+        "response": "September by Earth, Wind & Fire... but only when everything in the schedule goes perfectly! 🎉"
+      },
+      "notListenMusicFunky": {
+        "question": "I don’t listen to Funky music..",
+        "response": "...🤔"
+      },
+      "webAppCreation": {
+        "question": "How do you create a Web App?",
+        "response": "Programming knowledge, passion, dedication, many cups of coffee, and a bit of funky music! 🕺"
+      },
+      "greet": {
+        "question": "I just wanted to say hello!",
+        "response": "Hello! Thanks for visiting the site, it was a pleasure!👋😊"
+      },
+      "chooseGiuseppe": {
+        "question": "Why should you choose to work with Giuseppe?",
+        "response": "With years of experience in coding, I put passion and dedication into every project. And if knowledge isn’t enough, there's always the determination to learn and find the right solution!💡"
+      },
+      "portfolio": {
+        "question": "Do you have a portfolio?",
+        "response": "Certainly! Feel free to check out my portfolio! 💻"
+      },
+      "portfolioMoreDetails": {
+        "question": "Portfolio details",
+        "response": "The Portfolio is organized as follows:</br>• Collaborations, i.e., work experience in the field. </br>• Websites, developed and active online.</br>• Projects, experimental and published on GitHub.</br></br>Each project includes a detailed sheet, where I analyze various aspects, from technical challenges to solutions adopted, and the results achieved. 📂"
+      },
+      "aboutMe": {
+        "question": "I would love to know more about you!",
+        "response": "To learn more about me, you can visit my About page or read my story on my blog!📖"
+      },
+      "myBlog": {
+        "question": "Do you have a blog?",
+        "response": "Absolutely! But it's not just any blog. Besides sharing articles and coding exercises, I also tell adventure stories mixed with programming!😎"
+      },
+      "contactMe": {
+        "question": "How can I contact you?",
+        "response": "You can send me an email, and I’ll respond by the end of the day! 📧"
+      }
+    },
+    "buttons": {
+      "GoPortfolio": "Go to Portfolio",
+      "portfolioDetails": "Portfolio details",
+      "AboutMe": "Go to About",
+      "myBlog": "Go to my Blog",
+      "contactMe": "Send me an email"
+    },
+    "cta-1": "Back"
+}

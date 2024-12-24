@@ -240,7 +240,7 @@ button {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   height: 75px;
@@ -263,7 +263,7 @@ button {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  flex-basis: 67%;
+  flex-basis: 63%;
 }
 .nav-secondary-logo .nav-secondary-link-logo {
   display: flex;
@@ -288,7 +288,7 @@ button {
 }
 
 .nav-secondary-settingTheme {
-  flex-basis: 13%;
+  flex-basis: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -296,7 +296,7 @@ button {
 }
 
 .nav-secondary-container-hamburger {
-  flex-basis: 20%;
+  flex-basis: 17%;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -375,9 +375,10 @@ button {
 }
 
 .nav-secondary-groupLinks {
-  height: 75%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 .nav-secondary-groupLinks ul li {
@@ -569,32 +570,53 @@ button {
   font-weight: 600;
 }
 
+.lang-container {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lang-container img {
+  max-width: 40px;
+  margin: 0px 10px;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .lang-container img {
+    max-width: 55px;
+  }
+}
+
 .container-footer {
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 599px) {
   .container-footer {
-    min-height: 80px;
+    min-height: 90px;
+    padding: 10px;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .container-footer {
-    min-height: 110px;
+    min-height: 90px;
+    padding: 10px;
   }
 }
 @media (min-width: 1025px) {
   .container-footer {
-    min-height: 120px;
+    min-height: 90px;
+    padding: 15px;
   }
 }
 
 .section-footer {
   width: 100%;
+  margin: 10px;
 }
 .section-footer ul {
   list-style: none;
@@ -608,6 +630,63 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.section-footer-lang {
+  padding: 0px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-footer-lang img {
+  max-width: 33px;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .section-footer-lang {
+    width: 200px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .section-footer-lang img {
+    max-width: 33px;
+    margin: 0px 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .section-footer-lang {
+    width: 200px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .section-footer-lang img {
+    max-width: 33px;
+    margin: 0px 10px;
+  }
+}
+
+.section-footer-copyright {
+  margin: 5px 10px 5px 10px;
+}
+.section-footer-copyright p {
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .section-footer-copyright {
+    margin: 10px 10px 10px 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .section-footer-copyright {
+    margin: 10px 10px 10px 10px;
+  }
 }
 
 .button-class-1 {

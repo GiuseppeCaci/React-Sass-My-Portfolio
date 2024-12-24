@@ -1,0 +1,55 @@
+{
+    "progettoPortfolio": {
+      "siteType": {
+        "heading": "Site Type",
+        "value": "Personal Portfolio"
+      },
+      "publicationDate": {
+        "heading": "Publication Date",
+        "value": "18/09/2024"
+      },
+      "platforms": {
+        "heading": "Platforms",
+        "value": "Netlify, GitHub"
+      },
+      "visitWebsite": {
+        "heading": "Visit the Website"
+      },
+      "description": {
+        "paragraph1": "The website is a digital showcase of my <strong>professional journey</strong> as a developer, designed to showcase <span className=\"text-accent\">skills</span>, <span className=\"text-accent\">projects</span>, and <span className=\"text-accent\">collaborations</span>. The focus is on <i>minimalist design</i> and <i>intuitive functionality</i>, providing a clear overview of my <strong>competencies</strong>."
+      },
+      "toolsUsed": {
+        "heading": "Tools Used"
+      },
+      "developmentPhases": {
+        "heading": "Development Phases",
+        "phases": [
+          {
+            "description": "Preliminary research: Analysis of <i>templates</i> and <i>standards</i> to define functions and design."
+          },
+          {
+            "description": "Technical development: Using <span className=\"text-accent\">React</span> for a scalable front-end, page management with <span class=\"text-accent\">react-router-dom</span>, and dynamic theme change via <span className=\"text-accent\">Context API</span>."
+          },
+          {
+            "description": "Code example to highlight syntax: Code for implementing syntax in React."
+          }
+        ],
+        "phases2": "Visual design: Dark green color palette for dark mode, light gray and green for light mode, Poppins and Inter typography."
+      },
+      "figmaProject": {
+        "heading": "Figma Projects"
+      },
+      "mainDifficulties": {
+        "heading": "Main Difficulties",
+        "description": "The choice of colors required several attempts to achieve the right balance."
+      },
+      "resultsAndConclusions": {
+        "heading": "Results and Conclusions",
+        "description": "A <i>minimalist</i> and <i>functional</i> design that reflects my <strong>professional skills</strong> and provides an <span className=\"text-accent\">intuitive</span> user experience."
+      },
+      "dispositives": {
+        "heading": "On Various Devices"
+      }
+    }
+  }
+  

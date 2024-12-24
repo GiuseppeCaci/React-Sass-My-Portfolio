@@ -1,6 +1,8 @@
 import React from "react";
 import { useContext } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
+import LanguageSwitcherDESK from "./LanguageSwitcherDESK";
+import { useTranslation, Trans } from 'react-i18next';
 //icone
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
@@ -11,10 +13,12 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 const Footer = () => {
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+    const { t } = useTranslation('footer');
 
   return(
     <>
       <div className={`container-footer ${theme} secondary`}>
+
     <div className="section-footer">
         <ul>
         <li><a href={import.meta.env.VITE_GITHUB_URL} target="_blank"><GitHubIcon fontSize="large" /></a></li>
@@ -23,6 +27,15 @@ const Footer = () => {
             <li><a href={`mailto:${import.meta.env.VITE_EMAIL}`} target="_blank"><EmailIcon fontSize="large" /></a></li>
         </ul>
     </div>
+
+    <div className="section-footer-lang">
+      <LanguageSwitcherDESK/>
+    </div>
+
+    <div  className="section-footer-copyright">
+      <p>{t('copyright')}</p>
+    </div>
+
     </div>
     </>
   )

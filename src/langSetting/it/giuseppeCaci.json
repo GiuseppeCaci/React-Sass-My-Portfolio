@@ -1,0 +1,55 @@
+{
+    "progettoPortfolio": {
+      "siteType": {
+        "heading": "Tipo di Sito",
+        "value": "Portfolio personale"
+      },
+      "publicationDate": {
+        "heading": "Data pubblicazione",
+        "value": "18/09/2024"
+      },
+      "platforms": {
+        "heading": "Piattaforme",
+        "value": "Netlify, GitHub"
+      },
+      "visitWebsite": {
+        "heading": "Visita il sito"
+      },
+      "description": {
+        "paragraph1": "Il sito è una vetrina digitale del mio <strong>percorso professionale</strong> come sviluppatore, progettato per mostrare <span className=\"text-accent\">abilità</span>, <span className=\"text-accent\">progetti</span> e <span className=\"text-accent\">collaborazioni</span>. Il focus è su <i>design minimalista</i> e <i>funzionalità intuitive</i>, offrendo una panoramica chiara delle mie <strong>competenze</strong>."
+      },
+      "toolsUsed": {
+        "heading": "Strumenti Usati"
+      },
+      "developmentPhases": {
+        "heading": "Fasi dello sviluppo",
+        "phases": [
+          {
+            "description": "Ricerche preliminari: Analisi di <i>template</i> e <i>standard</i> per definire funzioni e design."
+          },
+          {
+            "description": "Sviluppo tecnico: Uso di <span className=\"text-accent\">React</span> per un front-end scalabile, gestione delle pagine con <span className=\"text-accent\">react-router-dom</span> e cambio tema dinamico tramite <span className=\"text-accent\">Context API</span>."
+          },
+          {
+            "description": "Esempio di codice per evidenziare la sintassi: Codice per l'implementazione della sintassi in React."
+          }
+        ],
+        "phases2":"Design visivo: Palette di colori verde scuro per modalità scura, grigio chiaro e verde per la chiara, tipografia Poppins e Inter."
+      },
+      "figmaProject": {
+        "heading": "Progetti Figma"
+      },
+      "mainDifficulties": {
+        "heading": "Difficoltà principali",
+        "description": "La scelta dei colori ha richiesto diversi tentativi per ottenere il giusto equilibrio."
+      },
+      "resultsAndConclusions": {
+        "heading": "Risultati e conclusioni",
+        "description": "Un <i>design minimalista</i> e <i>funzionale</i> che rispecchia le mie <strong>competenze professionali</strong> e offre un'esperienza utente <span className=\"text-accent\">intuitiva</span>."
+      },
+      "dispositives": {
+        "heading": "Sui vari dispositivi"
+      }
+    }
+  }
+  

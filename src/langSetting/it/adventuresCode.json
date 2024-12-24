@@ -1,0 +1,55 @@
+{
+    "adventuresCodePortfolio": {
+      "siteType": {
+        "heading": "Tipo di Sito",
+        "value": "Blog, Storytelling"
+      },
+      "publicationDate": {
+        "heading": "Data pubblicazione",
+        "value": "05/10/2024"
+      },
+      "platforms": {
+        "heading": "Piattaforme",
+        "value": "SiteGround"
+      },
+      "visitWebsite": {
+        "heading": "Visita il sito"
+      },
+      "description": {
+        "paragraph1": "L'idea di fondo di questo sito nasce da una domanda: <i>Cosa succede se mescolo la programmazione ai <span className=\"text-accent\"> racconti d'avventura?</span></i>",
+        "paragraph2": "L'atmosfera in stile <i>Indiana Jones</i> si combina perfettamente con gli argomenti logici e spesso enigmatici della programmazione. Aggiungi un blog dedicato al coding, una sezione <strong className=\"text-accent\">Note</strong> dove raccolgo i miei pensieri, una raccolta di esercizi di programmazione, e un tocco di <strong>flat design</strong> come sfondo, ed ecco a voi <strong className=\"text-accent\">Adventures Code</strong>."
+      },
+      "toolsUsed": {
+        "heading": "Strumenti Usati"
+      },
+      "developmentPhases": {
+        "heading": "Fasi dello sviluppo",
+       "phases": [
+        {
+          "description": "Studio preliminare: Ho approfondito le mie conoscenze su <strong className=\"text-accent\">WordPress</strong> e il plugin <strong className=\"text-accent\">Elementor</strong>, in quanto non avevo molta sicurezza degli strumenti da usare."
+        },
+        {
+          "description": "Sviluppo organizzativo: Ho avviato un nuovo progetto <strong className=\"text-accent\">WordPress</strong>, realizzando il design preliminare con <strong className=\"text-accent\">Figma</strong> e definendo l'alberatura delle pagine per garantire una navigazione intuitiva."
+        },
+        {
+          "description": "Design visivo: Palette di colori e tipografia. Ho usato il <strong className=\"text-accent\">verde</strong> del mio portfolio per gli elementi chiave e il <strong className=\"text-accent\">bianco tenue</strong> per il background."
+        },
+        {
+          "description": "Ottimizzazione: Ho lavorato sulla SEO, l'ottimizzazione per i motori di ricerca, e ho migliorato la navigabilità del sito."
+        }
+      ]
+      },
+      "figmaProject": {
+        "heading": "Flat Design su Figma"
+      },
+      "mainDifficulties": {
+        "heading": "Difficoltà principali",
+        "description": "Ho studiato la <strong className=\"text-accent\">SEO</strong> per la prima volta, imparando come ottimizzare il contenuto per i motori di ricerca, ho acquisito esperienza nella creazione di illustrazioni artistiche su <strong>Figma</strong>, affinando ulteriormente le mie competenze nel design grafico e nella realizzazione di elementi visivi creativi."
+      },
+      "resultsAndConclusions": {
+        "heading": "Risultati e conclusioni",
+        "description": "Un blog e sito di scrittura alternativo, con un design fresco e moderno, che offre un'esperienza utente coinvolgente e visivamente piacevole, facilmente navigabile e ben ottimizzato per il web."
+      }
+    }
+  }
+  

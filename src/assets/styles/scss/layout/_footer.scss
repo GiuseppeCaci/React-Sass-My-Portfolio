@@ -1,26 +1,30 @@
 @import "../abstracts/mixins";
 
-$footer-height-mobile: 80px;
-$footer-height-tablet: 110px;
-$footer-height-desktop: 120px;
+$footer-height-mobile: 90px;
+$footer-height-tablet: 90px;
+$footer-height-desktop: 90px;
 
 .container-footer {
   position: relative;
   width: 100%;
-  @include responsive-flex(row, center, center);
+  @include responsive-flex(column, center, center);
   @include respond-to(mobile) {
     min-height: $footer-height-mobile;
+    padding:10px;
   }
   @include respond-to(tablet) {
     min-height: $footer-height-tablet;
+    padding:10px;
   }
   @include respond-to(desktop) {
     min-height: $footer-height-desktop;
+    padding: 15px;
   }
 }
 
 .section-footer {
   width: 100%;
+  margin: 10px;
   ul {
     list-style: none;
     @include responsive-flex(row, space-evenly, center);
@@ -29,5 +33,56 @@ $footer-height-desktop: 120px;
         @include responsive-flex(row, center, center);
       }
     }
+  }
+}
+
+.section-footer-lang {
+  padding: 0px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+    img {
+      max-width: 33px;
+    }
+
+    @include respond-to(tablet) {
+      width: 200px;
+      margin: 20px 0px;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+        img {
+          max-width: 33px;
+          margin: 0px 10px;
+        }
+    }
+
+    @include respond-to(desktop) {
+      width: 200px;
+      margin: 20px 0px;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+        img {
+          max-width: 33px;
+          margin: 0px 10px;
+        }
+    }
+}
+
+.section-footer-copyright{
+  margin: 5px 10px 5px 10px;
+  p{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: $font-text-xs;
+    font-style: italic;
+  }
+  @include respond-to(tablet) {
+    margin: 10px 10px 10px 10px;
+  }
+  @include respond-to(desktop) {
+    margin: 10px 10px 10px 10px;
   }
 }

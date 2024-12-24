@@ -1,0 +1,55 @@
+{
+    "panasciPortfolio": {
+      "siteType": {
+        "heading": "Tipo di Sito",
+        "value": "Portfolio Personale"
+      },
+      "publicationDate": {
+        "heading": "Data pubblicazione",
+        "value": "03/10/2024"
+      },
+      "platforms": {
+        "heading": "Piattaforme",
+        "value": "Netlify, Github"
+      },
+      "visitWebsite": {
+        "heading": "Visita il sito"
+      },
+      "description": {
+        "paragraph1": "Questo sito è un <strong className=\"text-accent\">portfolio personale</strong> creato con <strong className=\"text-accent\">React</strong>, <strong className=\"text-accent\">Bootstrap</strong> e <strong className=\"text-accent\">Sass</strong>, dedicato a <strong>Salvatore Panasci</strong>, studente di neuropsicologia. È progettato per raccontare il suo percorso accademico e professionale."
+      },
+      "toolsUsed": {
+        "heading": "Strumenti Usati"
+      },
+      "developmentPhases": {
+        "heading": "Fasi dello sviluppo",
+        "phase1": {
+          "description": "Studio preliminare: Ho condotto ricerche su siti di ambito medico e psicologico per individuare elementi utili alla struttura e al design del sito. Ho ripassato <strong className=\"text-accent\">Bootstrap</strong>, integrandolo con <strong className=\"text-accent\">Sass</strong> per una maggiore personalizzazione."
+        },
+        "phase2": {
+         "description": "Sviluppo organizzativo: Ho creato un design preliminare con <strong className=\"text-accent\">Figma</strong>, avviato il progetto in <strong className=\"text-accent\">React</strong> e sviluppato componenti modulari. <br/> Non ho avuto necessità di ampliare uno stato complesso su React, non essendoci funzioni avanzate."
+        },
+        "phase3": {
+          "heading": "Design visivo:",
+          "subPhases": [
+            {
+              "description": "Palette di colori: Ho scelto un <strong className=\"text-accent\">bianco tenue</strong> per lo sfondo, un <strong className=\"text-accent\">blu intenso</strong> per i testi e un <strong className=\"text-accent\">giallo caldo</strong> per i pulsanti."
+            },
+            {
+              "description": "Tipografia: Ho utilizzato il font <strong className=\"text-accent\">Inter</strong>, moderno e leggibile, in combinazione con stili sans-serif."
+            }
+          ]
+        }
+      },
+      "figma-bg": "Progetto Figma e Canvas",
+      "mainDifficulties": {
+        "heading": "Difficoltà principali",
+        "description": "Inizialmente ho avuto difficoltà a integrare <strong className=\"text-accent\">Bootstrap</strong> con <strong className=\"text-accent\">Sass</strong>, ma superata questa fase non ci sono stati altri problemi."
+      },
+      "resultsAndConclusions": {
+        "heading": "Risultati e conclusioni",
+        "description": "Il risultato è un portfolio che combina un design <i>minimalista</i> e una navigazione <i>efficace</i>. <br/> Il sito riflette professionalità e garantisce un’esperienza utente piacevole e coinvolgente."
+      }
+    }
+  }
+  

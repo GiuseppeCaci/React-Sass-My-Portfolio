@@ -3,37 +3,24 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ThemeContext from "../store/theme/ThemeContext";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
+import { useTranslation } from "react-i18next";
 
 const ContattiChatBox = () => {
+  const { t } = useTranslation('chatBox');
   const isVisible = useVisibilityAndScrollReset();
   const { theme } = useContext(ThemeContext);
   const [messages, setMessages] = useState([
     { sender: "box", text: [""], textButtons: [], buttons: [] },
   ]);
-  const [isLoading, setIsLoading] = useState(false); // Stato per il caricamento
+  const [isLoading, setIsLoading] = useState(false);
 
-  const predefinedQuestions = [
-    "Hai un portfolio?",
-    "Mi piacerebbe sapere di più su di te!",
-    "Come posso contattarti?",
-    "Perché dovresti scegliere di lavorare con Giuseppe?",
-    "Volevo solo Salutare!"
-  ];
+  const predefinedQuestions = t('predefinedQuestions', { returnObjects: true }); // Ottieni le domande dal file JSON
+  const citazioni = t('quotes', { returnObjects: true }); // Ottieni le citazioni dal file JSON
 
-  const citazioni = [
-    "Ci serve una barca piu grande!🦈",
-    "Yippee-ki-yay!!💥",
-    "Nella giungla dovrai stare finché un cinque o un otto non compare.🌴",
-    "LEGGEN - non ti muovere - DARIO!⚔️",
-    "Questa sì che è una bella montagna di m**!💩",
-    "Peperonata? Alle otto del mattino? A mezzogiorno, topi morti?🐀",
-    "Guarda oltre ciò che vedi!🦁"
-  ];
-
-  function getRandomQuote(citazioni) {
+  const getRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * citazioni.length);
     return citazioni[randomIndex];
-}
+  };
 
   const messagesEndRef = useRef(null);
 
@@ -46,20 +33,19 @@ const ContattiChatBox = () => {
     };
     setMessages((prevMessage) => [...prevMessage, useMessage]);
 
-    // Mostra messaggio di caricamento
     setMessages((prevMessages) => [
       ...prevMessages,
-      { sender: "bot", text: ["💬..."], buttons: [], textButtons: [] },
+      { sender: "bot", text: ['💬...'], buttons: [], textButtons: [] },
     ]);
-    setIsLoading(true); // Inizia il caricamento
+    setIsLoading(true);
 
     setTimeout(() => {
       const botMessage = generateBotResponse(question);
       setMessages((prevMessages) => [
-        ...prevMessages.slice(0, -1), // Rimuovi messaggio di caricamento
+        ...prevMessages.slice(0, -1),
         botMessage,
       ]);
-      setIsLoading(false); // Fine caricamento
+      setIsLoading(false);
     }, 1000);
   };
 
@@ -67,72 +53,69 @@ const ContattiChatBox = () => {
     let response;
     let buttons = [];
     let textButtonQuestion = [];
+
     switch (question) {
-      case "Fammi sentire una citazione cinematografica!":
-        case "Un'altra!":
-            const citazione = getRandomQuote(citazioni);
-            response = [citazione];
-            textButtonQuestion = ["Un'altra!", "Torna alle domande"];
+      case t('responses.quoteRequest.question'):
+      case t('responses.anotherQuote.question'):
+        const citazione = getRandomQuote();
+        response = [citazione];
+        textButtonQuestion = [t('responses.anotherQuote.question'), t('messages.buttonBackToQuestions')];
+        break;
+
+ 
+        case t('responses.webAppCreation.question'):
+          response = [t('responses.webAppCreation.response')];
+          textButtonQuestion = [t('responses.notListenMusicFunky.question'), t('responses.favoriteQuote.question')];
+          break;
+          case t('responses.notListenMusicFunky.question'):
+            response = [t('responses.notListenMusicFunky.response')];
             break;
-            case "Dimmi la tua preferita!":
-              response = ["September dei Earth, Wind & Fire...Ma solo quando tutto nella programmazione è andato per il verso giusto! 🎉"];
+            case t('responses.favoriteQuote.question'):
+              response = [t('responses.favoriteQuote.response')];
               break;
-              case "Non ascolto musica Funky..":
-              response = ["...🤔"];
-              break;
-            case "Come si crea una Web App?":
-              response = ["Conoscenze di programmazione, passione, dedizione, tante tazze di caffè e un po' di musica funky! 🕺"];
-              textButtonQuestion = ["Non ascolto musica Funky..","Dimmi la tua preferita!"];
-              break;
-      case "Volevo solo Salutare!":
-        response = ["Ciao! Grazie per aver visitato il sito, è stato un piacere!👋😊"];
-        textButtonQuestion = ["Fammi sentire una citazione cinematografica!","Come si crea una Web App?"];
-        break;
-      case "Perché dovresti scegliere di lavorare con Giuseppe?":
-        response = ["Con anni di esperienza nel coding, metto passione e dedizione in ogni progetto. E se la conoscenza non basta, c'è sempre la determinazione di imparare e trovare la soluzione giusta!💡"];
-        break;
-      case "Hai un portfolio?":
-        response = ["Certamente! Dai pure un'occhiata al mio portfolio! 💻"];
-        buttons = ["Vai al Portfolio", "/portfolio"];
-        textButtonQuestion = ["Dettagli sul Portfolio"];
-        break;
-      case "Dettagli sul Portfolio":
-        response = [
-          "Il Portfolio è organizzato con il seguente ordine:",
-          "• <strong>Collaborazioni</strong> <i>(esperienze lavorative nel settore)</i>",
-          "• <strong>Siti Web</strong> <i>(realizzati e attivi online)</i>",
-          "• <strong>Progetti</strong> <i>(sperimentali e pubblicati su GitHub)</i>",
-          "Ogni Lavoro include una scheda dettagliata, in cui analizzo vari aspetti, dalle sfide tecniche alle soluzioni adottate, fino ai risultati ottenuti.📂",
-        ];
+
+      case t('responses.greet.question'):
+        response = [t('responses.greet.response')];
+        textButtonQuestion = [t('responses.quoteRequest.question'), t('responses.webAppCreation.question')];
         break;
 
-      case "Mi piacerebbe sapere di più su di te!":
-        response = [
-          "Per saperne di più su di me, puoi visitare la mia pagina About o leggere la mia storia nel mio blog!📖",
-        ];
-        buttons = ["Vai ad About", "/about"];
-        textButtonQuestion = ["Hai un Blog?"];
+      case t('responses.chooseGiuseppe.question'):
+        response = [t('responses.chooseGiuseppe.response')];
         break;
 
-      case "Hai un Blog?":
-        response = [
-          "Assolutamente! Ma non è un blog qualsiasi. Oltre a condividere articoli e esercizi di codice, racconto anche storie d'avventura mescolate con la programmazione!😎",
-        ];
-        buttons = ["Vai al mio Blog", "https://adventurescode.com/"];
+      case t('responses.portfolio.question'):
+        response = [t('responses.portfolio.response')];
+        buttons = [t('buttons.GoPortfolio'), "/portfolio"];
+        textButtonQuestion = [t('buttons.portfolioDetails')];
         break;
 
-      case "Come posso contattarti?":
-        response = ["Puoi inviarmi un'email, ti risponderò entro la giornata! 📧"];
-        buttons = ["Mandami un email", `mailto:${import.meta.env.VITE_EMAIL}`];
+      case t('buttons.portfolioDetails'):
+        response = [t('responses.portfolioMoreDetails.response')];
         break;
 
-      case "Torna alle domande":
-        response = ["Clicca su una delle seguenti domande per iniziare:"];
+      case t('responses.aboutMe.question'):
+        response = [t('responses.aboutMe.response')];
+        buttons = [t('buttons.AboutMe'), "/about"];
+        textButtonQuestion = [t('responses.myBlog.question')];
+        break;
+
+      case t('responses.myBlog.question'):
+        response = [t('responses.myBlog.response')];
+        buttons = [t('buttons.myBlog'), "https://adventurescode.com/"];
+        break;
+
+      case t('responses.contactMe.question'):
+        response = [t('responses.contactMe.response')];
+        buttons = [t('buttons.contactMe'), `mailto:${import.meta.env.VITE_EMAIL}`];
+        break;
+
+      case t('messages.buttonBackToQuestions'):
+        response = [t('messages.chatbotDescription')];
         textButtonQuestion = predefinedQuestions;
         break;
 
       default:
-        response = ["Non ho capito, puoi ripetere?"];
+        response = [t('messages.defaultResponse') || "Non ho capito, puoi ripetere?"];
     }
     return {
       sender: "bot",
@@ -177,8 +160,8 @@ const ContattiChatBox = () => {
             </button>
           ))}
         {msg.textButtons.length === 0 && msg.sender === "bot" && !isLoading && (
-          <button onClick={() => handleUseMessage("Torna alle domande")}>
-            indietro
+          <button onClick={() => handleUseMessage(t('messages.buttonBackToQuestions'))}>
+            {t('cta-1')}
           </button>
         )}
       </div>
@@ -192,13 +175,8 @@ const ContattiChatBox = () => {
       }`}
     >
       <div className={`chatBox-messages`}>
-        <h3>Chat Assistant</h3>
-        <p> Salve!👋 </p>
-        <p>
-          {" "}
-          Sono un chatbot creato da Giuseppe per rispondere alle tue domande!{" "}
-        </p>
-        <p> Come posso esserti utile?</p>
+        <h3>{t('messages.chatbotIntro')}</h3>
+        <p>{t('messages.chatbotDescription')}</p>
         {predefinedQuestions.map((element, index) => (
           <button key={index} onClick={() => handleUseMessage(element)}>
             {element}

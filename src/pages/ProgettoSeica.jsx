@@ -14,6 +14,7 @@ import CloudIcon from "@mui/icons-material/Cloud";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import LinkIcon from "@mui/icons-material/Link";
 import StorageIcon from '@mui/icons-material/Storage';
+import { useTranslation, Trans } from 'react-i18next';
 
 const ProgettoSeica = () => {
   //cambio nome alla pagina
@@ -23,6 +24,7 @@ const ProgettoSeica = () => {
 
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+    const { t } = useTranslation('seicaBoat');
 
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
   const pacchettiUsati = [
@@ -77,35 +79,29 @@ const ProgettoSeica = () => {
           <div className="size-large">
             <div className="article-informations">
               <div className="title-palette">
-                <h2>Seica Boat Excursions</h2>
-                {/*
-                 <div style={{ backgroundColor: "#193832" }}></div>
-                <div style={{ backgroundColor: "#2a6355" }}></div>
-                <div style={{ backgroundColor: "#f0f5f5" }}></div>
-                <div style={{ backgroundColor: "#4fbb64" }}></div>
-                */}
+                <h2>{t('seicaBoatExcursions.title')}</h2>
               </div>
               <h5 className="text-accent">
                 {" "}
-                <LightbulbIcon fontSize="small" /> Tipo di Sito
+                <LightbulbIcon fontSize="small" />{t('seicaBoatExcursions.siteType.heading')}
               </h5>
-              <p>E-commerce Specializzato</p>
+              <p>{t('seicaBoatExcursions.siteType.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <AccessTimeIcon fontSize="small" />
-                Data pubblicazione
+                {t('seicaBoatExcursions.publicationDate.heading')}
               </h5>
-              <p>18/11/2024</p>
+              <p>{t('seicaBoatExcursions.publicationDate.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <CloudIcon fontSize="small" />
-                Piattaforme
+                {t('seicaBoatExcursions.platforms.heading')}
               </h5>
-              <p>SiteGround</p>
+              <p>{t('seicaBoatExcursions.platforms.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <LinkIcon fontSize="small" />
-                Visita il sito
+                {t('seicaBoatExcursions.visitWebsite.heading')}
               </h5>
               <div className="icon-project">
                 <a
@@ -119,18 +115,14 @@ const ProgettoSeica = () => {
             </div>
             <div className="article-base flex-left-column">
             <p>
-    Un sito di <strong className="text-accent">escursioni in barca</strong> creato con
-    <strong className="text-accent"> WordPress</strong>, utilizzando il tema
-    <strong className="text-accent"> Phlox</strong> e il builder
-    <strong className="text-accent"> Elementor</strong>. Un sito che coniuga
-    creatività e funzionalità, pensato per valorizzare l’esperienza turistica.
+   <Trans i18nKey={t('seicaBoatExcursions.description.paragraph1')} components={{ strong: <strong className="text-accent" />, i: <i />, em:<em/> }} />
   </p>
             </div>
             <div
               className={`paragraph-base size-small flex-center-column ${theme} secondary`}
             >
               <div className="flex-center-column">
-                <h4>Strumenti Usati</h4>
+                <h4>{t('seicaBoatExcursions.toolsUsed.heading')}</h4>
                 <div className="container-skills flex-center-row">
                   {pacchettiUsati.map((element) => (
                     <div
@@ -144,63 +136,43 @@ const ProgettoSeica = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <h4 className="text-accent">{t('seicaBoatExcursions.developmentPhases.heading')}</h4>
               <ul>
     <li>
-      <strong>Studio preliminare:</strong> Ho effettuato una ricerca approfondita sui
-      <strong className="text-accent"> template</strong> per siti di escursioni in barca, 
-      analizzando stili visivi e tecniche per l’utilizzo di 
-      <strong className="text-accent"> Elementor</strong>.
+      <strong>{t('seicaBoatExcursions.developmentPhases.phase1.heading')}</strong> 
+      <Trans i18nKey={t('seicaBoatExcursions.developmentPhases.phase1.description')} components={{ strong: <strong className="text-accent" />, i: <i />, em:<em/> }} />
     </li>
     <li>
-      <strong>Sviluppo organizzativo:</strong> 
+      <strong>{t('seicaBoatExcursions.developmentPhases.phase2.heading')}</strong> 
       <ul>
-        <li>Progettazione della struttura del design con <strong className="text-accent">Figma</strong>.</li>
-        <li>Creazione dell’alberatura delle pagine e loro sviluppo in <strong className="text-accent">WordPress</strong>.</li>
-        <li>Inserimento di contenuti testuali e multimediali.</li>
-        <li>
-          Realizzazione di <strong className="text-accent">disegni in background</strong> con Figma, 
-          per aggiungere un tocco personalizzato.
-        </li>
-        <li>Ottimizzazione del sistema <strong className="text-accent">SEO</strong> per aumentare la visibilità.</li>
+    {t('seicaBoatExcursions.developmentPhases.phase2.tasks', { returnObjects: true }).map((task, index) => (
+      <li key={index} dangerouslySetInnerHTML={{ __html: task.task }} />
+    ))}
       </ul>
     </li>
     <li>
-      <strong>Design visivo:</strong>
+      <strong>{t('seicaBoatExcursions.developmentPhases.phase3.heading')}</strong>
       <ul>
-        <li>
-          <strong>Palette di colori:</strong> Ho scelto una combinazione cromatica che rispecchia i colori del mare:
-          <strong className="text-accent"> #256D85</strong> (Teal Blue), <strong className="text-accent">#3B82F6</strong> (Blue Cornflower), 
-          e <strong className="text-accent">#FDFDFD</strong> (White Smoke).
-        </li>
-        <li>
-          <strong>Tipografia:</strong> <strong className="text-accent">Nunito </strong> 
-          e <strong className="text-accent">Lora</strong>.
-        </li>
-        <li>
-          <strong>Immagini:</strong> Tutti gli elementi visivi sono stati disegnati a mano 
-          con <strong className="text-accent">Figma</strong>.
-        </li>
-      </ul>
+    {t('seicaBoatExcursions.developmentPhases.phase3.subPhases', { returnObjects: true }).map((subPhase, index) => (
+      <li key={index} dangerouslySetInnerHTML={{ __html: subPhase.description }} />
+    ))}
+  </ul>
     </li>
   </ul>
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Background di Figma</h4>
+                <h4>{t('seicaBoatExcursions.figma-bg')}</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4 className="text-accent">Difficoltà principali:</h4>
-              <p>Non ho incontrato difficoltà particolari nello sviluppo di questo sito.</p>
+              <h4 className="text-accent">{t('seicaBoatExcursions.mainDifficulties.heading')}</h4>
+              <p>  <Trans i18nKey={t('seicaBoatExcursions.mainDifficulties.description')} components={{ strong: <strong className="text-accent" />, i: <i />, em:<em/> }} /></p>
             </div>
             <div className="article-base flex-left-column">
-              <h4 className="text-accent">Risultati e conclusioni:</h4>
-              <ul>
-    <li>Un sito web di <strong className="text-accent">escursioni in barca</strong> dal design accattivante.</li>
-    <li>Esperienza visiva coinvolgente grazie all’uso di colori vivaci e contenuti personalizzati.</li>
-    <li>
-      Una struttura <strong className="text-accent">SEO</strong> ampliata per migliorare la 
-      visibilità sui motori di ricerca.
-    </li>
-  </ul>
+              <h4 className="text-accent">{t('seicaBoatExcursions.resultsAndConclusions.heading')}</h4>
+    <ul>
+      {t('seicaBoatExcursions.resultsAndConclusions.points', { returnObjects: true }).map((point, index) => (
+        <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
+      ))}
+    </ul>
   <br/>
             </div>
           </div>

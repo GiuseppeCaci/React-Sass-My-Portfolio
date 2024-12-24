@@ -1,0 +1,27 @@
+{
+    "publicis": {
+      "title": "Publicis Sapient",
+      "date": "From 02/2023 to 03/2024",
+      "tasks": {
+        "heading": "My Tasks",
+        "paragraph1": "Hired by <strong>Publicis Sapient</strong> (a global company specializing in consulting and digital services), I was assigned to the client <strong>Stellantis</strong> as a <strong>Junior Interactive Developer</strong>. In this role, I was responsible for developing, monitoring, and maintaining various web pages and related services, <em>collaborating with different teams on major projects</em>.",
+        "paragraph2": "To fully understand my contribution, it is important to explain the context: <br /> Stellantis manages the websites of some of the most well-known automotive brands, including <span className=\"text-accent\">Alfa Romeo</span>, <span className=\"text-accent\">Abarth</span>, <span className=\"text-accent\">Jeep</span>, <span className=\"text-accent\">Fiat</span>, and <span className=\"text-accent\">Citroën</span>, distributed across many European markets. Each brand had a website for each country, which mainly differed in language, content, and domain but maintained a similar structure. <br /> Development teams, divided by brand, worked with web designers to meet the specific needs of various markets and end customers.",
+        "paragraph3": "In my team, we were responsible for handling daily requests for the different versions of the site. These requests, managed through tickets on the <strong>Jira</strong> platform, included monthly updates, expansion of new pages, and continuous maintenance of the code."
+      },
+      "projects": {
+        "heading": "Various Projects",
+        "paragraph1": "In addition to managing daily tickets, I participated in several parallel projects within the company. <br/> One of the most significant projects was <span className=\"text-accent\">the update and transition of the Fiat Chrysler/PSA websites to the new Stellantis group</span>. <br /> I also contributed to the expansion of the new <span className=\"text-accent\">Fiat</span> websites, where, in addition to managing daily requests, I had the opportunity to create some of the new pages. <br /> Finally, at certain times, I was responsible for training and mentoring new hires and interns in the onboarding and learning process."
+      },
+      "tools": {
+        "heading": "Tools Used"
+      },
+      "skills": {
+        "heading": "Skills Developed",
+        "paragraph1": "With this experience, I had the opportunity to <em>learn and consolidate my ability to work effectively</em> within a team, collaborating with various company roles, from designers to project managers. I honed my ability to communicate with clients, understand their needs, and deliver <span className=\"text-accent\">solutions within deadlines</span>.",
+        "paragraph2": "<em>Collaboration with teams and clients from different countries allowed me to better understand the dynamics of working in a global and multicultural environment.</em>",
+        "paragraph3": "The various projects I participated in gave me the chance to <span className=\"text-accent\">face new challenges</span>, testing and surpassing my limits in terms of <span className=\"text-accent\">problem-solving</span> and time management. This allowed me to develop a strong attention to detail and the ability to adapt to the various needs of the projects.",
+        "paragraph4": "This experience also allowed me to become familiar with the <strong>AEM</strong> platform, working on the management and maintenance of sites through the configuration of various settings, management of <strong>JSON</strong> and <strong>HTML</strong> files, and creation of new pages. I had the opportunity to delve deeper into the organizational system of <strong>Jira</strong>, managing daily workflows and collaboration between various teams. Additionally, I strengthened my knowledge of tools such as <strong>Figma</strong>, used for design and prototyping, and the <strong>Microsoft Office</strong> suite, used daily for project management and organization."
+      }
+    }
+  }
+  

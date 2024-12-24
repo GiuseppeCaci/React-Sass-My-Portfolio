@@ -13,6 +13,7 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CloudIcon from "@mui/icons-material/Cloud";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import LinkIcon from "@mui/icons-material/Link";
+import { useTranslation, Trans } from 'react-i18next';
 
 const ProgettoAdventuresCode = () => {
   //cambio nome alla pagina
@@ -22,6 +23,7 @@ const ProgettoAdventuresCode = () => {
 
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
+    const { t } = useTranslation('adventuresCode');
 
   //creo lista array per ciclo di map e semplificazione quantità di contenuto
   const pluginUsati = [
@@ -81,25 +83,25 @@ const ProgettoAdventuresCode = () => {
               </div>
               <h5 className="text-accent">
                 {" "}
-                <LightbulbIcon fontSize="small" /> Tipo di Sito
+                <LightbulbIcon fontSize="small" /> {t('adventuresCodePortfolio.siteType.heading')}
               </h5>
-              <p>Blog, Storytelling </p>
+              <p>{t('adventuresCodePortfolio.siteType.value')} </p>
               <h5 className="text-accent">
                 {" "}
                 <AccessTimeIcon fontSize="small" />
-                Data pubblicazione
+                {t('adventuresCodePortfolio.publicationDate.heading')}
               </h5>
-              <p>05/10/2024</p>
+              <p> {t('adventuresCodePortfolio.publicationDate.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <CloudIcon fontSize="small" />
-                Piattaforme
+                {t('adventuresCodePortfolio.platforms.heading')}
               </h5>
-              <p>SiteGround</p>
+              <p>{t('adventuresCodePortfolio.platforms.value')}</p>
               <h5 className="text-accent">
                 {" "}
                 <LinkIcon fontSize="small" />
-                Visita il sito
+                {t('adventuresCodePortfolio.visitWebsite.heading')}
               </h5>
               <div className="icon-project">
                 <a
@@ -113,12 +115,7 @@ const ProgettoAdventuresCode = () => {
             </div>
             <div className="article-base flex-left-column">
               <p>
-                L'idea di fondo di questo sito nasce da una domanda: <br />
-                <i>
-                  {" "}
-                  Cosa succede se mescolo la programmazione ai{" "}
-                  <span className="text-accent"> racconti d'avventura?</span>
-                </i>
+            <Trans i18nKey={t('adventuresCodePortfolio.description.paragraph1')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
             </div>
               <img
@@ -127,20 +124,14 @@ const ProgettoAdventuresCode = () => {
               ></img>
                 <div className="article-base flex-left-column">
               <p>
-                L'atmosfera in stile <i>Indiana Jones</i> si combina
-                perfettamente con gli argomenti logici e spesso enigmatici della
-                programmazione. Aggiungi un blog dedicato al coding, una sezione{" "}
-                <strong className="text-accent">Note</strong> dove raccolgo i
-                miei pensieri, una raccolta di esercizi di programmazione, e un
-                tocco di <strong>flat design</strong> come sfondo, ed ecco a voi
-                <strong className="text-accent"> Adventures Code</strong>.
+              <Trans i18nKey={t('adventuresCodePortfolio.description.paragraph2')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
             </div>
             <div
               className={`paragraph-base size-small flex-center-column ${theme} secondary`}
             >
               <div className="flex-center-column">
-                <h4>Strumenti Usati</h4>
+                <h4>{t('adventuresCodePortfolio.toolsUsed.heading')}</h4>
                 <div className="container-skills flex-center-row">
                   {pluginUsati.map((element) => (
                     <div
@@ -154,67 +145,26 @@ const ProgettoAdventuresCode = () => {
               </div>
             </div>
             <div className="article-base flex-left-column">
-              <h4 className="text-accent">Fasi dello sviluppo:</h4>
+              <h4 className="text-accent">{t('adventuresCodePortfolio.developmentPhases.heading')}</h4>
               <ul>
-                <li>
-                  <strong>Studio preliminare: </strong>
-                  Ho approfondito le mie conoscenze su{" "}
-                  <strong className="text-accent">WordPress</strong> e il plugin{" "}
-                  <strong className="text-accent">Elementor</strong>, in quanto
-                  non avevo molta sicurezza degli strumenti da usare.
-                </li>
-                <li>
-                  <strong>Sviluppo organizzativo: </strong>
-                  Ho avviato un nuovo progetto{" "}
-                  <strong className="text-accent">WordPress</strong>,
-                  realizzando il design preliminare con{" "}
-                  <strong className="text-accent">Figma</strong> e definendo
-                  l'alberatura delle pagine per garantire una navigazione
-                  intuitiva.
-                </li>
-                <li>
-                  <strong>Design visivo: </strong>
-                  <ul>
-                    <li>
-                      Palette di colori: ho usato il{" "}
-                      <strong className="text-accent">verde</strong> utilizzato
-                      nel mio portfolio, per accentuare elementi chiave. Per il
-                      background, ho scelto un{" "}
-                      <strong className="text-accent">bianco tenue</strong>,
-                      mentre il <strong className="text-accent">nero</strong>{" "}
-                      per i menu.
-                    </li>
-                    <li>
-                      Tipografia: Ho adottato il font{" "}
-                      <strong className="text-accent">Roboto Flex</strong> per
-                      la sua versatilità e modernità, accompagnato da caratteri{" "}
-                      <strong className="text-accent">sans-serif</strong>, in
-                      linea con il tono del sito.
-                    </li>
-                  </ul>
-                </li>
+              {t('adventuresCodePortfolio.developmentPhases.phases', { returnObjects: true }).map((phase, index) => (
+  <li key={index} dangerouslySetInnerHTML={{ __html: phase.description }} />
+))}
               </ul>
 
               <div className={`${theme} gallery-background container-gallery`}>
-                <h4>Flat Design su Figma</h4>
+                <h4>{t('adventuresCodePortfolio.figmaProject.heading')}</h4>
                 <Gallery images={figmaProject} />
               </div>
-              <h4 className="text-accent">Difficoltà principali:</h4>
+              <h4 className="text-accent">{t('adventuresCodePortfolio.mainDifficulties.heading')}</h4>
               <p>
-                Ho studiato la <strong className="text-accent">SEO</strong> per
-                la prima volta, imparando come ottimizzare il contenuto per i
-                motori di ricerca, ho acquisito esperienza nella creazione di illustrazioni
-                 artistiche su <strong>Figma</strong>, affinando ulteriormente le mie competenze 
-                nel design grafico e nella realizzazione di elementi visivi creativi.
+              <Trans i18nKey={t('adventuresCodePortfolio.mainDifficulties.description')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
             </div>
-            <div className="article-base flex-left-column">
-              <h4 className="text-accent">Risultati e conclusioni:</h4>
+            <div className="article-base flex-left-column last-container">
+              <h4 className="text-accent">{t('adventuresCodePortfolio.resultsAndConclusions.heading')}</h4>
               <p>
-                Un blog e sito di scrittura alternativo, con un design fresco e
-                moderno, che offre un'esperienza utente coinvolgente e
-                visivamente piacevole, facilmente navigabile e ben ottimizzato
-                per il web.
+              <Trans i18nKey={t('adventuresCodePortfolio.resultsAndConclusions.description')} components={{ strong: <strong className="text-accent" />, i: <i />, span:<span/>, em:<em/> }} />
               </p>
             </div>
           </div>
