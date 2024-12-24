@@ -27,6 +27,7 @@ const ProgettoStreaming = () => {
   const pacchettiUsati = [
     "Html",
     "Css",
+    "Tailwind",
     "Javascript",
     "React",
     "React-Redux",
