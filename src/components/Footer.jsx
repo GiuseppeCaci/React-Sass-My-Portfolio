@@ -19,13 +19,20 @@ const Footer = () => {
     <>
       <div className={`container-footer ${theme} secondary`}>
 
-    <div className="section-footer">
-        <ul>
-        <li><a href={import.meta.env.VITE_GITHUB_URL} target="_blank"><GitHubIcon fontSize="large" /></a></li>
-            <li><a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank"><LinkedInIcon fontSize="large" /></a></li>
-            <li><a href={import.meta.env.VITE_CV_URL} download="curriculum-CACI.pdf"><AccountBoxIcon fontSize="large" /></a></li>
-            <li><a href={`mailto:${import.meta.env.VITE_EMAIL}`} target="_blank"><EmailIcon fontSize="large" /></a></li>
+    <div className="section-footer-1">
+      <div>
+        <ul> <h4>{t('contact')}</h4>
+            <li><a href={import.meta.env.VITE_CV_IT_URL} download="curriculum-CACI.pdf">Curriculum (Italian)</a></li>
+            <li><a href={import.meta.env.VITE_CV_EN_URL} download="curriculum-CACI.pdf">Curriculum (English)</a></li>
+            <li><a href={`mailto:${import.meta.env.VITE_EMAIL}`} target="_blank">Email</a></li>
         </ul>
+        </div>
+        <div>
+        <ul> <h4>{t('work')}</h4>
+        <li><a href={import.meta.env.VITE_GITHUB_URL} target="_blank">GitHub</a></li>
+            <li><a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">LinkedIn</a></li>
+        </ul>
+        </div>
     </div>
 
     <div className="section-footer-lang">
