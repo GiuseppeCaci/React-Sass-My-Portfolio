@@ -130,3 +130,15 @@
     margin-bottom: 80px;
   }
 }
+
+.more-margin-bottom {
+  @include respond-to(mobile) {
+    margin-bottom: 70px;
+  }
+  @include respond-to(tablet) {
+    margin-bottom: 110px;
+  }
+  @include respond-to(desktop) {
+    margin-bottom: 110px;
+  }
+}

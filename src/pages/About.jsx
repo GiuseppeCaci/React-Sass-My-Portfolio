@@ -133,7 +133,7 @@ const About = () => {
             </div>
           </div>
           <div
-            className={`paragraph-base size-small flex-left-column ${theme} secondary`}
+            className={`paragraph-base size-small flex-left-column ${theme} secondary more-margin-bottom`}
           >
             <h3>Soft Skills</h3>
             <p>

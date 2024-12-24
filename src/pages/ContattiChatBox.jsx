@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ThemeContext from "../store/theme/ThemeContext";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 import { useTranslation } from "react-i18next";
+import Typewriter from 'typewriter-effect';
 
 const ContattiChatBox = () => {
   const { t } = useTranslation('chatBox');
@@ -129,7 +130,7 @@ const ContattiChatBox = () => {
     if (messages.length > 1) {
       const debounceScroll = setTimeout(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      }, 300);
       return () => clearTimeout(debounceScroll);
     }
   }, [messages]);
@@ -141,7 +142,7 @@ const ContattiChatBox = () => {
       }}
       className={`${theme} ${
         msg.sender === "user" ? "primary chat-user" : "secondary chat-pc"
-      }`}
+      } ${msg.text[0] === '💬...'? "pc-write" : null}`}
     >
       {msg.text.map((text, index) => (
         <p key={index} dangerouslySetInnerHTML={{ __html: text }}></p>
@@ -167,10 +168,10 @@ const ContattiChatBox = () => {
       </div>
     </div>
   ));
-
+ 
   return (
     <div
-      className={`main-base chatBox-base ${theme} primary container-invisible ${
+      className={`main-base-chat chatBox-base ${theme} primary container-invisible ${
         isVisible ? "visible" : ""
       }`}
     >
