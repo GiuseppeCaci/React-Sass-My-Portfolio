@@ -21,14 +21,14 @@ const Footer = () => {
 
     <div className="section-footer-1">
       <div>
-        <ul> <h4>{t('contact')}</h4>
+        <ul> <h3>{t('contact')}</h3>
             <li><a href={import.meta.env.VITE_CV_IT_URL} download="curriculum-CACI.pdf">Curriculum (Italian)</a></li>
             <li><a href={import.meta.env.VITE_CV_EN_URL} download="curriculum-CACI.pdf">Curriculum (English)</a></li>
             <li><a href={`mailto:${import.meta.env.VITE_EMAIL}`} target="_blank">Email</a></li>
         </ul>
         </div>
         <div>
-        <ul> <h4>{t('work')}</h4>
+        <ul> <h3>{t('work')}</h3>
         <li><a href={import.meta.env.VITE_GITHUB_URL} target="_blank">GitHub</a></li>
             <li><a href={import.meta.env.VITE_LINKEDIN_URL} target="_blank">LinkedIn</a></li>
         </ul>

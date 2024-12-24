@@ -650,9 +650,12 @@ button {
 .section-footer-1 div ul h4 {
   margin-bottom: 3px;
 }
+.section-footer-1 div ul li {
+  padding: 1px;
+}
 .section-footer-1 div ul li a {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .section-footer-lang {

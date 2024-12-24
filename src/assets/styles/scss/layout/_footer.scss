@@ -51,9 +51,10 @@ $footer-height-desktop: 90px;
     text-align: start;
     @include responsive-flex(column, space-evenly, start);
     li {
+      padding: 1px;
       a{
         font-size: $font-text-s;
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-semi-bold;
       }
     }
   }
