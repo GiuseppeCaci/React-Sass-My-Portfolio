@@ -55,6 +55,9 @@ const About = () => {
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
   const isVisible = useVisibilityAndScrollReset();
 
+  useEffect(() => {
+    console.log(theme)
+  },[theme])
 
   return (
     <>
@@ -68,7 +71,7 @@ const About = () => {
             <h1>{t('about-title')}</h1>
           </div>
           <div className="about-bio pm-hero">
-            <img src="/assets/generic/img-about.jpg" alt="About"></img>
+            <img src={`/assets/generic/${theme === "dark-mode"? "about-dark.png" : "about-light.png"}`} alt="About"></img>
             <div className="about-bio-text">
   <p>
   <Trans i18nKey={t('about-intro')} components={{ strong: <strong className="text-accent" />, i: <i /> }} />

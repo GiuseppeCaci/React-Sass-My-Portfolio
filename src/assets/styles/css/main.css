@@ -1909,7 +1909,7 @@ button {
   }
   .about-bio img {
     border-radius: 5px;
-    max-width: 130px;
+    max-width: 150px;
     margin: 0px 17px 7px 21px;
     float: left;
   }
@@ -1951,7 +1951,7 @@ button {
 @media (min-width: 600px) and (max-width: 1024px) {
   .about-bio img {
     border-radius: 5px;
-    max-width: 190px;
+    max-width: 200px;
     margin: 0px 17px 7px 0px;
     float: left;
   }
@@ -1993,7 +1993,7 @@ button {
   }
   .about-bio img {
     border-radius: 5px;
-    max-width: 210px;
+    max-width: 230px;
     margin: 0px 30px 7px 0px;
     float: left;
   }

@@ -6,7 +6,7 @@
     margin: 10px 0px 10px 0px;
     img {
       border-radius: 5px;
-      max-width: 130px;
+      max-width: 150px;
       margin: 0px 17px 7px 21px;
       float: left;
     }
@@ -48,7 +48,7 @@
   @include respond-to(tablet) {
     img {
       border-radius: 5px;
-      max-width: 190px;
+      max-width: 200px;
       margin: 0px 17px 7px 0px;
       float: left;
     }
@@ -89,7 +89,7 @@
     margin: 10px 0px 10px 0px;
     img {
       border-radius: 5px;
-      max-width: 210px;
+      max-width: 230px;
       margin: 0px 30px 7px 0px;
       float: left;
     }
