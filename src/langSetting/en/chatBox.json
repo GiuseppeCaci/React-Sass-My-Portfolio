@@ -6,29 +6,12 @@
       "Why should you choose to work with Giuseppe?",
       "I just wanted to say hello!"
     ],
-    "quotes": [
-      "We need a bigger boat!🦈",
-      "Yippee-ki-yay!!💥",
-      "In the jungle, you’ll have to stay until a five or an eight appears.🌴",
-      "LEGEND - don't move - DARIO!⚔️",
-      "Now that's a hell of a pile of s**t!💩",
-      "Pepper stew? At eight in the morning? Dead rats at noon?🐀",
-      "Look beyond what you see!🦁"
-    ],
     "messages": {
       "chatbotIntro": "Hello!👋",
       "chatbotDescription": "I am a chatbot created by Giuseppe to answer your questions! How can I assist you?",
       "buttonBackToQuestions": "Back to questions"
     },
     "responses": {
-      "quoteRequest": {
-        "question": "Give me a movie quote!",
-        "response": "Yippee-ki-yay!!💥"
-      },
-      "anotherQuote": {
-        "question": "Another one!",
-        "response": "We need a bigger boat!🦈"
-      },
       "favoriteQuote": {
         "question": "Tell me your favorite one!",
         "response": "September by Earth, Wind & Fire... but only when everything in the schedule goes perfectly! 🎉"

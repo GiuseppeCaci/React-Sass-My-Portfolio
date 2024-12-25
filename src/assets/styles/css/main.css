@@ -3693,7 +3693,9 @@ button {
 }
 .chatBox-base .chatBox-sender .chat-user {
   width: 100%;
-  margin: 13px 0px;
+  margin: 20px 0px;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 .chatBox-base .chatBox-sender .chat-user p {
   font-size: 1.125rem;
@@ -3702,7 +3704,7 @@ button {
 }
 .chatBox-base .chatBox-sender .chat-pc {
   width: fit-content;
-  padding: 5px 3px;
+  padding: 10px;
   border-radius: 15px;
 }
 .chatBox-base .chatBox-sender .chat-pc p {
@@ -3732,6 +3734,17 @@ button {
   color: none !important;
 }
 
+/* Aggiungi questa classe al tuo CSS */
+.new-message p {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards; /* Aggiungi l'animazione di fading */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes color-change-dark {
   0% {
     background: #325a4d;

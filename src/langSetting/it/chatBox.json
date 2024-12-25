@@ -6,29 +6,12 @@
       "Perché dovresti scegliere di lavorare con Giuseppe?",
       "Volevo solo salutare!"
     ],
-    "quotes": [
-      "Ci serve una barca piu grande!🦈",
-      "Yippee-ki-yay!!💥",
-      "Nella giungla dovrai stare finché un cinque o un otto non compare.🌴",
-      "LEGGEN - non ti muovere - DARIO!⚔️",
-      "Questa sì che è una bella montagna di m**!💩",
-      "Peperonata? Alle otto del mattino? A mezzogiorno, topi morti?🐀",
-      "Guarda oltre ciò che vedi!🦁"
-    ],
     "messages": {
       "chatbotIntro": "Salve!👋",
       "chatbotDescription": "Sono un chatbot creato da Giuseppe per rispondere alle tue domande! Come posso esserti utile?",
       "buttonBackToQuestions": "Torna alle domande"
     },
     "responses": {
-      "quoteRequest": {
-        "question": "Fammi sentire una citazione cinematografica!",
-        "response": "Yippee-ki-yay!!💥"
-      },
-      "anotherQuote": {
-        "question": "Un'altra!",
-        "response": "Ci serve una barca più grande!🦈"
-      },
       "favoriteQuote": {
         "question": "Dimmi la tua preferita!",
         "response": "September dei Earth, Wind & Fire...Ma solo quando tutto nella programmazione è andato per il verso giusto! 🎉"

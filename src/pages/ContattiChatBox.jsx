@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import ThemeContext from "../store/theme/ThemeContext";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
 import { useTranslation } from "react-i18next";
-import Typewriter from 'typewriter-effect';
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const ContattiChatBox = () => {
   const { t } = useTranslation('chatBox');
   const isVisible = useVisibilityAndScrollReset();
+  gsap.registerPlugin(ScrollToPlugin);
   const { theme } = useContext(ThemeContext);
   const [messages, setMessages] = useState([
     { sender: "box", text: [""], textButtons: [], buttons: [] },
@@ -56,14 +58,6 @@ const ContattiChatBox = () => {
     let textButtonQuestion = [];
 
     switch (question) {
-      case t('responses.quoteRequest.question'):
-      case t('responses.anotherQuote.question'):
-        const citazione = getRandomQuote();
-        response = [citazione];
-        textButtonQuestion = [t('responses.anotherQuote.question'), t('messages.buttonBackToQuestions')];
-        break;
-
- 
         case t('responses.webAppCreation.question'):
           response = [t('responses.webAppCreation.response')];
           textButtonQuestion = [t('responses.notListenMusicFunky.question'), t('responses.favoriteQuote.question')];
@@ -77,7 +71,7 @@ const ContattiChatBox = () => {
 
       case t('responses.greet.question'):
         response = [t('responses.greet.response')];
-        textButtonQuestion = [t('responses.quoteRequest.question'), t('responses.webAppCreation.question')];
+        textButtonQuestion = [ t('responses.webAppCreation.question')];
         break;
 
       case t('responses.chooseGiuseppe.question'):
@@ -128,47 +122,62 @@ const ContattiChatBox = () => {
 
   useEffect(() => {
     if (messages.length > 1) {
-      const debounceScroll = setTimeout(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
-      return () => clearTimeout(debounceScroll);
+      const messagesEnd = messagesEndRef.current;
+      const offset = 400; // Definisci l'offset (puoi modificarlo a piacere)
+  
+      gsap.to(window, {
+        scrollTo: { y: messagesEnd.offsetTop - offset, autoKill: false },
+        duration: 2, // Tempo in secondi per il movimento
+        ease: "power2.out", // Easing per un movimento più fluido
+      });
     }
   }, [messages]);
 
-  const Message = memo(({ msg, theme, handleUseMessage }) => (
-    <div
-      style={{
-        textAlign: msg.sender === "user" ? "right" : "left",
-      }}
-      className={`${theme} ${
-        msg.sender === "user" ? "primary chat-user" : "secondary chat-pc"
-      } ${msg.text[0] === '💬...'? "pc-write" : null}`}
-    >
-      {msg.text.map((text, index) => (
-        <p key={index} dangerouslySetInnerHTML={{ __html: text }}></p>
-      ))}
-
-      <div className="button-chat">
-        {msg.buttons.length > 0 && (
-          <Link to={`${msg.buttons[1]}`}>
-            <button>{msg.buttons[0]}</button>
-          </Link>
-        )}
-        {msg.textButtons.length > 0 &&
-          msg.textButtons.map((questionExtra, index) => (
-            <button key={index} onClick={() => handleUseMessage(questionExtra)}>
-              {questionExtra}
+  const Message = memo(({ msg, theme, handleUseMessage }) => {
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      // Fai apparire il messaggio dopo un breve ritardo
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 100); // Ritardo di 100ms per far partire la transizione
+  
+      return () => clearTimeout(timer);
+    }, []); // Effetto da eseguire una sola volta quando il messaggio viene montato
+  
+    return (
+      <div
+        style={{
+          textAlign: msg.sender === "user" ? "right" : "left",
+        }}
+        className={`${theme} ${msg.sender === "user" ? "primary chat-user" : "secondary chat-pc"} ${msg.text[0] === '💬...' ? "pc-write" : null} message ${isVisible ? 'message-visible' : ''}`}
+      >
+        {msg.text.map((text, index) => (
+          <p key={index} dangerouslySetInnerHTML={{ __html: text }}></p>
+        ))}
+  
+        <div className="button-chat">
+          {msg.buttons.length > 0 && (
+            <Link to={`${msg.buttons[1]}`}>
+              <button>{msg.buttons[0]}</button>
+            </Link>
+          )}
+          {msg.textButtons.length > 0 &&
+            msg.textButtons.map((questionExtra, index) => (
+              <button key={index} onClick={() => handleUseMessage(questionExtra)}>
+                {questionExtra}
+              </button>
+            ))}
+          {msg.textButtons.length === 0 && msg.sender === "bot" && !isLoading && (
+            <button onClick={() => handleUseMessage(t('messages.buttonBackToQuestions'))}>
+              {t('cta-1')}
             </button>
-          ))}
-        {msg.textButtons.length === 0 && msg.sender === "bot" && !isLoading && (
-          <button onClick={() => handleUseMessage(t('messages.buttonBackToQuestions'))}>
-            {t('cta-1')}
-          </button>
-        )}
+          )}
+        </div>
       </div>
-    </div>
-  ));
- 
+    );
+  });
+  
   return (
     <div
       className={`main-base-chat chatBox-base ${theme} primary container-invisible ${
@@ -197,6 +206,8 @@ const ContattiChatBox = () => {
             />
           ))}
         <div ref={messagesEndRef} />
+      </div>
+      <div className="more-margin-bottom">
       </div>
     </div>
   );

@@ -1,16 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import i18n from 'i18next';
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const LanguageSwitcher = () => {
   // Stato per la lingua attuale
   const [language, setLanguage] = useState('en'); 
-
+  gsap.registerPlugin(ScrollToPlugin);
   // Funzione per cambiare la lingua
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);  // Cambia la lingua con i18n
     setLanguage(lang);          // Aggiorna lo stato
     localStorage.setItem('language', lang);  // Salva la lingua nel localStorage
-    window.location.reload();
+    gsap.to(window, {
+      scrollTo: { y: 0, autoKill: false }, // Scorrere fino alla parte superiore della pagina
+      duration: 0.5, // Tempo in secondi per il movimento
+      ease: "power2.out", // Easing per un movimento fluido
+    });
+    setTimeout(() => {
+      window.location.reload();
+    }, 500); // Ritardo di 2 secondi
+  
   };
 
   useEffect(() => {
