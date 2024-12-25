@@ -155,14 +155,37 @@
 }
 
 
-/* Aggiungi questa classe al tuo CSS */
-.new-message p {
-  opacity: 0;
-  animation: fadeIn 0.5s forwards; /* Aggiungi l'animazione di fading */
+.chat-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px !important;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
+.chat-loading p {
+  margin: 0px !important;
+  padding: 0px !important;
+  animation: bounce 0.8s infinite ease-in-out;
+  font-size: 30px !important;
+}
+
+.chat-loading p:nth-child(1) {
+  animation-delay: 0s; /* Primo elemento, nessun ritardo */
+}
+
+.chat-loading p:nth-child(2) {
+  animation-delay: 0.2s; /* Secondo elemento, ritardo di 0.2s */
+}
+
+.chat-loading p:nth-child(3) {
+  animation-delay: 0.4s; /* Terzo elemento, ritardo di 0.4s */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Inizio e fine a posizione originale */
+  }
+  50% {
+    transform: translateY(-7px); /* A metà del ciclo, si sposta verso l'alto */
   }
 }
