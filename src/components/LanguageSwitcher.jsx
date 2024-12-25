@@ -5,7 +5,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const LanguageSwitcher = () => {
   // Stato per la lingua attuale
-  const [language, setLanguage] = useState('en'); 
+  const [language, setLanguage] = useState('it'); 
   gsap.registerPlugin(ScrollToPlugin);
   // Funzione per cambiare la lingua
   const changeLanguage = (lang) => {
@@ -28,7 +28,7 @@ const LanguageSwitcher = () => {
   
     // Se la lingua non è presente, assegna 'en' come valore di default
     if (!savedLanguage) {
-      savedLanguage = 'en';
+      savedLanguage = 'it';
       localStorage.setItem('language', savedLanguage); // Salva la lingua di default nel localStorage
     }
   

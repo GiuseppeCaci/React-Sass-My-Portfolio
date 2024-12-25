@@ -4,7 +4,7 @@ import ThemeContext from "./ThemeContext";
 
 const ThemeProvider = ({ children }) => {
   //creo variabile richiamando il localStorage "theme", e se non è presente inserisco "dark-mode" come default
-  const storedTheme = localStorage.getItem("theme") || "dark-mode";
+  const storedTheme = localStorage.getItem("theme") || "light-mode";
   //creo uno stato inserendo il tema di default
   const [theme, setTheme] = useState(storedTheme);
 
