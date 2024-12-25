@@ -42,7 +42,7 @@
       },
       "aboutMe": {
         "question": "I would love to know more about you!",
-        "response": "To learn more about me, you can visit my About page or read my story on my blog!📖"
+        "response": "To learn more about me, you can visit my <strong>About Me</strong> page or read my story on my blog!📖"
       },
       "myBlog": {
         "question": "Do you have a blog?",
