@@ -1,0 +1,78 @@
+{
+  "StreamingP": {
+    "title": "Proyecto Streaming",
+    "siteType": {
+      "heading": "Tipo de Sitio",
+      "value": "Plataforma de Streaming"
+    },
+    "publicationDate": {
+      "heading": "Fecha de Publicación",
+      "value": "05/11/2024"
+    },
+    "platforms": {
+      "heading": "Plataformas",
+      "value": "Netlify, Heroku, MongoDB, Github"
+    },
+    "visitWebsite": {
+      "heading": "Visita el sitio"
+    },
+    "description1": {
+      "paragraph1": "Este proyecto simula una plataforma de streaming (similar a <strong className=\"text-accent\">Netflix</strong>), poniendo a prueba mis habilidades en diseño, gestión de estados complejos en <i>React</i> e implementación de <strong className=\"text-accent\">API RESTful</strong>."
+    },
+    "description2": {
+      "paragraph1": "Abordé todas las fases del proyecto, desde la planificación inicial hasta la realización completa de las funcionalidades (Base de datos, Servidor, Cliente), incluyendo el diseño, la gestión de usuarios y la construcción de una UX intuitiva. Este proyecto representa un desafío significativo para consolidar mis competencias en desarrollo <i>full stack</i>."
+    },
+    "toolsUsed": {
+      "heading": "Herramientas Usadas"
+    },
+    "title-development": "Fases de Desarrollo",
+    "phase1": "Estudio preliminar: Para el proyecto fue necesaria una extensa fase de organización y creación de estructuras en pseudocódigo. Comencé estructurando la base de datos (<i>MongoDB</i>), seguido por el servidor y las llamadas API, para luego proceder al <strong className=\"text-accent\">frontend</strong>, incluyendo tanto la estructura estilística como la gestión de estados en React.",
+    "phase2": "Desarrollo organizativo:",
+    "developmentPhases": {
+      "description": [
+        {
+          "description": "<strong className=\"text-accent\">Base de Datos</strong>: Creación de la estructura de datos para usuarios (registro, inicio de sesión, confirmación de correo electrónico), favoritos (medios guardados por los usuarios) y medios (datos sobre los contenidos individuales)."
+        },
+        {
+          "description": "<strong className=\"text-accent\">Backend</strong>: Implementación de funciones <i>CRUD</i> para gestionar usuarios, productos y favoritos. Posteriormente, cada endpoint fue probado con <strong className=\"text-accent\">Postman</strong> para verificar su correcto funcionamiento."
+        },
+        {
+          "description": "<strong className=\"text-accent\">Frontend</strong>: Estructuración del sitio tanto del lado cliente (estructura de páginas) como de la gestión de estados (<i>Redux</i>). El uso de Redux me permitió crear estados complejos y bien estructurados para manejar las llamadas API. Una vez completada la integración con el backend, finalicé el diseño visual del sitio."
+        }
+      ]
+    },
+    "phase3": "Diseño Visual:",
+    "subPhases": {
+      "description": [
+        {
+          "description": "Paleta de colores: Utilicé colores inspirados en <strong className=\"text-accent\">Netflix</strong>, incluyendo: <strong className=\"text-accent\">rojo</strong> (#E50914) para los acentos principales, <strong className=\"text-accent\">negro</strong> (#141414) para el fondo y <strong className=\"text-accent\">gris</strong> (#B3B3B3) para los detalles."
+        },
+        {
+          "description": "Tipografía: Elegí una fuente moderna y legible: <strong className=\"text-accent\">sans-serif</strong>."
+        },
+        {
+          "description": "Imágenes: Para las portadas de los medios, creé imágenes personalizadas utilizando <strong className=\"text-accent\">Leonardo AI</strong> para garantizar un diseño único y específico."
+        }
+      ]
+    },
+    "screenBg": "Capturas del Proyecto",
+    "mainDifficulties": {
+      "heading": "Dificultades Principales",
+      "description": "Este proyecto me puso a prueba en muchos aspectos. En el <i>backend</i>, inicialmente encontré compleja la gestión de funciones relacionadas con la <strong className=\"text-accent\">autenticación</strong> mediante tokens y el envío de correos electrónicos. En el <i>frontend</i>, la creación de estados ramificados con Redux en todo el sitio fue un desafío, así como la implementación de <strong className=\"text-accent\">localStorage</strong> para optimizar el flujo de datos."
+    },
+    "title-result": "Resultados y Conclusiones:",
+    "results": {
+      "description": [
+        "Funcionalidad de registro e inicio de sesión de usuarios, con confirmación por correo electrónico.",
+        "Gestión del cambio de contraseña y la imagen de perfil del usuario.",
+        "Posibilidad para los usuarios de agregar y eliminar medios de sus favoritos.",
+        "Carga y gestión de películas en la plataforma, con opciones de edición y eliminación.",
+        "Optimización de llamadas API mediante Redux y uso de <strong className=\"text-accent\">localStorage</strong>.",
+        "Integración de funcionalidades avanzadas de <i>backend</i>, incluida la autenticación basada en tokens.",
+        "Creación de un diseño moderno inspirado en la plataforma <strong className=\"text-accent\">Netflix</strong>.",
+        "Implementación de un <strong className=\"text-accent\">algoritmo</strong> para filtrar medios similares.",
+        "Implementación de tres tipos de respuesta en el motor de búsqueda: <i>no se encontraron medios</i>, <i>se encontró un medio</i>, <i>se encontraron varios medios</i>."
+      ]
+    }
+  }
+}

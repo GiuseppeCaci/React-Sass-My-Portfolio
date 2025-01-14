@@ -1,0 +1,54 @@
+{
+  "progettoPortfolio": {
+      "siteType": {
+          "heading": "Tipo de Sitio",
+          "value": "Portafolio personal"
+      },
+      "publicationDate": {
+          "heading": "Fecha de Publicación",
+          "value": "18/09/2024"
+      },
+      "platforms": {
+          "heading": "Plataformas",
+          "value": "Netlify, GitHub"
+      },
+      "visitWebsite": {
+          "heading": "Visita el sitio"
+      },
+      "description": {
+          "paragraph1": "El sitio es una vitrina digital de mi <strong>trayectoria profesional</strong> como desarrollador, diseñado para mostrar <span className=\"text-accent\">habilidades</span>, <span className=\"text-accent\">proyectos</span> y <span className=\"text-accent\">colaboraciones</span>. El enfoque está en un <i>diseño minimalista</i> y <i>funcionalidades intuitivas</i>, ofreciendo una visión clara de mis <strong>competencias</strong>."
+      },
+      "toolsUsed": {
+          "heading": "Herramientas Usadas"
+      },
+      "developmentPhases": {
+          "heading": "Fases del Desarrollo",
+          "phases": [
+              {
+                  "description": "Investigaciones preliminares: Análisis de <i>plantillas</i> y <i>estándares</i> para definir funciones y diseño."
+              },
+              {
+                  "description": "Desarrollo técnico: Uso de <span className=\"text-accent\">React</span> para un front-end escalable, gestión de páginas con <span className=\"text-accent\">react-router-dom</span> y cambio de tema dinámico mediante <span className=\"text-accent\">Context API</span>."
+              },
+              {
+                  "description": "Ejemplo de código para resaltar la sintaxis: Código para la implementación de la sintaxis en React."
+              }
+          ],
+          "phases2": "Diseño visual: Paleta de colores verde oscuro para modo oscuro, gris claro y verde para el modo claro, tipografía Poppins e Inter."
+      },
+      "figmaProject": {
+          "heading": "Proyectos Figma"
+      },
+      "mainDifficulties": {
+          "heading": "Dificultades Principales",
+          "description": "La elección de los colores requirió varios intentos para lograr el equilibrio adecuado."
+      },
+      "resultsAndConclusions": {
+          "heading": "Resultados y Conclusiones",
+          "description": "Un <i>diseño minimalista</i> y <i>funcional</i> que refleja mis <strong>competencias profesionales</strong> y ofrece una experiencia de usuario <span className=\"text-accent\">intuitiva</span>."
+      },
+      "dispositives": {
+          "heading": "En varios dispositivos"
+      }
+  }
+}

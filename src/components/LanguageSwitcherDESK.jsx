@@ -50,6 +50,12 @@ const LanguageSwitcherDESK = () => {
         onClick={() => changeLanguage('en')}
         style={{ cursor: 'pointer', opacity: language === 'en' ? 1 : 0.5 }}
       />
+       <img
+        src="/assets/lang/es.png"
+        alt="Spanish"
+        onClick={() => changeLanguage('es')}
+        style={{ cursor: 'pointer', opacity: language === 'es' ? 1 : 0.5 }}
+      />
     </div>
   );
 };

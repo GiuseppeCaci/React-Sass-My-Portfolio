@@ -1,0 +1,26 @@
+{
+  "publicis": {
+    "title": "Public Sapient",
+    "date": "Desde 02/2023 hasta 03/2024",
+    "tasks": {
+      "heading": "Mis responsabilidades",
+      "paragraph1": "Contratado por <strong>Publicis Sapient</strong> (empresa global especializada en consultoría y servicios digitales), fui asignado al cliente <strong>Stellantis</strong> como <strong>Junior Interactive Developer</strong>. En este rol, me encargué de desarrollar, monitorear y mantener diversas páginas web y servicios relacionados, <em>colaborando con varios equipos en proyectos importantes</em>.",
+      "paragraph2": "Para comprender completamente mi contribución, es útil explicar el contexto: <br /> Stellantis gestiona los sitios web de algunas de las marcas automovilísticas más conocidas, incluyendo <span className=\"text-accent\">Alfa Romeo</span>, <span className=\"text-accent\">Abarth</span>, <span className=\"text-accent\">Jeep</span>, <span className=\"text-accent\">Fiat</span> y <span className=\"text-accent\">Citroën</span>, divididos en varios mercados europeos. Cada marca tenía un sitio para cada país, que difería principalmente en idioma, contenidos y dominio, pero mantenía una estructura similar. <br /> Los equipos de desarrollo, divididos por marca, colaboraban con los diseñadores web para satisfacer las necesidades específicas de los diferentes mercados y clientes finales.",
+      "paragraph3": "En mi equipo, gestionábamos las solicitudes diarias para las diversas versiones del sitio. Estas solicitudes, manejadas a través de tickets en la plataforma <strong>Jira</strong>, incluían actualizaciones mensuales, expansión de nuevas páginas y el mantenimiento constante del código."
+    },
+    "projects": {
+      "heading": "Los diversos proyectos",
+      "paragraph1": "Además de la gestión diaria de tickets, participé en varios proyectos paralelos dentro de la empresa. <br /> Uno de los proyectos más significativos fue <span className=\"text-accent\">la actualización y transición de los sitios web de las marcas Fiat Chrysler/PSA al nuevo grupo Stellantis</span>. <br /> También contribuí a la expansión de los nuevos sitios <span className=\"text-accent\">Fiat</span>, donde, además de gestionar las solicitudes diarias, tuve la oportunidad de crear algunas de las nuevas páginas. <br /> Finalmente, en algunos periodos, me encargué de formar y acompañar a los nuevos empleados y pasantes en el proceso de incorporación y aprendizaje del trabajo."
+    },
+    "tools": {
+      "heading": "Herramientas usadas"
+    },
+    "skills": {
+      "heading": "Habilidades desarrolladas",
+      "paragraph1": "Con esta experiencia, tuve la oportunidad de <em>aprender y consolidar mis habilidades para trabajar eficazmente</em> dentro de un equipo, cooperando con diversas figuras empresariales, desde diseñadores hasta gestores de proyectos. Perfeccioné mi capacidad de comunicarme con los clientes, comprender sus necesidades y proporcionar <span className=\"text-accent\">soluciones dentro de los plazos establecidos</span>.",
+      "paragraph2": "<em>La colaboración con equipos y clientes de diferentes países me permitió comprender mejor las dinámicas del trabajo en un entorno global y multicultural.</em>",
+      "paragraph3": "Los diversos proyectos en los que participé me ofrecieron la posibilidad de <span className=\"text-accent\">enfrentar nuevos desafíos</span>, poniéndome a prueba y superando mis límites en términos de <span className=\"text-accent\">resolución de problemas</span> y gestión del tiempo. Esto me permitió desarrollar una gran atención a los detalles y una capacidad de adaptación a las diferentes necesidades de los proyectos.",
+      "paragraph4": "Esta experiencia también me permitió familiarizarme con la plataforma <strong>AEM</strong>, encargándome de la gestión y el mantenimiento de los sitios a través de la configuración de varios ajustes, la gestión de archivos <strong>JSON</strong> y <strong>HTML</strong>, y la creación de nuevas páginas. Tuve la oportunidad de profundizar en el sistema organizativo de <strong>Jira</strong>, gestionando diariamente los flujos de trabajo y la colaboración entre los diferentes equipos. Además, consolidé mi conocimiento de herramientas como <strong>Figma</strong>, utilizado para el diseño y la creación de prototipos, y el paquete <strong>Microsoft Office</strong>, empleado diariamente para la gestión y organización de los proyectos."
+    }
+  }
+}

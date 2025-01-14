@@ -16,7 +16,6 @@ import enStreamingP from './langSetting/en/streamingP.json';
 import enNavBar from './langSetting/en/navBar.json';
 import enFooter from './langSetting/en/footer.json';
 
-
 import itHome from './langSetting/it/home.json';
 import itAbout from './langSetting/it/about.json';
 import itChatBox from './langSetting/it/chatBox.json';
@@ -29,6 +28,19 @@ import itGiuseppeCaci from './langSetting/it/giuseppeCaci.json';
 import itStreamingP from './langSetting/it/streamingP.json';
 import itNavBar from './langSetting/it/navBar.json';
 import itFooter from './langSetting/it/footer.json';
+
+import esHome from './langSetting/es/home.json';
+import esAbout from './langSetting/es/about.json';
+import esChatBox from './langSetting/es/chatBox.json';
+import esPortfolio from './langSetting/es/portfolio.json';
+import esPublicis from './langSetting/es/publicis.json';
+import esSeicaBoat from './langSetting/es/seicaBoat.json';
+import esPanasci from './langSetting/es/panasci.json';
+import esAdventures from './langSetting/es/adventuresCode.json';
+import esGiuseppeCaci from './langSetting/es/giuseppeCaci.json';
+import esStreamingP from './langSetting/es/streamingP.json';
+import esNavBar from './langSetting/es/navBar.json';
+import esFooter from './langSetting/es/footer.json';
 
 const resources = {
   en: {
@@ -58,6 +70,20 @@ const resources = {
     streamingP: itStreamingP,
     navBar:itNavBar,
     footer:itFooter,
+  },
+  es: {
+    home: esHome,
+    about: esAbout,
+    chatBox:esChatBox,
+    portfolio:esPortfolio,
+    publicis:esPublicis,
+    seicaBoat:esSeicaBoat,
+    panasci:esPanasci,
+    adventuresCode:esAdventures,
+    giuseppeCaci: esGiuseppeCaci,
+    streamingP: esStreamingP,
+    navBar:esNavBar,
+    footer:esFooter,
   },
 };
 

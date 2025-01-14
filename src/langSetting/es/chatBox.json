@@ -1,0 +1,64 @@
+{
+  "predefinedQuestions": [
+      "¿Tienes un portafolio?",
+      "¡Me gustaría saber más sobre ti!",
+      "¿Cómo puedo contactarte?",
+      "¿Por qué debería elegir trabajar con Giuseppe?",
+      "¡Solo quería saludar!"
+  ],
+  "messages": {
+      "chatbotIntro": "¡Hola!👋",
+      "chatbotDescription": "Soy un chatbot creado por Giuseppe para responder a tus preguntas. ¿En qué puedo ayudarte?",
+      "buttonBackToQuestions": "Volver a las preguntas"
+  },
+  "responses": {
+      "favoriteQuote": {
+          "question": "¡Dime tu favorita!",
+          "response": "September de Earth, Wind & Fire... ¡Pero solo cuando todo en la programación ha salido bien! 🎉"
+      },
+      "notListenMusicFunky": {
+          "question": "No escucho música Funky...",
+          "response": "...🤔"
+      },
+      "webAppCreation": {
+          "question": "¿Cómo se crea una Web App?",
+          "response": "Con conocimientos de programación, pasión, dedicación, muchas tazas de café y algo de música funky. 🕺"
+      },
+      "greet": {
+          "question": "¡Solo quería saludar!",
+          "response": "¡Hola! Gracias por visitar el sitio, ¡ha sido un placer!👋😊"
+      },
+      "chooseGiuseppe": {
+          "question": "¿Por qué debería elegir trabajar con Giuseppe?",
+          "response": "Con años de experiencia en programación, pongo pasión y dedicación en cada proyecto. Y si el conocimiento no es suficiente, ¡siempre está la determinación de aprender y encontrar la solución correcta!💡"
+      },
+      "portfolio": {
+          "question": "¿Tienes un portafolio?",
+          "response": "¡Por supuesto! ¡Échale un vistazo a mi portafolio! 💻"
+      },
+      "portfolioMoreDetails": {
+          "question": "Detalles del portafolio",
+          "response": "El portafolio está organizado de la siguiente manera:</br>• Colaboraciones, es decir, experiencias laborales en el sector.</br>• Sitios web, creados y activos en línea.</br>• Proyectos, experimentales y publicados en GitHub.</br></br>Cada trabajo incluye una ficha detallada donde analizo varios aspectos: desde los desafíos técnicos hasta las soluciones adoptadas, y los resultados obtenidos. 📂"
+      },
+      "aboutMe": {
+          "question": "¡Me gustaría saber más sobre ti!",
+          "response": "Para saber más sobre mí, puedes visitar mi página <strong>Quién Soy</strong> o leer mi historia en mi blog.📖"
+      },
+      "myBlog": {
+          "question": "¿Tienes un blog?",
+          "response": "¡Por supuesto! Pero no es un blog cualquiera. Además de compartir artículos y ejercicios de código, ¡también cuento historias de aventuras mezcladas con programación!😎"
+      },
+      "contactMe": {
+          "question": "¿Cómo puedo contactarte?",
+          "response": "¡Puedes enviarme un correo electrónico y te responderé dentro del día! 📧"
+      }
+  },
+  "buttons": {
+      "GoPortfolio": "Ir al Portafolio",
+      "portfolioDetails": "Detalles del portafolio",
+      "AboutMe": "Ir a Quién Soy",
+      "myBlog": "Ir a mi Blog",
+      "contactMe": "Envíame un correo"
+  },
+  "cta-1": "Atrás"
+}

@@ -1,0 +1,80 @@
+{
+  "seicaBoatExcursions": {
+    "title": "Seica Boat Excursions",
+    "siteType": {
+      "heading": "Tipo de Sitio",
+      "value": "E-commerce Especializado"
+    },
+    "publicationDate": {
+      "heading": "Fecha de Publicación",
+      "value": "18/11/2024"
+    },
+    "platforms": {
+      "heading": "Plataformas",
+      "value": "SiteGround"
+    },
+    "visitWebsite": {
+      "heading": "Visita el sitio"
+    },
+    "description": {
+      "paragraph1": "Un sitio de <strong className=\"text-accent\">excursiones en barco</strong> creado con <strong className=\"text-accent\">WordPress</strong>, utilizando el tema <strong className=\"text-accent\">Phlox</strong> y el constructor <strong className=\"text-accent\">Elementor</strong>. Un sitio que combina creatividad y funcionalidad, diseñado para realzar la experiencia turística."
+    },
+    "toolsUsed": {
+      "heading": "Herramientas Usadas"
+    },
+    "developmentPhases": {
+      "heading": "Fases del Desarrollo",
+      "phase1": {
+        "heading": "Estudio preliminar:",
+        "description": "Realicé una investigación detallada sobre <strong className=\"text-accent\">plantillas</strong> para sitios de excursiones en barco, analizando estilos visuales y técnicas para el uso de <strong className=\"text-accent\">Elementor</strong>."
+      },
+      "phase2": {
+        "heading": "Desarrollo organizativo:",
+        "tasks": [
+          {
+            "task": "Diseño de la estructura visual con <strong className=\"text-accent\">Figma</strong>."
+          },
+          {
+            "task": "Creación de la estructura de las páginas y su desarrollo en <strong className=\"text-accent\">WordPress</strong>."
+          },
+          {
+            "task": "Inserción de contenido textual y multimedia."
+          },
+          {
+            "task": "Creación de <strong className=\"text-accent\">diseños de fondo</strong> con Figma para agregar un toque personalizado."
+          },
+          {
+            "task": "Optimización del sistema <strong className=\"text-accent\">SEO</strong> para mejorar la visibilidad."
+          }
+        ]
+      },
+      "phase3": {
+        "heading": "Diseño Visual",
+        "subPhases": [
+          {
+            "description": "Paleta de colores: Elegí una combinación cromática que refleja los colores del mar: <strong className=\"text-accent\">#256D85</strong> (Teal Blue), <strong className=\"text-accent\">#3B82F6</strong> (Blue Cornflower) y <strong className=\"text-accent\">#FDFDFD</strong> (White Smoke)."
+          },
+          {
+            "description": "Tipografía: <strong className=\"text-accent\">Nunito</strong> y <strong className=\"text-accent\">Lora</strong>."
+          },
+          {
+            "description": "Imágenes: Todos los elementos visuales fueron diseñados a mano con <strong className=\"text-accent\">Figma</strong>."
+          }
+        ]
+      }
+    },
+    "figma-bg": "Fondos de Figma",
+    "mainDifficulties": {
+      "heading": "Dificultades Principales",
+      "description": "No encontré dificultades particulares en el desarrollo de este sitio."
+    },
+    "resultsAndConclusions": {
+      "heading": "Resultados y Conclusiones",
+      "points": [
+        "Un sitio web de <strong className=\"text-accent\">excursiones en barco</strong> con un diseño atractivo.",
+        "Una experiencia visual envolvente gracias al uso de colores vibrantes y contenido personalizado.",
+        "Una estructura <strong className=\"text-accent\">SEO</strong> ampliada para mejorar la visibilidad en los motores de búsqueda."
+      ]
+    }
+  }
+}
