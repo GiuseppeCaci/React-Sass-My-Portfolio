@@ -21,7 +21,6 @@ const [arrowState, setArrowState] = useState(false);
 
   const arrowMenu = () => {
     setArrowState((prev) => !prev);
-    console.log(arrowState)
   }
 
   return(
@@ -39,7 +38,7 @@ const [arrowState, setArrowState] = useState(false);
         <img src="/assets/lang/ita-icoin.png" alt="Italian"/></li>
         <li><a href={import.meta.env.VITE_CV_EN_URL} download="curriculum-CACI.pdf">{t('english')}</a>
         <img src="/assets/lang/en-icoin.png" alt="English"/></li>
-        <li><a href={import.meta.env.VITE_CV_EN_URL} download="curriculum-CACI.pdf">{t('spanish')}</a>
+        <li><a href={import.meta.env.VITE_CV_ES_URL} download="curriculum-CACI.pdf">{t('spanish')}</a>
         <img src="/assets/lang/es-icoin.png" alt="Spanish"/></li>
         </ul>
         </div>
