@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 import { Link } from "react-router-dom";
 import useVisibilityAndScrollReset from "../components/UseHooks/useVisibilityAndScrollReset";
@@ -10,6 +10,21 @@ const About = () => {
   useEffect(() => {
     document.title = "About | Giuseppe Caci";
   }, []);
+  //recupero la lingua
+  const [lang, setLang] = useState();
+  useEffect(() => {
+    let savedLanguage = localStorage.getItem("language") || "EN";
+    const language = savedLanguage.toLocaleUpperCase();
+    setLang(language);
+  },[])
+
+  const cvUrls = {
+    IT: import.meta.env.VITE_CV_IT_URL,
+    EN: import.meta.env.VITE_CV_EN_URL,
+    ES: import.meta.env.VITE_CV_ES_URL,
+  };
+   // URL del CV selezionato
+   const cvUrl = cvUrls[lang] || cvUrls.EN;
   //chiamo il context del tema per recuperare il tema inserito
   const { theme } = useContext(ThemeContext);
     const { t } = useTranslation('about');
@@ -142,10 +157,12 @@ const About = () => {
             <p>
             <Trans i18nKey={t('about-skills')} components={{ strong: <strong className="text-accent" />, i: <i /> }} />
             </p>
+            <p>
+            <Trans i18nKey={t('cv-version')} components={{ i: <i /> }} />
+            </p>
             <div className="flex-center-column">
               <a
-                href={import.meta.env.VITE_CV_URL}
-                download="curriculum-CACI.pdf"
+                href={cvUrl} download={`curriculum-CACI-${lang}.pdf`}
               >
                 <button className="button-class-1">{t('about-cta-2')}</button>
               </a>

@@ -1,5 +1,8 @@
 {
     "contact":"Contact",
     "work":"Work",
-    "copyright":"© 2024 Giuseppe Caci. All rights reserved."
+    "copyright":"© 2024 Giuseppe Caci. All rights reserved.",
+    "italian":"In italian",
+    "english":"In english",
+    "spanish":"In spanish"
 }

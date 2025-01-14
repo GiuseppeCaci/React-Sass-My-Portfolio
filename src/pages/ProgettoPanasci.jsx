@@ -33,7 +33,7 @@ const ProgettoPanasci = () => {
     "Sass",
     "Bootstrap",
     "React",
-    "Canvas"
+    "Canva"
   ];
 
   //uso hook personalizzato per la transizione iniziale e la partezza del sito a Y-0
