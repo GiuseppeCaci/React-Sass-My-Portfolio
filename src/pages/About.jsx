@@ -157,7 +157,7 @@ const About = () => {
             <p>
             <Trans i18nKey={t('about-skills')} components={{ strong: <strong className="text-accent" />, i: <i /> }} />
             </p>
-            <p>
+            <p className="little-p">
             <Trans i18nKey={t('cv-version')} components={{ i: <i /> }} />
             </p>
             <div className="flex-center-column">

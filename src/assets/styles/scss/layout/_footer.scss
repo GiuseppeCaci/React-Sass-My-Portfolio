@@ -52,8 +52,8 @@ $footer-height-desktop: 90px;
     @include responsive-flex(column, space-evenly, start);
     li {
       img{
-        margin: 5px;
-        max-width: 20px;
+        margin: 3px;
+        max-width: 13px;
       }
       span{
         @include responsive-flex(row, center, center);

@@ -160,6 +160,22 @@ button {
   display: inline;
 }
 
+@media (max-width: 599px) {
+  .little-p {
+    font-size: 0.875rem !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .little-p {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  .little-p {
+    font-size: 1rem;
+  }
+}
+
 .rotate-90-cw {
   -webkit-animation: rotate-90-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-90-cw 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -658,8 +674,8 @@ button {
   padding: 1px;
 }
 .section-footer-1 div ul li img {
-  margin: 5px;
-  max-width: 20px;
+  margin: 3px;
+  max-width: 13px;
 }
 .section-footer-1 div ul li span {
   display: flex;
@@ -1574,6 +1590,22 @@ button {
   display: inline;
 }
 
+@media (max-width: 599px) {
+  .little-p {
+    font-size: 0.875rem !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .little-p {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  .little-p {
+    font-size: 1rem;
+  }
+}
+
 .container-hero {
   justify-content: center;
   display: flex;
@@ -2388,6 +2420,22 @@ button {
   background: transparent;
   border: none;
   display: inline;
+}
+
+@media (max-width: 599px) {
+  .little-p {
+    font-size: 0.875rem !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .little-p {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  .little-p {
+    font-size: 1rem;
+  }
 }
 
 .portfolio-curriculum {
@@ -4288,6 +4336,22 @@ button {
   background: transparent;
   border: none;
   display: inline;
+}
+
+@media (max-width: 599px) {
+  .little-p {
+    font-size: 0.875rem !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .little-p {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  .little-p {
+    font-size: 1rem;
+  }
 }
 
 .pm-small {

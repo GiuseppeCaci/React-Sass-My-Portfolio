@@ -187,3 +187,15 @@ button {
   border: none; 
   display: inline; 
 }
+
+.little-p{
+  @include respond-to(mobile) {
+    font-size: $font-text-xs !important;
+  }
+  @include respond-to(tablet) {
+    font-size: $font-text-xs;
+  }
+  @include respond-to(desktop) {
+    font-size: $font-text-s;
+  }
+}

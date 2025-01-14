@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef, useEffect } from "react";
 import { useContext } from "react";
 import ThemeContext from "../store/theme/ThemeContext";
 import LanguageSwitcherDESK from "./LanguageSwitcherDESK";
@@ -18,6 +18,22 @@ const Footer = () => {
     const { t } = useTranslation('footer');
 
 const [arrowState, setArrowState] = useState(false);
+const menuRef = useRef(null);
+
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setArrowState(false); // Chiudi il menu
+    }
+  };
+
+  document.addEventListener("click", handleClickOutside);
+
+  // Cleanup per evitare memory leaks
+  return () => {
+    document.removeEventListener("click", handleClickOutside);
+  };
+}, []);
 
   const arrowMenu = () => {
     setArrowState((prev) => !prev);
@@ -27,7 +43,7 @@ const [arrowState, setArrowState] = useState(false);
     <>
       <div className={`container-footer ${theme} secondary`}>
 
-    <div className="section-footer-1">
+    <div className="section-footer-1" ref={menuRef}>
       <div>
         <ul> <h3>{t('contact')}</h3>
         <li onClick={arrowMenu} className="li-cv"><span className={`${arrowState? "rotate-180" : "rotate-0"}`}> 
