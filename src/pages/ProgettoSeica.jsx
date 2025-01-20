@@ -159,10 +159,7 @@ const ProgettoSeica = () => {
   </ul>
     </li>
   </ul>
-              <div className={`${theme} gallery-background container-gallery`}>
-                <h4>{t('seicaBoatExcursions.figma-bg')}</h4>
-                <Gallery images={figmaProject} />
-              </div>
+            
               <h4 className="text-accent">{t('seicaBoatExcursions.mainDifficulties.heading')}</h4>
               <p>  <Trans i18nKey={t('seicaBoatExcursions.mainDifficulties.description')} components={{ strong: <strong className="text-accent" />, i: <i />, em:<em/> }} /></p>
             </div>
