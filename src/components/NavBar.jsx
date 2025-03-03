@@ -129,21 +129,6 @@ const NavBar = () => {
                 </Link>
               </li>
 
-              <li className={`nav-Link ${theme} secondary link-transition-right ${
-                    isOpen ? "link-transition-state" : ""
-                  }`}>
-                    
-                  <a
-                href="https://adventurescode.com/"
-                className={`nav-Link ${theme} secondary`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Blog
-              </a>
-
-              </li>
-
               <li
                 className={`link-transition-left  ${
                   isOpen ? "link-transition-state" : ""
@@ -197,16 +182,6 @@ const NavBar = () => {
               <Link to="/chat-assistant" className={`nav-Link ${theme} secondary`}>
               {t('contact')}
               </Link>
-            </li>
-            <li>
-              <a
-                href="https://adventurescode.com/"
-                className={`nav-Link ${theme} secondary`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Blog
-              </a>
             </li>
             <li>
               <Link to="/portfolio" className={`nav-Link ${theme} secondary`}>
